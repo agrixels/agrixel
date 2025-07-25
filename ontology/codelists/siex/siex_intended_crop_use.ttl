@@ -1,0 +1,224 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix siex_cl: <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+siex_cl:siexIntendedCropUseValueCode a skos:ConceptScheme ;
+    rdfs:label "Code list for siexIntendedCropUseValue - codelist scheme"@en ;
+    rdfs:seeAlso siex_cl:SiexIntendedCropUseValueCode ;
+    skos:definition "Defined in SIEX 'Destino del cultivo' catalogue: https://www3.sede.fega.gob.es/bdcsixpor/catalogos" ;
+    skos:note "This code list provides possible values for siexIntendedCropUse."@en ;
+    skos:prefLabel "Code list for siexIntendedCropUseValue - codelist scheme"@en .
+
+siex_cl:SiexIntendedCropUseValueCode a owl:Class ;
+    rdfs:label "Code list for SiexIntendedCropUseValue - codelist class"@en ;
+    rdfs:comment "This code list provides the SiexIntendedCropUseValue codes."@en ;
+    rdfs:seeAlso siex_cl:siexIntendedCropUseValueCode ;
+    rdfs:subClassOf skos:Concept ;
+    owl:oneOf ( siex_cl:siexIntendedCropUseValueCode-1 siex_cl:siexIntendedCropUseValueCode-2 siex_cl:siexIntendedCropUseValueCode-3 siex_cl:siexIntendedCropUseValueCode-4 siex_cl:siexIntendedCropUseValueCode-5 siex_cl:siexIntendedCropUseValueCode-6 siex_cl:siexIntendedCropUseValueCode-7 siex_cl:siexIntendedCropUseValueCode-8 siex_cl:siexIntendedCropUseValueCode-9 siex_cl:siexIntendedCropUseValueCode-10 siex_cl:siexIntendedCropUseValueCode-11 siex_cl:siexIntendedCropUseValueCode-12 siex_cl:siexIntendedCropUseValueCode-13 siex_cl:siexIntendedCropUseValueCode-14 siex_cl:siexIntendedCropUseValueCode-15 siex_cl:siexIntendedCropUseValueCode-16 siex_cl:siexIntendedCropUseValueCode-17 siex_cl:siexIntendedCropUseValueCode-18 siex_cl:siexIntendedCropUseValueCode-19 siex_cl:siexIntendedCropUseValueCode-20 siex_cl:siexIntendedCropUseValueCode-21 siex_cl:siexIntendedCropUseValueCode-22 siex_cl:siexIntendedCropUseValueCode-23 siex_cl:siexIntendedCropUseValueCode-24 siex_cl:siexIntendedCropUseValueCode-25 siex_cl:siexIntendedCropUseValueCode-26 siex_cl:siexIntendedCropUseValueCode-27 siex_cl:siexIntendedCropUseValueCode-28 siex_cl:siexIntendedCropUseValueCode-29 ) ;
+    skos:definition "Defined in SIEX 'Destino del cultivo' catalogue: https://www3.sede.fega.gob.es/bdcsixpor/catalogos" .
+
+siex_cl:siexIntendedCropUseValueCode-1 a skos:Concept,
+        siex_cl:SiexIntendedCropUseValueCode ;
+    skos:inScheme siex_cl:siexIntendedCropUseValueCode ;
+    skos:notation "1" ;
+    skos:prefLabel "Consumo humano en fresco"@es ;
+    skos:topConceptOf siex_cl:siexIntendedCropUseValueCode .
+
+siex_cl:siexIntendedCropUseValueCode-10 a skos:Concept,
+        siex_cl:SiexIntendedCropUseValueCode ;
+    skos:inScheme siex_cl:siexIntendedCropUseValueCode ;
+    skos:notation "10" ;
+    skos:prefLabel "Semillas destinadas a la producción de brotes"@es ;
+    skos:topConceptOf siex_cl:siexIntendedCropUseValueCode .
+
+siex_cl:siexIntendedCropUseValueCode-11 a skos:Concept,
+        siex_cl:SiexIntendedCropUseValueCode ;
+    skos:inScheme siex_cl:siexIntendedCropUseValueCode ;
+    skos:notation "11" ;
+    skos:prefLabel "Semillas germinadas excepto brotes (shoots o cress)"@es ;
+    skos:topConceptOf siex_cl:siexIntendedCropUseValueCode .
+
+siex_cl:siexIntendedCropUseValueCode-12 a skos:Concept,
+        siex_cl:SiexIntendedCropUseValueCode ;
+    skos:inScheme siex_cl:siexIntendedCropUseValueCode ;
+    skos:notation "12" ;
+    skos:prefLabel "Leña"@es ;
+    skos:topConceptOf siex_cl:siexIntendedCropUseValueCode .
+
+siex_cl:siexIntendedCropUseValueCode-13 a skos:Concept,
+        siex_cl:SiexIntendedCropUseValueCode ;
+    skos:inScheme siex_cl:siexIntendedCropUseValueCode ;
+    skos:notation "13" ;
+    skos:prefLabel "Corcho"@es ;
+    skos:topConceptOf siex_cl:siexIntendedCropUseValueCode .
+
+siex_cl:siexIntendedCropUseValueCode-14 a skos:Concept,
+        siex_cl:SiexIntendedCropUseValueCode ;
+    skos:inScheme siex_cl:siexIntendedCropUseValueCode ;
+    skos:notation "14" ;
+    skos:prefLabel "Resina"@es ;
+    skos:topConceptOf siex_cl:siexIntendedCropUseValueCode .
+
+siex_cl:siexIntendedCropUseValueCode-15 a skos:Concept,
+        siex_cl:SiexIntendedCropUseValueCode ;
+    skos:inScheme siex_cl:siexIntendedCropUseValueCode ;
+    skos:notation "15" ;
+    skos:prefLabel "Sidra"@es ;
+    skos:topConceptOf siex_cl:siexIntendedCropUseValueCode .
+
+siex_cl:siexIntendedCropUseValueCode-16 a skos:Concept,
+        siex_cl:SiexIntendedCropUseValueCode ;
+    skos:inScheme siex_cl:siexIntendedCropUseValueCode ;
+    skos:notation "16" ;
+    skos:prefLabel "Pimentón"@es ;
+    skos:topConceptOf siex_cl:siexIntendedCropUseValueCode .
+
+siex_cl:siexIntendedCropUseValueCode-17 a skos:Concept,
+        siex_cl:SiexIntendedCropUseValueCode ;
+    skos:inScheme siex_cl:siexIntendedCropUseValueCode ;
+    skos:notation "17" ;
+    skos:prefLabel "Fibra"@es ;
+    skos:topConceptOf siex_cl:siexIntendedCropUseValueCode .
+
+siex_cl:siexIntendedCropUseValueCode-18 a skos:Concept,
+        siex_cl:SiexIntendedCropUseValueCode ;
+    skos:inScheme siex_cl:siexIntendedCropUseValueCode ;
+    skos:notation "18" ;
+    skos:prefLabel "Aceite"@es ;
+    skos:topConceptOf siex_cl:siexIntendedCropUseValueCode .
+
+siex_cl:siexIntendedCropUseValueCode-19 a skos:Concept,
+        siex_cl:SiexIntendedCropUseValueCode ;
+    skos:inScheme siex_cl:siexIntendedCropUseValueCode ;
+    skos:notation "19" ;
+    skos:prefLabel "Medicinal"@es ;
+    skos:topConceptOf siex_cl:siexIntendedCropUseValueCode .
+
+siex_cl:siexIntendedCropUseValueCode-2 a skos:Concept,
+        siex_cl:SiexIntendedCropUseValueCode ;
+    skos:inScheme siex_cl:siexIntendedCropUseValueCode ;
+    skos:notation "2" ;
+    skos:prefLabel "Consumo humano en seco"@es ;
+    skos:topConceptOf siex_cl:siexIntendedCropUseValueCode .
+
+siex_cl:siexIntendedCropUseValueCode-20 a skos:Concept,
+        siex_cl:SiexIntendedCropUseValueCode ;
+    skos:inScheme siex_cl:siexIntendedCropUseValueCode ;
+    skos:notation "20" ;
+    skos:prefLabel "Industria cosmética "@es ;
+    skos:topConceptOf siex_cl:siexIntendedCropUseValueCode .
+
+siex_cl:siexIntendedCropUseValueCode-21 a skos:Concept,
+        siex_cl:SiexIntendedCropUseValueCode ;
+    skos:inScheme siex_cl:siexIntendedCropUseValueCode ;
+    skos:notation "21" ;
+    skos:prefLabel "Energía renovable"@es ;
+    skos:topConceptOf siex_cl:siexIntendedCropUseValueCode .
+
+siex_cl:siexIntendedCropUseValueCode-22 a skos:Concept,
+        siex_cl:SiexIntendedCropUseValueCode ;
+    skos:inScheme siex_cl:siexIntendedCropUseValueCode ;
+    skos:notation "22" ;
+    skos:prefLabel "Vinificación"@es ;
+    skos:topConceptOf siex_cl:siexIntendedCropUseValueCode .
+
+siex_cl:siexIntendedCropUseValueCode-23 a skos:Concept,
+        siex_cl:SiexIntendedCropUseValueCode ;
+    skos:inScheme siex_cl:siexIntendedCropUseValueCode ;
+    skos:notation "23" ;
+    skos:prefLabel "Otro procesamiento industrial"@es ;
+    skos:topConceptOf siex_cl:siexIntendedCropUseValueCode .
+
+siex_cl:siexIntendedCropUseValueCode-24 a skos:Concept,
+        siex_cl:SiexIntendedCropUseValueCode ;
+    skos:inScheme siex_cl:siexIntendedCropUseValueCode ;
+    skos:notation "24" ;
+    skos:prefLabel "Henificado "@es ;
+    skos:topConceptOf siex_cl:siexIntendedCropUseValueCode .
+
+siex_cl:siexIntendedCropUseValueCode-25 a skos:Concept,
+        siex_cl:SiexIntendedCropUseValueCode ;
+    skos:inScheme siex_cl:siexIntendedCropUseValueCode ;
+    skos:notation "25" ;
+    skos:prefLabel "Uso experimental"@es ;
+    skos:topConceptOf siex_cl:siexIntendedCropUseValueCode .
+
+siex_cl:siexIntendedCropUseValueCode-26 a skos:Concept,
+        siex_cl:SiexIntendedCropUseValueCode ;
+    skos:inScheme siex_cl:siexIntendedCropUseValueCode ;
+    skos:notation "26" ;
+    skos:prefLabel "Biomasa"@es ;
+    skos:topConceptOf siex_cl:siexIntendedCropUseValueCode .
+
+siex_cl:siexIntendedCropUseValueCode-27 a skos:Concept,
+        siex_cl:SiexIntendedCropUseValueCode ;
+    skos:inScheme siex_cl:siexIntendedCropUseValueCode ;
+    skos:notation "27" ;
+    skos:prefLabel "Madera"@es ;
+    skos:topConceptOf siex_cl:siexIntendedCropUseValueCode .
+
+siex_cl:siexIntendedCropUseValueCode-28 a skos:Concept,
+        siex_cl:SiexIntendedCropUseValueCode ;
+    skos:inScheme siex_cl:siexIntendedCropUseValueCode ;
+    skos:notation "28" ;
+    skos:prefLabel "Secado de la planta por comercialización"@es ;
+    skos:topConceptOf siex_cl:siexIntendedCropUseValueCode .
+
+siex_cl:siexIntendedCropUseValueCode-29 a skos:Concept,
+        siex_cl:SiexIntendedCropUseValueCode ;
+    skos:inScheme siex_cl:siexIntendedCropUseValueCode ;
+    skos:notation "29" ;
+    skos:prefLabel "Combinado: Industrial u otros más secado"@es ;
+    skos:topConceptOf siex_cl:siexIntendedCropUseValueCode .
+
+siex_cl:siexIntendedCropUseValueCode-3 a skos:Concept,
+        siex_cl:SiexIntendedCropUseValueCode ;
+    skos:inScheme siex_cl:siexIntendedCropUseValueCode ;
+    skos:notation "3" ;
+    skos:prefLabel "Consumo animal "@es ;
+    skos:topConceptOf siex_cl:siexIntendedCropUseValueCode .
+
+siex_cl:siexIntendedCropUseValueCode-4 a skos:Concept,
+        siex_cl:SiexIntendedCropUseValueCode ;
+    skos:inScheme siex_cl:siexIntendedCropUseValueCode ;
+    skos:notation "4" ;
+    skos:prefLabel "Forrajero"@es ;
+    skos:topConceptOf siex_cl:siexIntendedCropUseValueCode .
+
+siex_cl:siexIntendedCropUseValueCode-5 a skos:Concept,
+        siex_cl:SiexIntendedCropUseValueCode ;
+    skos:inScheme siex_cl:siexIntendedCropUseValueCode ;
+    skos:notation "5" ;
+    skos:prefLabel "Forraje deshidratado"@es ;
+    skos:topConceptOf siex_cl:siexIntendedCropUseValueCode .
+
+siex_cl:siexIntendedCropUseValueCode-6 a skos:Concept,
+        siex_cl:SiexIntendedCropUseValueCode ;
+    skos:inScheme siex_cl:siexIntendedCropUseValueCode ;
+    skos:notation "6" ;
+    skos:prefLabel "Semillas para siembra"@es ;
+    skos:topConceptOf siex_cl:siexIntendedCropUseValueCode .
+
+siex_cl:siexIntendedCropUseValueCode-7 a skos:Concept,
+        siex_cl:SiexIntendedCropUseValueCode ;
+    skos:inScheme siex_cl:siexIntendedCropUseValueCode ;
+    skos:notation "7" ;
+    skos:prefLabel "Semillas certificadas para siembra"@es ;
+    skos:topConceptOf siex_cl:siexIntendedCropUseValueCode .
+
+siex_cl:siexIntendedCropUseValueCode-8 a skos:Concept,
+        siex_cl:SiexIntendedCropUseValueCode ;
+    skos:inScheme siex_cl:siexIntendedCropUseValueCode ;
+    skos:notation "8" ;
+    skos:prefLabel "Plantas, plantones o partes de planta para cultivo y/o reproducción"@es ;
+    skos:topConceptOf siex_cl:siexIntendedCropUseValueCode .
+
+siex_cl:siexIntendedCropUseValueCode-9 a skos:Concept,
+        siex_cl:SiexIntendedCropUseValueCode ;
+    skos:inScheme siex_cl:siexIntendedCropUseValueCode ;
+    skos:notation "9" ;
+    skos:prefLabel "Ensilado"@es ;
+    skos:topConceptOf siex_cl:siexIntendedCropUseValueCode .
+

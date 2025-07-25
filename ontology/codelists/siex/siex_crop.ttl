@@ -1,0 +1,3234 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix siex_cl: <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+siex_cl:siexCropValueCode a skos:ConceptScheme ;
+    rdfs:label "Code list for siexCropValue - codelist scheme"@en ;
+    rdfs:seeAlso siex_cl:SiexCropValueCode ;
+    skos:definition "Defined in SIEX 'Cultivo' catalogue: https://www3.sede.fega.gob.es/bdcsixpor/catalogos" ;
+    skos:note "This code list provides possible values for siexCrop."@en ;
+    skos:prefLabel "Code list for siexCropValue - codelist scheme"@en .
+
+siex_cl:SiexCropValueCode a owl:Class ;
+    rdfs:label "Code list for SiexCropValue - codelist class"@en ;
+    rdfs:comment "This code list provides the SiexCropValue codes."@en ;
+    rdfs:seeAlso siex_cl:siexCropValueCode ;
+    rdfs:subClassOf skos:Concept ;
+    owl:oneOf ( siex_cl:siexCropValueCode-1 siex_cl:siexCropValueCode-2 siex_cl:siexCropValueCode-3 siex_cl:siexCropValueCode-4 siex_cl:siexCropValueCode-5 siex_cl:siexCropValueCode-6 siex_cl:siexCropValueCode-7 siex_cl:siexCropValueCode-8 siex_cl:siexCropValueCode-9 siex_cl:siexCropValueCode-10 siex_cl:siexCropValueCode-11 siex_cl:siexCropValueCode-12 siex_cl:siexCropValueCode-13 siex_cl:siexCropValueCode-14 siex_cl:siexCropValueCode-19 siex_cl:siexCropValueCode-20 siex_cl:siexCropValueCode-23 siex_cl:siexCropValueCode-33 siex_cl:siexCropValueCode-34 siex_cl:siexCropValueCode-35 siex_cl:siexCropValueCode-36 siex_cl:siexCropValueCode-40 siex_cl:siexCropValueCode-41 siex_cl:siexCropValueCode-43 siex_cl:siexCropValueCode-49 siex_cl:siexCropValueCode-50 siex_cl:siexCropValueCode-51 siex_cl:siexCropValueCode-52 siex_cl:siexCropValueCode-53 siex_cl:siexCropValueCode-60 siex_cl:siexCropValueCode-61 siex_cl:siexCropValueCode-62 siex_cl:siexCropValueCode-63 siex_cl:siexCropValueCode-67 siex_cl:siexCropValueCode-68 siex_cl:siexCropValueCode-69 siex_cl:siexCropValueCode-70 siex_cl:siexCropValueCode-71 siex_cl:siexCropValueCode-72 siex_cl:siexCropValueCode-73 siex_cl:siexCropValueCode-74 siex_cl:siexCropValueCode-76 siex_cl:siexCropValueCode-77 siex_cl:siexCropValueCode-78 siex_cl:siexCropValueCode-80 siex_cl:siexCropValueCode-81 siex_cl:siexCropValueCode-82 siex_cl:siexCropValueCode-83 siex_cl:siexCropValueCode-84 siex_cl:siexCropValueCode-85 siex_cl:siexCropValueCode-86 siex_cl:siexCropValueCode-87 siex_cl:siexCropValueCode-88 siex_cl:siexCropValueCode-89 siex_cl:siexCropValueCode-90 siex_cl:siexCropValueCode-91 siex_cl:siexCropValueCode-92 siex_cl:siexCropValueCode-96 siex_cl:siexCropValueCode-97 siex_cl:siexCropValueCode-99 siex_cl:siexCropValueCode-101 siex_cl:siexCropValueCode-102 siex_cl:siexCropValueCode-104 siex_cl:siexCropValueCode-105 siex_cl:siexCropValueCode-106 siex_cl:siexCropValueCode-107 siex_cl:siexCropValueCode-108 siex_cl:siexCropValueCode-109 siex_cl:siexCropValueCode-110 siex_cl:siexCropValueCode-111 siex_cl:siexCropValueCode-112 siex_cl:siexCropValueCode-113 siex_cl:siexCropValueCode-116 siex_cl:siexCropValueCode-117 siex_cl:siexCropValueCode-118 siex_cl:siexCropValueCode-119 siex_cl:siexCropValueCode-120 siex_cl:siexCropValueCode-121 siex_cl:siexCropValueCode-122 siex_cl:siexCropValueCode-123 siex_cl:siexCropValueCode-124 siex_cl:siexCropValueCode-125 siex_cl:siexCropValueCode-138 siex_cl:siexCropValueCode-139 siex_cl:siexCropValueCode-140 siex_cl:siexCropValueCode-141 siex_cl:siexCropValueCode-142 siex_cl:siexCropValueCode-143 siex_cl:siexCropValueCode-147 siex_cl:siexCropValueCode-149 siex_cl:siexCropValueCode-151 siex_cl:siexCropValueCode-152 siex_cl:siexCropValueCode-153 siex_cl:siexCropValueCode-154 siex_cl:siexCropValueCode-155 siex_cl:siexCropValueCode-156 siex_cl:siexCropValueCode-157 siex_cl:siexCropValueCode-158 siex_cl:siexCropValueCode-159 siex_cl:siexCropValueCode-160 siex_cl:siexCropValueCode-162 siex_cl:siexCropValueCode-163 siex_cl:siexCropValueCode-164 siex_cl:siexCropValueCode-165 siex_cl:siexCropValueCode-166 siex_cl:siexCropValueCode-167 siex_cl:siexCropValueCode-168 siex_cl:siexCropValueCode-169 siex_cl:siexCropValueCode-171 siex_cl:siexCropValueCode-172 siex_cl:siexCropValueCode-173 siex_cl:siexCropValueCode-174 siex_cl:siexCropValueCode-175 siex_cl:siexCropValueCode-176 siex_cl:siexCropValueCode-177 siex_cl:siexCropValueCode-178 siex_cl:siexCropValueCode-179 siex_cl:siexCropValueCode-181 siex_cl:siexCropValueCode-182 siex_cl:siexCropValueCode-183 siex_cl:siexCropValueCode-184 siex_cl:siexCropValueCode-185 siex_cl:siexCropValueCode-186 siex_cl:siexCropValueCode-187 siex_cl:siexCropValueCode-189 siex_cl:siexCropValueCode-190 siex_cl:siexCropValueCode-191 siex_cl:siexCropValueCode-192 siex_cl:siexCropValueCode-193 siex_cl:siexCropValueCode-194 siex_cl:siexCropValueCode-197 siex_cl:siexCropValueCode-200 siex_cl:siexCropValueCode-201 siex_cl:siexCropValueCode-202 siex_cl:siexCropValueCode-203 siex_cl:siexCropValueCode-204 siex_cl:siexCropValueCode-205 siex_cl:siexCropValueCode-206 siex_cl:siexCropValueCode-207 siex_cl:siexCropValueCode-208 siex_cl:siexCropValueCode-209 siex_cl:siexCropValueCode-210 siex_cl:siexCropValueCode-211 siex_cl:siexCropValueCode-212 siex_cl:siexCropValueCode-213 siex_cl:siexCropValueCode-214 siex_cl:siexCropValueCode-215 siex_cl:siexCropValueCode-216 siex_cl:siexCropValueCode-217 siex_cl:siexCropValueCode-218 siex_cl:siexCropValueCode-219 siex_cl:siexCropValueCode-220 siex_cl:siexCropValueCode-222 siex_cl:siexCropValueCode-223 siex_cl:siexCropValueCode-224 siex_cl:siexCropValueCode-225 siex_cl:siexCropValueCode-226 siex_cl:siexCropValueCode-227 siex_cl:siexCropValueCode-228 siex_cl:siexCropValueCode-229 siex_cl:siexCropValueCode-230 siex_cl:siexCropValueCode-231 siex_cl:siexCropValueCode-232 siex_cl:siexCropValueCode-233 siex_cl:siexCropValueCode-235 siex_cl:siexCropValueCode-236 siex_cl:siexCropValueCode-238 siex_cl:siexCropValueCode-239 siex_cl:siexCropValueCode-240 siex_cl:siexCropValueCode-241 siex_cl:siexCropValueCode-242 siex_cl:siexCropValueCode-243 siex_cl:siexCropValueCode-244 siex_cl:siexCropValueCode-245 siex_cl:siexCropValueCode-246 siex_cl:siexCropValueCode-247 siex_cl:siexCropValueCode-248 siex_cl:siexCropValueCode-249 siex_cl:siexCropValueCode-250 siex_cl:siexCropValueCode-251 siex_cl:siexCropValueCode-252 siex_cl:siexCropValueCode-253 siex_cl:siexCropValueCode-254 siex_cl:siexCropValueCode-256 siex_cl:siexCropValueCode-257 siex_cl:siexCropValueCode-258 siex_cl:siexCropValueCode-259 siex_cl:siexCropValueCode-260 siex_cl:siexCropValueCode-261 siex_cl:siexCropValueCode-262 siex_cl:siexCropValueCode-263 siex_cl:siexCropValueCode-264 siex_cl:siexCropValueCode-265 siex_cl:siexCropValueCode-266 siex_cl:siexCropValueCode-267 siex_cl:siexCropValueCode-268 siex_cl:siexCropValueCode-269 siex_cl:siexCropValueCode-270 siex_cl:siexCropValueCode-271 siex_cl:siexCropValueCode-272 siex_cl:siexCropValueCode-273 siex_cl:siexCropValueCode-274 siex_cl:siexCropValueCode-275 siex_cl:siexCropValueCode-276 siex_cl:siexCropValueCode-277 siex_cl:siexCropValueCode-278 siex_cl:siexCropValueCode-279 siex_cl:siexCropValueCode-280 siex_cl:siexCropValueCode-281 siex_cl:siexCropValueCode-282 siex_cl:siexCropValueCode-283 siex_cl:siexCropValueCode-284 siex_cl:siexCropValueCode-285 siex_cl:siexCropValueCode-286 siex_cl:siexCropValueCode-287 siex_cl:siexCropValueCode-288 siex_cl:siexCropValueCode-289 siex_cl:siexCropValueCode-290 siex_cl:siexCropValueCode-291 siex_cl:siexCropValueCode-293 siex_cl:siexCropValueCode-294 siex_cl:siexCropValueCode-295 siex_cl:siexCropValueCode-296 siex_cl:siexCropValueCode-297 siex_cl:siexCropValueCode-298 siex_cl:siexCropValueCode-299 siex_cl:siexCropValueCode-300 siex_cl:siexCropValueCode-301 siex_cl:siexCropValueCode-304 siex_cl:siexCropValueCode-305 siex_cl:siexCropValueCode-306 siex_cl:siexCropValueCode-307 siex_cl:siexCropValueCode-308 siex_cl:siexCropValueCode-309 siex_cl:siexCropValueCode-310 siex_cl:siexCropValueCode-311 siex_cl:siexCropValueCode-312 siex_cl:siexCropValueCode-313 siex_cl:siexCropValueCode-315 siex_cl:siexCropValueCode-316 siex_cl:siexCropValueCode-317 siex_cl:siexCropValueCode-318 siex_cl:siexCropValueCode-319 siex_cl:siexCropValueCode-320 siex_cl:siexCropValueCode-322 siex_cl:siexCropValueCode-323 siex_cl:siexCropValueCode-324 siex_cl:siexCropValueCode-325 siex_cl:siexCropValueCode-328 siex_cl:siexCropValueCode-329 siex_cl:siexCropValueCode-331 siex_cl:siexCropValueCode-332 siex_cl:siexCropValueCode-333 siex_cl:siexCropValueCode-334 siex_cl:siexCropValueCode-335 siex_cl:siexCropValueCode-336 siex_cl:siexCropValueCode-337 siex_cl:siexCropValueCode-338 siex_cl:siexCropValueCode-339 siex_cl:siexCropValueCode-340 siex_cl:siexCropValueCode-341 siex_cl:siexCropValueCode-343 siex_cl:siexCropValueCode-344 siex_cl:siexCropValueCode-345 siex_cl:siexCropValueCode-346 siex_cl:siexCropValueCode-347 siex_cl:siexCropValueCode-348 siex_cl:siexCropValueCode-349 siex_cl:siexCropValueCode-351 siex_cl:siexCropValueCode-352 siex_cl:siexCropValueCode-353 siex_cl:siexCropValueCode-354 siex_cl:siexCropValueCode-355 siex_cl:siexCropValueCode-356 siex_cl:siexCropValueCode-358 siex_cl:siexCropValueCode-359 siex_cl:siexCropValueCode-360 siex_cl:siexCropValueCode-361 siex_cl:siexCropValueCode-362 siex_cl:siexCropValueCode-363 siex_cl:siexCropValueCode-364 siex_cl:siexCropValueCode-365 siex_cl:siexCropValueCode-366 siex_cl:siexCropValueCode-367 siex_cl:siexCropValueCode-368 siex_cl:siexCropValueCode-369 siex_cl:siexCropValueCode-370 siex_cl:siexCropValueCode-371 siex_cl:siexCropValueCode-372 siex_cl:siexCropValueCode-373 siex_cl:siexCropValueCode-374 siex_cl:siexCropValueCode-375 siex_cl:siexCropValueCode-376 siex_cl:siexCropValueCode-377 siex_cl:siexCropValueCode-378 siex_cl:siexCropValueCode-379 siex_cl:siexCropValueCode-380 siex_cl:siexCropValueCode-381 siex_cl:siexCropValueCode-382 siex_cl:siexCropValueCode-383 siex_cl:siexCropValueCode-384 siex_cl:siexCropValueCode-385 siex_cl:siexCropValueCode-386 siex_cl:siexCropValueCode-387 siex_cl:siexCropValueCode-388 siex_cl:siexCropValueCode-389 siex_cl:siexCropValueCode-390 siex_cl:siexCropValueCode-391 siex_cl:siexCropValueCode-392 siex_cl:siexCropValueCode-393 siex_cl:siexCropValueCode-394 siex_cl:siexCropValueCode-395 siex_cl:siexCropValueCode-397 siex_cl:siexCropValueCode-398 siex_cl:siexCropValueCode-399 siex_cl:siexCropValueCode-401 siex_cl:siexCropValueCode-402 siex_cl:siexCropValueCode-403 siex_cl:siexCropValueCode-404 siex_cl:siexCropValueCode-405 siex_cl:siexCropValueCode-406 siex_cl:siexCropValueCode-409 siex_cl:siexCropValueCode-410 siex_cl:siexCropValueCode-411 siex_cl:siexCropValueCode-412 siex_cl:siexCropValueCode-413 siex_cl:siexCropValueCode-414 siex_cl:siexCropValueCode-415 siex_cl:siexCropValueCode-416 siex_cl:siexCropValueCode-417 siex_cl:siexCropValueCode-418 siex_cl:siexCropValueCode-419 siex_cl:siexCropValueCode-420 siex_cl:siexCropValueCode-421 siex_cl:siexCropValueCode-422 siex_cl:siexCropValueCode-423 siex_cl:siexCropValueCode-424 siex_cl:siexCropValueCode-425 siex_cl:siexCropValueCode-426 siex_cl:siexCropValueCode-427 siex_cl:siexCropValueCode-428 siex_cl:siexCropValueCode-429 siex_cl:siexCropValueCode-430 siex_cl:siexCropValueCode-431 siex_cl:siexCropValueCode-432 siex_cl:siexCropValueCode-433 siex_cl:siexCropValueCode-434 siex_cl:siexCropValueCode-435 siex_cl:siexCropValueCode-436 siex_cl:siexCropValueCode-437 siex_cl:siexCropValueCode-438 siex_cl:siexCropValueCode-439 siex_cl:siexCropValueCode-440 siex_cl:siexCropValueCode-441 siex_cl:siexCropValueCode-442 siex_cl:siexCropValueCode-443 siex_cl:siexCropValueCode-444 siex_cl:siexCropValueCode-445 siex_cl:siexCropValueCode-446 siex_cl:siexCropValueCode-447 siex_cl:siexCropValueCode-448 siex_cl:siexCropValueCode-449 siex_cl:siexCropValueCode-450 siex_cl:siexCropValueCode-451 siex_cl:siexCropValueCode-452 siex_cl:siexCropValueCode-453 siex_cl:siexCropValueCode-454 siex_cl:siexCropValueCode-455 siex_cl:siexCropValueCode-456 siex_cl:siexCropValueCode-457 siex_cl:siexCropValueCode-458 siex_cl:siexCropValueCode-459 siex_cl:siexCropValueCode-460 siex_cl:siexCropValueCode-461 siex_cl:siexCropValueCode-462 siex_cl:siexCropValueCode-463 siex_cl:siexCropValueCode-464 siex_cl:siexCropValueCode-465 siex_cl:siexCropValueCode-466 siex_cl:siexCropValueCode-467 siex_cl:siexCropValueCode-468 siex_cl:siexCropValueCode-469 siex_cl:siexCropValueCode-470 siex_cl:siexCropValueCode-471 siex_cl:siexCropValueCode-472 siex_cl:siexCropValueCode-473 siex_cl:siexCropValueCode-474 siex_cl:siexCropValueCode-475 siex_cl:siexCropValueCode-477 siex_cl:siexCropValueCode-478 siex_cl:siexCropValueCode-479 siex_cl:siexCropValueCode-480 siex_cl:siexCropValueCode-481 siex_cl:siexCropValueCode-482 siex_cl:siexCropValueCode-483 siex_cl:siexCropValueCode-484 siex_cl:siexCropValueCode-485 siex_cl:siexCropValueCode-486 siex_cl:siexCropValueCode-487 siex_cl:siexCropValueCode-488 siex_cl:siexCropValueCode-489 siex_cl:siexCropValueCode-490 siex_cl:siexCropValueCode-491 siex_cl:siexCropValueCode-492 siex_cl:siexCropValueCode-493 siex_cl:siexCropValueCode-494 siex_cl:siexCropValueCode-495 siex_cl:siexCropValueCode-496 siex_cl:siexCropValueCode-497 siex_cl:siexCropValueCode-498 siex_cl:siexCropValueCode-904 siex_cl:siexCropValueCode-905 siex_cl:siexCropValueCode-906 siex_cl:siexCropValueCode-907 siex_cl:siexCropValueCode-908 siex_cl:siexCropValueCode-909 siex_cl:siexCropValueCode-910 siex_cl:siexCropValueCode-911 siex_cl:siexCropValueCode-912 siex_cl:siexCropValueCode-913 siex_cl:siexCropValueCode-914 siex_cl:siexCropValueCode-915 siex_cl:siexCropValueCode-916 siex_cl:siexCropValueCode-918 siex_cl:siexCropValueCode-919 siex_cl:siexCropValueCode-920 siex_cl:siexCropValueCode-921 siex_cl:siexCropValueCode-922 siex_cl:siexCropValueCode-923 siex_cl:siexCropValueCode-924 siex_cl:siexCropValueCode-925 siex_cl:siexCropValueCode-926 siex_cl:siexCropValueCode-927 siex_cl:siexCropValueCode-928 siex_cl:siexCropValueCode-929 siex_cl:siexCropValueCode-930 siex_cl:siexCropValueCode-932 siex_cl:siexCropValueCode-933 siex_cl:siexCropValueCode-936 siex_cl:siexCropValueCode-937 siex_cl:siexCropValueCode-938 siex_cl:siexCropValueCode-939 siex_cl:siexCropValueCode-940 siex_cl:siexCropValueCode-941 siex_cl:siexCropValueCode-942 siex_cl:siexCropValueCode-943 siex_cl:siexCropValueCode-944 siex_cl:siexCropValueCode-945 siex_cl:siexCropValueCode-946 siex_cl:siexCropValueCode-947 siex_cl:siexCropValueCode-948 siex_cl:siexCropValueCode-949 siex_cl:siexCropValueCode-950 siex_cl:siexCropValueCode-951 siex_cl:siexCropValueCode-952 siex_cl:siexCropValueCode-953 siex_cl:siexCropValueCode-954 siex_cl:siexCropValueCode-955 siex_cl:siexCropValueCode-956 ) ;
+    skos:definition "Defined in SIEX 'Cultivo' catalogue: https://www3.sede.fega.gob.es/bdcsixpor/catalogos" .
+
+siex_cl:siexCropValueCode-1 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "1" ;
+    skos:prefLabel "TRIGO BLANDO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-10 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "10" ;
+    skos:prefLabel "MIJO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-101 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "101" ;
+    skos:prefLabel "OLIVO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-102 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "102" ;
+    skos:prefLabel "VIÑA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-104 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "104" ;
+    skos:prefLabel "ALMENDRO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-105 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "105" ;
+    skos:prefLabel "MELOCOTONERO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-106 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "106" ;
+    skos:prefLabel "NECTARINO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-107 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "107" ;
+    skos:prefLabel "ALBARICOQUERO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-108 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "108" ;
+    skos:prefLabel "PERAL"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-109 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "109" ;
+    skos:prefLabel "MANZANO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-11 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "11" ;
+    skos:prefLabel "ALPISTE"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-110 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "110" ;
+    skos:prefLabel "CEREZO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-111 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "111" ;
+    skos:prefLabel "CIRUELO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-112 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "112" ;
+    skos:prefLabel "NOGAL"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-113 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "113" ;
+    skos:prefLabel "OTROS FRUTALES"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-116 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "116" ;
+    skos:prefLabel "CHOPO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-117 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "117" ;
+    skos:prefLabel "CASTAÑO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-118 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "118" ;
+    skos:prefLabel "ESPECIES AROMÁTICAS LEÑOSAS"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-119 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "119" ;
+    skos:prefLabel "VIVERO - PRODUCTOR MVR"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-12 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "12" ;
+    skos:prefLabel "TRANQUILLÓN"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-120 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "120" ;
+    skos:prefLabel "VIÑA - OLIVAR"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-121 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "121" ;
+    skos:prefLabel "BONIATO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-122 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "122" ;
+    skos:prefLabel "ALGARROBO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-123 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "123" ;
+    skos:prefLabel "AVELLANO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-124 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "124" ;
+    skos:prefLabel "PISTACHO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-125 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "125" ;
+    skos:prefLabel "FRUTOS DE CÁSCARA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-13 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "13" ;
+    skos:prefLabel "TRITICALE"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-138 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "138" ;
+    skos:prefLabel "ADORMIDERA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-139 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "139" ;
+    skos:prefLabel "HIERBA CINTA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-14 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "14" ;
+    skos:prefLabel "TRITORDEUM"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-140 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "140" ;
+    skos:prefLabel "ABACA ALIAS MANILA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-141 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "141" ;
+    skos:prefLabel "KENAF"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-142 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "142" ;
+    skos:prefLabel "YUTE"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-143 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "143" ;
+    skos:prefLabel "SISAL"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-147 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "147" ;
+    skos:prefLabel "ENCINA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-149 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "149" ;
+    skos:prefLabel "ZARZAMORA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-151 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "151" ;
+    skos:prefLabel "PUERRO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-152 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "152" ;
+    skos:prefLabel "PIMIENTO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-153 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "153" ;
+    skos:prefLabel "MELÓN"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-154 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "154" ;
+    skos:prefLabel "BRÓCOLI"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-155 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "155" ;
+    skos:prefLabel "LECHUGA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-156 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "156" ;
+    skos:prefLabel "SANDÍA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-157 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "157" ;
+    skos:prefLabel "CEBOLLA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-158 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "158" ;
+    skos:prefLabel "APIO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-159 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "159" ;
+    skos:prefLabel "COLIRRÁBANO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-160 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "160" ;
+    skos:prefLabel "COLIFLOR"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-162 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "162" ;
+    skos:prefLabel "BERENJENA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-163 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "163" ;
+    skos:prefLabel "CALABACÍN"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-164 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "164" ;
+    skos:prefLabel "ALCACHOFA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-165 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "165" ;
+    skos:prefLabel "PEPINO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-166 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "166" ;
+    skos:prefLabel "ACELGA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-167 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "167" ;
+    skos:prefLabel "CEBOLLETA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-168 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "168" ;
+    skos:prefLabel "CHALOTA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-169 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "169" ;
+    skos:prefLabel "AJO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-171 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "171" ;
+    skos:prefLabel "CHIRIVÍA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-172 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "172" ;
+    skos:prefLabel "REPOLLO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-173 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "173" ;
+    skos:prefLabel "COL ROJA O LOMBARDA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-174 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "174" ;
+    skos:prefLabel "COL MILÁN O SAVOY"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-175 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "175" ;
+    skos:prefLabel "BERZA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-176 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "176" ;
+    skos:prefLabel "COL DE BRUSELAS"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-177 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "177" ;
+    skos:prefLabel "ENDIVIA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-178 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "178" ;
+    skos:prefLabel "ZANAHORIA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-179 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "179" ;
+    skos:prefLabel "NABO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-181 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "181" ;
+    skos:prefLabel "ACHICORIA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-182 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "182" ;
+    skos:prefLabel "GUINDILLA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-183 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "183" ;
+    skos:prefLabel "ESPINACA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-184 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "184" ;
+    skos:prefLabel "CARDO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-185 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "185" ;
+    skos:prefLabel "CALABAZA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-186 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "186" ;
+    skos:prefLabel "CALABAZA DEL PEREGRINO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-187 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "187" ;
+    skos:prefLabel "BORRAJA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-189 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "189" ;
+    skos:prefLabel "ESCAROLA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-19 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "19" ;
+    skos:prefLabel "TEFF"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-190 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "190" ;
+    skos:prefLabel "RÁBANO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-191 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "191" ;
+    skos:prefLabel "BERRO DE AGUA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-192 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "192" ;
+    skos:prefLabel "FRAMBUESA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-193 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "193" ;
+    skos:prefLabel "HUERTA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-194 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "194" ;
+    skos:prefLabel "CHAMPIÑÓN"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-197 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "197" ;
+    skos:prefLabel "TOMATE"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-2 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "2" ;
+    skos:prefLabel "ESPELTA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-20 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "20" ;
+    skos:prefLabel "BARBECHO TRADICIONAL"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-200 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "200" ;
+    skos:prefLabel "PAULONIA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-201 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "201" ;
+    skos:prefLabel "PLATERINA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-202 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "202" ;
+    skos:prefLabel "PARAGUAYO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-203 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "203" ;
+    skos:prefLabel "ENDRINO o ARAÑÓN"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-204 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "204" ;
+    skos:prefLabel "CLEMENTINA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-205 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "205" ;
+    skos:prefLabel "SATSUMA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-206 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "206" ;
+    skos:prefLabel "NARANJO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-207 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "207" ;
+    skos:prefLabel "LIMONERO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-208 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "208" ;
+    skos:prefLabel "POMELO O TORONJA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-209 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "209" ;
+    skos:prefLabel "MANDARINO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-210 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "210" ;
+    skos:prefLabel "MANDARINO HÍBRIDO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-211 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "211" ;
+    skos:prefLabel "MEMBRILLO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-212 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "212" ;
+    skos:prefLabel "KIWI"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-213 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "213" ;
+    skos:prefLabel "CAQUI o PALOSANTO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-214 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "214" ;
+    skos:prefLabel "NÍSPERO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-215 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "215" ;
+    skos:prefLabel "GROSELLERO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-216 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "216" ;
+    skos:prefLabel "ARÁNDANO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-217 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "217" ;
+    skos:prefLabel "GRANADO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-218 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "218" ;
+    skos:prefLabel "HIGUERA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-219 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "219" ;
+    skos:prefLabel "FRESA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-220 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "220" ;
+    skos:prefLabel "CAÑA DE AZÚCAR"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-222 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "222" ;
+    skos:prefLabel "QUINOA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-223 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "223" ;
+    skos:prefLabel "MISCANTHUS"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-224 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "224" ;
+    skos:prefLabel "HUAXYACAC"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-225 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "225" ;
+    skos:prefLabel "EUCALIPTO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-226 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "226" ;
+    skos:prefLabel "OPUNTIA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-227 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "227" ;
+    skos:prefLabel "SAUCE"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-228 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "228" ;
+    skos:prefLabel "ACACIA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-229 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "229" ;
+    skos:prefLabel "AILANTO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-23 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "23" ;
+    skos:prefLabel "BARBECHO MEDIOAMBIENTAL"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-230 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "230" ;
+    skos:prefLabel "ROBINIA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-231 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "231" ;
+    skos:prefLabel "ACACIA DE TRES ESPINAS"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-232 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "232" ;
+    skos:prefLabel "JACARANDA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-233 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "233" ;
+    skos:prefLabel "FITOLACA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-235 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "235" ;
+    skos:prefLabel "JATROPHA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-236 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "236" ;
+    skos:prefLabel "CAÑA COMÚN"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-238 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "238" ;
+    skos:prefLabel "ALTRAMUZ AMARILLO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-239 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "239" ;
+    skos:prefLabel "ALMORTA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-240 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "240" ;
+    skos:prefLabel "TITARROS"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-241 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "241" ;
+    skos:prefLabel "MEZCLA AVENA-VEZA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-242 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "242" ;
+    skos:prefLabel "MEZCLA TRITICALE-VEZA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-243 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "243" ;
+    skos:prefLabel "MEZCLA TRIGO-VEZA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-244 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "244" ;
+    skos:prefLabel "MEZCLA CEBADA-VEZA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-245 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "245" ;
+    skos:prefLabel "MEZCLA AVENA-ZULLA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-246 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "246" ;
+    skos:prefLabel "MEZCLA CEBADA-ZULLA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-247 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "247" ;
+    skos:prefLabel "CULTIVOS MIXTOS DE ESPECIES PRATENSES"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-248 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "248" ;
+    skos:prefLabel "ALGARROBA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-249 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "249" ;
+    skos:prefLabel "ALVERJA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-250 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "250" ;
+    skos:prefLabel "ALBERJÓN"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-251 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "251" ;
+    skos:prefLabel "AJEDREA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-252 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "252" ;
+    skos:prefLabel "CILANTRO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-253 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "253" ;
+    skos:prefLabel "ANÍS DULCE"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-254 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "254" ;
+    skos:prefLabel "ENELDO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-256 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "256" ;
+    skos:prefLabel "VALERIANA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-257 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "257" ;
+    skos:prefLabel "ARTEMISA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-258 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "258" ;
+    skos:prefLabel "GENCIANA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-259 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "259" ;
+    skos:prefLabel "HISOPO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-260 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "260" ;
+    skos:prefLabel "HINOJO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-261 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "261" ;
+    skos:prefLabel "PEREJIL"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-262 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "262" ;
+    skos:prefLabel "AZAFRÁN"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-263 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "263" ;
+    skos:prefLabel "TOMILLO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-264 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "264" ;
+    skos:prefLabel "ALBAHACA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-265 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "265" ;
+    skos:prefLabel "MELISA O TORONJIL"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-266 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "266" ;
+    skos:prefLabel "MENTA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-267 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "267" ;
+    skos:prefLabel "ORÉGANO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-268 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "268" ;
+    skos:prefLabel "SALVIA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-269 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "269" ;
+    skos:prefLabel "PERIFOLLO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-270 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "270" ;
+    skos:prefLabel "ESTRAGÓN"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-271 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "271" ;
+    skos:prefLabel "MEJORANA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-272 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "272" ;
+    skos:prefLabel "CALÉNDULA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-273 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "273" ;
+    skos:prefLabel "COMINO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-274 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "274" ;
+    skos:prefLabel "ESTEVIA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-275 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "275" ;
+    skos:prefLabel "HIPÉRICO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-276 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "276" ;
+    skos:prefLabel "HIERBABUENA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-277 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "277" ;
+    skos:prefLabel "VERBENA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-278 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "278" ;
+    skos:prefLabel "FRUTOS DEL BOSQUE"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-279 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "279" ;
+    skos:prefLabel "ESPÁRRAGO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-280 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "280" ;
+    skos:prefLabel "TRUFA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-281 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "281" ;
+    skos:prefLabel "LAVANDA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-282 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "282" ;
+    skos:prefLabel "LAVANDÍN"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-283 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "283" ;
+    skos:prefLabel "ALCAPARRA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-284 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "284" ;
+    skos:prefLabel "AJENJO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-285 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "285" ;
+    skos:prefLabel "ESPLIEGO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-286 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "286" ;
+    skos:prefLabel "HELICRISO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-287 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "287" ;
+    skos:prefLabel "HIERBALUISA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-288 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "288" ;
+    skos:prefLabel "ROMERO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-289 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "289" ;
+    skos:prefLabel "SANTOLINA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-290 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "290" ;
+    skos:prefLabel "ALOE VERA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-291 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "291" ;
+    skos:prefLabel "CAFÉ"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-293 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "293" ;
+    skos:prefLabel "ROBLE"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-294 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "294" ;
+    skos:prefLabel "HAYA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-295 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "295" ;
+    skos:prefLabel "ALCORNOQUE"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-296 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "296" ;
+    skos:prefLabel "ABETO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-297 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "297" ;
+    skos:prefLabel "ENEBRO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-298 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "298" ;
+    skos:prefLabel "MEZCLA CEBADA-GUISANTE"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-299 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "299" ;
+    skos:prefLabel "MEZCLA AVENA-GUISANTE"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-3 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "3" ;
+    skos:prefLabel "TRIGO DURO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-300 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "300" ;
+    skos:prefLabel "SABINA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-301 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "301" ;
+    skos:prefLabel "PINSAPO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-304 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "304" ;
+    skos:prefLabel "COL CHINA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-305 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "305" ;
+    skos:prefLabel "MEZCLA AVENA-TRIGO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-306 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "306" ;
+    skos:prefLabel "MEZCLA AVENA-CEBADA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-307 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "307" ;
+    skos:prefLabel "MEZCLA AVENA-TRITICALE"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-308 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "308" ;
+    skos:prefLabel "AGRIMONIA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-309 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "309" ;
+    skos:prefLabel "BARDANA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-310 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "310" ;
+    skos:prefLabel "DIENTE DE LEÓN"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-311 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "311" ;
+    skos:prefLabel "ENULA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-312 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "312" ;
+    skos:prefLabel "EQUINACEA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-313 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "313" ;
+    skos:prefLabel "GINSENG"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-315 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "315" ;
+    skos:prefLabel "LLANTÉN"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-316 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "316" ;
+    skos:prefLabel "MALVAVISCO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-317 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "317" ;
+    skos:prefLabel "MANZANILLA AMARGA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-318 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "318" ;
+    skos:prefLabel "MANZANILLA DULCE"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-319 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "319" ;
+    skos:prefLabel "MILENRAMA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-320 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "320" ;
+    skos:prefLabel "POLEO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-322 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "322" ;
+    skos:prefLabel "ROMPEPIEDRA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-323 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "323" ;
+    skos:prefLabel "TRAVALERA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-324 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "324" ;
+    skos:prefLabel "VARA DE ORO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-325 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "325" ;
+    skos:prefLabel "TRIGO KHORASAN"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-328 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "328" ;
+    skos:prefLabel "PASTO DEL SUDÁN"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-329 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "329" ;
+    skos:prefLabel "AMARANTO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-33 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "33" ;
+    skos:prefLabel "GIRASOL"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-331 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "331" ;
+    skos:prefLabel "MORINGA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-332 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "332" ;
+    skos:prefLabel "MOSTAZA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-333 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "333" ;
+    skos:prefLabel "PORTAINJERTOS DE VID"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-334 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "334" ;
+    skos:prefLabel "BARBECHO DE BIODIVERSIDAD (INCLUYE MELÍFERAS)"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-335 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "335" ;
+    skos:prefLabel "CABECERA Y CONTORNOS DE CULTIVO PERMANENTE"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-336 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "336" ;
+    skos:prefLabel "MEZCLA ALGARROBA-AVENA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-337 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "337" ;
+    skos:prefLabel "MEZCLA ALGARROBA-CEBADA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-338 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "338" ;
+    skos:prefLabel "MEZCLA RAYGRASS-VEZA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-339 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "339" ;
+    skos:prefLabel "MEZCLA AVENA-YEROS"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-34 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "34" ;
+    skos:prefLabel "SOJA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-340 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "340" ;
+    skos:prefLabel "MEZCLA CEBADA-YEROS"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-341 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "341" ;
+    skos:prefLabel "SILPHIUM"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-343 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "343" ;
+    skos:prefLabel "AGUACATE"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-344 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "344" ;
+    skos:prefLabel "MANGO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-345 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "345" ;
+    skos:prefLabel "CHIRIMOYO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-346 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "346" ;
+    skos:prefLabel "PAPAYA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-347 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "347" ;
+    skos:prefLabel "MORERA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-348 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "348" ;
+    skos:prefLabel "VIÑA - FRUTAL"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-349 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "349" ;
+    skos:prefLabel "OLIVAR - FRUTAL"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-35 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "35" ;
+    skos:prefLabel "COLZA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-351 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "351" ;
+    skos:prefLabel "CÍTRICOS HÍBRIDOS-CAQUI"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-352 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "352" ;
+    skos:prefLabel "NARANJO-AGUACATE"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-353 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "353" ;
+    skos:prefLabel "CEREZO-OLIVAR"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-354 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "354" ;
+    skos:prefLabel "CEREZO-ALGARROBO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-355 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "355" ;
+    skos:prefLabel "RICINO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-356 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "356" ;
+    skos:prefLabel "NARANJO AMARGO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-358 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "358" ;
+    skos:prefLabel "MEZCLA DE FORESTALES"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-359 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "359" ;
+    skos:prefLabel "HIERBA DE GUINEA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-36 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "36" ;
+    skos:prefLabel "CAMELINA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-360 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "360" ;
+    skos:prefLabel "ABEDUL"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-361 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "361" ;
+    skos:prefLabel "ABETO DE DOUGLAS"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-362 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "362" ;
+    skos:prefLabel "ACEBO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-363 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "363" ;
+    skos:prefLabel "ACEBUCHE"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-364 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "364" ;
+    skos:prefLabel "ÁLAMO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-365 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "365" ;
+    skos:prefLabel "ALANTICO o LANTISCO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-366 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "366" ;
+    skos:prefLabel "ALERCE"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-367 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "367" ;
+    skos:prefLabel "ALISO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-368 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "368" ;
+    skos:prefLabel "ALMÁCIGO DE CANARIAS"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-369 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "369" ;
+    skos:prefLabel "ALMEZ"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-370 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "370" ;
+    skos:prefLabel "ARCE"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-371 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "371" ;
+    skos:prefLabel "CARPE"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-372 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "372" ;
+    skos:prefLabel "CEDRO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-373 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "373" ;
+    skos:prefLabel "CHAPARRO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-374 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "374" ;
+    skos:prefLabel "CHÍA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-375 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "375" ;
+    skos:prefLabel "CIPRÉS"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-376 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "376" ;
+    skos:prefLabel "FRESNO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-377 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "377" ;
+    skos:prefLabel "MADROÑO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-378 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "378" ;
+    skos:prefLabel "OLMO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-379 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "379" ;
+    skos:prefLabel "PALMA CANARIA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-380 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "380" ;
+    skos:prefLabel "PICEA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-381 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "381" ;
+    skos:prefLabel "QUEJIGO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-382 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "382" ;
+    skos:prefLabel "REBOLLO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-383 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "383" ;
+    skos:prefLabel "RETAMA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-384 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "384" ;
+    skos:prefLabel "SERBAL"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-385 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "385" ;
+    skos:prefLabel "TALAYA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-386 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "386" ;
+    skos:prefLabel "TEJO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-387 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "387" ;
+    skos:prefLabel "TILO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-388 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "388" ;
+    skos:prefLabel "YUCA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-389 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "389" ;
+    skos:prefLabel "PINO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-390 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "390" ;
+    skos:prefLabel "HABONCILLO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-391 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "391" ;
+    skos:prefLabel "CEREZO DE MAHOMA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-392 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "392" ;
+    skos:prefLabel "MEZCLA ALUBIA-MAÍZ"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-393 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "393" ;
+    skos:prefLabel "ESCANDA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-394 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "394" ;
+    skos:prefLabel "ESCAÑA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-395 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "395" ;
+    skos:prefLabel "PANIZO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-397 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "397" ;
+    skos:prefLabel "JUDÍA ESCARLATA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-398 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "398" ;
+    skos:prefLabel "RAMIO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-399 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "399" ;
+    skos:prefLabel "SÉSAMO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-4 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "4" ;
+    skos:prefLabel "MAÍZ"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-40 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "40" ;
+    skos:prefLabel "GUISANTE"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-401 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "401" ;
+    skos:prefLabel "CEBOLLINO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-402 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "402" ;
+    skos:prefLabel "ACEDERILLA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-403 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "403" ;
+    skos:prefLabel "ANÍS ESTRELLADO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-404 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "404" ;
+    skos:prefLabel "BOTÓN DE ORO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-405 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "405" ;
+    skos:prefLabel "AJOWAN"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-406 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "406" ;
+    skos:prefLabel "CHUPAMIELES"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-409 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "409" ;
+    skos:prefLabel "DEDALERA O DIGITAL"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-41 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "41" ;
+    skos:prefLabel "HABA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-410 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "410" ;
+    skos:prefLabel "CICUTA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-411 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "411" ;
+    skos:prefLabel "JABONERA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-412 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "412" ;
+    skos:prefLabel "MALVA COMÚN"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-413 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "413" ;
+    skos:prefLabel "PULMONARIA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-414 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "414" ;
+    skos:prefLabel "CARDO DE FULLER"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-415 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "415" ;
+    skos:prefLabel "TÁRTAGO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-416 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "416" ;
+    skos:prefLabel "PATACA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-417 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "417" ;
+    skos:prefLabel "CANÓNIGO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-418 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "418" ;
+    skos:prefLabel "ACEDERA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-419 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "419" ;
+    skos:prefLabel "BERRO HORTELANO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-420 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "420" ;
+    skos:prefLabel "RUIBARBO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-421 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "421" ;
+    skos:prefLabel "VERDOLAGA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-422 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "422" ;
+    skos:prefLabel "KIWANO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-423 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "423" ;
+    skos:prefLabel "TOMATILLO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-424 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "424" ;
+    skos:prefLabel "ALCACHOFA CHINA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-425 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "425" ;
+    skos:prefLabel "GALANGA MENOR"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-426 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "426" ;
+    skos:prefLabel "PEREJIL TUBEROSO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-427 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "427" ;
+    skos:prefLabel "RÁBANO PICANTE"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-428 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "428" ;
+    skos:prefLabel "JUDÍA DE LIMA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-429 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "429" ;
+    skos:prefLabel "COLLEJA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-43 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "43" ;
+    skos:prefLabel "ALTRAMUZ BLANCO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-430 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "430" ;
+    skos:prefLabel "BERGAMOTO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-431 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "431" ;
+    skos:prefLabel "CIDRO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-432 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "432" ;
+    skos:prefLabel "LIMÓN MANDARINA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-433 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "433" ;
+    skos:prefLabel "LIMERO DULCE"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-434 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "434" ;
+    skos:prefLabel "LIMÓN DULCE DEL MEDITERRÁNEO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-435 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "435" ;
+    skos:prefLabel "NARANJO MORUNO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-436 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "436" ;
+    skos:prefLabel "ACEROLO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-437 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "437" ;
+    skos:prefLabel "GUINDO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-438 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "438" ;
+    skos:prefLabel "SAUCO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-439 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "439" ;
+    skos:prefLabel "ESPINO AMARILLO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-440 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "440" ;
+    skos:prefLabel "PITA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-441 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "441" ;
+    skos:prefLabel "TÉ"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-442 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "442" ;
+    skos:prefLabel "MIMBRERA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-443 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "443" ;
+    skos:prefLabel "BAMBÚ"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-444 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "444" ;
+    skos:prefLabel "ZUMAQUE"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-445 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "445" ;
+    skos:prefLabel "COL CRESPA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-446 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "446" ;
+    skos:prefLabel "SERRADELLA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-447 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "447" ;
+    skos:prefLabel "MEZCLA CEREAL-RAYGRASS"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-448 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "448" ;
+    skos:prefLabel "MEZCLA AVENA-MAÍZ"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-449 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "449" ;
+    skos:prefLabel "MEZCLA HABA-VEZA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-450 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "450" ;
+    skos:prefLabel "MEZCLA CEBADA-TRIGO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-451 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "451" ;
+    skos:prefLabel "MEZCLA CENTENO-TRIGO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-452 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "452" ;
+    skos:prefLabel "MEZCLA AVENA-MAÍZ-VEZA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-453 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "453" ;
+    skos:prefLabel "MEZCLA CEBADA-MAÍZ-VEZA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-454 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "454" ;
+    skos:prefLabel "MEZCLA ALTRAMUZ-AVENA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-455 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "455" ;
+    skos:prefLabel "MEZCLA AVENA-CENTENO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-456 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "456" ;
+    skos:prefLabel "MEZCLA CENTENO-MAÍZ"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-457 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "457" ;
+    skos:prefLabel "MEZCLA MAÍZ-SORGO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-458 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "458" ;
+    skos:prefLabel "MARALFALFA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-459 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "459" ;
+    skos:prefLabel "TEDERA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-460 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "460" ;
+    skos:prefLabel "CAUPÍ"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-461 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "461" ;
+    skos:prefLabel "MELILOTO AMARILLO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-462 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "462" ;
+    skos:prefLabel "OJO DE BUEY"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-463 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "463" ;
+    skos:prefLabel "CHOISUM"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-464 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "464" ;
+    skos:prefLabel "BRÓCOLI CHINO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-465 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "465" ;
+    skos:prefLabel "BATATA ACUÁTICA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-466 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "466" ;
+    skos:prefLabel "CEBOLLINO CHINO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-467 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "467" ;
+    skos:prefLabel "LEMONGRASS"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-468 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "468" ;
+    skos:prefLabel "ESPINACA DE MALABAR"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-469 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "469" ;
+    skos:prefLabel "LUFFA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-470 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "470" ;
+    skos:prefLabel "JUDÍA DE EGIPTO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-471 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "471" ;
+    skos:prefLabel "CALABAZA AMARGA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-472 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "472" ;
+    skos:prefLabel "PEPINO CULEBRA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-473 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "473" ;
+    skos:prefLabel "CALABAZA CHINA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-474 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "474" ;
+    skos:prefLabel "AROS EGIPCIOS"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-475 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "475" ;
+    skos:prefLabel "RÁBANO SILVESTRE"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-477 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "477" ;
+    skos:prefLabel "SALSIFÍ"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-478 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "478" ;
+    skos:prefLabel "COLINABO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-479 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "479" ;
+    skos:prefLabel "ESCORZONERA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-480 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "480" ;
+    skos:prefLabel "BARBAREA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-481 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "481" ;
+    skos:prefLabel "NUEZ DE COLA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-482 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "482" ;
+    skos:prefLabel "ALTRAMUZ AZUL"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-483 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "483" ;
+    skos:prefLabel "VEZA VELLOSA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-484 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "484" ;
+    skos:prefLabel "GRELOS"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-485 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "485" ;
+    skos:prefLabel "BAYAS DE GOJI"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-486 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "486" ;
+    skos:prefLabel "ALVERJA HÚNGARA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-487 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "487" ;
+    skos:prefLabel "CALIFORNIA BLUEBELL"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-488 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "488" ;
+    skos:prefLabel "BISERRULA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-489 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "489" ;
+    skos:prefLabel "GRAMA COMÚN"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-49 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "49" ;
+    skos:prefLabel "ALUBIA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-490 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "490" ;
+    skos:prefLabel "MEDICAGO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-491 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "491" ;
+    skos:prefLabel "ESPIGUILLA DE BURRO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-492 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "492" ;
+    skos:prefLabel "AÑIL"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-493 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "493" ;
+    skos:prefLabel "ÍNDIGO CHINO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-494 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "494" ;
+    skos:prefLabel "VIÑA - HUERTA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-495 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "495" ;
+    skos:prefLabel "FRUTAL - HUERTA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-496 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "496" ;
+    skos:prefLabel "MEZCLA RAYGRASS-TRÉBOL"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-497 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "497" ;
+    skos:prefLabel "APIO-RÁBANO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-498 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "498" ;
+    skos:prefLabel "BROCCOLINI"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-5 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "5" ;
+    skos:prefLabel "CEBADA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-50 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "50" ;
+    skos:prefLabel "GARBANZO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-51 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "51" ;
+    skos:prefLabel "LENTEJA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-52 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "52" ;
+    skos:prefLabel "VEZA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-53 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "53" ;
+    skos:prefLabel "YEROS"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-6 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "6" ;
+    skos:prefLabel "CENTENO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-60 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "60" ;
+    skos:prefLabel "ALFALFA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-61 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "61" ;
+    skos:prefLabel "ALHOLVA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-62 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "62" ;
+    skos:prefLabel "PASTOS PERMANENTES DE 5 O MÁS AÑOS"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-63 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "63" ;
+    skos:prefLabel "PASTOS DE MENOS DE 5 AÑOS"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-67 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "67" ;
+    skos:prefLabel "ESPARCETA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-68 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "68" ;
+    skos:prefLabel "FESTUCA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-69 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "69" ;
+    skos:prefLabel "RAYGRASS PERENNE"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-7 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "7" ;
+    skos:prefLabel "SORGO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-70 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "70" ;
+    skos:prefLabel "AGROSTIS"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-71 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "71" ;
+    skos:prefLabel "ARRHENATHERUM"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-72 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "72" ;
+    skos:prefLabel "DACTILO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-73 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "73" ;
+    skos:prefLabel "FLEO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-74 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "74" ;
+    skos:prefLabel "POA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-76 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "76" ;
+    skos:prefLabel "ZULLA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-77 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "77" ;
+    skos:prefLabel "TRÉBOL"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-78 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "78" ;
+    skos:prefLabel "RAYGRASS ANUAL"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-8 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "8" ;
+    skos:prefLabel "AVENA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-80 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "80" ;
+    skos:prefLabel "ARROZ"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-81 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "81" ;
+    skos:prefLabel "ALGODÓN"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-82 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "82" ;
+    skos:prefLabel "REMOLACHA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-83 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "83" ;
+    skos:prefLabel "TABACO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-84 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "84" ;
+    skos:prefLabel "LÚPULO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-85 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "85" ;
+    skos:prefLabel "LINO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-86 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "86" ;
+    skos:prefLabel "CÁÑAMO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-87 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "87" ;
+    skos:prefLabel "CACAHUETE"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-88 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "88" ;
+    skos:prefLabel "CÁRTAMO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-89 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "89" ;
+    skos:prefLabel "CHUFA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-9 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "9" ;
+    skos:prefLabel "ALFORFÓN"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-90 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "90" ;
+    skos:prefLabel "REGALIZ"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-904 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "904" ;
+    skos:prefLabel "CROTALARIA JUNCEA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-905 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "905" ;
+    skos:prefLabel "PLATANERA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-906 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "906" ;
+    skos:prefLabel "PIÑA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-907 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "907" ;
+    skos:prefLabel "AZUFAIFO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-908 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "908" ;
+    skos:prefLabel "CARAMBOLO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-909 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "909" ;
+    skos:prefLabel "NASHI"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-91 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "91" ;
+    skos:prefLabel "FLORES"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-910 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "910" ;
+    skos:prefLabel "LITCHI"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-911 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "911" ;
+    skos:prefLabel "KUMQUAT"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-912 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "912" ;
+    skos:prefLabel "LIMEQUAT"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-913 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "913" ;
+    skos:prefLabel "MANO DE BUDA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-914 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "914" ;
+    skos:prefLabel "CAVIAR CÍTRICO/ FINGER LIME"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-915 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "915" ;
+    skos:prefLabel "LIMA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-916 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "916" ;
+    skos:prefLabel "KALE"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-918 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "918" ;
+    skos:prefLabel "ARGÁN"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-919 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "919" ;
+    skos:prefLabel "PITAYA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-92 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "92" ;
+    skos:prefLabel "ROMANESCU"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-920 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "920" ;
+    skos:prefLabel "LONGAN"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-921 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "921" ;
+    skos:prefLabel "MANGOSTÁN"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-922 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "922" ;
+    skos:prefLabel "RAMBUTÁN"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-923 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "923" ;
+    skos:prefLabel "GUAYABO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-924 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "924" ;
+    skos:prefLabel "ZAPOTE"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-925 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "925" ;
+    skos:prefLabel "ALFICOZ"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-926 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "926" ;
+    skos:prefLabel "BATATA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-927 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "927" ;
+    skos:prefLabel "OKRA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-928 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "928" ;
+    skos:prefLabel "PHYSALIS"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-929 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "929" ;
+    skos:prefLabel "RÚCULA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-930 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "930" ;
+    skos:prefLabel "SALICORNIA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-932 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "932" ;
+    skos:prefLabel "PLANTAS ORNAMENTALES"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-933 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "933" ;
+    skos:prefLabel "ÑAME"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-936 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "936" ;
+    skos:prefLabel "TAGASASTE"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-937 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "937" ;
+    skos:prefLabel "CUERNECILLO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-938 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "938" ;
+    skos:prefLabel "FRESÓN"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-939 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "939" ;
+    skos:prefLabel "ALMENDRO-OLIVAR"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-940 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "940" ;
+    skos:prefLabel "NARANJO-CAQUI"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-941 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "941" ;
+    skos:prefLabel "NARANJO-MANDARINO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-942 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "942" ;
+    skos:prefLabel "NÍSPERO-CAQUI"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-943 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "943" ;
+    skos:prefLabel "PALMERA DATILERA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-944 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "944" ;
+    skos:prefLabel "MARACUYÁ o FRUTO DE LA PASIÓN"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-945 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "945" ;
+    skos:prefLabel "MEZCLA AVENA-HABA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-946 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "946" ;
+    skos:prefLabel "MEZCLA AVENA-CEBADA-VEZA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-947 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "947" ;
+    skos:prefLabel "JOJOBA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-948 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "948" ;
+    skos:prefLabel "CLEMENTINA-CAQUI"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-949 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "949" ;
+    skos:prefLabel "SATSUMA-CAQUI"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-950 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "950" ;
+    skos:prefLabel "CÚRCUMA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-951 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "951" ;
+    skos:prefLabel "JENGIBRE"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-952 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "952" ;
+    skos:prefLabel "COL PICUDA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-953 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "953" ;
+    skos:prefLabel "MEZCLA PRATENSES CON PREDOMINANCIA CULTIVOS FIJADORES NITROGENO"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-954 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "954" ;
+    skos:prefLabel "MEZCLA VEZA-GUISANTE-TRÉBOL"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-955 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "955" ;
+    skos:prefLabel "YUZU"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-956 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "956" ;
+    skos:prefLabel "MEZCLA TRITICALE-GUISANTE"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-96 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "96" ;
+    skos:prefLabel "ESPECIES AROMÁTICAS HERBÁCEAS"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-97 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "97" ;
+    skos:prefLabel "SETAS"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+
+siex_cl:siexCropValueCode-99 a skos:Concept,
+        siex_cl:SiexCropValueCode ;
+    skos:inScheme siex_cl:siexCropValueCode ;
+    skos:notation "99" ;
+    skos:prefLabel "PATATA"@es ;
+    skos:topConceptOf siex_cl:siexCropValueCode .
+

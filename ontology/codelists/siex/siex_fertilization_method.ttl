@@ -1,0 +1,70 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix siex_cl: <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+siex_cl:siexFertilizationMethodValueCode a skos:ConceptScheme ;
+    rdfs:label "Code list for siexFertilizationMethodValue - codelist scheme"@en ;
+    rdfs:seeAlso siex_cl:SiexFertilizationMethodValueCode ;
+    skos:definition "Defined in SIEX 'Método de aplicación de fertilizante' catalogue: https://www3.sede.fega.gob.es/bdcsixpor/catalogos" ;
+    skos:note "This code list provides possible values for siexFertilizationMethod."@en ;
+    skos:prefLabel "Code list for siexFertilizationMethodValue - codelist scheme"@en .
+
+siex_cl:SiexFertilizationMethodValueCode a owl:Class ;
+    rdfs:label "Code list for SiexFertilizationMethodValue - codelist class"@en ;
+    rdfs:comment "This code list provides the SiexFertilizationMethodValue codes."@en ;
+    rdfs:seeAlso siex_cl:siexFertilizationMethodValueCode ;
+    rdfs:subClassOf skos:Concept ;
+    owl:oneOf ( siex_cl:siexFertilizationMethodValueCode-1 siex_cl:siexFertilizationMethodValueCode-2 siex_cl:siexFertilizationMethodValueCode-3 siex_cl:siexFertilizationMethodValueCode-4 siex_cl:siexFertilizationMethodValueCode-5 siex_cl:siexFertilizationMethodValueCode-6 siex_cl:siexFertilizationMethodValueCode-7 ) ;
+    skos:definition "Defined in SIEX 'Método de aplicación de fertilizante' catalogue: https://www3.sede.fega.gob.es/bdcsixpor/catalogos" .
+
+siex_cl:siexFertilizationMethodValueCode-1 a skos:Concept,
+        siex_cl:SiexFertilizationMethodValueCode ;
+    skos:inScheme siex_cl:siexFertilizationMethodValueCode ;
+    skos:notation "1" ;
+    skos:prefLabel "Esparcido general"@es ;
+    skos:topConceptOf siex_cl:siexFertilizationMethodValueCode .
+
+siex_cl:siexFertilizationMethodValueCode-2 a skos:Concept,
+        siex_cl:SiexFertilizationMethodValueCode ;
+    skos:inScheme siex_cl:siexFertilizationMethodValueCode ;
+    skos:notation "2" ;
+    skos:prefLabel "Esparcido general y enterrado"@es ;
+    skos:topConceptOf siex_cl:siexFertilizationMethodValueCode .
+
+siex_cl:siexFertilizationMethodValueCode-3 a skos:Concept,
+        siex_cl:SiexFertilizationMethodValueCode ;
+    skos:inScheme siex_cl:siexFertilizationMethodValueCode ;
+    skos:notation "3" ;
+    skos:prefLabel "Esparcido localizado"@es ;
+    skos:topConceptOf siex_cl:siexFertilizationMethodValueCode .
+
+siex_cl:siexFertilizationMethodValueCode-4 a skos:Concept,
+        siex_cl:SiexFertilizationMethodValueCode ;
+    skos:inScheme siex_cl:siexFertilizationMethodValueCode ;
+    skos:notation "4" ;
+    skos:prefLabel "Esparcido localizado y enterrado"@es ;
+    skos:topConceptOf siex_cl:siexFertilizationMethodValueCode .
+
+siex_cl:siexFertilizationMethodValueCode-5 a skos:Concept,
+        siex_cl:SiexFertilizationMethodValueCode ;
+    skos:inScheme siex_cl:siexFertilizationMethodValueCode ;
+    skos:notation "5" ;
+    skos:prefLabel "Riego por aspersión (fertirrigación)"@es ;
+    skos:topConceptOf siex_cl:siexFertilizationMethodValueCode .
+
+siex_cl:siexFertilizationMethodValueCode-6 a skos:Concept,
+        siex_cl:SiexFertilizationMethodValueCode ;
+    skos:inScheme siex_cl:siexFertilizationMethodValueCode ;
+    skos:notation "6" ;
+    skos:prefLabel "Riego localizado (fertirrigación)"@es ;
+    skos:topConceptOf siex_cl:siexFertilizationMethodValueCode .
+
+siex_cl:siexFertilizationMethodValueCode-7 a skos:Concept,
+        siex_cl:SiexFertilizationMethodValueCode ;
+    skos:inScheme siex_cl:siexFertilizationMethodValueCode ;
+    skos:notation "7" ;
+    skos:prefLabel "Aplicación foliar"@es ;
+    skos:topConceptOf siex_cl:siexFertilizationMethodValueCode .
+

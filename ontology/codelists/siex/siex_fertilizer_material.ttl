@@ -1,0 +1,189 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix siex_cl: <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+siex_cl:siexFertilizerMaterialValueCode a skos:ConceptScheme ;
+    rdfs:label "Code list for siexFertilizerMaterialValue - codelist scheme"@en ;
+    rdfs:seeAlso siex_cl:SiexFertilizerMaterialValueCode ;
+    skos:definition "Defined in SIEX 'Material fertilizante' catalogue: https://www3.sede.fega.gob.es/bdcsixpor/catalogos" ;
+    skos:note "This code list provides possible values for siexFertilizerMaterial."@en ;
+    skos:prefLabel "Code list for siexFertilizerMaterialValue - codelist scheme"@en .
+
+siex_cl:SiexFertilizerMaterialValueCode a owl:Class ;
+    rdfs:label "Code list for SiexFertilizerMaterialValue - codelist class"@en ;
+    rdfs:comment "This code list provides the SiexFertilizerMaterialValue codes."@en ;
+    rdfs:seeAlso siex_cl:siexFertilizerMaterialValueCode ;
+    rdfs:subClassOf skos:Concept ;
+    owl:oneOf ( siex_cl:siexFertilizerMaterialValueCode-0 siex_cl:siexFertilizerMaterialValueCode-1 siex_cl:siexFertilizerMaterialValueCode-2 siex_cl:siexFertilizerMaterialValueCode-3 siex_cl:siexFertilizerMaterialValueCode-4 siex_cl:siexFertilizerMaterialValueCode-5 siex_cl:siexFertilizerMaterialValueCode-6 siex_cl:siexFertilizerMaterialValueCode-7 siex_cl:siexFertilizerMaterialValueCode-8 siex_cl:siexFertilizerMaterialValueCode-9 siex_cl:siexFertilizerMaterialValueCode-10 siex_cl:siexFertilizerMaterialValueCode-11 siex_cl:siexFertilizerMaterialValueCode-12 siex_cl:siexFertilizerMaterialValueCode-13 siex_cl:siexFertilizerMaterialValueCode-14 siex_cl:siexFertilizerMaterialValueCode-15 siex_cl:siexFertilizerMaterialValueCode-16 siex_cl:siexFertilizerMaterialValueCode-17 siex_cl:siexFertilizerMaterialValueCode-18 siex_cl:siexFertilizerMaterialValueCode-19 siex_cl:siexFertilizerMaterialValueCode-20 siex_cl:siexFertilizerMaterialValueCode-21 siex_cl:siexFertilizerMaterialValueCode-22 siex_cl:siexFertilizerMaterialValueCode-23 ) ;
+    skos:definition "Defined in SIEX 'Material fertilizante' catalogue: https://www3.sede.fega.gob.es/bdcsixpor/catalogos" .
+
+siex_cl:siexFertilizerMaterialValueCode-0 a skos:Concept,
+        siex_cl:SiexFertilizerMaterialValueCode ;
+    skos:inScheme siex_cl:siexFertilizerMaterialValueCode ;
+    skos:notation "0" ;
+    skos:prefLabel "Otros"@es ;
+    skos:topConceptOf siex_cl:siexFertilizerMaterialValueCode .
+
+siex_cl:siexFertilizerMaterialValueCode-1 a skos:Concept,
+        siex_cl:SiexFertilizerMaterialValueCode ;
+    skos:inScheme siex_cl:siexFertilizerMaterialValueCode ;
+    skos:notation "1" ;
+    skos:prefLabel "Estiercol líquido de aves"@es ;
+    skos:topConceptOf siex_cl:siexFertilizerMaterialValueCode .
+
+siex_cl:siexFertilizerMaterialValueCode-10 a skos:Concept,
+        siex_cl:SiexFertilizerMaterialValueCode ;
+    skos:inScheme siex_cl:siexFertilizerMaterialValueCode ;
+    skos:notation "10" ;
+    skos:prefLabel "Otros tipos de estiércol sólido: conejo, visón, zorro"@es ;
+    skos:topConceptOf siex_cl:siexFertilizerMaterialValueCode .
+
+siex_cl:siexFertilizerMaterialValueCode-11 a skos:Concept,
+        siex_cl:SiexFertilizerMaterialValueCode ;
+    skos:inScheme siex_cl:siexFertilizerMaterialValueCode ;
+    skos:notation "11" ;
+    skos:prefLabel "Productos fertilizantes bioestimulantes"@es ;
+    skos:topConceptOf siex_cl:siexFertilizerMaterialValueCode .
+
+siex_cl:siexFertilizerMaterialValueCode-12 a skos:Concept,
+        siex_cl:SiexFertilizerMaterialValueCode ;
+    skos:inScheme siex_cl:siexFertilizerMaterialValueCode ;
+    skos:notation "12" ;
+    skos:prefLabel "Productos fertilizantes enmiendas calizas"@es ;
+    skos:topConceptOf siex_cl:siexFertilizerMaterialValueCode .
+
+siex_cl:siexFertilizerMaterialValueCode-13 a skos:Concept,
+        siex_cl:SiexFertilizerMaterialValueCode ;
+    skos:inScheme siex_cl:siexFertilizerMaterialValueCode ;
+    skos:notation "13" ;
+    skos:prefLabel "Productos fertilizantes enmiendas orgánicas"@es ;
+    skos:topConceptOf siex_cl:siexFertilizerMaterialValueCode .
+
+siex_cl:siexFertilizerMaterialValueCode-14 a skos:Concept,
+        siex_cl:SiexFertilizerMaterialValueCode ;
+    skos:inScheme siex_cl:siexFertilizerMaterialValueCode ;
+    skos:notation "14" ;
+    skos:prefLabel "Productos fertilizantes: abonos inorgánicos"@es ;
+    skos:topConceptOf siex_cl:siexFertilizerMaterialValueCode .
+
+siex_cl:siexFertilizerMaterialValueCode-15 a skos:Concept,
+        siex_cl:SiexFertilizerMaterialValueCode ;
+    skos:inScheme siex_cl:siexFertilizerMaterialValueCode ;
+    skos:notation "15" ;
+    skos:prefLabel "Productos fertilizantes: abonos orgánicos"@es ;
+    skos:topConceptOf siex_cl:siexFertilizerMaterialValueCode .
+
+siex_cl:siexFertilizerMaterialValueCode-16 a skos:Concept,
+        siex_cl:SiexFertilizerMaterialValueCode ;
+    skos:inScheme siex_cl:siexFertilizerMaterialValueCode ;
+    skos:notation "16" ;
+    skos:prefLabel "Productos fertilizantes: abonos organominerales"@es ;
+    skos:topConceptOf siex_cl:siexFertilizerMaterialValueCode .
+
+siex_cl:siexFertilizerMaterialValueCode-17 a skos:Concept,
+        siex_cl:SiexFertilizerMaterialValueCode ;
+    skos:inScheme siex_cl:siexFertilizerMaterialValueCode ;
+    skos:notation "17" ;
+    skos:prefLabel "Productos fertilizantes otras enmiendas (retenedoras humedad, ácidas, etc.)"@es ;
+    skos:topConceptOf siex_cl:siexFertilizerMaterialValueCode .
+
+siex_cl:siexFertilizerMaterialValueCode-18 a skos:Concept,
+        siex_cl:SiexFertilizerMaterialValueCode ;
+    skos:inScheme siex_cl:siexFertilizerMaterialValueCode ;
+    skos:notation "18" ;
+    skos:prefLabel "Residuos: Materiales que, sin haberse empleado en la elaboración de un producto fertilizante, cumplan con todos los requisitos de las CMCS 3, 4, 5, 6, 12, 13 y 14 del Anexo II del Reglamento (UE) 2019/1009."@es ;
+    skos:topConceptOf siex_cl:siexFertilizerMaterialValueCode .
+
+siex_cl:siexFertilizerMaterialValueCode-19 a skos:Concept,
+        siex_cl:SiexFertilizerMaterialValueCode ;
+    skos:inScheme siex_cl:siexFertilizerMaterialValueCode ;
+    skos:notation "19" ;
+    skos:prefLabel "Residuos: Subproductos de origen animal no aptos para consumo humano, que hayan sido tratados conforme al artículo 20 del Reglamento (CE) 1069/2009."@es ;
+    skos:topConceptOf siex_cl:siexFertilizerMaterialValueCode .
+
+siex_cl:siexFertilizerMaterialValueCode-2 a skos:Concept,
+        siex_cl:SiexFertilizerMaterialValueCode ;
+    skos:inScheme siex_cl:siexFertilizerMaterialValueCode ;
+    skos:notation "2" ;
+    skos:prefLabel "Estiércol líquido de bovino"@es ;
+    skos:topConceptOf siex_cl:siexFertilizerMaterialValueCode .
+
+siex_cl:siexFertilizerMaterialValueCode-20 a skos:Concept,
+        siex_cl:SiexFertilizerMaterialValueCode ;
+    skos:inScheme siex_cl:siexFertilizerMaterialValueCode ;
+    skos:notation "20" ;
+    skos:prefLabel "Residuos: compost de alperujo"@es ;
+    skos:topConceptOf siex_cl:siexFertilizerMaterialValueCode .
+
+siex_cl:siexFertilizerMaterialValueCode-21 a skos:Concept,
+        siex_cl:SiexFertilizerMaterialValueCode ;
+    skos:inScheme siex_cl:siexFertilizerMaterialValueCode ;
+    skos:notation "21" ;
+    skos:prefLabel "Residuos: alperujo desecado"@es ;
+    skos:topConceptOf siex_cl:siexFertilizerMaterialValueCode .
+
+siex_cl:siexFertilizerMaterialValueCode-22 a skos:Concept,
+        siex_cl:SiexFertilizerMaterialValueCode ;
+    skos:inScheme siex_cl:siexFertilizerMaterialValueCode ;
+    skos:notation "22" ;
+    skos:prefLabel "Residuos: Lodos de tratamiento de aguas residuales urbanas (lodos EDAR), incluidos en el Real Decreto 1310/1990, de 29 de octubre. siempre que hayan sido tratados."@es ;
+    skos:topConceptOf siex_cl:siexFertilizerMaterialValueCode .
+
+siex_cl:siexFertilizerMaterialValueCode-23 a skos:Concept,
+        siex_cl:SiexFertilizerMaterialValueCode ;
+    skos:inScheme siex_cl:siexFertilizerMaterialValueCode ;
+    skos:notation "23" ;
+    skos:prefLabel "Residuos: Lodos calizos procedentes del proceso Kraft de fabricación de pasta de papel, para elevar el pH de suelos ácidos"@es ;
+    skos:topConceptOf siex_cl:siexFertilizerMaterialValueCode .
+
+siex_cl:siexFertilizerMaterialValueCode-3 a skos:Concept,
+        siex_cl:SiexFertilizerMaterialValueCode ;
+    skos:inScheme siex_cl:siexFertilizerMaterialValueCode ;
+    skos:notation "3" ;
+    skos:prefLabel "Estiércol líquido de porcino"@es ;
+    skos:topConceptOf siex_cl:siexFertilizerMaterialValueCode .
+
+siex_cl:siexFertilizerMaterialValueCode-4 a skos:Concept,
+        siex_cl:SiexFertilizerMaterialValueCode ;
+    skos:inScheme siex_cl:siexFertilizerMaterialValueCode ;
+    skos:notation "4" ;
+    skos:prefLabel "Estiércol sólido de aves"@es ;
+    skos:topConceptOf siex_cl:siexFertilizerMaterialValueCode .
+
+siex_cl:siexFertilizerMaterialValueCode-5 a skos:Concept,
+        siex_cl:SiexFertilizerMaterialValueCode ;
+    skos:inScheme siex_cl:siexFertilizerMaterialValueCode ;
+    skos:notation "5" ;
+    skos:prefLabel "Estiércol sólido de bovino"@es ;
+    skos:topConceptOf siex_cl:siexFertilizerMaterialValueCode .
+
+siex_cl:siexFertilizerMaterialValueCode-6 a skos:Concept,
+        siex_cl:SiexFertilizerMaterialValueCode ;
+    skos:inScheme siex_cl:siexFertilizerMaterialValueCode ;
+    skos:notation "6" ;
+    skos:prefLabel "Estiércol sólido de caprino"@es ;
+    skos:topConceptOf siex_cl:siexFertilizerMaterialValueCode .
+
+siex_cl:siexFertilizerMaterialValueCode-7 a skos:Concept,
+        siex_cl:SiexFertilizerMaterialValueCode ;
+    skos:inScheme siex_cl:siexFertilizerMaterialValueCode ;
+    skos:notation "7" ;
+    skos:prefLabel "Estiércol sólido de equino"@es ;
+    skos:topConceptOf siex_cl:siexFertilizerMaterialValueCode .
+
+siex_cl:siexFertilizerMaterialValueCode-8 a skos:Concept,
+        siex_cl:SiexFertilizerMaterialValueCode ;
+    skos:inScheme siex_cl:siexFertilizerMaterialValueCode ;
+    skos:notation "8" ;
+    skos:prefLabel "Estiércol sólido de ovino"@es ;
+    skos:topConceptOf siex_cl:siexFertilizerMaterialValueCode .
+
+siex_cl:siexFertilizerMaterialValueCode-9 a skos:Concept,
+        siex_cl:SiexFertilizerMaterialValueCode ;
+    skos:inScheme siex_cl:siexFertilizerMaterialValueCode ;
+    skos:notation "9" ;
+    skos:prefLabel "Inhibidores"@es ;
+    skos:topConceptOf siex_cl:siexFertilizerMaterialValueCode .
+

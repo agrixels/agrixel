@@ -1,0 +1,63 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix siex_cl: <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+siex_cl:siexIrrigationWaterSourceValueCode a skos:ConceptScheme ;
+    rdfs:label "Code list for siexIrrigationWaterSourceValue - codelist scheme"@en ;
+    rdfs:seeAlso siex_cl:SiexIrrigationWaterSourceValueCode ;
+    skos:definition "Defined in SIEX 'Procedencia del agua de riego' catalogue: https://www3.sede.fega.gob.es/bdcsixpor/catalogos" ;
+    skos:note "This code list provides possible values for siexIrrigationWaterSource."@en ;
+    skos:prefLabel "Code list for siexIrrigationWaterSourceValue - codelist scheme"@en .
+
+siex_cl:SiexIrrigationWaterSourceValueCode a owl:Class ;
+    rdfs:label "Code list for SiexIrrigationWaterSourceValue - codelist class"@en ;
+    rdfs:comment "This code list provides the SiexIrrigationWaterSourceValue codes."@en ;
+    rdfs:seeAlso siex_cl:siexIrrigationWaterSourceValueCode ;
+    rdfs:subClassOf skos:Concept ;
+    owl:oneOf ( siex_cl:siexIrrigationWaterSourceValueCode-1 siex_cl:siexIrrigationWaterSourceValueCode-2 siex_cl:siexIrrigationWaterSourceValueCode-3 siex_cl:siexIrrigationWaterSourceValueCode-4 siex_cl:siexIrrigationWaterSourceValueCode-5 siex_cl:siexIrrigationWaterSourceValueCode-6 ) ;
+    skos:definition "Defined in SIEX 'Procedencia del agua de riego' catalogue: https://www3.sede.fega.gob.es/bdcsixpor/catalogos" .
+
+siex_cl:siexIrrigationWaterSourceValueCode-1 a skos:Concept,
+        siex_cl:SiexIrrigationWaterSourceValueCode ;
+    skos:inScheme siex_cl:siexIrrigationWaterSourceValueCode ;
+    skos:notation "1" ;
+    skos:prefLabel "Superficial"@es ;
+    skos:topConceptOf siex_cl:siexIrrigationWaterSourceValueCode .
+
+siex_cl:siexIrrigationWaterSourceValueCode-2 a skos:Concept,
+        siex_cl:SiexIrrigationWaterSourceValueCode ;
+    skos:inScheme siex_cl:siexIrrigationWaterSourceValueCode ;
+    skos:notation "2" ;
+    skos:prefLabel "Subterránea"@es ;
+    skos:topConceptOf siex_cl:siexIrrigationWaterSourceValueCode .
+
+siex_cl:siexIrrigationWaterSourceValueCode-3 a skos:Concept,
+        siex_cl:SiexIrrigationWaterSourceValueCode ;
+    skos:inScheme siex_cl:siexIrrigationWaterSourceValueCode ;
+    skos:notation "3" ;
+    skos:prefLabel "Pluvial"@es ;
+    skos:topConceptOf siex_cl:siexIrrigationWaterSourceValueCode .
+
+siex_cl:siexIrrigationWaterSourceValueCode-4 a skos:Concept,
+        siex_cl:SiexIrrigationWaterSourceValueCode ;
+    skos:inScheme siex_cl:siexIrrigationWaterSourceValueCode ;
+    skos:notation "4" ;
+    skos:prefLabel "Regeneración"@es ;
+    skos:topConceptOf siex_cl:siexIrrigationWaterSourceValueCode .
+
+siex_cl:siexIrrigationWaterSourceValueCode-5 a skos:Concept,
+        siex_cl:SiexIrrigationWaterSourceValueCode ;
+    skos:inScheme siex_cl:siexIrrigationWaterSourceValueCode ;
+    skos:notation "5" ;
+    skos:prefLabel "Desalinización"@es ;
+    skos:topConceptOf siex_cl:siexIrrigationWaterSourceValueCode .
+
+siex_cl:siexIrrigationWaterSourceValueCode-6 a skos:Concept,
+        siex_cl:SiexIrrigationWaterSourceValueCode ;
+    skos:inScheme siex_cl:siexIrrigationWaterSourceValueCode ;
+    skos:notation "6" ;
+    skos:prefLabel "Recursos alternativos (distintos de la regeneración y desalinización)"@es ;
+    skos:topConceptOf siex_cl:siexIrrigationWaterSourceValueCode .
+

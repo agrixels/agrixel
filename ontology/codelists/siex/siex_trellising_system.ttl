@@ -1,0 +1,84 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix siex_cl: <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+siex_cl:siexTrellisingSystemValueCode a skos:ConceptScheme ;
+    rdfs:label "Code list for siexTrellisingSystemValue - codelist scheme"@en ;
+    rdfs:seeAlso siex_cl:SiexTrellisingSystemValueCode ;
+    skos:definition "Defined in SIEX 'Sistema de conducción' catalogue: https://www3.sede.fega.gob.es/bdcsixpor/catalogos" ;
+    skos:note "This code list provides possible values for siexTrellisingSystem."@en ;
+    skos:prefLabel "Code list for siexTrellisingSystemValue - codelist scheme"@en .
+
+siex_cl:SiexTrellisingSystemValueCode a owl:Class ;
+    rdfs:label "Code list for SiexTrellisingSystemValue - codelist class"@en ;
+    rdfs:comment "This code list provides the SiexTrellisingSystemValue codes."@en ;
+    rdfs:seeAlso siex_cl:siexTrellisingSystemValueCode ;
+    rdfs:subClassOf skos:Concept ;
+    owl:oneOf ( siex_cl:siexTrellisingSystemValueCode-1 siex_cl:siexTrellisingSystemValueCode-2 siex_cl:siexTrellisingSystemValueCode-3 siex_cl:siexTrellisingSystemValueCode-4 siex_cl:siexTrellisingSystemValueCode-5 siex_cl:siexTrellisingSystemValueCode-6 siex_cl:siexTrellisingSystemValueCode-7 siex_cl:siexTrellisingSystemValueCode-8 siex_cl:siexTrellisingSystemValueCode-9 ) ;
+    skos:definition "Defined in SIEX 'Sistema de conducción' catalogue: https://www3.sede.fega.gob.es/bdcsixpor/catalogos" .
+
+siex_cl:siexTrellisingSystemValueCode-1 a skos:Concept,
+        siex_cl:SiexTrellisingSystemValueCode ;
+    skos:inScheme siex_cl:siexTrellisingSystemValueCode ;
+    skos:notation "1" ;
+    skos:prefLabel "Vaso"@es ;
+    skos:topConceptOf siex_cl:siexTrellisingSystemValueCode .
+
+siex_cl:siexTrellisingSystemValueCode-2 a skos:Concept,
+        siex_cl:SiexTrellisingSystemValueCode ;
+    skos:inScheme siex_cl:siexTrellisingSystemValueCode ;
+    skos:notation "2" ;
+    skos:prefLabel "Espaldera"@es ;
+    skos:topConceptOf siex_cl:siexTrellisingSystemValueCode .
+
+siex_cl:siexTrellisingSystemValueCode-3 a skos:Concept,
+        siex_cl:SiexTrellisingSystemValueCode ;
+    skos:inScheme siex_cl:siexTrellisingSystemValueCode ;
+    skos:notation "3" ;
+    skos:prefLabel "Parral"@es ;
+    skos:topConceptOf siex_cl:siexTrellisingSystemValueCode .
+
+siex_cl:siexTrellisingSystemValueCode-4 a skos:Concept,
+        siex_cl:SiexTrellisingSystemValueCode ;
+    skos:inScheme siex_cl:siexTrellisingSystemValueCode ;
+    skos:notation "4" ;
+    skos:prefLabel "Empalizado"@es ;
+    skos:topConceptOf siex_cl:siexTrellisingSystemValueCode .
+
+siex_cl:siexTrellisingSystemValueCode-5 a skos:Concept,
+        siex_cl:SiexTrellisingSystemValueCode ;
+    skos:inScheme siex_cl:siexTrellisingSystemValueCode ;
+    skos:notation "5" ;
+    skos:prefLabel "Emparrado"@es ;
+    skos:topConceptOf siex_cl:siexTrellisingSystemValueCode .
+
+siex_cl:siexTrellisingSystemValueCode-6 a skos:Concept,
+        siex_cl:SiexTrellisingSystemValueCode ;
+    skos:inScheme siex_cl:siexTrellisingSystemValueCode ;
+    skos:notation "6" ;
+    skos:prefLabel "Elevación individual"@es ;
+    skos:topConceptOf siex_cl:siexTrellisingSystemValueCode .
+
+siex_cl:siexTrellisingSystemValueCode-7 a skos:Concept,
+        siex_cl:SiexTrellisingSystemValueCode ;
+    skos:inScheme siex_cl:siexTrellisingSystemValueCode ;
+    skos:notation "7" ;
+    skos:prefLabel "Rastras"@es ;
+    skos:topConceptOf siex_cl:siexTrellisingSystemValueCode .
+
+siex_cl:siexTrellisingSystemValueCode-8 a skos:Concept,
+        siex_cl:SiexTrellisingSystemValueCode ;
+    skos:inScheme siex_cl:siexTrellisingSystemValueCode ;
+    skos:notation "8" ;
+    skos:prefLabel "Cordones"@es ;
+    skos:topConceptOf siex_cl:siexTrellisingSystemValueCode .
+
+siex_cl:siexTrellisingSystemValueCode-9 a skos:Concept,
+        siex_cl:SiexTrellisingSystemValueCode ;
+    skos:inScheme siex_cl:siexTrellisingSystemValueCode ;
+    skos:notation "9" ;
+    skos:prefLabel "Formas libres"@es ;
+    skos:topConceptOf siex_cl:siexTrellisingSystemValueCode .
+

@@ -1,0 +1,274 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix siex_cl: <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+siex_cl:siexRootstockValueCode a skos:ConceptScheme ;
+    rdfs:label "Code list for siexRootstockValue - codelist scheme"@en ;
+    rdfs:seeAlso siex_cl:SiexRootstockValueCode ;
+    skos:definition "Defined in SIEX 'Portainjerto' catalogue: https://www3.sede.fega.gob.es/bdcsixpor/catalogos" ;
+    skos:note "This code list provides possible values for siexRootstock."@en ;
+    skos:prefLabel "Code list for siexRootstockValue - codelist scheme"@en .
+
+siex_cl:SiexRootstockValueCode a owl:Class ;
+    rdfs:label "Code list for SiexRootstockValue - codelist class"@en ;
+    rdfs:comment "This code list provides the SiexRootstockValue codes."@en ;
+    rdfs:seeAlso siex_cl:siexRootstockValueCode ;
+    rdfs:subClassOf skos:Concept ;
+    owl:oneOf ( siex_cl:siexRootstockValueCode-1 siex_cl:siexRootstockValueCode-2 siex_cl:siexRootstockValueCode-3 siex_cl:siexRootstockValueCode-4 siex_cl:siexRootstockValueCode-5 siex_cl:siexRootstockValueCode-6 siex_cl:siexRootstockValueCode-7 siex_cl:siexRootstockValueCode-8 siex_cl:siexRootstockValueCode-9 siex_cl:siexRootstockValueCode-10 siex_cl:siexRootstockValueCode-11 siex_cl:siexRootstockValueCode-12 siex_cl:siexRootstockValueCode-13 siex_cl:siexRootstockValueCode-14 siex_cl:siexRootstockValueCode-15 siex_cl:siexRootstockValueCode-16 siex_cl:siexRootstockValueCode-17 siex_cl:siexRootstockValueCode-18 siex_cl:siexRootstockValueCode-19 siex_cl:siexRootstockValueCode-20 siex_cl:siexRootstockValueCode-21 siex_cl:siexRootstockValueCode-22 siex_cl:siexRootstockValueCode-23 siex_cl:siexRootstockValueCode-34 siex_cl:siexRootstockValueCode-35 siex_cl:siexRootstockValueCode-36 siex_cl:siexRootstockValueCode-37 siex_cl:siexRootstockValueCode-38 siex_cl:siexRootstockValueCode-39 siex_cl:siexRootstockValueCode-40 siex_cl:siexRootstockValueCode-41 siex_cl:siexRootstockValueCode-42 siex_cl:siexRootstockValueCode-43 ) ;
+    skos:definition "Defined in SIEX 'Portainjerto' catalogue: https://www3.sede.fega.gob.es/bdcsixpor/catalogos" .
+
+siex_cl:siexRootstockValueCode-1 a skos:Concept,
+        siex_cl:SiexRootstockValueCode ;
+    skos:altLabel "BC1" ;
+    skos:inScheme siex_cl:siexRootstockValueCode ;
+    skos:notation "1" ;
+    skos:prefLabel "1 BLANCHARD"@es ;
+    skos:topConceptOf siex_cl:siexRootstockValueCode .
+
+siex_cl:siexRootstockValueCode-10 a skos:Concept,
+        siex_cl:SiexRootstockValueCode ;
+    skos:altLabel "5 AMZ" ;
+    skos:inScheme siex_cl:siexRootstockValueCode ;
+    skos:notation "10" ;
+    skos:prefLabel "5 A MARTINEZ ZAPORTA"@es ;
+    skos:topConceptOf siex_cl:siexRootstockValueCode .
+
+siex_cl:siexRootstockValueCode-11 a skos:Concept,
+        siex_cl:SiexRootstockValueCode ;
+    skos:altLabel "41 B" ;
+    skos:inScheme siex_cl:siexRootstockValueCode ;
+    skos:notation "11" ;
+    skos:prefLabel "41 B MILLARDET GRASSET"@es ;
+    skos:topConceptOf siex_cl:siexRootstockValueCode .
+
+siex_cl:siexRootstockValueCode-12 a skos:Concept,
+        siex_cl:SiexRootstockValueCode ;
+    skos:altLabel "420 A" ;
+    skos:inScheme siex_cl:siexRootstockValueCode ;
+    skos:notation "12" ;
+    skos:prefLabel "420 MILLARDET GRASSET"@es ;
+    skos:topConceptOf siex_cl:siexRootstockValueCode .
+
+siex_cl:siexRootstockValueCode-13 a skos:Concept,
+        siex_cl:SiexRootstockValueCode ;
+    skos:altLabel "19 62 M" ;
+    skos:inScheme siex_cl:siexRootstockValueCode ;
+    skos:notation "13" ;
+    skos:prefLabel "19 62 MILLARDET GRASSET"@es ;
+    skos:topConceptOf siex_cl:siexRootstockValueCode .
+
+siex_cl:siexRootstockValueCode-14 a skos:Concept,
+        siex_cl:SiexRootstockValueCode ;
+    skos:altLabel "101 14 M" ;
+    skos:inScheme siex_cl:siexRootstockValueCode ;
+    skos:notation "14" ;
+    skos:prefLabel "101 14 MILLARDET GRASSET"@es ;
+    skos:topConceptOf siex_cl:siexRootstockValueCode .
+
+siex_cl:siexRootstockValueCode-15 a skos:Concept,
+        siex_cl:SiexRootstockValueCode ;
+    skos:altLabel "1103 P" ;
+    skos:inScheme siex_cl:siexRootstockValueCode ;
+    skos:notation "15" ;
+    skos:prefLabel "1103 PAULSEN"@es ;
+    skos:topConceptOf siex_cl:siexRootstockValueCode .
+
+siex_cl:siexRootstockValueCode-16 a skos:Concept,
+        siex_cl:SiexRootstockValueCode ;
+    skos:altLabel "31 R" ;
+    skos:inScheme siex_cl:siexRootstockValueCode ;
+    skos:notation "16" ;
+    skos:prefLabel "31 RICHTER"@es ;
+    skos:topConceptOf siex_cl:siexRootstockValueCode .
+
+siex_cl:siexRootstockValueCode-17 a skos:Concept,
+        siex_cl:SiexRootstockValueCode ;
+    skos:altLabel "99 R" ;
+    skos:inScheme siex_cl:siexRootstockValueCode ;
+    skos:notation "17" ;
+    skos:prefLabel "99 RITCHER"@es ;
+    skos:topConceptOf siex_cl:siexRootstockValueCode .
+
+siex_cl:siexRootstockValueCode-18 a skos:Concept,
+        siex_cl:SiexRootstockValueCode ;
+    skos:altLabel "110 R" ;
+    skos:inScheme siex_cl:siexRootstockValueCode ;
+    skos:notation "18" ;
+    skos:prefLabel "110 RITCHER"@es ;
+    skos:topConceptOf siex_cl:siexRootstockValueCode .
+
+siex_cl:siexRootstockValueCode-19 a skos:Concept,
+        siex_cl:SiexRootstockValueCode ;
+    skos:altLabel "140 RU" ;
+    skos:inScheme siex_cl:siexRootstockValueCode ;
+    skos:notation "19" ;
+    skos:prefLabel "140 RUGGERI"@es ;
+    skos:topConceptOf siex_cl:siexRootstockValueCode .
+
+siex_cl:siexRootstockValueCode-2 a skos:Concept,
+        siex_cl:SiexRootstockValueCode ;
+    skos:altLabel "196 17 CL" ;
+    skos:inScheme siex_cl:siexRootstockValueCode ;
+    skos:notation "2" ;
+    skos:prefLabel "196 17 CASTEL"@es ;
+    skos:topConceptOf siex_cl:siexRootstockValueCode .
+
+siex_cl:siexRootstockValueCode-20 a skos:Concept,
+        siex_cl:SiexRootstockValueCode ;
+    skos:altLabel "5 BB,KOBER" ;
+    skos:inScheme siex_cl:siexRootstockValueCode ;
+    skos:notation "20" ;
+    skos:prefLabel "5 BB TELEKI KOBER"@es ;
+    skos:topConceptOf siex_cl:siexRootstockValueCode .
+
+siex_cl:siexRootstockValueCode-21 a skos:Concept,
+        siex_cl:SiexRootstockValueCode ;
+    skos:altLabel "SO4" ;
+    skos:inScheme siex_cl:siexRootstockValueCode ;
+    skos:notation "21" ;
+    skos:prefLabel "SELEC. OPPENHEIM DE TELEK Nº 4"@es ;
+    skos:topConceptOf siex_cl:siexRootstockValueCode .
+
+siex_cl:siexRootstockValueCode-22 a skos:Concept,
+        siex_cl:SiexRootstockValueCode ;
+    skos:altLabel "R. DE LOT" ;
+    skos:inScheme siex_cl:siexRootstockValueCode ;
+    skos:notation "22" ;
+    skos:prefLabel "RUPESTRIS DE LOT"@es ;
+    skos:topConceptOf siex_cl:siexRootstockValueCode .
+
+siex_cl:siexRootstockValueCode-23 a skos:Concept,
+        siex_cl:SiexRootstockValueCode ;
+    skos:inScheme siex_cl:siexRootstockValueCode ;
+    skos:notation "23" ;
+    skos:prefLabel "PIE FRANCO EN EL TERRITORIO DE LAS ISLAS CANARIAS"@es ;
+    skos:topConceptOf siex_cl:siexRootstockValueCode .
+
+siex_cl:siexRootstockValueCode-3 a skos:Concept,
+        siex_cl:SiexRootstockValueCode ;
+    skos:altLabel "6736 CL" ;
+    skos:inScheme siex_cl:siexRootstockValueCode ;
+    skos:notation "3" ;
+    skos:prefLabel "6736 CASTEL"@es ;
+    skos:topConceptOf siex_cl:siexRootstockValueCode .
+
+siex_cl:siexRootstockValueCode-34 a skos:Concept,
+        siex_cl:SiexRootstockValueCode ;
+    skos:inScheme siex_cl:siexRootstockValueCode ;
+    skos:notation "34" ;
+    skos:prefLabel "GRN1"@es ;
+    skos:topConceptOf siex_cl:siexRootstockValueCode .
+
+siex_cl:siexRootstockValueCode-35 a skos:Concept,
+        siex_cl:SiexRootstockValueCode ;
+    skos:inScheme siex_cl:siexRootstockValueCode ;
+    skos:notation "35" ;
+    skos:prefLabel "GRN3"@es ;
+    skos:topConceptOf siex_cl:siexRootstockValueCode .
+
+siex_cl:siexRootstockValueCode-36 a skos:Concept,
+        siex_cl:SiexRootstockValueCode ;
+    skos:inScheme siex_cl:siexRootstockValueCode ;
+    skos:notation "36" ;
+    skos:prefLabel "M 1"@es ;
+    skos:topConceptOf siex_cl:siexRootstockValueCode .
+
+siex_cl:siexRootstockValueCode-37 a skos:Concept,
+        siex_cl:SiexRootstockValueCode ;
+    skos:inScheme siex_cl:siexRootstockValueCode ;
+    skos:notation "37" ;
+    skos:prefLabel "M 2"@es ;
+    skos:topConceptOf siex_cl:siexRootstockValueCode .
+
+siex_cl:siexRootstockValueCode-38 a skos:Concept,
+        siex_cl:SiexRootstockValueCode ;
+    skos:inScheme siex_cl:siexRootstockValueCode ;
+    skos:notation "38" ;
+    skos:prefLabel "M 3"@es ;
+    skos:topConceptOf siex_cl:siexRootstockValueCode .
+
+siex_cl:siexRootstockValueCode-39 a skos:Concept,
+        siex_cl:SiexRootstockValueCode ;
+    skos:inScheme siex_cl:siexRootstockValueCode ;
+    skos:notation "39" ;
+    skos:prefLabel "M 4"@es ;
+    skos:topConceptOf siex_cl:siexRootstockValueCode .
+
+siex_cl:siexRootstockValueCode-4 a skos:Concept,
+        siex_cl:SiexRootstockValueCode ;
+    skos:altLabel "161 49 C" ;
+    skos:inScheme siex_cl:siexRootstockValueCode ;
+    skos:notation "4" ;
+    skos:prefLabel "161 49 COUDERC"@es ;
+    skos:topConceptOf siex_cl:siexRootstockValueCode .
+
+siex_cl:siexRootstockValueCode-40 a skos:Concept,
+        siex_cl:SiexRootstockValueCode ;
+    skos:altLabel "R.S.B. 1" ;
+    skos:inScheme siex_cl:siexRootstockValueCode ;
+    skos:notation "40" ;
+    skos:prefLabel "RESSEGIER SELEC BIROLLEAU Nº 1"@es ;
+    skos:topConceptOf siex_cl:siexRootstockValueCode .
+
+siex_cl:siexRootstockValueCode-41 a skos:Concept,
+        siex_cl:SiexRootstockValueCode ;
+    skos:inScheme siex_cl:siexRootstockValueCode ;
+    skos:notation "41" ;
+    skos:prefLabel "RG8"@es ;
+    skos:topConceptOf siex_cl:siexRootstockValueCode .
+
+siex_cl:siexRootstockValueCode-42 a skos:Concept,
+        siex_cl:SiexRootstockValueCode ;
+    skos:inScheme siex_cl:siexRootstockValueCode ;
+    skos:notation "42" ;
+    skos:prefLabel "RG9"@es ;
+    skos:topConceptOf siex_cl:siexRootstockValueCode .
+
+siex_cl:siexRootstockValueCode-43 a skos:Concept,
+        siex_cl:SiexRootstockValueCode ;
+    skos:inScheme siex_cl:siexRootstockValueCode ;
+    skos:notation "43" ;
+    skos:prefLabel "RIPARIA GLORIA DE MONTPELLIER"@es ;
+    skos:topConceptOf siex_cl:siexRootstockValueCode .
+
+siex_cl:siexRootstockValueCode-5 a skos:Concept,
+        siex_cl:SiexRootstockValueCode ;
+    skos:altLabel "1616 C" ;
+    skos:inScheme siex_cl:siexRootstockValueCode ;
+    skos:notation "5" ;
+    skos:prefLabel "1616 COURDERC"@es ;
+    skos:topConceptOf siex_cl:siexRootstockValueCode .
+
+siex_cl:siexRootstockValueCode-6 a skos:Concept,
+        siex_cl:SiexRootstockValueCode ;
+    skos:altLabel "3309 C" ;
+    skos:inScheme siex_cl:siexRootstockValueCode ;
+    skos:notation "6" ;
+    skos:prefLabel "3309 COUDERC"@es ;
+    skos:topConceptOf siex_cl:siexRootstockValueCode .
+
+siex_cl:siexRootstockValueCode-7 a skos:Concept,
+        siex_cl:SiexRootstockValueCode ;
+    skos:altLabel "333 EM" ;
+    skos:inScheme siex_cl:siexRootstockValueCode ;
+    skos:notation "7" ;
+    skos:prefLabel "333 ESCUELA DE MONTPELLIER"@es ;
+    skos:topConceptOf siex_cl:siexRootstockValueCode .
+
+siex_cl:siexRootstockValueCode-8 a skos:Concept,
+        siex_cl:SiexRootstockValueCode ;
+    skos:altLabel "13 5 EVEX" ;
+    skos:inScheme siex_cl:siexRootstockValueCode ;
+    skos:notation "8" ;
+    skos:prefLabel "13 5 EVE JEREZ"@es ;
+    skos:topConceptOf siex_cl:siexRootstockValueCode .
+
+siex_cl:siexRootstockValueCode-9 a skos:Concept,
+        siex_cl:SiexRootstockValueCode ;
+    skos:inScheme siex_cl:siexRootstockValueCode ;
+    skos:notation "9" ;
+    skos:prefLabel "FERCAL"@es ;
+    skos:topConceptOf siex_cl:siexRootstockValueCode .
+

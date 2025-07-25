@@ -1,0 +1,84 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix siex_cl: <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+siex_cl:siexSoilCoverActivityValueCode a skos:ConceptScheme ;
+    rdfs:label "Code list for siexSoilCoverActivityValue - codelist scheme"@en ;
+    rdfs:seeAlso siex_cl:SiexSoilCoverActivityValueCode ;
+    skos:definition "Defined in SIEX 'Actividad sobre la cubierta' catalogue: https://www3.sede.fega.gob.es/bdcsixpor/catalogos" ;
+    skos:note "This code list provides possible values for siexSoilCoverActivity."@en ;
+    skos:prefLabel "Code list for siexSoilCoverActivityValue - codelist scheme"@en .
+
+siex_cl:SiexSoilCoverActivityValueCode a owl:Class ;
+    rdfs:label "Code list for SiexSoilCoverActivityValue - codelist class"@en ;
+    rdfs:comment "This code list provides the SiexSoilCoverActivityValue codes."@en ;
+    rdfs:seeAlso siex_cl:siexSoilCoverActivityValueCode ;
+    rdfs:subClassOf skos:Concept ;
+    owl:oneOf ( siex_cl:siexSoilCoverActivityValueCode-1 siex_cl:siexSoilCoverActivityValueCode-2 siex_cl:siexSoilCoverActivityValueCode-3 siex_cl:siexSoilCoverActivityValueCode-4 siex_cl:siexSoilCoverActivityValueCode-5 siex_cl:siexSoilCoverActivityValueCode-6 siex_cl:siexSoilCoverActivityValueCode-7 siex_cl:siexSoilCoverActivityValueCode-8 siex_cl:siexSoilCoverActivityValueCode-9 ) ;
+    skos:definition "Defined in SIEX 'Actividad sobre la cubierta' catalogue: https://www3.sede.fega.gob.es/bdcsixpor/catalogos" .
+
+siex_cl:siexSoilCoverActivityValueCode-1 a skos:Concept,
+        siex_cl:SiexSoilCoverActivityValueCode ;
+    skos:inScheme siex_cl:siexSoilCoverActivityValueCode ;
+    skos:notation "1" ;
+    skos:prefLabel "Mantenimiento de la cubierta vegetal espontánea o sembrada por medios mecánicos (siega/desbrozado)"@es ;
+    skos:topConceptOf siex_cl:siexSoilCoverActivityValueCode .
+
+siex_cl:siexSoilCoverActivityValueCode-2 a skos:Concept,
+        siex_cl:SiexSoilCoverActivityValueCode ;
+    skos:inScheme siex_cl:siexSoilCoverActivityValueCode ;
+    skos:notation "2" ;
+    skos:prefLabel "Mantenimiento de la cubierta vegetal espontánea o sembrada por medios químicos"@es ;
+    skos:topConceptOf siex_cl:siexSoilCoverActivityValueCode .
+
+siex_cl:siexSoilCoverActivityValueCode-3 a skos:Concept,
+        siex_cl:SiexSoilCoverActivityValueCode ;
+    skos:inScheme siex_cl:siexSoilCoverActivityValueCode ;
+    skos:notation "3" ;
+    skos:prefLabel "Mantenimiento de la cubierta vegetal espontánea o sembrada mediante pastoreo"@es ;
+    skos:topConceptOf siex_cl:siexSoilCoverActivityValueCode .
+
+siex_cl:siexSoilCoverActivityValueCode-4 a skos:Concept,
+        siex_cl:SiexSoilCoverActivityValueCode ;
+    skos:inScheme siex_cl:siexSoilCoverActivityValueCode ;
+    skos:notation "4" ;
+    skos:prefLabel "Depositado sobre el suelo de los restos de la cubierta vegetal espontánea o sembrada una vez segada"@es ;
+    skos:topConceptOf siex_cl:siexSoilCoverActivityValueCode .
+
+siex_cl:siexSoilCoverActivityValueCode-5 a skos:Concept,
+        siex_cl:SiexSoilCoverActivityValueCode ;
+    skos:inScheme siex_cl:siexSoilCoverActivityValueCode ;
+    skos:notation "5" ;
+    skos:prefLabel "Eliminacion de la cubierta vegetal espontánea o sembrada mediante su incorporacion al terreno mediante labor"@es ;
+    skos:topConceptOf siex_cl:siexSoilCoverActivityValueCode .
+
+siex_cl:siexSoilCoverActivityValueCode-6 a skos:Concept,
+        siex_cl:SiexSoilCoverActivityValueCode ;
+    skos:inScheme siex_cl:siexSoilCoverActivityValueCode ;
+    skos:notation "6" ;
+    skos:prefLabel "Eliminacion de la cubierta vegetal espontánea o sembrada mediante medios químicos"@es ;
+    skos:topConceptOf siex_cl:siexSoilCoverActivityValueCode .
+
+siex_cl:siexSoilCoverActivityValueCode-7 a skos:Concept,
+        siex_cl:SiexSoilCoverActivityValueCode ;
+    skos:inScheme siex_cl:siexSoilCoverActivityValueCode ;
+    skos:notation "7" ;
+    skos:prefLabel "Eliminación de la cubierta inerte de restos de poda mediante su incorporación al suelo mediante labor"@es ;
+    skos:topConceptOf siex_cl:siexSoilCoverActivityValueCode .
+
+siex_cl:siexSoilCoverActivityValueCode-8 a skos:Concept,
+        siex_cl:SiexSoilCoverActivityValueCode ;
+    skos:inScheme siex_cl:siexSoilCoverActivityValueCode ;
+    skos:notation "8" ;
+    skos:prefLabel "Depositado sobre el suelo de los restos de la cubierta inerte de restos de poda sin incorporación al terreno"@es ;
+    skos:topConceptOf siex_cl:siexSoilCoverActivityValueCode .
+
+siex_cl:siexSoilCoverActivityValueCode-9 a skos:Concept,
+        siex_cl:SiexSoilCoverActivityValueCode ;
+    skos:inScheme siex_cl:siexSoilCoverActivityValueCode ;
+    skos:notation "9" ;
+    skos:prefLabel "Sin especificar"@es ;
+    skos:topConceptOf siex_cl:siexSoilCoverActivityValueCode .
+

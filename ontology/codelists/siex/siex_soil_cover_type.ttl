@@ -1,0 +1,63 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix siex_cl: <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+siex_cl:siexSoilCoverTypeValueCode a skos:ConceptScheme ;
+    rdfs:label "Code list for siexSoilCoverTypeValue - codelist scheme"@en ;
+    rdfs:seeAlso siex_cl:SiexSoilCoverTypeValueCode ;
+    skos:definition "Defined in SIEX 'Tipo de cobertura del suelo' catalogue: https://www3.sede.fega.gob.es/bdcsixpor/catalogos" ;
+    skos:note "This code list provides possible values for siexSoilCoverType."@en ;
+    skos:prefLabel "Code list for siexSoilCoverTypeValue - codelist scheme"@en .
+
+siex_cl:SiexSoilCoverTypeValueCode a owl:Class ;
+    rdfs:label "Code list for SiexSoilCoverTypeValue - codelist class"@en ;
+    rdfs:comment "This code list provides the SiexSoilCoverTypeValue codes."@en ;
+    rdfs:seeAlso siex_cl:siexSoilCoverTypeValueCode ;
+    rdfs:subClassOf skos:Concept ;
+    owl:oneOf ( siex_cl:siexSoilCoverTypeValueCode-1 siex_cl:siexSoilCoverTypeValueCode-2 siex_cl:siexSoilCoverTypeValueCode-3 siex_cl:siexSoilCoverTypeValueCode-4 siex_cl:siexSoilCoverTypeValueCode-5 siex_cl:siexSoilCoverTypeValueCode-6 ) ;
+    skos:definition "Defined in SIEX 'Tipo de cobertura del suelo' catalogue: https://www3.sede.fega.gob.es/bdcsixpor/catalogos" .
+
+siex_cl:siexSoilCoverTypeValueCode-1 a skos:Concept,
+        siex_cl:SiexSoilCoverTypeValueCode ;
+    skos:inScheme siex_cl:siexSoilCoverTypeValueCode ;
+    skos:notation "1" ;
+    skos:prefLabel "Suelo desnudo"@es ;
+    skos:topConceptOf siex_cl:siexSoilCoverTypeValueCode .
+
+siex_cl:siexSoilCoverTypeValueCode-2 a skos:Concept,
+        siex_cl:SiexSoilCoverTypeValueCode ;
+    skos:inScheme siex_cl:siexSoilCoverTypeValueCode ;
+    skos:notation "2" ;
+    skos:prefLabel "Cubierta vegetal sembrada"@es ;
+    skos:topConceptOf siex_cl:siexSoilCoverTypeValueCode .
+
+siex_cl:siexSoilCoverTypeValueCode-3 a skos:Concept,
+        siex_cl:SiexSoilCoverTypeValueCode ;
+    skos:inScheme siex_cl:siexSoilCoverTypeValueCode ;
+    skos:notation "3" ;
+    skos:prefLabel "Cubierta vegetal espontánea."@es ;
+    skos:topConceptOf siex_cl:siexSoilCoverTypeValueCode .
+
+siex_cl:siexSoilCoverTypeValueCode-4 a skos:Concept,
+        siex_cl:SiexSoilCoverTypeValueCode ;
+    skos:inScheme siex_cl:siexSoilCoverTypeValueCode ;
+    skos:notation "4" ;
+    skos:prefLabel "Cubierta inerte de restos de poda"@es ;
+    skos:topConceptOf siex_cl:siexSoilCoverTypeValueCode .
+
+siex_cl:siexSoilCoverTypeValueCode-5 a skos:Concept,
+        siex_cl:SiexSoilCoverTypeValueCode ;
+    skos:inScheme siex_cl:siexSoilCoverTypeValueCode ;
+    skos:notation "5" ;
+    skos:prefLabel "Cubierta inerte de otros materiales (cáscaras de frutos secos, piedras, otros restos vegetales, etc.)"@es ;
+    skos:topConceptOf siex_cl:siexSoilCoverTypeValueCode .
+
+siex_cl:siexSoilCoverTypeValueCode-6 a skos:Concept,
+        siex_cl:SiexSoilCoverTypeValueCode ;
+    skos:inScheme siex_cl:siexSoilCoverTypeValueCode ;
+    skos:notation "6" ;
+    skos:prefLabel "Regeneración Pastos permanentes"@es ;
+    skos:topConceptOf siex_cl:siexSoilCoverTypeValueCode .
+
