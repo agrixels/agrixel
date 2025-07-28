@@ -1,0 +1,74 @@
+@prefix : <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@base <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel> .
+
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel> rdf:type owl:Ontology ;
+                                                          owl:versionIRI <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/1.0.0> ;
+                                                          owl:imports <http://qudt.org/3.1.1/vocab/quantitykind> ,
+                                                                      <http://w3id.org/glosis/model> ,
+                                                                      <http://www.w3.org/2006/time#> ,
+                                                                      <https://def.isotc211.org/ontologies/iso19115/-1/2018/MetadataInformation.rdf> ,
+                                                                      <https://opengeospatial.github.io/ogc-geosparql/geosparql11/geo.ttl> ,
+                                                                      <https://w3id.org/def/foo#> ,
+                                                                      <https://w3id.org/demeter/agri> ,
+                                                                      <https://www.w3.org/2005/Incubator/ssn/ssnx/cf/cf-property> ;
+                                                          rdfs:label "Agrixel Ontology" ;
+                                                          owl:versionInfo "1.0.0" .
+
+:siexConcept rdf:type owl:ObjectProperty ;
+    rdfs:label "siexConcept"@en ;
+    rdfs:comment "Link to the corresponding concept defined in the SIEX catalog."@en ;
+    rdfs:isDefinedBy <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel> ;
+    rdfs:seeAlso <https://www3.sede.fega.gob.es/bdcsixpor/catalogos> ;
+    rdfs:range [
+        a owl:Class ;
+        owl:intersectionOf (
+            skos:Concept
+            [
+                a owl:Class ;
+                owl:unionOf (
+                    [ a owl:Restriction ;
+                      owl:onProperty skos:inScheme ;
+                      owl:hasValue <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexCropTypeValueCode>
+                    ]
+                    [ a owl:Restriction ;
+                      owl:onProperty skos:inScheme ;
+                      owl:hasValue <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFertilizationMethodValueCode>
+                    ]
+                    [ a owl:Restriction ;
+                      owl:onProperty skos:inScheme ;
+                      owl:hasValue <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFertilizerMaterialValueCode>
+                    ]
+                    [ a owl:Restriction ;
+                      owl:onProperty skos:inScheme ;
+                      owl:hasValue <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexIntendedCropUseValueCode>
+                    ]
+                    [ a owl:Restriction ;
+                      owl:onProperty skos:inScheme ;
+                      owl:hasValue <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexIrrigationWaterSourceValueCode>
+                    ]
+                    [ a owl:Restriction ;
+                      owl:onProperty skos:inScheme ;
+                      owl:hasValue <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexRootstockValueCode>
+                    ]
+                    [ a owl:Restriction ;
+                      owl:onProperty skos:inScheme ;
+                      owl:hasValue <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexSoilCoverActivityValueCode>
+                    ]
+                    [ a owl:Restriction ;
+                      owl:onProperty skos:inScheme ;
+                      owl:hasValue <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexSoilCoverTypeValueCode>
+                    ]
+                    [ a owl:Restriction ;
+                      owl:onProperty skos:inScheme ;
+                      owl:hasValue <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexTrellisingSystemValueCode>
+                    ]
+                )
+            ]
+        )
+    ] .
