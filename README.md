@@ -2,7 +2,7 @@
 
 ## Codelists
 ### SIEX 
-1. SIEX 'Cultivo': [https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexCropTypeValueCode](https://agrixels.github.io/agrixel/ontology/codelists/medio-rural-pesca/siex/siex_crop_type.ttl)
+1. SIEX 'Cultivo' : [https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexCropTypeValueCode](https://agrixels.github.io/agrixel/ontology/codelists/medio-rural-pesca/siex/siex_crop_type.ttl)
 2. SIEX 'Método de aplicación de fertilizante' : [https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFertilizationMethodValueCode](https://agrixels.github.io/agrixel/ontology/codelists/medio-rural-pesca/siex/siex_fertilization_method.ttl)
 3. SIEX 'Material fertilizante' : [https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFertilizerMaterialValueCode](https://agrixels.github.io/agrixel/ontology/codelists/medio-rural-pesca/siex/siex_fertilizer_material.ttl)
 4. SIEX 'Destino del cultivo' : [https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexIntendedCropUseValueCode](https://agrixels.github.io/agrixel/ontology/codelists/medio-rural-pesca/siex/siex_intended_crop_use.ttl)
