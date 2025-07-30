@@ -3,6 +3,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix siex_cl: <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 siex_cl:siexCropTypeValueCode a skos:ConceptScheme ;
     rdfs:label "Code list for siexCropTypeValue - codelist scheme"@en ;
@@ -35,6 +36,7 @@ siex_cl:siexCropTypeValueCode-10 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-100 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "100" ;
     skos:prefLabel "PATATA PARA CONSUMO"@es ;
@@ -56,6 +58,7 @@ siex_cl:siexCropTypeValueCode-102 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-103 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "103" ;
     skos:prefLabel "UVA DE MESA"@es ;
@@ -140,6 +143,7 @@ siex_cl:siexCropTypeValueCode-113 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-114 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "114" ;
     skos:prefLabel "SUPERFICIES FORESTALES MADERABLES"@es ;
@@ -147,6 +151,7 @@ siex_cl:siexCropTypeValueCode-114 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-115 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "115" ;
     skos:prefLabel "OTRAS SUPERFICIES FORESTALES"@es ;
@@ -231,6 +236,7 @@ siex_cl:siexCropTypeValueCode-125 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-126 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "126" ;
     skos:prefLabel "DATO HISTÓRICO DE BAJA"@es ;
@@ -238,6 +244,7 @@ siex_cl:siexCropTypeValueCode-126 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-127 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "127" ;
     skos:prefLabel "DATO HISTÓRICO DE BAJA"@es ;
@@ -245,6 +252,7 @@ siex_cl:siexCropTypeValueCode-127 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-128 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "128" ;
     skos:prefLabel "DATO HISTÓRICO DE BAJA"@es ;
@@ -252,6 +260,7 @@ siex_cl:siexCropTypeValueCode-128 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-129 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "129" ;
     skos:prefLabel "DATO HISTÓRICO DE BAJA"@es ;
@@ -266,6 +275,7 @@ siex_cl:siexCropTypeValueCode-13 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-130 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "130" ;
     skos:prefLabel "DATO HISTÓRICO DE BAJA"@es ;
@@ -273,6 +283,7 @@ siex_cl:siexCropTypeValueCode-130 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-131 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "131" ;
     skos:prefLabel "DATO HISTÓRICO DE BAJA"@es ;
@@ -280,6 +291,7 @@ siex_cl:siexCropTypeValueCode-131 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-132 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "132" ;
     skos:prefLabel "DATO HISTÓRICO DE BAJA"@es ;
@@ -287,6 +299,7 @@ siex_cl:siexCropTypeValueCode-132 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-133 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "133" ;
     skos:prefLabel "DATO HISTÓRICO DE BAJA"@es ;
@@ -294,6 +307,7 @@ siex_cl:siexCropTypeValueCode-133 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-134 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "134" ;
     skos:prefLabel "DATO HISTÓRICO DE BAJA"@es ;
@@ -301,6 +315,7 @@ siex_cl:siexCropTypeValueCode-134 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-135 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "135" ;
     skos:prefLabel "DATO HISTÓRICO DE BAJA"@es ;
@@ -308,6 +323,7 @@ siex_cl:siexCropTypeValueCode-135 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-136 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "136" ;
     skos:prefLabel "DATO HISTÓRICO DE BAJA"@es ;
@@ -315,6 +331,7 @@ siex_cl:siexCropTypeValueCode-136 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-137 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "137" ;
     skos:prefLabel "DATO HISTÓRICO DE BAJA"@es ;
@@ -371,6 +388,7 @@ siex_cl:siexCropTypeValueCode-143 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-144 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "144" ;
     skos:prefLabel "PINOS PIÑONEROS"@es ;
@@ -378,6 +396,7 @@ siex_cl:siexCropTypeValueCode-144 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-145 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "145" ;
     skos:prefLabel "RESTO DE PINOS (NO PIÑONEROS)"@es ;
@@ -385,6 +404,7 @@ siex_cl:siexCropTypeValueCode-145 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-146 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "146" ;
     skos:prefLabel "ARBOLES DE NAVIDAD"@es ;
@@ -399,6 +419,7 @@ siex_cl:siexCropTypeValueCode-147 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-148 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "148" ;
     skos:prefLabel "BELLOTA"@es ;
@@ -413,6 +434,7 @@ siex_cl:siexCropTypeValueCode-149 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-15 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "15" ;
     skos:prefLabel "DATO HISTÓRICO DE BAJA"@es ;
@@ -420,6 +442,7 @@ siex_cl:siexCropTypeValueCode-15 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-150 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "150" ;
     skos:prefLabel "OTRAS UTILIZACIONES NO AGRARIAS NI FORESTALES"@es ;
@@ -490,6 +513,7 @@ siex_cl:siexCropTypeValueCode-159 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-16 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "16" ;
     skos:prefLabel "DATO HISTÓRICO DE BAJA"@es ;
@@ -504,6 +528,7 @@ siex_cl:siexCropTypeValueCode-160 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-161 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "161" ;
     skos:prefLabel "HABA FRESCA ( Ver tipos)"@es ;
@@ -567,6 +592,7 @@ siex_cl:siexCropTypeValueCode-169 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-17 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "17" ;
     skos:prefLabel "DATO HISTÓRICO DE BAJA"@es ;
@@ -574,6 +600,7 @@ siex_cl:siexCropTypeValueCode-17 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-170 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "170" ;
     skos:prefLabel "COL"@es ;
@@ -644,6 +671,7 @@ siex_cl:siexCropTypeValueCode-179 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-18 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "18" ;
     skos:prefLabel "DATO HISTÓRICO DE BAJA"@es ;
@@ -651,6 +679,7 @@ siex_cl:siexCropTypeValueCode-18 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-180 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "180" ;
     skos:prefLabel "JUDÍA"@es ;
@@ -707,6 +736,7 @@ siex_cl:siexCropTypeValueCode-187 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-188 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "188" ;
     skos:prefLabel "PEPINILLOS"@es ;
@@ -763,6 +793,7 @@ siex_cl:siexCropTypeValueCode-194 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-195 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "195" ;
     skos:prefLabel "PIMIENTO BOLA ( Ver tipos)"@es ;
@@ -770,6 +801,7 @@ siex_cl:siexCropTypeValueCode-195 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-196 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "196" ;
     skos:prefLabel "PIMIENTO MALLA ( Ver tipos)"@es ;
@@ -784,6 +816,7 @@ siex_cl:siexCropTypeValueCode-197 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-198 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "198" ;
     skos:prefLabel "TOMATE PARA TRANSFORMACIÓN"@es ;
@@ -791,6 +824,7 @@ siex_cl:siexCropTypeValueCode-198 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-199 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "199" ;
     skos:prefLabel "PINOS"@es ;
@@ -882,6 +916,7 @@ siex_cl:siexCropTypeValueCode-209 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-21 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "21" ;
     skos:prefLabel "BARBECHO MEDIOAMBIENTAL ABANDONO 5 AÑOS"@es ;
@@ -959,6 +994,7 @@ siex_cl:siexCropTypeValueCode-219 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-22 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "22" ;
     skos:prefLabel "DATO HISTÓRICO DE BAJA"@es ;
@@ -973,6 +1009,7 @@ siex_cl:siexCropTypeValueCode-220 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-221 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "221" ;
     skos:prefLabel "UVA PASA"@es ;
@@ -1071,6 +1108,7 @@ siex_cl:siexCropTypeValueCode-233 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-234 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "234" ;
     skos:prefLabel "CASTAÑO (FORESTAL)"@es ;
@@ -1092,6 +1130,7 @@ siex_cl:siexCropTypeValueCode-236 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-237 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "237" ;
     skos:prefLabel "SUPERFICIES FORESTALES DE ROTACIÓN CORTA"@es ;
@@ -1113,6 +1152,7 @@ siex_cl:siexCropTypeValueCode-239 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-24 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "24" ;
     skos:prefLabel "BARBECHO SIN PRODUCCIÓN"@es ;
@@ -1190,6 +1230,7 @@ siex_cl:siexCropTypeValueCode-249 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-25 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "25" ;
     skos:prefLabel "ABANDONO 20 AÑOS"@es ;
@@ -1232,6 +1273,7 @@ siex_cl:siexCropTypeValueCode-254 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-255 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "255" ;
     skos:prefLabel "MANZANILLA"@es ;
@@ -1267,6 +1309,7 @@ siex_cl:siexCropTypeValueCode-259 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-26 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "26" ;
     skos:prefLabel "ABANDONO PARA FORESTACIÓN"@es ;
@@ -1344,6 +1387,7 @@ siex_cl:siexCropTypeValueCode-269 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-27 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "27" ;
     skos:prefLabel "RETIRADA OBLIGATORIA FIJA"@es ;
@@ -1421,6 +1465,7 @@ siex_cl:siexCropTypeValueCode-279 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-28 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "28" ;
     skos:prefLabel "RETIRADA FORESTACIÓN"@es ;
@@ -1498,6 +1543,7 @@ siex_cl:siexCropTypeValueCode-289 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-29 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "29" ;
     skos:prefLabel "RETIRADA VOLUNTARIA"@es ;
@@ -1582,6 +1628,7 @@ siex_cl:siexCropTypeValueCode-3 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-30 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "30" ;
     skos:prefLabel "DATO HISTÓRICO DE BAJA"@es ;
@@ -1603,6 +1650,7 @@ siex_cl:siexCropTypeValueCode-301 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-302 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "302" ;
     skos:prefLabel "MEZCLA EN MÁRGENES MULTIFUNCIONALES"@es ;
@@ -1610,6 +1658,7 @@ siex_cl:siexCropTypeValueCode-302 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-303 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "303" ;
     skos:prefLabel "MEZCLA DE RESERVORIOS"@es ;
@@ -1659,6 +1708,7 @@ siex_cl:siexCropTypeValueCode-309 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-31 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "31" ;
     skos:prefLabel "DATO HISTÓRICO DE BAJA"@es ;
@@ -1694,6 +1744,7 @@ siex_cl:siexCropTypeValueCode-313 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-314 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "314" ;
     skos:prefLabel "DATO HISTÓRICO DE BAJA"@es ;
@@ -1736,6 +1787,7 @@ siex_cl:siexCropTypeValueCode-319 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-32 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "32" ;
     skos:prefLabel "DATO HISTÓRICO DE BAJA"@es ;
@@ -1820,6 +1872,7 @@ siex_cl:siexCropTypeValueCode-33 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-330 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "330" ;
     skos:prefLabel "ELEMENTO DEL PAISAJE"@es ;
@@ -1911,6 +1964,7 @@ siex_cl:siexCropTypeValueCode-341 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-342 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "342" ;
     skos:prefLabel "OTRAS MEZCLAS CON PREDOMINANCIA CFN"@es ;
@@ -1974,6 +2028,7 @@ siex_cl:siexCropTypeValueCode-35 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-350 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "350" ;
     skos:prefLabel "RASTROJERAS"@es ;
@@ -2023,6 +2078,7 @@ siex_cl:siexCropTypeValueCode-356 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-357 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "357" ;
     skos:prefLabel "CÁÑAMO NO TEXTIL"@es ;
@@ -2121,6 +2177,7 @@ siex_cl:siexCropTypeValueCode-369 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-37 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "37" ;
     skos:prefLabel "DATO HISTÓRICO DE BAJA"@es ;
@@ -2198,6 +2255,7 @@ siex_cl:siexCropTypeValueCode-379 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-38 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "38" ;
     skos:prefLabel "DATO HISTÓRICO DE BAJA"@es ;
@@ -2275,6 +2333,7 @@ siex_cl:siexCropTypeValueCode-389 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-39 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "39" ;
     skos:prefLabel "DATO HISTÓRICO DE BAJA"@es ;
@@ -2324,6 +2383,7 @@ siex_cl:siexCropTypeValueCode-395 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-396 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "396" ;
     skos:prefLabel "DATO HISTÓRICO DE BAJA"@es ;
@@ -2366,6 +2426,7 @@ siex_cl:siexCropTypeValueCode-40 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-400 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "400" ;
     skos:prefLabel "FORESTACIONES VINCULADAS AL REGLAMENTO 2080/1992"@es ;
@@ -2415,6 +2476,7 @@ siex_cl:siexCropTypeValueCode-406 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-407 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "407" ;
     skos:prefLabel "DATO HISTÓRICO DE BAJA"@es ;
@@ -2422,6 +2484,7 @@ siex_cl:siexCropTypeValueCode-407 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-408 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "408" ;
     skos:prefLabel "DATO HISTÓRICO DE BAJA"@es ;
@@ -2513,6 +2576,7 @@ siex_cl:siexCropTypeValueCode-419 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-42 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "42" ;
     skos:prefLabel "HABONCILLOS"@es ;
@@ -2667,6 +2731,7 @@ siex_cl:siexCropTypeValueCode-439 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-44 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "44" ;
     skos:prefLabel "GUISANTE EN VERDE"@es ;
@@ -2744,6 +2809,7 @@ siex_cl:siexCropTypeValueCode-449 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-45 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "45" ;
     skos:prefLabel "DATO HISTÓRICO DE BAJA"@es ;
@@ -2821,6 +2887,7 @@ siex_cl:siexCropTypeValueCode-459 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-46 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "46" ;
     skos:prefLabel "DATO HISTÓRICO DE BAJA"@es ;
@@ -2898,6 +2965,7 @@ siex_cl:siexCropTypeValueCode-469 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-47 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "47" ;
     skos:prefLabel "DATO HISTÓRICO DE BAJA"@es ;
@@ -2947,6 +3015,7 @@ siex_cl:siexCropTypeValueCode-475 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-476 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "476" ;
     skos:prefLabel "DATO HISTÓRICO DE BAJA"@es ;
@@ -2975,6 +3044,7 @@ siex_cl:siexCropTypeValueCode-479 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-48 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "48" ;
     skos:prefLabel "DATO HISTÓRICO DE BAJA"@es ;
@@ -3122,6 +3192,7 @@ siex_cl:siexCropTypeValueCode-498 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-499 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "499" ;
     skos:prefLabel "DATO HISTÓRICO DE BAJA"@es ;
@@ -3143,6 +3214,7 @@ siex_cl:siexCropTypeValueCode-50 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-500 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "500" ;
     skos:prefLabel "FORESTACIONES VINCULADAS AL REGLAMENTO Nº 1257/1999"@es ;
@@ -3444,6 +3516,7 @@ siex_cl:siexCropTypeValueCode-539 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-54 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "54" ;
     skos:prefLabel "OTRAS LEGUMINOSAS"@es ;
@@ -3521,6 +3594,7 @@ siex_cl:siexCropTypeValueCode-549 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-55 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "55" ;
     skos:prefLabel "DATO HISTÓRICO DE BAJA"@es ;
@@ -3598,6 +3672,7 @@ siex_cl:siexCropTypeValueCode-559 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-56 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "56" ;
     skos:prefLabel "DATO HISTÓRICO DE BAJA"@es ;
@@ -3675,6 +3750,7 @@ siex_cl:siexCropTypeValueCode-569 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-57 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "57" ;
     skos:prefLabel "DATO HISTÓRICO DE BAJA"@es ;
@@ -3752,6 +3828,7 @@ siex_cl:siexCropTypeValueCode-579 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-58 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "58" ;
     skos:prefLabel "DATO HISTÓRICO DE BAJA"@es ;
@@ -3829,6 +3906,7 @@ siex_cl:siexCropTypeValueCode-589 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-59 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "59" ;
     skos:prefLabel "DATO HISTÓRICO DE BAJA"@es ;
@@ -3920,6 +3998,7 @@ siex_cl:siexCropTypeValueCode-60 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-600 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "600" ;
     skos:prefLabel "FORESTACIONES VINCULADAS AL REGLAMENTO Nº 1698/2005"@es ;
@@ -3962,6 +4041,7 @@ siex_cl:siexCropTypeValueCode-63 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-64 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "64" ;
     skos:prefLabel "PASTIZAL DE 5 O MAS AÑOS"@es ;
@@ -3969,6 +4049,7 @@ siex_cl:siexCropTypeValueCode-64 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-65 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "65" ;
     skos:prefLabel "PASTO ARBUSTIVO DE 5 O MAS AÑOS"@es ;
@@ -3976,6 +4057,7 @@ siex_cl:siexCropTypeValueCode-65 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-66 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "66" ;
     skos:prefLabel "PASTO ARBOLADO DE 5 O MAS AÑOS"@es ;
@@ -4018,6 +4100,7 @@ siex_cl:siexCropTypeValueCode-70 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-700 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "700" ;
     skos:prefLabel "SUP DE AGROSILVICULTURA QUE RECIBA O HAYA RECIBIDO AYUDAS DE LOS REGLAMENTOS 1698/2005 Y/O 1305/2013"@es ;
@@ -4053,6 +4136,7 @@ siex_cl:siexCropTypeValueCode-74 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-75 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "75" ;
     skos:prefLabel "GUISANTE FORRAJERO"@es ;
@@ -4060,6 +4144,7 @@ siex_cl:siexCropTypeValueCode-75 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-750 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "750" ;
     skos:prefLabel "SUPERFICIES VINCULADAS A LA DIRECTIVA 92/43/CEE"@es ;
@@ -4088,6 +4173,7 @@ siex_cl:siexCropTypeValueCode-78 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-79 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "79" ;
     skos:prefLabel "DATO HISTÓRICO DE BAJA"@es ;
@@ -4109,6 +4195,7 @@ siex_cl:siexCropTypeValueCode-80 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-800 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "800" ;
     skos:prefLabel "FORESTACIONES VINCULADAS AL REGLAMENTO Nº 1305/2013"@es ;
@@ -4151,6 +4238,7 @@ siex_cl:siexCropTypeValueCode-85 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-850 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "850" ;
     skos:prefLabel "OTRAS SUPERFICIES FORESTALES-VUELO"@es ;
@@ -4200,6 +4288,7 @@ siex_cl:siexCropTypeValueCode-90 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-900 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "900" ;
     skos:prefLabel "SINAPIS ALBA"@es ;
@@ -4221,6 +4310,7 @@ siex_cl:siexCropTypeValueCode-902 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-903 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "903" ;
     skos:prefLabel "OTRAS CRUCIFERAS"@es ;
@@ -4326,6 +4416,7 @@ siex_cl:siexCropTypeValueCode-916 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-917 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "917" ;
     skos:prefLabel "NO ADMISIBLE POR MONITORIZACIÓN"@es ;
@@ -4424,6 +4515,7 @@ siex_cl:siexCropTypeValueCode-929 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-93 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "93" ;
     skos:prefLabel "LINO NO TEXTIL"@es ;
@@ -4438,6 +4530,7 @@ siex_cl:siexCropTypeValueCode-930 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-931 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "931" ;
     skos:prefLabel "DATO HISTÓRICO DE BAJA"@es ;
@@ -4459,6 +4552,7 @@ siex_cl:siexCropTypeValueCode-933 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-934 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "934" ;
     skos:prefLabel "DATO HISTÓRICO DE BAJA"@es ;
@@ -4466,6 +4560,7 @@ siex_cl:siexCropTypeValueCode-934 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-935 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "935" ;
     skos:prefLabel "DATO HISTÓRICO DE BAJA"@es ;
@@ -4501,6 +4596,7 @@ siex_cl:siexCropTypeValueCode-939 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-94 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "94" ;
     skos:prefLabel "TUBÉRCULOS"@es ;
@@ -4578,6 +4674,7 @@ siex_cl:siexCropTypeValueCode-949 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-95 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "95" ;
     skos:prefLabel "AZAFRÁN"@es ;
@@ -4669,6 +4766,7 @@ siex_cl:siexCropTypeValueCode-97 a skos:Concept,
 
 siex_cl:siexCropTypeValueCode-98 a skos:Concept,
         siex_cl:SiexCropTypeValueCode ;
+    owl:deprecated true ;
     skos:inScheme siex_cl:siexCropTypeValueCode ;
     skos:notation "98" ;
     skos:prefLabel "PIMIENTO PARA PIMENTÓN"@es ;

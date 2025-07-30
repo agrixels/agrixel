@@ -1,0 +1,42 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix siex_cl: <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+siex_cl:siexFertilizationTypeValueCode a skos:ConceptScheme ;
+    rdfs:label "Code list for siexFertilizationTypeValue - codelist scheme"@en ;
+    rdfs:seeAlso siex_cl:SiexFertilizationTypeValueCode ;
+    skos:definition "Defined in SIEX 'Tipo de fertilización' catalogue: https://www3.sede.fega.gob.es/bdcsixpor/catalogos" ;
+    skos:note "This code list provides possible values for siexFertilizationType."@en ;
+    skos:prefLabel "Code list for siexFertilizationTypeValue - codelist scheme"@en .
+
+siex_cl:SiexFertilizationTypeValueCode a owl:Class ;
+    rdfs:label "Code list for SiexFertilizationTypeValue - codelist class"@en ;
+    rdfs:comment "This code list provides the SiexFertilizationTypeValue codes."@en ;
+    rdfs:seeAlso siex_cl:siexFertilizationTypeValueCode ;
+    rdfs:subClassOf skos:Concept ;
+    owl:oneOf ( siex_cl:siexFertilizationTypeValueCode-1 siex_cl:siexFertilizationTypeValueCode-2 siex_cl:siexFertilizationTypeValueCode-3 ) ;
+    skos:definition "Defined in SIEX 'Tipo de fertilización' catalogue: https://www3.sede.fega.gob.es/bdcsixpor/catalogos" .
+
+siex_cl:siexFertilizationTypeValueCode-1 a skos:Concept,
+        siex_cl:SiexFertilizationTypeValueCode ;
+    skos:inScheme siex_cl:siexFertilizationTypeValueCode ;
+    skos:notation "1" ;
+    skos:prefLabel "Abonado de fondo"@es ;
+    skos:topConceptOf siex_cl:siexFertilizationTypeValueCode .
+
+siex_cl:siexFertilizationTypeValueCode-2 a skos:Concept,
+        siex_cl:SiexFertilizationTypeValueCode ;
+    skos:inScheme siex_cl:siexFertilizationTypeValueCode ;
+    skos:notation "2" ;
+    skos:prefLabel "Abonado de cobertera"@es ;
+    skos:topConceptOf siex_cl:siexFertilizationTypeValueCode .
+
+siex_cl:siexFertilizationTypeValueCode-3 a skos:Concept,
+        siex_cl:SiexFertilizationTypeValueCode ;
+    skos:inScheme siex_cl:siexFertilizationTypeValueCode ;
+    skos:notation "3" ;
+    skos:prefLabel "Aplicación de enmienda"@es ;
+    skos:topConceptOf siex_cl:siexFertilizationTypeValueCode .
+

@@ -1,0 +1,35 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix siex_cl: <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+siex_cl:siexFarmingSystemValueCode a skos:ConceptScheme ;
+    rdfs:label "Code list for siexFarmingSystemValue - codelist scheme"@en ;
+    rdfs:seeAlso siex_cl:SiexFarmingSystemValueCode ;
+    skos:definition "Defined in SIEX 'Sistema de explotación' catalogue: https://www3.sede.fega.gob.es/bdcsixpor/catalogos" ;
+    skos:note "This code list provides possible values for siexFarmingSystem."@en ;
+    skos:prefLabel "Code list for siexFarmingSystemValue - codelist scheme"@en .
+
+siex_cl:SiexFarmingSystemValueCode a owl:Class ;
+    rdfs:label "Code list for SiexFarmingSystemValue - codelist class"@en ;
+    rdfs:comment "This code list provides the SiexFarmingSystemValue codes."@en ;
+    rdfs:seeAlso siex_cl:siexFarmingSystemValueCode ;
+    rdfs:subClassOf skos:Concept ;
+    owl:oneOf ( siex_cl:siexFarmingSystemValueCode-R siex_cl:siexFarmingSystemValueCode-S ) ;
+    skos:definition "Defined in SIEX 'Sistema de explotación' catalogue: https://www3.sede.fega.gob.es/bdcsixpor/catalogos" .
+
+siex_cl:siexFarmingSystemValueCode-R a skos:Concept,
+        siex_cl:SiexFarmingSystemValueCode ;
+    skos:inScheme siex_cl:siexFarmingSystemValueCode ;
+    skos:notation "R" ;
+    skos:prefLabel "Regadío"@es ;
+    skos:topConceptOf siex_cl:siexFarmingSystemValueCode .
+
+siex_cl:siexFarmingSystemValueCode-S a skos:Concept,
+        siex_cl:SiexFarmingSystemValueCode ;
+    skos:inScheme siex_cl:siexFarmingSystemValueCode ;
+    skos:notation "S" ;
+    skos:prefLabel "Secano"@es ;
+    skos:topConceptOf siex_cl:siexFarmingSystemValueCode .
+
