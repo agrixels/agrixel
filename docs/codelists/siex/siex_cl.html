@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SIEX Codelists - Agrixel Ontology</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.4;
+      padding: 40px;
+      background-color: #f9f9f9;
+      color: #2c3e50;
+    }
+
+    h2, h3 {
+      color: #2c3e50;
+      margin-bottom: 0.2em;
+    }
+
+    h2 {
+      font-size: 1.8em;
+    }
+
+    h3 {
+      font-size: 1.2em;
+      font-weight: normal;
+    }
+
+    p {
+      margin-top: 0.5em;
+      max-width: 900px;
+    }
+
+    a {
+      color: #0056b3;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .license-badge img {
+      vertical-align: middle;
+      margin-top: 10px;
+    }
+
+    .table-container {
+      margin-top: 2em;
+      overflow-x: auto;
+      max-width: 100%;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85em; /* smaller font */
+      background-color: white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    th, td {
+      padding: 6px 10px; /* less padding */
+      border-bottom: 1px solid #e2e8f0;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background-color: #f1f5f9;
+      font-weight: 600;
+    }
+
+    tr:hover td {
+      background-color: #f9fafb;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>SIEX Codelists</h2>
+  <h3>Publisher: <a href="https://agrixels.upc.edu" target="_blank" rel="noopener noreferrer">Agrixels</a></h3>
+
+  <div class="license-badge">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener noreferrer">
+      <img src="https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-blue.svg" alt="License: CC BY-NC-ND 4.0" />
+    </a>
+  </div>
+  <br>
+  <p>
+    The following SKOS concept schemes have been created based on the official <strong>SIEX catalogues</strong>
+    published by FEGA, available at: 
+    <a href="https://www3.sede.fega.gob.es/bdcsixpor/catalogos" target="_blank" rel="noopener noreferrer">https://www3.sede.fega.gob.es/bdcsixpor/catalogos</a>
+  </p>
+
+  <p>
+    Each concept scheme is available as an RDF/Turtle serialization and is hosted on GitHub.
+  </p>
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>SIEX Catalogue Source</th>
+          <th>SKOS Concept Scheme</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Método de aplicación de fertilizante</td>
+          <td><a href="https://agrixels.github.io/agrixel/ontology/codelists/medio-rural-pesca/siex/siex_fertilization_method.ttl" target="_blank" rel="noopener noreferrer">siexFertilizationMethodValueCode</a></td>
+        </tr>
+        <tr>
+          <td>Material fertilizante</td>
+          <td><a href="https://agrixels.github.io/agrixel/ontology/codelists/medio-rural-pesca/siex/siex_fertilizer_material.ttl" target="_blank" rel="noopener noreferrer">siexFertilizerMaterialValueCode</a></td>
+        </tr>
+        <tr>
+          <td>Destino del cultivo</td>
+          <td><a href="https://agrixels.github.io/agrixel/ontology/codelists/medio-rural-pesca/siex/siex_intended_crop_use.ttl" target="_blank" rel="noopener noreferrer">siexIntendedCropUseValueCode</a></td>
+        </tr>
+        <tr>
+          <td>Procedencia del agua de riego</td>
+          <td><a href="https://agrixels.github.io/agrixel/ontology/codelists/medio-rural-pesca/siex/siex_irrigation_water_source.ttl" target="_blank" rel="noopener noreferrer">siexIrrigationWaterSourceValueCode</a></td>
+        </tr>
+        <tr>
+          <td>Portainjerto</td>
+          <td><a href="https://agrixels.github.io/agrixel/ontology/codelists/medio-rural-pesca/siex/siex_rootstock.ttl" target="_blank" rel="noopener noreferrer">siexRootstockValueCode</a></td>
+        </tr>
+        <tr>
+          <td>Actividad sobre la cubierta</td>
+          <td><a href="https://agrixels.github.io/agrixel/ontology/codelists/medio-rural-pesca/siex/siex_soil_cover_activity.ttl" target="_blank" rel="noopener noreferrer">siexSoilCoverActivityValueCode</a></td>
+        </tr>
+        <tr>
+          <td>Tipo de cobertura del suelo</td>
+          <td><a href="https://agrixels.github.io/agrixel/ontology/codelists/medio-rural-pesca/siex/siex_soil_cover_type.ttl" target="_blank" rel="noopener noreferrer">siexSoilCoverTypeValueCode</a></td>
+        </tr>
+        <tr>
+          <td>Sistema de conducción</td>
+          <td><a href="https://agrixels.github.io/agrixel/ontology/codelists/medio-rural-pesca/siex/siex_trellising_system.ttl" target="_blank" rel="noopener noreferrer">siexTrellisingSystemValueCode</a></td>
+        </tr>
+        <tr>
+          <td>Cultivo</td>
+          <td><a href="https://agrixels.github.io/agrixel/ontology/codelists/medio-rural-pesca/siex/siex_crop_type.ttl" target="_blank" rel="noopener noreferrer">siexCropTypeValueCode</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
