@@ -1,9 +1,11 @@
 # Agrixel Ontology
-
 ### **Publisher**: [Agrixels](https://agrixels.upc.edu)  
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-blue.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
+
 ## SIEX Codelists
+### **Publisher**: [Agrixels](https://agrixels.upc.edu)  
+[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-blue.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 The following SKOS concept schemes have been created based on the official **SIEX catalogues** published by FEGA, available at:  
 [https://www3.sede.fega.gob.es/bdcsixpor/catalogos](https://www3.sede.fega.gob.es/bdcsixpor/catalogos)
