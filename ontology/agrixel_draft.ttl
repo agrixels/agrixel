@@ -76,6 +76,10 @@
                       owl:onProperty skos:inScheme ;
                       owl:hasValue <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFarmingSystemValueCode>
                     ]
+                    [ a owl:Restriction ;
+                      owl:onProperty skos:inScheme ;
+                      owl:hasValue <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexCropProductValueCode>
+                    ]
                 )
             ]
         )
