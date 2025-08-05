@@ -1,0 +1,1458 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix siex_cl: <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+siex_cl:siexCropProductValueCode a skos:ConceptScheme ;
+    rdfs:label "Code list for siexCropProductValue - codelist scheme"@en ;
+    rdfs:seeAlso siex_cl:SiexCropProductValueCode ;
+    skos:definition "Defined in SIEX 'Producto vegetal' catalogue: https://www3.sede.fega.gob.es/bdcsixpor/catalogos" ;
+    skos:note "This code list provides possible values for siexCropProduct."@en ;
+    skos:prefLabel "Code list for siexCropProductValue - codelist scheme"@en .
+
+siex_cl:SiexCropProductValueCode a owl:Class ;
+    rdfs:label "Code list for SiexCropProductValue - codelist class"@en ;
+    rdfs:comment "This code list provides the SiexCropProductValue codes."@en ;
+    rdfs:seeAlso siex_cl:siexCropProductValueCode ;
+    rdfs:subClassOf skos:Concept ;
+    owl:oneOf ( siex_cl:siexCropProductValueCode-1 siex_cl:siexCropProductValueCode-2 siex_cl:siexCropProductValueCode-3 siex_cl:siexCropProductValueCode-4 siex_cl:siexCropProductValueCode-5 siex_cl:siexCropProductValueCode-6 siex_cl:siexCropProductValueCode-7 siex_cl:siexCropProductValueCode-8 siex_cl:siexCropProductValueCode-9 siex_cl:siexCropProductValueCode-9 siex_cl:siexCropProductValueCode-10 siex_cl:siexCropProductValueCode-12 siex_cl:siexCropProductValueCode-13 siex_cl:siexCropProductValueCode-14 siex_cl:siexCropProductValueCode-15 siex_cl:siexCropProductValueCode-16 siex_cl:siexCropProductValueCode-17 siex_cl:siexCropProductValueCode-18 siex_cl:siexCropProductValueCode-19 siex_cl:siexCropProductValueCode-20 siex_cl:siexCropProductValueCode-21 siex_cl:siexCropProductValueCode-22 siex_cl:siexCropProductValueCode-23 siex_cl:siexCropProductValueCode-24 siex_cl:siexCropProductValueCode-24 siex_cl:siexCropProductValueCode-24 siex_cl:siexCropProductValueCode-24 siex_cl:siexCropProductValueCode-24 siex_cl:siexCropProductValueCode-24 siex_cl:siexCropProductValueCode-24 siex_cl:siexCropProductValueCode-24 siex_cl:siexCropProductValueCode-24 siex_cl:siexCropProductValueCode-24 siex_cl:siexCropProductValueCode-24 siex_cl:siexCropProductValueCode-24 siex_cl:siexCropProductValueCode-24 siex_cl:siexCropProductValueCode-24 siex_cl:siexCropProductValueCode-24 siex_cl:siexCropProductValueCode-24 siex_cl:siexCropProductValueCode-24 siex_cl:siexCropProductValueCode-24 siex_cl:siexCropProductValueCode-24 siex_cl:siexCropProductValueCode-24 siex_cl:siexCropProductValueCode-24 siex_cl:siexCropProductValueCode-24 siex_cl:siexCropProductValueCode-24 siex_cl:siexCropProductValueCode-24 siex_cl:siexCropProductValueCode-24 siex_cl:siexCropProductValueCode-24 siex_cl:siexCropProductValueCode-24 siex_cl:siexCropProductValueCode-24 siex_cl:siexCropProductValueCode-24 siex_cl:siexCropProductValueCode-24 siex_cl:siexCropProductValueCode-24 siex_cl:siexCropProductValueCode-24 siex_cl:siexCropProductValueCode-24 siex_cl:siexCropProductValueCode-24 siex_cl:siexCropProductValueCode-24 siex_cl:siexCropProductValueCode-24 siex_cl:siexCropProductValueCode-24 siex_cl:siexCropProductValueCode-24 siex_cl:siexCropProductValueCode-25 siex_cl:siexCropProductValueCode-26 siex_cl:siexCropProductValueCode-26 siex_cl:siexCropProductValueCode-26 siex_cl:siexCropProductValueCode-28 siex_cl:siexCropProductValueCode-29 siex_cl:siexCropProductValueCode-30 siex_cl:siexCropProductValueCode-31 siex_cl:siexCropProductValueCode-32 siex_cl:siexCropProductValueCode-33 siex_cl:siexCropProductValueCode-34 siex_cl:siexCropProductValueCode-35 siex_cl:siexCropProductValueCode-36 siex_cl:siexCropProductValueCode-37 siex_cl:siexCropProductValueCode-38 siex_cl:siexCropProductValueCode-39 siex_cl:siexCropProductValueCode-40 siex_cl:siexCropProductValueCode-41 siex_cl:siexCropProductValueCode-42 siex_cl:siexCropProductValueCode-43 siex_cl:siexCropProductValueCode-44 siex_cl:siexCropProductValueCode-45 siex_cl:siexCropProductValueCode-46 siex_cl:siexCropProductValueCode-48 siex_cl:siexCropProductValueCode-49 siex_cl:siexCropProductValueCode-50 siex_cl:siexCropProductValueCode-51 siex_cl:siexCropProductValueCode-52 siex_cl:siexCropProductValueCode-53 siex_cl:siexCropProductValueCode-54 siex_cl:siexCropProductValueCode-55 siex_cl:siexCropProductValueCode-56 siex_cl:siexCropProductValueCode-57 siex_cl:siexCropProductValueCode-58 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-59 siex_cl:siexCropProductValueCode-60 siex_cl:siexCropProductValueCode-61 siex_cl:siexCropProductValueCode-64 siex_cl:siexCropProductValueCode-65 siex_cl:siexCropProductValueCode-66 siex_cl:siexCropProductValueCode-66 siex_cl:siexCropProductValueCode-66 siex_cl:siexCropProductValueCode-66 siex_cl:siexCropProductValueCode-67 siex_cl:siexCropProductValueCode-67 siex_cl:siexCropProductValueCode-67 siex_cl:siexCropProductValueCode-67 siex_cl:siexCropProductValueCode-67 siex_cl:siexCropProductValueCode-67 siex_cl:siexCropProductValueCode-67 siex_cl:siexCropProductValueCode-67 siex_cl:siexCropProductValueCode-67 siex_cl:siexCropProductValueCode-67 siex_cl:siexCropProductValueCode-67 siex_cl:siexCropProductValueCode-68 siex_cl:siexCropProductValueCode-68 siex_cl:siexCropProductValueCode-68 siex_cl:siexCropProductValueCode-68 siex_cl:siexCropProductValueCode-68 siex_cl:siexCropProductValueCode-68 siex_cl:siexCropProductValueCode-68 siex_cl:siexCropProductValueCode-68 siex_cl:siexCropProductValueCode-68 siex_cl:siexCropProductValueCode-68 siex_cl:siexCropProductValueCode-68 siex_cl:siexCropProductValueCode-68 siex_cl:siexCropProductValueCode-68 siex_cl:siexCropProductValueCode-68 siex_cl:siexCropProductValueCode-68 siex_cl:siexCropProductValueCode-68 siex_cl:siexCropProductValueCode-68 siex_cl:siexCropProductValueCode-68 siex_cl:siexCropProductValueCode-68 siex_cl:siexCropProductValueCode-68 siex_cl:siexCropProductValueCode-68 siex_cl:siexCropProductValueCode-68 siex_cl:siexCropProductValueCode-68 siex_cl:siexCropProductValueCode-68 siex_cl:siexCropProductValueCode-69 siex_cl:siexCropProductValueCode-70 siex_cl:siexCropProductValueCode-71 siex_cl:siexCropProductValueCode-72 siex_cl:siexCropProductValueCode-73 siex_cl:siexCropProductValueCode-74 siex_cl:siexCropProductValueCode-75 siex_cl:siexCropProductValueCode-76 siex_cl:siexCropProductValueCode-77 siex_cl:siexCropProductValueCode-78 siex_cl:siexCropProductValueCode-79 siex_cl:siexCropProductValueCode-80 siex_cl:siexCropProductValueCode-81 siex_cl:siexCropProductValueCode-82 siex_cl:siexCropProductValueCode-82 siex_cl:siexCropProductValueCode-82 siex_cl:siexCropProductValueCode-82 siex_cl:siexCropProductValueCode-82 siex_cl:siexCropProductValueCode-82 siex_cl:siexCropProductValueCode-82 siex_cl:siexCropProductValueCode-82 siex_cl:siexCropProductValueCode-82 siex_cl:siexCropProductValueCode-82 siex_cl:siexCropProductValueCode-82 siex_cl:siexCropProductValueCode-82 siex_cl:siexCropProductValueCode-82 siex_cl:siexCropProductValueCode-82 siex_cl:siexCropProductValueCode-82 siex_cl:siexCropProductValueCode-82 siex_cl:siexCropProductValueCode-82 siex_cl:siexCropProductValueCode-82 siex_cl:siexCropProductValueCode-82 siex_cl:siexCropProductValueCode-82 siex_cl:siexCropProductValueCode-82 siex_cl:siexCropProductValueCode-82 siex_cl:siexCropProductValueCode-82 siex_cl:siexCropProductValueCode-82 siex_cl:siexCropProductValueCode-82 siex_cl:siexCropProductValueCode-82 siex_cl:siexCropProductValueCode-82 siex_cl:siexCropProductValueCode-82 siex_cl:siexCropProductValueCode-82 siex_cl:siexCropProductValueCode-82 siex_cl:siexCropProductValueCode-82 siex_cl:siexCropProductValueCode-82 siex_cl:siexCropProductValueCode-82 siex_cl:siexCropProductValueCode-82 siex_cl:siexCropProductValueCode-82 siex_cl:siexCropProductValueCode-82 siex_cl:siexCropProductValueCode-82 siex_cl:siexCropProductValueCode-83 siex_cl:siexCropProductValueCode-84 siex_cl:siexCropProductValueCode-85 siex_cl:siexCropProductValueCode-85 siex_cl:siexCropProductValueCode-85 siex_cl:siexCropProductValueCode-85 siex_cl:siexCropProductValueCode-85 siex_cl:siexCropProductValueCode-85 siex_cl:siexCropProductValueCode-86 siex_cl:siexCropProductValueCode-87 siex_cl:siexCropProductValueCode-88 siex_cl:siexCropProductValueCode-89 siex_cl:siexCropProductValueCode-90 siex_cl:siexCropProductValueCode-91 siex_cl:siexCropProductValueCode-92 siex_cl:siexCropProductValueCode-93 siex_cl:siexCropProductValueCode-94 siex_cl:siexCropProductValueCode-95 siex_cl:siexCropProductValueCode-96 siex_cl:siexCropProductValueCode-97 siex_cl:siexCropProductValueCode-98 siex_cl:siexCropProductValueCode-99 siex_cl:siexCropProductValueCode-100 siex_cl:siexCropProductValueCode-101 siex_cl:siexCropProductValueCode-102 siex_cl:siexCropProductValueCode-103 siex_cl:siexCropProductValueCode-105 siex_cl:siexCropProductValueCode-106 siex_cl:siexCropProductValueCode-107 siex_cl:siexCropProductValueCode-108 siex_cl:siexCropProductValueCode-109 siex_cl:siexCropProductValueCode-110 siex_cl:siexCropProductValueCode-111 siex_cl:siexCropProductValueCode-112 siex_cl:siexCropProductValueCode-113 siex_cl:siexCropProductValueCode-114 siex_cl:siexCropProductValueCode-115 siex_cl:siexCropProductValueCode-116 siex_cl:siexCropProductValueCode-117 siex_cl:siexCropProductValueCode-119 siex_cl:siexCropProductValueCode-120 siex_cl:siexCropProductValueCode-121 siex_cl:siexCropProductValueCode-122 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-123 siex_cl:siexCropProductValueCode-124 siex_cl:siexCropProductValueCode-124 siex_cl:siexCropProductValueCode-124 siex_cl:siexCropProductValueCode-124 siex_cl:siexCropProductValueCode-124 siex_cl:siexCropProductValueCode-124 siex_cl:siexCropProductValueCode-124 siex_cl:siexCropProductValueCode-124 siex_cl:siexCropProductValueCode-124 siex_cl:siexCropProductValueCode-126 siex_cl:siexCropProductValueCode-127 siex_cl:siexCropProductValueCode-127 siex_cl:siexCropProductValueCode-127 siex_cl:siexCropProductValueCode-127 siex_cl:siexCropProductValueCode-127 siex_cl:siexCropProductValueCode-127 siex_cl:siexCropProductValueCode-127 siex_cl:siexCropProductValueCode-127 siex_cl:siexCropProductValueCode-127 siex_cl:siexCropProductValueCode-127 siex_cl:siexCropProductValueCode-127 siex_cl:siexCropProductValueCode-127 siex_cl:siexCropProductValueCode-127 siex_cl:siexCropProductValueCode-127 siex_cl:siexCropProductValueCode-127 siex_cl:siexCropProductValueCode-127 siex_cl:siexCropProductValueCode-128 siex_cl:siexCropProductValueCode-128 siex_cl:siexCropProductValueCode-128 siex_cl:siexCropProductValueCode-128 siex_cl:siexCropProductValueCode-128 siex_cl:siexCropProductValueCode-128 siex_cl:siexCropProductValueCode-128 siex_cl:siexCropProductValueCode-128 siex_cl:siexCropProductValueCode-128 siex_cl:siexCropProductValueCode-128 siex_cl:siexCropProductValueCode-128 siex_cl:siexCropProductValueCode-128 siex_cl:siexCropProductValueCode-128 siex_cl:siexCropProductValueCode-128 siex_cl:siexCropProductValueCode-128 siex_cl:siexCropProductValueCode-128 siex_cl:siexCropProductValueCode-128 siex_cl:siexCropProductValueCode-128 siex_cl:siexCropProductValueCode-128 siex_cl:siexCropProductValueCode-128 siex_cl:siexCropProductValueCode-128 siex_cl:siexCropProductValueCode-128 siex_cl:siexCropProductValueCode-128 siex_cl:siexCropProductValueCode-128 siex_cl:siexCropProductValueCode-128 siex_cl:siexCropProductValueCode-128 siex_cl:siexCropProductValueCode-128 siex_cl:siexCropProductValueCode-128 siex_cl:siexCropProductValueCode-128 siex_cl:siexCropProductValueCode-128 siex_cl:siexCropProductValueCode-128 siex_cl:siexCropProductValueCode-128 siex_cl:siexCropProductValueCode-128 siex_cl:siexCropProductValueCode-128 siex_cl:siexCropProductValueCode-128 siex_cl:siexCropProductValueCode-128 siex_cl:siexCropProductValueCode-128 siex_cl:siexCropProductValueCode-128 siex_cl:siexCropProductValueCode-128 siex_cl:siexCropProductValueCode-128 siex_cl:siexCropProductValueCode-128 siex_cl:siexCropProductValueCode-129 siex_cl:siexCropProductValueCode-130 siex_cl:siexCropProductValueCode-131 siex_cl:siexCropProductValueCode-132 siex_cl:siexCropProductValueCode-133 siex_cl:siexCropProductValueCode-134 siex_cl:siexCropProductValueCode-135 siex_cl:siexCropProductValueCode-136 siex_cl:siexCropProductValueCode-137 siex_cl:siexCropProductValueCode-138 siex_cl:siexCropProductValueCode-139 siex_cl:siexCropProductValueCode-140 siex_cl:siexCropProductValueCode-141 siex_cl:siexCropProductValueCode-142 siex_cl:siexCropProductValueCode-143 siex_cl:siexCropProductValueCode-144 siex_cl:siexCropProductValueCode-145 siex_cl:siexCropProductValueCode-146 siex_cl:siexCropProductValueCode-147 siex_cl:siexCropProductValueCode-148 siex_cl:siexCropProductValueCode-149 siex_cl:siexCropProductValueCode-150 siex_cl:siexCropProductValueCode-151 siex_cl:siexCropProductValueCode-152 siex_cl:siexCropProductValueCode-154 siex_cl:siexCropProductValueCode-155 siex_cl:siexCropProductValueCode-156 siex_cl:siexCropProductValueCode-157 siex_cl:siexCropProductValueCode-158 siex_cl:siexCropProductValueCode-159 siex_cl:siexCropProductValueCode-160 siex_cl:siexCropProductValueCode-161 siex_cl:siexCropProductValueCode-162 siex_cl:siexCropProductValueCode-163 siex_cl:siexCropProductValueCode-164 siex_cl:siexCropProductValueCode-165 siex_cl:siexCropProductValueCode-166 siex_cl:siexCropProductValueCode-167 siex_cl:siexCropProductValueCode-168 siex_cl:siexCropProductValueCode-169 siex_cl:siexCropProductValueCode-170 siex_cl:siexCropProductValueCode-171 siex_cl:siexCropProductValueCode-172 siex_cl:siexCropProductValueCode-173 siex_cl:siexCropProductValueCode-174 siex_cl:siexCropProductValueCode-175 siex_cl:siexCropProductValueCode-176 siex_cl:siexCropProductValueCode-177 siex_cl:siexCropProductValueCode-178 siex_cl:siexCropProductValueCode-178 siex_cl:siexCropProductValueCode-178 siex_cl:siexCropProductValueCode-178 siex_cl:siexCropProductValueCode-178 siex_cl:siexCropProductValueCode-178 siex_cl:siexCropProductValueCode-178 siex_cl:siexCropProductValueCode-178 siex_cl:siexCropProductValueCode-178 siex_cl:siexCropProductValueCode-178 siex_cl:siexCropProductValueCode-178 siex_cl:siexCropProductValueCode-178 siex_cl:siexCropProductValueCode-178 siex_cl:siexCropProductValueCode-178 siex_cl:siexCropProductValueCode-179 siex_cl:siexCropProductValueCode-179 siex_cl:siexCropProductValueCode-179 siex_cl:siexCropProductValueCode-179 siex_cl:siexCropProductValueCode-179 siex_cl:siexCropProductValueCode-179 siex_cl:siexCropProductValueCode-179 siex_cl:siexCropProductValueCode-179 siex_cl:siexCropProductValueCode-180 siex_cl:siexCropProductValueCode-181 siex_cl:siexCropProductValueCode-182 siex_cl:siexCropProductValueCode-183 siex_cl:siexCropProductValueCode-184 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-185 siex_cl:siexCropProductValueCode-186 siex_cl:siexCropProductValueCode-187 siex_cl:siexCropProductValueCode-188 siex_cl:siexCropProductValueCode-189 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-190 siex_cl:siexCropProductValueCode-191 siex_cl:siexCropProductValueCode-192 siex_cl:siexCropProductValueCode-193 siex_cl:siexCropProductValueCode-194 siex_cl:siexCropProductValueCode-195 siex_cl:siexCropProductValueCode-196 siex_cl:siexCropProductValueCode-197 siex_cl:siexCropProductValueCode-198 siex_cl:siexCropProductValueCode-199 siex_cl:siexCropProductValueCode-199 siex_cl:siexCropProductValueCode-199 siex_cl:siexCropProductValueCode-199 siex_cl:siexCropProductValueCode-199 siex_cl:siexCropProductValueCode-199 siex_cl:siexCropProductValueCode-200 siex_cl:siexCropProductValueCode-201 siex_cl:siexCropProductValueCode-202 siex_cl:siexCropProductValueCode-203 siex_cl:siexCropProductValueCode-204 siex_cl:siexCropProductValueCode-205 siex_cl:siexCropProductValueCode-206 siex_cl:siexCropProductValueCode-208 siex_cl:siexCropProductValueCode-209 siex_cl:siexCropProductValueCode-210 siex_cl:siexCropProductValueCode-211 siex_cl:siexCropProductValueCode-212 siex_cl:siexCropProductValueCode-214 siex_cl:siexCropProductValueCode-215 siex_cl:siexCropProductValueCode-216 ) ;
+    skos:definition "Defined in SIEX 'Producto vegetal' catalogue: https://www3.sede.fega.gob.es/bdcsixpor/catalogos" .
+
+siex_cl:siexCropProductValueCode-1 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "1" ;
+    skos:prefLabel "Aceitunas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-10 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "10" ;
+    skos:prefLabel "Almendras"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-100 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "100" ;
+    skos:prefLabel "Lichis"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-101 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "101" ;
+    skos:prefLabel "Limas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-102 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "102" ;
+    skos:prefLabel "Limones"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-103 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "103" ;
+    skos:prefLabel "Lúpulo (producto cosechado)"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-105 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "105" ;
+    skos:prefLabel "Mandarinas (incluidas las clementinas e híbridos)"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-106 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "106" ;
+    skos:prefLabel "Mangos"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-107 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "107" ;
+    skos:prefLabel "Manzanas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-108 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "108" ;
+    skos:prefLabel "Maíz dulce (producto cosechado)"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-109 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "109" ;
+    skos:prefLabel "Maíz forrajero (producto cosechado)"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-110 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "110" ;
+    skos:prefLabel "Melocotones (incluidas las nectarinas e híbridos)"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-111 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "111" ;
+    skos:prefLabel "Melones"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-112 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "112" ;
+    skos:prefLabel "Membrillos"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-113 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "113" ;
+    skos:prefLabel "Menta"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-114 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "114" ;
+    skos:prefLabel "Mostazas chinas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-115 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "115" ;
+    skos:prefLabel "Nabos"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-116 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "116" ;
+    skos:prefLabel "Naranjas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-117 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "117" ;
+    skos:prefLabel "Nueces"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-119 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "119" ;
+    skos:prefLabel "Nuez de cola"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-12 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "12" ;
+    skos:prefLabel "Apionabos"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-120 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "120" ;
+    skos:prefLabel "Nísperos, nísperos del Japón"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-121 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "121" ;
+    skos:prefLabel "Orejones de albaricoque"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-122 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "122" ;
+    skos:prefLabel "Orejones de melocotón"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-123 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "123" ;
+    skos:prefLabel "Otras infusiones"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-124 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "124" ;
+    skos:prefLabel "Otros forrajes y pajas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-126 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "126" ;
+    skos:prefLabel "Pacanas, nueces de Pecán"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-127 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "127" ;
+    skos:prefLabel "Paja de cereales"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-128 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "128" ;
+    skos:prefLabel "Paja de legumbres"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-129 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "129" ;
+    skos:prefLabel "Papayas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-13 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "13" ;
+    skos:prefLabel "Apios"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-130 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "130" ;
+    skos:prefLabel "Pasas de uva"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-131 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "131" ;
+    skos:prefLabel "Patacas, aguaturmas, tupinambos"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-132 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "132" ;
+    skos:prefLabel "Patatas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-133 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "133" ;
+    skos:prefLabel "Patatas de consumo"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-134 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "134" ;
+    skos:prefLabel "Patatas para almacenar"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-135 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "135" ;
+    skos:prefLabel "Patatas tempranas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-136 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "136" ;
+    skos:prefLabel "Pepinillos"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-137 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "137" ;
+    skos:prefLabel "Pepinos"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-138 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "138" ;
+    skos:prefLabel "Peras"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-139 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "139" ;
+    skos:prefLabel "Perejil (producto cosechado)"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-14 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "14" ;
+    skos:prefLabel "Arándanos rojos"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-140 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "140" ;
+    skos:prefLabel "Perifollos"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-141 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "141" ;
+    skos:prefLabel "Pimientos"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-142 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "142" ;
+    skos:prefLabel "Pimientos desecados"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-143 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "143" ;
+    skos:prefLabel "Pistachos"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-144 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "144" ;
+    skos:prefLabel "Pitayas, frutas del dragón (producto cosechado)"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-145 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "145" ;
+    skos:prefLabel "Piñas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-146 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "146" ;
+    skos:prefLabel "Piñones"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-147 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "147" ;
+    skos:prefLabel "Plátanos"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-148 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "148" ;
+    skos:prefLabel "Puerros"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-149 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "149" ;
+    skos:prefLabel "Raíces de perejil (producto cosechado)"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-15 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "15" ;
+    skos:prefLabel "Arándanos, mirtilos"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-150 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "150" ;
+    skos:prefLabel "Remolacha azucarera (producto cosechado)"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-151 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "151" ;
+    skos:prefLabel "Remolachas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-152 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "152" ;
+    skos:prefLabel "Repollos"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-154 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "154" ;
+    skos:prefLabel "Ruibarbos"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-155 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "155" ;
+    skos:prefLabel "Rábanos"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-156 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "156" ;
+    skos:prefLabel "Rábanos rusticanos"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-157 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "157" ;
+    skos:prefLabel "Rúculas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-158 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "158" ;
+    skos:prefLabel "Salsifíes"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-159 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "159" ;
+    skos:prefLabel "Sandías"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-16 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "16" ;
+    skos:prefLabel "Avellanas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-160 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "160" ;
+    skos:prefLabel "Semillas de  algodón"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-161 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "161" ;
+    skos:prefLabel "Semillas de  colza"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-162 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "162" ;
+    skos:prefLabel "Semillas de adormidera"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-163 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "163" ;
+    skos:prefLabel "Semillas de cacahuetes"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-164 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "164" ;
+    skos:prefLabel "Semillas de girasol"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-165 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "165" ;
+    skos:prefLabel "Semillas de lino"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-166 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "166" ;
+    skos:prefLabel "Semillas de mostaza"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-167 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "167" ;
+    skos:prefLabel "Semillas de sésamo o ajonjolí"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-168 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "168" ;
+    skos:prefLabel "Setas cultivadas (producto cosechado)"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-169 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "169" ;
+    skos:prefLabel "Setas silvestres (producto cosechado)"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-17 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "17" ;
+    skos:prefLabel "Barbareas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-170 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "170" ;
+    skos:prefLabel "Simiente de ajo"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-171 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "171" ;
+    skos:prefLabel "Simiente de algodón"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-172 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "172" ;
+    skos:prefLabel "Simiente de arroz"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-173 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "173" ;
+    skos:prefLabel "Simiente de avena"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-174 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "174" ;
+    skos:prefLabel "Simiente de cebada"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-175 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "175" ;
+    skos:prefLabel "Simiente de cebolla"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-176 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "176" ;
+    skos:prefLabel "Simiente de centeno"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-177 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "177" ;
+    skos:prefLabel "Simiente de colza"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-178 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "178" ;
+    skos:prefLabel "Simiente de crucíferas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-179 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "179" ;
+    skos:prefLabel "Simiente de cucurbitáceas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-18 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "18" ;
+    skos:prefLabel "Berenjenas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-180 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "180" ;
+    skos:prefLabel "Simiente de espinacas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-181 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "181" ;
+    skos:prefLabel "Simiente de garbanzos"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-182 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "182" ;
+    skos:prefLabel "Simiente de girasol"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-183 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "183" ;
+    skos:prefLabel "Simiente de guisantes"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-184 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "184" ;
+    skos:prefLabel "Simiente de habas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-185 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "185" ;
+    skos:prefLabel "Simiente de hierbas aromáticas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-186 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "186" ;
+    skos:prefLabel "Simiente de judías"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-187 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "187" ;
+    skos:prefLabel "Simiente de lechuga"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-188 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "188" ;
+    skos:prefLabel "Simiente de lino"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-189 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "189" ;
+    skos:prefLabel "Simiente de maíz"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-19 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "19" ;
+    skos:prefLabel "Berros de agua"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-190 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "190" ;
+    skos:prefLabel "Simiente de ornamentales"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-191 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "191" ;
+    skos:prefLabel "Simiente de patatas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-192 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "192" ;
+    skos:prefLabel "Simiente de remolacha azucarera"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-193 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "193" ;
+    skos:prefLabel "Simiente de remolacha de mesa"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-194 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "194" ;
+    skos:prefLabel "Simiente de remolacha forrajera"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-195 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "195" ;
+    skos:prefLabel "Simiente de soja"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-196 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "196" ;
+    skos:prefLabel "Simiente de sorgo"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-197 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "197" ;
+    skos:prefLabel "Simiente de tabaco"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-198 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "198" ;
+    skos:prefLabel "Simiente de tomates"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-199 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "199" ;
+    skos:prefLabel "Simiente de trigo"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-2 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "2" ;
+    skos:prefLabel "Acelgas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-20 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "20" ;
+    skos:prefLabel "Berros, mastuerzos"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-200 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "200" ;
+    skos:prefLabel "Simiente de triticale"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-201 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "201" ;
+    skos:prefLabel "Simiente de zanahoria"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-202 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "202" ;
+    skos:prefLabel "Sorgo forrajero"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-203 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "203" ;
+    skos:prefLabel "Tabaco (producto cosechado)"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-204 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "204" ;
+    skos:prefLabel "Tomates"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-205 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "205" ;
+    skos:prefLabel "Tomates desecados"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-206 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "206" ;
+    skos:prefLabel "Toronjas, pomelos"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-208 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "208" ;
+    skos:prefLabel "Té"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-209 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "209" ;
+    skos:prefLabel "Uvas de mesa"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-21 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "21" ;
+    skos:prefLabel "Berzas, coles"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-210 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "210" ;
+    skos:prefLabel "Uvas de vinificación"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-211 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "211" ;
+    skos:prefLabel "Verdolagas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-212 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "212" ;
+    skos:prefLabel "Veza (producto cosechado)"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-214 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "214" ;
+    skos:prefLabel "Zanahorias"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-215 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "215" ;
+    skos:prefLabel "Zarzamoras (producto cosechado)"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-216 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "216" ;
+    skos:prefLabel "Ñames"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-22 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "22" ;
+    skos:prefLabel "Boniatos, batatas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-23 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "23" ;
+    skos:prefLabel "Borrajas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-24 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "24" ;
+    skos:prefLabel "Brotes tiernos, incluidas las especies de Brassica (producto cosechado)"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-25 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "25" ;
+    skos:prefLabel "Brécoles"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-26 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "26" ;
+    skos:prefLabel "Bulbos de ornamentales"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-28 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "28" ;
+    skos:prefLabel "Café en grano"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-29 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "29" ;
+    skos:prefLabel "Calabacines"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-3 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "3" ;
+    skos:prefLabel "Achicorias (hojas)"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-30 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "30" ;
+    skos:prefLabel "Calabazas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-31 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "31" ;
+    skos:prefLabel "Canónigos"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-32 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "32" ;
+    skos:prefLabel "Caquis"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-33 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "33" ;
+    skos:prefLabel "Cardos"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-34 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "34" ;
+    skos:prefLabel "Castañas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-35 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "35" ;
+    skos:prefLabel "Caña de azúcar (producto cosechado)"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-36 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "36" ;
+    skos:prefLabel "Cebollas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-37 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "37" ;
+    skos:prefLabel "Cebolletas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-38 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "38" ;
+    skos:prefLabel "Cebollinos"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-39 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "39" ;
+    skos:prefLabel "Cerezas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-4 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "4" ;
+    skos:prefLabel "Aguacates"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-40 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "40" ;
+    skos:prefLabel "Chalotes"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-41 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "41" ;
+    skos:prefLabel "Champiñones"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-42 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "42" ;
+    skos:prefLabel "Chirimoyas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-43 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "43" ;
+    skos:prefLabel "Chirivías"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-44 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "44" ;
+    skos:prefLabel "Chufas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-45 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "45" ;
+    skos:prefLabel "Ciruelas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-46 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "46" ;
+    skos:prefLabel "Ciruelas pasas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-48 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "48" ;
+    skos:prefLabel "Coles de Bruselas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-49 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "49" ;
+    skos:prefLabel "Coles de China"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-5 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "5" ;
+    skos:prefLabel "Ajetes, ajos tiernos"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-50 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "50" ;
+    skos:prefLabel "Coliflores"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-51 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "51" ;
+    skos:prefLabel "Colinabos"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-52 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "52" ;
+    skos:prefLabel "Colirrábanos"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-53 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "53" ;
+    skos:prefLabel "Coronas de remolacha"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-54 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "54" ;
+    skos:prefLabel "Dátiles"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-55 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "55" ;
+    skos:prefLabel "Dátiles secos"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-56 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "56" ;
+    skos:prefLabel "Endibias"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-57 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "57" ;
+    skos:prefLabel "Escarolas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-58 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "58" ;
+    skos:prefLabel "Escorzoneras"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-59 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "59" ;
+    skos:prefLabel "Especias"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-6 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "6" ;
+    skos:prefLabel "Ajos"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-60 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "60" ;
+    skos:prefLabel "Espinacas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-61 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "61" ;
+    skos:prefLabel "Espárragos"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-64 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "64" ;
+    skos:prefLabel "Flores cortadas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-65 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "65" ;
+    skos:prefLabel "Forraje de alfalfa"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-66 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "66" ;
+    skos:prefLabel "Forraje de gramíneas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-67 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "67" ;
+    skos:prefLabel "Forraje de leguminosas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-68 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "68" ;
+    skos:prefLabel "Forrajes desecados"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-69 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "69" ;
+    skos:prefLabel "Frambuesas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-7 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "7" ;
+    skos:prefLabel "Albaricoques"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-70 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "70" ;
+    skos:prefLabel "Fresas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-71 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "71" ;
+    skos:prefLabel "Frutos de la pasión"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-72 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "72" ;
+    skos:prefLabel "Granadas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-73 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "73" ;
+    skos:prefLabel "Granos de arroz"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-74 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "74" ;
+    skos:prefLabel "Granos de avena"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-75 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "75" ;
+    skos:prefLabel "Granos de cebada"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-76 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "76" ;
+    skos:prefLabel "Granos de centeno"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-77 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "77" ;
+    skos:prefLabel "Granos de garbanzos"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-78 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "78" ;
+    skos:prefLabel "Granos de guisantes"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-79 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "79" ;
+    skos:prefLabel "Granos de judías"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-8 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "8" ;
+    skos:prefLabel "Alcachofas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-80 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "80" ;
+    skos:prefLabel "Granos de lentejas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-81 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "81" ;
+    skos:prefLabel "Granos de maíz"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-82 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "82" ;
+    skos:prefLabel "Granos de otras legumbres"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-83 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "83" ;
+    skos:prefLabel "Granos de quinoa"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-84 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "84" ;
+    skos:prefLabel "Granos de sorgo-grano"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-85 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "85" ;
+    skos:prefLabel "Granos de trigo"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-86 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "86" ;
+    skos:prefLabel "Granos de triticale"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-87 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "87" ;
+    skos:prefLabel "Grosellas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-88 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "88" ;
+    skos:prefLabel "Guisantes verdes"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-89 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "89" ;
+    skos:prefLabel "Habas de soja"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-9 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    owl:deprecated true ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "9" ;
+    skos:prefLabel "Algarrobas (vainas de algarrobo)"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-90 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "90" ;
+    skos:prefLabel "Habas verdes"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-91 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "91" ;
+    skos:prefLabel "Higos"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-92 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "92" ;
+    skos:prefLabel "Higos secos"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-93 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "93" ;
+    skos:prefLabel "Hinojos"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-94 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "94" ;
+    skos:prefLabel "Hojas de apio"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-95 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "95" ;
+    skos:prefLabel "Hojas de remolacha"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-96 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "96" ;
+    skos:prefLabel "Judías verdes"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-97 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "97" ;
+    skos:prefLabel "Kiwis"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-98 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "98" ;
+    skos:prefLabel "Kumquats"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
+siex_cl:siexCropProductValueCode-99 a skos:Concept,
+        siex_cl:SiexCropProductValueCode ;
+    skos:inScheme siex_cl:siexCropProductValueCode ;
+    skos:notation "99" ;
+    skos:prefLabel "Lechugas"@es ;
+    skos:topConceptOf siex_cl:siexCropProductValueCode .
+
