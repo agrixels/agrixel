@@ -9,8 +9,11 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix esadm: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#> .
 @prefix s4agri: <https://saref.etsi.org/saref4agri/> .
 @prefix agrixel: <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix siex_cl: <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/> .
 @prefix iso19150-2: <http://def.isotc211.org/iso19150/-2/2012/base#> .
 @prefix iso19156_OB: <http://def.isotc211.org/iso19156/2011/Observation#> .
@@ -19,6 +22,7 @@
 
 <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/> rdf:type owl:Ontology ;
                                                            owl:imports <http://qudt.org/3.1.1/vocab/quantitykind> ,
+                                                                       <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ,
                                                                        <http://w3id.org/glosis/model> ,
                                                                        <https://def.isotc211.org/ontologies/iso19115/2006/MetadataEntitySetInformation.rdf> ,
                                                                        <https://w3id.org/demeter/agri> ;
@@ -189,6 +193,19 @@ agrixel:siexConcept rdf:type owl:ObjectProperty ;
 
 
 #################################################################
+#    Data properties
+#################################################################
+
+###  http://www.w3.org/2006/time#inXSDgYear
+time:inXSDgYear rdf:type owl:DatatypeProperty ;
+                rdfs:domain time:Instant ;
+                rdfs:range xsd:gYear ;
+                rdfs:comment "Position of an instant, expressed using xsd:gYear"@en ;
+                rdfs:label "in XSD g-Year"@en ;
+                skos:definition "Position of an instant, expressed using xsd:gYear"@en .
+
+
+#################################################################
 #    Classes
 #################################################################
 
@@ -261,6 +278,24 @@ agrixel:Parcel rdf:type owl:Class ;
 agrixel:ParcelUnit rdf:type owl:Class ;
                    rdfs:subClassOf sosa:FeatureOfInterest ,
                                    [ rdf:type owl:Restriction ;
+                                     owl:onProperty time:hasTime ;
+                                     owl:allValuesFrom [ rdf:type owl:Restriction ;
+                                                         owl:onProperty time:inXSDgYear ;
+                                                         owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                       ]
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty agrixel:siexConcept ;
+                                     owl:allValuesFrom [ owl:intersectionOf ( skos:Concept
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty skos:inScheme ;
+                                                                                owl:hasValue siex_cl:siexIntendedCropUseValueCode
+                                                                              ]
+                                                                            ) ;
+                                                         rdf:type owl:Class
+                                                       ]
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
                                      owl:onProperty geo:hasGeometry ;
                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                      owl:onClass geo:Geometry
@@ -269,6 +304,10 @@ agrixel:ParcelUnit rdf:type owl:Class ;
                                      owl:onProperty s4agri:isContainedIn ;
                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                      owl:onClass agrixel:Parcel
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty dcterms:identifier ;
+                                     owl:cardinality "1"^^xsd:nonNegativeInteger
                                    ] ;
                    rdfs:label "Parcel Unit" .
 
