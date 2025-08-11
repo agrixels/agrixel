@@ -1,86 +1,328 @@
-@prefix : <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel#> .
+@prefix : <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix mod: <https://w3id.org/mod#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@base <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix s4agri: <https://saref.etsi.org/saref4agri/> .
+@prefix agrixel: <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/> .
+@prefix siex_cl: <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/> .
+@prefix iso19150-2: <http://def.isotc211.org/iso19150/-2/2012/base#> .
+@prefix iso19156_OB: <http://def.isotc211.org/iso19156/2011/Observation#> .
+@prefix iso19115_503: <http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation#> .
+@base <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/> .
 
-<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel> rdf:type owl:Ontology ;
-                                                          owl:versionIRI <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/1.0.0> ;
-                                                          owl:imports <http://qudt.org/3.1.1/vocab/quantitykind> ,
-                                                                      <http://w3id.org/glosis/model> ,
-                                                                      <http://www.w3.org/2006/time#> ,
-                                                                      <https://def.isotc211.org/ontologies/iso19115/-1/2018/MetadataInformation.rdf> ,
-                                                                      <https://opengeospatial.github.io/ogc-geosparql/geosparql11/geo.ttl> ,
-                                                                      <https://w3id.org/def/foo#> ,
-                                                                      <https://w3id.org/demeter/agri> ,
-                                                                      <https://www.w3.org/2005/Incubator/ssn/ssnx/cf/cf-property> ;
-                                                          rdfs:label "Agrixel Ontology" ;
-                                                          owl:versionInfo "1.0.0" .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/> rdf:type owl:Ontology ;
+                                                           owl:imports <http://qudt.org/3.1.1/vocab/quantitykind> ,
+                                                                       <http://w3id.org/glosis/model> ,
+                                                                       <https://def.isotc211.org/ontologies/iso19115/2006/MetadataEntitySetInformation.rdf> ,
+                                                                       <https://w3id.org/demeter/agri> ;
+                                                           dc:contributor "Cecilio Angulo" ;
+                                                           dc:creator "Miona Dimic" ,
+                                                                      "Joan Van Eeckhout Alsinet" ;
+                                                           dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+                                                           dc:title "Agrixel Ontology" ;
+                                                           owl:versionInfo "1.0.0" ;
+                                                           mod:createdWith <https://chowlk.linkeddata.es/> .
 
-:siexConcept rdf:type owl:ObjectProperty ;
-    rdfs:label "siexConcept"@en ;
-    rdfs:comment "Link to the corresponding concept defined in the SIEX catalog."@en ;
-    rdfs:isDefinedBy <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel> ;
-    rdfs:seeAlso <https://www3.sede.fega.gob.es/bdcsixpor/catalogos> ;
-    rdfs:range [
-        a owl:Class ;
-        owl:intersectionOf (
-            skos:Concept
-            [
-                a owl:Class ;
-                owl:unionOf (
-                    [ a owl:Restriction ;
-                      owl:onProperty skos:inScheme ;
-                      owl:hasValue <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexCropTypeValueCode>
-                    ]
-                    [ a owl:Restriction ;
-                      owl:onProperty skos:inScheme ;
-                      owl:hasValue <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFertilizationMethodValueCode>
-                    ]
-                    [ a owl:Restriction ;
-                      owl:onProperty skos:inScheme ;
-                      owl:hasValue <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFertilizerMaterialValueCode>
-                    ]
-                    [ a owl:Restriction ;
-                      owl:onProperty skos:inScheme ;
-                      owl:hasValue <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexIntendedCropUseValueCode>
-                    ]
-                    [ a owl:Restriction ;
-                      owl:onProperty skos:inScheme ;
-                      owl:hasValue <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexIrrigationWaterSourceValueCode>
-                    ]
-                    [ a owl:Restriction ;
-                      owl:onProperty skos:inScheme ;
-                      owl:hasValue <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexRootstockValueCode>
-                    ]
-                    [ a owl:Restriction ;
-                      owl:onProperty skos:inScheme ;
-                      owl:hasValue <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexSoilCoverActivityValueCode>
-                    ]
-                    [ a owl:Restriction ;
-                      owl:onProperty skos:inScheme ;
-                      owl:hasValue <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexSoilCoverTypeValueCode>
-                    ]
-                    [ a owl:Restriction ;
-                      owl:onProperty skos:inScheme ;
-                      owl:hasValue <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexTrellisingSystemValueCode>
-                    ]
-                    [ a owl:Restriction ;
-                      owl:onProperty skos:inScheme ;
-                      owl:hasValue <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFertilizationTypeValueCode>
-                    ]
-                    [ a owl:Restriction ;
-                      owl:onProperty skos:inScheme ;
-                      owl:hasValue <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFarmingSystemValueCode>
-                    ]
-                    [ a owl:Restriction ;
-                      owl:onProperty skos:inScheme ;
-                      owl:hasValue <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexCropProductValueCode>
-                    ]
-                )
-            ]
-        )
-    ] .
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://def.isotc211.org/iso19150/-2/2012/base#associationName
+iso19150-2:associationName rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/contributor
+dc:contributor rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/license
+dc:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+dc:title rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/mod#createdWith
+mod:createdWith rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.metadata
+iso19156_OB:OM_Observation.metadata rdf:type owl:ObjectProperty ;
+                                    rdfs:domain iso19156_OB:OM_Observation ;
+                                    rdfs:range iso19115_503:MD_Metadata ;
+                                    iso19150-2:associationName "Metadata" ;
+                                    rdfs:isDefinedBy "http://standards.iso.org/iso/19156/ed-1/en/" ;
+                                    rdfs:label "metadata" .
+
+
+###  http://www.opengis.net/ont/geosparql#ehDisjoint
+geo:ehDisjoint rdf:type owl:ObjectProperty ;
+               owl:equivalentProperty geo:rcc8dc ,
+                                      geo:sfDisjoint ;
+               rdfs:domain geo:SpatialObject ;
+               rdfs:range geo:SpatialObject ;
+               owl:propertyDisjointWith geo:sfIntersects ;
+               rdfs:isDefinedBy geo: ,
+                                <http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/eh-spatial-relations> ,
+                                <http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/eh-spatial-relations> ;
+               rdfs:seeAlso <http://dbpedia.org/resource/DE-9IM> ;
+               skos:definition "States that the subject SpatialObject is spatially disjoint from the object SpatialObject. DE-9IM: FF*FF****"@en ;
+               skos:prefLabel "disjoint"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#rcc8dc
+geo:rcc8dc rdf:type owl:ObjectProperty ;
+           owl:equivalentProperty geo:sfDisjoint ;
+           rdfs:domain geo:SpatialObject ;
+           rdfs:range geo:SpatialObject ;
+           rdfs:isDefinedBy geo: ,
+                            <http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/rcc8-spatial-relations> ,
+                            <http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/rcc8-spatial-relations> ;
+           rdfs:seeAlso <http://dbpedia.org/resource/DE-9IM> ;
+           skos:definition "States that the subject SpatialObject is spatially disjoint from the object SpatialObject. DE-9IM: FFTFFTTTT"@en ;
+           skos:prefLabel "disconnected"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#sfDisjoint
+geo:sfDisjoint rdf:type owl:ObjectProperty ;
+               rdfs:domain geo:SpatialObject ;
+               rdfs:range geo:SpatialObject ;
+               owl:propertyDisjointWith geo:sfIntersects ;
+               rdfs:isDefinedBy geo: ,
+                                <http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/sf-spatial-relations> ,
+                                <http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/sf-spatial-relations> ;
+               rdfs:seeAlso <http://dbpedia.org/resource/DE-9IM> ;
+               skos:definition "States that the subject SpatialObject is spatially disjoint from the object SpatialObject. DE-9IM: FF*FF****"@en ;
+               skos:prefLabel "disjoint"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#sfIntersects
+geo:sfIntersects rdf:type owl:ObjectProperty ;
+                 rdfs:domain geo:SpatialObject ;
+                 rdfs:range geo:SpatialObject ;
+                 rdfs:isDefinedBy geo: ,
+                                  <http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/sf-spatial-relations> ,
+                                  <http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/sf-spatial-relations> ;
+                 rdfs:seeAlso <http://dbpedia.org/resource/DE-9IM> ;
+                 skos:definition "States that the subject SpatialObject is not spatially disjoint from the object SpatialObject. DE-9IM: T******** ^ *T******* ^ ***T***** ^ ****T****"@en ;
+                 skos:prefLabel "intersects"@en .
+
+
+###  https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/siexConcept
+agrixel:siexConcept rdf:type owl:ObjectProperty ;
+                    rdfs:range [ owl:intersectionOf ( skos:Concept
+                                                      [ rdf:type owl:Class ;
+                                                        owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty skos:inScheme ;
+                                                                        owl:hasValue siex_cl:siexCropProductValueCode
+                                                                      ]
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty skos:inScheme ;
+                                                                        owl:hasValue siex_cl:siexCropTypeValueCode
+                                                                      ]
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty skos:inScheme ;
+                                                                        owl:hasValue siex_cl:siexFarmingSystemValueCode
+                                                                      ]
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty skos:inScheme ;
+                                                                        owl:hasValue siex_cl:siexFertilizationMethodValueCode
+                                                                      ]
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty skos:inScheme ;
+                                                                        owl:hasValue siex_cl:siexFertilizationTypeValueCode
+                                                                      ]
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty skos:inScheme ;
+                                                                        owl:hasValue siex_cl:siexFertilizerMaterialValueCode
+                                                                      ]
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty skos:inScheme ;
+                                                                        owl:hasValue siex_cl:siexIntendedCropUseValueCode
+                                                                      ]
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty skos:inScheme ;
+                                                                        owl:hasValue siex_cl:siexIrrigationWaterSourceValueCode
+                                                                      ]
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty skos:inScheme ;
+                                                                        owl:hasValue siex_cl:siexRootstockValueCode
+                                                                      ]
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty skos:inScheme ;
+                                                                        owl:hasValue siex_cl:siexSoilCoverActivityValueCode
+                                                                      ]
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty skos:inScheme ;
+                                                                        owl:hasValue siex_cl:siexSoilCoverTypeValueCode
+                                                                      ]
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty skos:inScheme ;
+                                                                        owl:hasValue siex_cl:siexTrellisingSystemValueCode
+                                                                      ]
+                                                                    )
+                                                      ]
+                                                    ) ;
+                                 rdf:type owl:Class
+                               ] ;
+                    rdfs:label "siex concept" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Agrixel
+agrixel:Agrixel rdf:type owl:Class ;
+                rdfs:subClassOf sosa:FeatureOfInterest ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty geo:sfIntersects ;
+                                  owl:someValuesFrom agrixel:CropArea
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty geo:hasGeometry ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass geo:Geometry
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty s4agri:isContainedIn ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass agrixel:Parcel
+                                ] ;
+                rdfs:label "Agrixel" .
+
+
+###  https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropArea
+agrixel:CropArea rdf:type owl:Class ;
+                 rdfs:subClassOf sosa:FeatureOfInterest ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty geo:sfIntersects ;
+                                   owl:someValuesFrom agrixel:ParcelUnit
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty geo:hasGeometry ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass geo:Geometry
+                                 ] ;
+                 rdfs:label "Crop Area" .
+
+
+###  https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Parcel
+agrixel:Parcel rdf:type owl:Class ;
+               rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                 owl:onProperty s4agri:contains ;
+                                 owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass agrixel:Agrixel
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty s4agri:contains ;
+                                 owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass agrixel:CropArea
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty s4agri:contains ;
+                                 owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass agrixel:ParcelUnit
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty s4agri:isContainedIn ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass agrixel:CropArea
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty s4agri:isContainedIn ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass s4agri:Farm
+                               ] ;
+               rdfs:label "Parcel" .
+
+
+###  https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ParcelUnit
+agrixel:ParcelUnit rdf:type owl:Class ;
+                   rdfs:subClassOf sosa:FeatureOfInterest ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty geo:hasGeometry ;
+                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass geo:Geometry
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty s4agri:isContainedIn ;
+                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass agrixel:Parcel
+                                   ] ;
+                   rdfs:label "Parcel Unit" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexCropProductValueCode
+siex_cl:siexCropProductValueCode rdf:type owl:NamedIndividual .
+
+
+###  https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexCropTypeValueCode
+siex_cl:siexCropTypeValueCode rdf:type owl:NamedIndividual .
+
+
+###  https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFarmingSystemValueCode
+siex_cl:siexFarmingSystemValueCode rdf:type owl:NamedIndividual .
+
+
+###  https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFertilizationMethodValueCode
+siex_cl:siexFertilizationMethodValueCode rdf:type owl:NamedIndividual .
+
+
+###  https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFertilizationTypeValueCode
+siex_cl:siexFertilizationTypeValueCode rdf:type owl:NamedIndividual .
+
+
+###  https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFertilizerMaterialValueCode
+siex_cl:siexFertilizerMaterialValueCode rdf:type owl:NamedIndividual .
+
+
+###  https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexIntendedCropUseValueCode
+siex_cl:siexIntendedCropUseValueCode rdf:type owl:NamedIndividual .
+
+
+###  https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexIrrigationWaterSourceValueCode
+siex_cl:siexIrrigationWaterSourceValueCode rdf:type owl:NamedIndividual .
+
+
+###  https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexRootstockValueCode
+siex_cl:siexRootstockValueCode rdf:type owl:NamedIndividual .
+
+
+###  https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexSoilCoverActivityValueCode
+siex_cl:siexSoilCoverActivityValueCode rdf:type owl:NamedIndividual .
+
+
+###  https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexSoilCoverTypeValueCode
+siex_cl:siexSoilCoverTypeValueCode rdf:type owl:NamedIndividual .
+
+
+###  https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexTrellisingSystemValueCode
+siex_cl:siexTrellisingSystemValueCode rdf:type owl:NamedIndividual .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
