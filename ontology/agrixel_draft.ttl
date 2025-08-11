@@ -23,8 +23,8 @@
                                                                        <https://def.isotc211.org/ontologies/iso19115/2006/MetadataEntitySetInformation.rdf> ,
                                                                        <https://w3id.org/demeter/agri> ;
                                                            dc:contributor "Cecilio Angulo" ;
-                                                           dc:creator "Miona Dimic" ,
-                                                                      "Joan Van Eeckhout Alsinet" ;
+                                                           dc:creator "Joan Van Eeckhout Alsinet" ,
+                                                                      "Miona Dimic" ;
                                                            dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
                                                            dc:title "Agrixel Ontology" ;
                                                            owl:versionInfo "1.0.0" ;
