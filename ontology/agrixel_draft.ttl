@@ -1,20 +1,22 @@
 @prefix : <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix foo: <https://w3id.org/def/foo#> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix mod: <https://w3id.org/mod#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix http: <http://purl.org/dc/terms/> .
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix esadm: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#> .
+@prefix foodie: <http://foodie-cloud.com/model/foodie#> .
 @prefix s4agri: <https://saref.etsi.org/saref4agri/> .
 @prefix agrixel: <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix siex_cl: <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/> .
 @prefix sigpac_cl: <https://agrixels.upc.edu/kos/medio-rural-pesca/sigpac/> .
 @prefix iso19150-2: <http://def.isotc211.org/iso19150/-2/2012/base#> .
@@ -30,8 +32,8 @@
                                                                        <https://def.isotc211.org/ontologies/iso19115/2006/MetadataEntitySetInformation.rdf> ,
                                                                        <https://w3id.org/demeter/agri> ;
                                                            dc:contributor "Cecilio Angulo" ;
-                                                           dc:creator "Joan Van Eeckhout Alsinet" ,
-                                                                      "Miona Dimic" ;
+                                                           dc:creator "Miona Dimic" ,
+                                                                      "Joan Van Eeckhout Alsinet" ;
                                                            dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
                                                            dc:title "Agrixel Ontology" ;
                                                            owl:versionInfo "1.0.0" ;
@@ -135,6 +137,20 @@ geo:sfIntersects rdf:type owl:ObjectProperty ;
                  skos:prefLabel "intersects"@en .
 
 
+###  https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/cadastralRecord
+agrixel:cadastralRecord rdf:type owl:ObjectProperty ;
+                        rdfs:range rdfs:Resource ;
+                        rdfs:comment "Relates an entity to its corresponding cadastral record."@en ;
+                        rdfs:label "cadastral record" .
+
+
+###  https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/hasHarvestTimeInterval
+agrixel:hasHarvestTimeInterval rdf:type owl:ObjectProperty ;
+                               rdfs:range time:Interval ;
+                               rdfs:comment "Links a crop to the time interval during which it is harvested."@en ;
+                               rdfs:label "has harvest time interval" .
+
+
 ###  https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/siexConcept
 agrixel:siexConcept rdf:type owl:ObjectProperty ;
                     rdfs:range [ owl:intersectionOf ( skos:Concept
@@ -215,6 +231,18 @@ agrixel:sigpacConcept rdf:type owl:ObjectProperty ;
                       rdfs:label "sigpac concept" .
 
 
+###  https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/upovConcept
+agrixel:upovConcept rdf:type owl:ObjectProperty ;
+                    rdfs:comment "Link to the corresponding concept defined in the UPOV database."@en ;
+                    rdfs:label "upov concept" ;
+                    rdfs:seeAlso <https://www.upov.int/> .
+
+
+###  https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/variety
+agrixel:variety rdf:type owl:ObjectProperty ;
+                rdfs:label "variety" .
+
+
 #################################################################
 #    Data properties
 #################################################################
@@ -226,6 +254,27 @@ time:inXSDgYear rdf:type owl:DatatypeProperty ;
                 rdfs:comment "Position of an instant, expressed using xsd:gYear"@en ;
                 rdfs:label "in XSD g-Year"@en ;
                 skos:definition "Position of an instant, expressed using xsd:gYear"@en .
+
+
+###  https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/avgeragePrice
+agrixel:avgeragePrice rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf foodie:price ;
+                      rdfs:comment "Relation depicting average price of a any resource e.g. Product, Treatment etc."@en ;
+                      rdfs:label "avgerage price" .
+
+
+###  https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/maximumPrice
+agrixel:maximumPrice rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf foodie:price ;
+                     rdfs:comment "Relation depicting maximum price of a any resource e.g. Product, Treatment etc"@en ;
+                     rdfs:label "maximum price" .
+
+
+###  https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/minimumPrice
+agrixel:minimumPrice rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf foodie:price ;
+                     rdfs:comment "Relation depicting minimum price of a any resource e.g. Product, Treatment etc."@en ;
+                     rdfs:label "minimum price" .
 
 
 #################################################################
@@ -249,6 +298,7 @@ agrixel:Agrixel rdf:type owl:Class ;
                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                   owl:onClass agrixel:Parcel
                                 ] ;
+                rdfs:comment "Agrixel represents 1m x 1m geospatial semantic unit."@en ;
                 rdfs:label "Agrixel" .
 
 
@@ -269,12 +319,14 @@ agrixel:CropArea rdf:type owl:Class ;
                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                    owl:onClass agrixel:Parcel
                                  ] ;
+                 rdfs:comment "Declared crop surface for a specific agricultural campaign."@en ;
                  rdfs:label "Crop Area" .
 
 
 ###  https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Parcel
 agrixel:Parcel rdf:type owl:Class ;
-               rdfs:subClassOf [ rdf:type owl:Restriction ;
+               rdfs:subClassOf sosa:FeatureOfInterest ,
+                               [ rdf:type owl:Restriction ;
                                  owl:onProperty s4agri:contains ;
                                  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                  owl:onClass agrixel:Agrixel
@@ -290,10 +342,16 @@ agrixel:Parcel rdf:type owl:Class ;
                                  owl:onClass agrixel:ParcelUnit
                                ] ,
                                [ rdf:type owl:Restriction ;
+                                 owl:onProperty agrixel:cadastralRecord ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass rdfs:Resource
+                               ] ,
+                               [ rdf:type owl:Restriction ;
                                  owl:onProperty s4agri:isContainedIn ;
                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                  owl:onClass s4agri:Farm
                                ] ;
+               rdfs:comment "Registered parcel."@en ;
                rdfs:label "Parcel" .
 
 
@@ -318,10 +376,17 @@ agrixel:ParcelUnit rdf:type owl:Class ;
                                      owl:onClass agrixel:Parcel
                                    ] ,
                                    [ rdf:type owl:Restriction ;
-                                     owl:onProperty http:identifier ;
+                                     owl:onProperty dcterms:identifier ;
                                      owl:cardinality "1"^^xsd:nonNegativeInteger
                                    ] ;
+                   rdfs:comment "Declared area within a parcel, characterized by unique identifier and a single land use."@en ;
                    rdfs:label "Parcel Unit" .
+
+
+###  https://w3id.org/def/foo#Tree
+foo:Tree rdf:type owl:Class ;
+         rdfs:subClassOf sosa:FeatureOfInterest ;
+         rdfs:label "Tree" .
 
 
 #################################################################
