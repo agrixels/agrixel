@@ -1,0 +1,1443 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="resources/primer.css" media="screen"/>
+<link rel="stylesheet" href="resources/rec.css" media="screen"/>
+<link rel="stylesheet" href="resources/extra.css" media="screen"/>
+<link rel="stylesheet" href="resources/owl.css" media="screen"/>
+<link rel="stylesheet" href="resources/dark.css" media="(prefers-color-scheme: dark)"/>
+<link rel="stylesheet" href="resources/light.css" media="(prefers-color-scheme: light)"/>
+<link rel="stylesheet" href="resources/slider.css" media="screen"/>
+<meta name="color-scheme" content="dark light">
+<script type="module" src="resources/dark-mode-toggle.mjs"></script><div class="darkmode">
+	<dark-mode-toggle class="slider"></dark-mode-toggle>
+</div>
+ <title>Agrixel Ontology</title>
+
+
+<!-- SCHEMA.ORG METADATA -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/","name":"Agrixel Ontology", "headline":"Document describing the ontology https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/", "dateReleased":"Thu Aug 14 12:11:01 CEST 2025", "version":"1.0.0", "license":"https://creativecommons.org/licenses/by-nc-nd/4.0/", "author":[{"@type":"Person","name":"Miona Dimic"},{"@type":"Person","name":"Joan Van Eeckhout Alsinet"}], "contributor":[{"@type":"Person","name":"Cecilio Angulo"}]}</script>
+
+<script src="resources/jquery.js"></script> 
+<script src="resources/marked.min.js"></script> 
+    <script> 
+function loadHash() {
+  jQuery(".markdown").each(function(el){jQuery(this).after(marked.parse(jQuery(this).text())).remove()});
+	var hash = location.hash;
+	if($(hash).offset()!=null){
+	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
+}
+	loadTOC();
+}
+function loadTOC(){
+	//process toc dynamically
+	  var t='<h2>Table of contents</h2><ul>';i = 1;j=0;
+	  jQuery(".list").each(function(){
+		if(jQuery(this).is('h2')){
+			if(j>0){
+				t+='</ul>';
+				j=0;
+			}
+			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+			i++;
+		}
+		if(jQuery(this).is('h3')){
+			if(j==0){
+				t+='<ul>';
+			}
+			j++;
+			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+		}
+	  });
+	  t+='</ul>';
+	  $("#toc").html(t); 
+}
+$(function(){
+    loadHash();
+}); $.fn.ignore = function(sel){
+        return this.clone().find(sel||">*").remove().end();
+ }; 
+   </script> 
+  </head> 
+
+<body>
+<div class="container">
+<div class="head">
+<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
+<h1>Agrixel Ontology</h1>
+
+
+<dl>
+<dt>Latest version:</dt>
+<dd><a href="https://agrixels.github.io/agrixel/ontology/agrixel_draft.ttl">https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/</a></dd>
+<dt>Revision:</dt>
+<dd>1.0.0</dd>
+<!-- <dt>Issued on:</dt>
+<dd>Date issued</dd> -->
+<dt>Authors:</dt>
+<dd>Miona Dimic</dd><dd>Joan Van Eeckhout Alsinet</dd>
+
+<dt>Contributors:</dt>
+<dd>Cecilio Angulo</dd>
+
+<dt>Publisher:</dt>
+<dd><a href="https://agrixels.upc.edu/">Agrixels</a></dd>
+<dt>Imported Ontologies:</dt>
+<dd><a href="https://def.isotc211.org/ontologies/iso19115/2006/MetadataEntitySetInformation.rdf">iso19115_503</a></dd><dd><a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio">esadm</a></dd><dd><a href="https://w3id.org/demeter/agri">demeterAgriProfile</a></dd><dd><a href="http://w3id.org/glosis/model">glosis</a></dd>
+
+<dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.owl" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img src="https://img.shields.io/badge/License-CC%20BY_NC_ND%204.0-blue.svg" alt="https://creativecommons.org/licenses/by-nc-nd/4.0/" /></a>
+</dd><!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
+<dd>Dimic, M.; Van Eeckhout, J.; Angulo, C. (2025). Agrixel Ontology. http://hdl.handle.net/2117/431611</dd>
+</dl>
+
+<hr/>
+</div>
+<div class="status">
+<div>
+<span>Ontology Specification Draft</span>
+</div>
+</div><div id="toc"></div> 
+
+<!--INTRODUCTION SECTION-->
+    <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This document contains the first version of the agrixel ontology, a standard for the semantic representation of agricultural data at a 1 meter x 1 meter scale. It is designed to facilitate the integration, interoperability, and exploitation of heterogeneous agricultural data using artificial intelligence and computer vision techniques, while promoting the adoption of FAIR principles in data sharing and standardization.</div>
+  
+
+<!--OVERVIEW SECTION-->
+    <div id="overview"><h2 id="overv" class="list">Agrixel Ontology: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This ontology has the following classes and properties.</span>
+<h4>Classes</h4>
+<ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#Agrixel"
+         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Agrixel">Agrixel</a>
+   </li>
+   <li>
+      <a href="#CropArea"
+         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropArea">Crop Area</a>
+   </li>
+   <li>
+      <a href="#Parcel"
+         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Parcel">Parcel</a>
+   </li>
+   <li>
+      <a href="#ParcelUnit"
+         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ParcelUnit">Parcel Unit</a>
+   </li>
+   <!-- <li>
+      <a href="#https://w3id.org/def/foo#Tree" title="https://w3id.org/def/foo#Tree">Tree</a>
+   </li> -->
+</ul><h4>Object Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#cadastralRecord"
+         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/cadastralRecord">cadastral record</a>
+   </li>
+   <!-- <li>
+      <a href="#http://www.opengis.net/ont/geosparql#rcc8dc" title="http://www.opengis.net/ont/geosparql#rcc8dc">disconnected</a>
+   </li> -->
+   <!-- <li>
+      <a href="#http://www.opengis.net/ont/geosparql#ehDisjoint" title="http://www.opengis.net/ont/geosparql#ehDisjoint">disjoint</a>
+   </li>
+   <li>
+      <a href="#http://www.opengis.net/ont/geosparql#sfDisjoint" title="http://www.opengis.net/ont/geosparql#sfDisjoint">disjoint</a>
+   </li> -->
+   <li>
+      <a href="#hasHarvestTimeInterval"
+         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/hasHarvestTimeInterval">has harvest time interval</a>
+   </li>
+   <!-- <li>
+      <a href="#http://www.opengis.net/ont/geosparql#sfIntersects"
+         title="http://www.opengis.net/ont/geosparql#sfIntersects">intersects</a>
+   </li> -->
+   <!-- <li>
+      <a href="#http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.metadata"
+         title="http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.metadata">metadata</a>
+   </li> -->
+   <li>
+      <a href="#siexConcept"
+         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/siexConcept">siex concept</a>
+   </li>
+   <li>
+      <a href="#sigpacConcept"
+         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/sigpacConcept">sigpac concept</a>
+   </li>
+   <li>
+      <a href="#upovConcept"
+         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/upovConcept">upov concept</a>
+   </li>
+   <li>
+      <a href="#variety"
+         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/variety">variety</a>
+   </li>
+</ul><h4>Data Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#avgeragePrice"
+         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/avgeragePrice">avgerage price</a>
+   </li>
+   <!-- <li>
+      <a href="#http://www.w3.org/2006/time#inXSDgYear" title="http://www.w3.org/2006/time#inXSDgYear">in XSD g-Year</a>
+   </li> -->
+   <li>
+      <a href="#maximumPrice"
+         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/maximumPrice">maximum price</a>
+   </li>
+   <li>
+      <a href="#minimumPrice"
+         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/minimumPrice">minimum price</a>
+   </li>
+</ul><h4>Named Individuals</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#AgriculturalLime"
+         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/AgriculturalLime">Agricultural Lime</a>
+   </li>
+   <li>
+      <a href="#CropCoefficient"
+         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropCoefficient">Crop Coefficient</a>
+   </li>
+   <li>
+      <a href="#CropEvapotranspiration"
+         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropEvapotranspiration">Crop Evapotranspiration</a>
+   </li>
+   <li>
+      <a href="#DripEmitterSpacing"
+         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripEmitterSpacing">Drip Emitter Spacing</a>
+   </li>
+   <li>
+      <a href="#DripLineDiameter"
+         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripLineDiameter">Drip Line Diameter</a>
+   </li>
+   <li>
+      <a href="#DripLineDistance"
+         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripLineDistance">Drip Line Distance</a>
+   </li>
+   <li>
+      <a href="#DripTapeDistance"
+         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripTapeDistance">Drip Tape Distance</a>
+   </li>
+   <li>
+      <a href="#Evapotranspiration"
+         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Evapotranspiration">Evapotranspiration</a>
+   </li>
+   <li>
+      <a href="#IrrigationWaterFlux"
+         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/IrrigationWaterFlux">Irrigation Water Flux</a>
+   </li>
+   <li>
+      <a href="#NormalizedDifferenceWaterIndex"
+         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/NormalizedDifferenceWaterIndex">Normalized Difference Water Index</a>
+   </li>
+   <li>
+      <a href="#NumberOfCultivatorPasses"
+         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/NumberOfCultivatorPasses">Number of Cultivator Passes</a>
+   </li>
+   <li>
+      <a href="#PlantDensityProperty"
+         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/PlantDensityProperty">Plant Density Property</a>
+   </li>
+   <li>
+      <a href="#PollinatorPlantRatio"
+         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/PollinatorPlantRatio">Pollinator Plant Ratio</a>
+   </li>
+   <li>
+      <a href="#ProductLossRate"
+         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ProductLossRate">Product Loss Rate</a>
+   </li>
+   <li>
+      <a href="#ReferenceCropEvapotranspiration"
+         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ReferenceCropEvapotranspiration">Reference Crop Evapotranspiration</a>
+   </li>
+   <li>
+      <a href="#RowSpacing"
+         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/RowSpacing">Row Spacing</a>
+   </li>
+   <li>
+      <a href="#SoilMoistureDeficit"
+         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SoilMoistureDeficit">Soil Moisture Deficit</a>
+   </li>
+   <li>
+      <a href="#SprinklerRiserHeight"
+         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SprinklerRiserHeight">Sprinkler Riser Height</a>
+   </li>
+   <li>
+      <a href="#SprinklerWettedDiameter"
+         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SprinklerWettedDiameter">Sprinkler Wetted Diameter</a>
+   </li>
+   <li>
+      <a href="#TotalDieselFuel"
+         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/TotalDieselFuel">Total Diesel Fuel</a>
+   </li>
+   <li>
+      <a href="#Transpiration"
+         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Transpiration">Transpiration</a>
+   </li>
+   <li>
+      <a href="#WaterPotential"
+         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/WaterPotential">Water Potential</a>
+   </li>
+   <li>
+      <a href="#WetBulbDepth"
+         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/WetBulbDepth">Wet Bulb Depth</a>
+   </li>
+   <li>
+      <a href="#Yield"
+         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Yield">Yield</a>
+   </li>
+</ul>
+</div>
+   
+
+<!--CROSSREF SECTION-->
+   <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for Agrixel Ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Agrixel Ontology.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#Agrixel" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Agrixel">Agrixel</a></li>
+  <li><a href="#CropArea" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropArea">Crop Area</a></li>
+  <li><a href="#Parcel" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Parcel">Parcel</a></li>
+  <li><a href="#ParcelUnit" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ParcelUnit">Parcel Unit</a></li>
+  <!-- <li><a href="#https://w3id.org/def/foo#Tree" title="https://w3id.org/def/foo#Tree">Tree</a></li> -->
+ </ul>
+ <div class="entity" id="Agrixel">
+  <h3>Agrixel<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Agrixel</p>
+  <div class="comment">
+   <span class="markdown">Agrixel represents 1m x 1m geospatial semantic unit.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/sosa/FeatureOfInterest" target="_blank" title="http://www.w3.org/ns/sosa/FeatureOfInterest">Feature Of Interest</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="CropArea">
+  <h3>Crop Area<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropArea</p>
+  <div class="comment">
+   <span class="markdown">Declared crop surface for a specific agricultural campaign.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/sosa/FeatureOfInterest" target="_blank" title="http://www.w3.org/ns/sosa/FeatureOfInterest">Feature Of Interest</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Parcel">
+  <h3>Parcel<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Parcel</p>
+  <div class="comment">
+   <span class="markdown">Registered parcel.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/sosa/FeatureOfInterest" target="_blank" title="http://www.w3.org/ns/sosa/FeatureOfInterest">Feature Of Interest</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ParcelUnit">
+  <h3>Parcel Unit<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ParcelUnit</p>
+  <div class="comment">
+   <span class="markdown">Declared area within a parcel, characterized by unique identifier and a single land use.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/sosa/FeatureOfInterest" target="_blank" title="http://www.w3.org/ns/sosa/FeatureOfInterest">Feature Of Interest</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <!-- <div class="entity" id="https://w3id.org/def/foo#Tree">
+  <h3>Tree<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/def/foo#Tree</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/sosa/FeatureOfInterest" target="_blank" title="http://www.w3.org/ns/sosa/FeatureOfInterest">Feature Of Interest</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div> -->
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#cadastralRecord" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/cadastralRecord">cadastral record</a></li>
+  <!-- <li><a href="#http://www.opengis.net/ont/geosparql#rcc8dc" title="http://www.opengis.net/ont/geosparql#rcc8dc">disconnected</a></li> -->
+  <!-- <li><a href="#http://www.opengis.net/ont/geosparql#ehDisjoint" title="http://www.opengis.net/ont/geosparql#ehDisjoint">disjoint</a></li> -->
+  <!-- <li><a href="#http://www.opengis.net/ont/geosparql#sfDisjoint" title="http://www.opengis.net/ont/geosparql#sfDisjoint">disjoint</a></li> -->
+  <li><a href="#hasHarvestTimeInterval" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/hasHarvestTimeInterval">has harvest time interval</a></li>
+  <li><a href="#http://www.opengis.net/ont/geosparql#sfIntersects" title="http://www.opengis.net/ont/geosparql#sfIntersects">intersects</a></li>
+  <!-- <li><a href="#http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.metadata" title="http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.metadata">metadata</a></li> -->
+  <li><a href="#siexConcept" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/siexConcept">siex concept</a></li>
+  <li><a href="#sigpacConcept" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/sigpacConcept">sigpac concept</a></li>
+  <li><a href="#upovConcept" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/upovConcept">upov concept</a></li>
+  <li><a href="#variety" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/variety">variety</a></li>
+ </ul>
+ <div class="entity" id="cadastralRecord">
+  <h3>cadastral record<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/cadastralRecord</p>
+  <div class="comment">
+   <span class="markdown">Relates an entity to its corresponding cadastral record.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2000/01/rdf-schema#Resource" target="_blank" title="http://www.w3.org/2000/01/rdf-schema#Resource">Resource</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <!-- <div class="entity" id="http://www.opengis.net/ont/geosparql#rcc8dc">
+  <h3>disconnected<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.opengis.net/ont/geosparql#rcc8dc</p>
+  <div class="comment">
+   <span class="markdown">States that the subject SpatialObject is spatially disjoint from the object SpatialObject. DE-9IM: FFTFFTTTT</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://www.opengis.net/ont/geosparql#">http://www.opengis.net/ont/geosparql#</a>
+   </dd>
+   <dd>
+    <a href="http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/rcc8-spatial-relations">http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/rcc8-spatial-relations</a>
+   </dd>
+   <dd>
+    <a href="http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/rcc8-spatial-relations">http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/rcc8-spatial-relations</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has equivalent properties
+    </dt>
+    <dd>
+     <a href="#http://www.opengis.net/ont/geosparql#ehDisjoint" title="http://www.opengis.net/ont/geosparql#ehDisjoint">disjoint</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.opengis.net/ont/geosparql#sfDisjoint" title="http://www.opengis.net/ont/geosparql#sfDisjoint">disjoint</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://www.opengis.net/ont/geosparql#SpatialObject" target="_blank" title="http://www.opengis.net/ont/geosparql#SpatialObject">Spatial Object</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.opengis.net/ont/geosparql#SpatialObject" target="_blank" title="http://www.opengis.net/ont/geosparql#SpatialObject">Spatial Object</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.opengis.net/ont/geosparql#ehDisjoint">
+  <h3>disjoint<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.opengis.net/ont/geosparql#ehDisjoint</p>
+  <div class="comment">
+   <span class="markdown">States that the subject SpatialObject is spatially disjoint from the object SpatialObject. DE-9IM: FF*FF****</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://www.opengis.net/ont/geosparql#">http://www.opengis.net/ont/geosparql#</a>
+   </dd>
+   <dd>
+    <a href="http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/eh-spatial-relations">http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/eh-spatial-relations</a>
+   </dd>
+   <dd>
+    <a href="http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/eh-spatial-relations">http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/eh-spatial-relations</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has equivalent properties
+    </dt>
+    <dd>
+     <a href="#http://www.opengis.net/ont/geosparql#rcc8dc" title="http://www.opengis.net/ont/geosparql#rcc8dc">disconnected</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.opengis.net/ont/geosparql#sfDisjoint" title="http://www.opengis.net/ont/geosparql#sfDisjoint">disjoint</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://www.opengis.net/ont/geosparql#SpatialObject" target="_blank" title="http://www.opengis.net/ont/geosparql#SpatialObject">Spatial Object</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.opengis.net/ont/geosparql#SpatialObject" target="_blank" title="http://www.opengis.net/ont/geosparql#SpatialObject">Spatial Object</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.opengis.net/ont/geosparql#sfDisjoint">
+  <h3>disjoint<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.opengis.net/ont/geosparql#sfDisjoint</p>
+  <div class="comment">
+   <span class="markdown">States that the subject SpatialObject is spatially disjoint from the object SpatialObject. DE-9IM: FF*FF****</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://www.opengis.net/ont/geosparql#">http://www.opengis.net/ont/geosparql#</a>
+   </dd>
+   <dd>
+    <a href="http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/sf-spatial-relations">http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/sf-spatial-relations</a>
+   </dd>
+   <dd>
+    <a href="http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/sf-spatial-relations">http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/sf-spatial-relations</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has equivalent properties
+    </dt>
+    <dd>
+     <a href="#http://www.opengis.net/ont/geosparql#ehDisjoint" title="http://www.opengis.net/ont/geosparql#ehDisjoint">disjoint</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.opengis.net/ont/geosparql#rcc8dc" title="http://www.opengis.net/ont/geosparql#rcc8dc">disconnected</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://www.opengis.net/ont/geosparql#SpatialObject" target="_blank" title="http://www.opengis.net/ont/geosparql#SpatialObject">Spatial Object</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.opengis.net/ont/geosparql#SpatialObject" target="_blank" title="http://www.opengis.net/ont/geosparql#SpatialObject">Spatial Object</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div> -->
+ <div class="entity" id="hasHarvestTimeInterval">
+  <h3>has harvest time interval<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/hasHarvestTimeInterval</p>
+  <div class="comment">
+   <span class="markdown">Links a crop to the time interval during which it is harvested.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2006/time#Interval" target="_blank" title="http://www.w3.org/2006/time#Interval">Interval</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <!-- <div class="entity" id="http://www.opengis.net/ont/geosparql#sfIntersects">
+  <h3>intersects<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.opengis.net/ont/geosparql#sfIntersects</p>
+  <div class="comment">
+   <span class="markdown">States that the subject SpatialObject is not spatially disjoint from the object SpatialObject. DE-9IM: T******** ^ *T******* ^ ***T***** ^ ****T****</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://www.opengis.net/ont/geosparql#">http://www.opengis.net/ont/geosparql#</a>
+   </dd>
+   <dd>
+    <a href="http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/sf-spatial-relations">http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/sf-spatial-relations</a>
+   </dd>
+   <dd>
+    <a href="http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/sf-spatial-relations">http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/sf-spatial-relations</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://www.opengis.net/ont/geosparql#SpatialObject" target="_blank" title="http://www.opengis.net/ont/geosparql#SpatialObject">Spatial Object</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.opengis.net/ont/geosparql#SpatialObject" target="_blank" title="http://www.opengis.net/ont/geosparql#SpatialObject">Spatial Object</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.metadata">
+  <h3>metadata<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.metadata</p>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    http://standards.iso.org/iso/19156/ed-1/en/
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://def.isotc211.org/iso19156/2011/Observation#OM_Observation" target="_blank" title="http://def.isotc211.org/iso19156/2011/Observation#OM_Observation">O M Observation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation#MD_Metadata" target="_blank" title="http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation#MD_Metadata">MD_Metadata</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div> -->
+ <div class="entity" id="siexConcept">
+  <h3>siex concept<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/siexConcept</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> ((<a href="http://www.w3.org/2004/02/skos/core#inScheme" target="_blank" title="http://www.w3.org/2004/02/skos/core#inScheme">in Scheme</a> <sup class="type-op" title="object property">op</sup> <span class="logic">value</span> <a href="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexCropProductValueCode" target="_blank" title="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexCropProductValueCode">siex Crop Product Value Code</a> <sup class="type-ni" title="named individual">ni</sup>) <span class="logic">or</span> (<a href="http://www.w3.org/2004/02/skos/core#inScheme" target="_blank" title="http://www.w3.org/2004/02/skos/core#inScheme">in Scheme</a> <sup class="type-op" title="object property">op</sup> <span class="logic">value</span> <a href="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexCropTypeValueCode" target="_blank" title="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexCropTypeValueCode">siex Crop Type Value Code</a> <sup class="type-ni" title="named individual">ni</sup>) <span class="logic">or</span> (<a href="http://www.w3.org/2004/02/skos/core#inScheme" target="_blank" title="http://www.w3.org/2004/02/skos/core#inScheme">in Scheme</a> <sup class="type-op" title="object property">op</sup> <span class="logic">value</span> <a href="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFarmingSystemValueCode" target="_blank" title="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFarmingSystemValueCode">siex Farming System Value Code</a> <sup class="type-ni" title="named individual">ni</sup>) <span class="logic">or</span> (<a href="http://www.w3.org/2004/02/skos/core#inScheme" target="_blank" title="http://www.w3.org/2004/02/skos/core#inScheme">in Scheme</a> <sup class="type-op" title="object property">op</sup> <span class="logic">value</span> <a href="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFertilizationMethodValueCode" target="_blank" title="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFertilizationMethodValueCode">siex Fertilization Method Value Code</a> <sup class="type-ni" title="named individual">ni</sup>) <span class="logic">or</span> (<a href="http://www.w3.org/2004/02/skos/core#inScheme" target="_blank" title="http://www.w3.org/2004/02/skos/core#inScheme">in Scheme</a> <sup class="type-op" title="object property">op</sup> <span class="logic">value</span> <a href="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFertilizationTypeValueCode" target="_blank" title="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFertilizationTypeValueCode">siex Fertilization Type Value Code</a> <sup class="type-ni" title="named individual">ni</sup>) <span class="logic">or</span> (<a href="http://www.w3.org/2004/02/skos/core#inScheme" target="_blank" title="http://www.w3.org/2004/02/skos/core#inScheme">in Scheme</a> <sup class="type-op" title="object property">op</sup> <span class="logic">value</span> <a href="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFertilizerMaterialValueCode" target="_blank" title="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFertilizerMaterialValueCode">siex Fertilizer Material Value Code</a> <sup class="type-ni" title="named individual">ni</sup>) <span class="logic">or</span> (<a href="http://www.w3.org/2004/02/skos/core#inScheme" target="_blank" title="http://www.w3.org/2004/02/skos/core#inScheme">in Scheme</a> <sup class="type-op" title="object property">op</sup> <span class="logic">value</span> <a href="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexIntendedCropUseValueCode" target="_blank" title="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexIntendedCropUseValueCode">siex Intended Crop Use Value Code</a> <sup class="type-ni" title="named individual">ni</sup>) <span class="logic">or</span> (<a href="http://www.w3.org/2004/02/skos/core#inScheme" target="_blank" title="http://www.w3.org/2004/02/skos/core#inScheme">in Scheme</a> <sup class="type-op" title="object property">op</sup> <span class="logic">value</span> <a href="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexIrrigationWaterSourceValueCode" target="_blank" title="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexIrrigationWaterSourceValueCode">siex Irrigation Water Source Value Code</a> <sup class="type-ni" title="named individual">ni</sup>) <span class="logic">or</span> (<a href="http://www.w3.org/2004/02/skos/core#inScheme" target="_blank" title="http://www.w3.org/2004/02/skos/core#inScheme">in Scheme</a> <sup class="type-op" title="object property">op</sup> <span class="logic">value</span> <a href="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexRootstockValueCode" target="_blank" title="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexRootstockValueCode">siex Rootstock Value Code</a> <sup class="type-ni" title="named individual">ni</sup>) <span class="logic">or</span> (<a href="http://www.w3.org/2004/02/skos/core#inScheme" target="_blank" title="http://www.w3.org/2004/02/skos/core#inScheme">in Scheme</a> <sup class="type-op" title="object property">op</sup> <span class="logic">value</span> <a href="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexSoilCoverActivityValueCode" target="_blank" title="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexSoilCoverActivityValueCode">siex Soil Cover Activity Value Code</a> <sup class="type-ni" title="named individual">ni</sup>) <span class="logic">or</span> (<a href="http://www.w3.org/2004/02/skos/core#inScheme" target="_blank" title="http://www.w3.org/2004/02/skos/core#inScheme">in Scheme</a> <sup class="type-op" title="object property">op</sup> <span class="logic">value</span> <a href="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexSoilCoverTypeValueCode" target="_blank" title="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexSoilCoverTypeValueCode">siex Soil Cover Type Value Code</a> <sup class="type-ni" title="named individual">ni</sup>) <span class="logic">or</span> (<a href="http://www.w3.org/2004/02/skos/core#inScheme" target="_blank" title="http://www.w3.org/2004/02/skos/core#inScheme">in Scheme</a> <sup class="type-op" title="object property">op</sup> <span class="logic">value</span> <a href="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexTrellisingSystemValueCode" target="_blank" title="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexTrellisingSystemValueCode">siex Trellising System Value Code</a> <sup class="type-ni" title="named individual">ni</sup>))
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="sigpacConcept">
+  <h3>sigpac concept<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/sigpacConcept</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> ((<a href="http://www.w3.org/2004/02/skos/core#inScheme" target="_blank" title="http://www.w3.org/2004/02/skos/core#inScheme">in Scheme</a> <sup class="type-op" title="object property">op</sup> <span class="logic">value</span> <a href="https://agrixels.upc.edu/kos/medio-rural-pesca/sigpac/sigpacIncidentValueCode" target="_blank" title="https://agrixels.upc.edu/kos/medio-rural-pesca/sigpac/sigpacIncidentValueCode">sigpac Incident Value Code</a> <sup class="type-ni" title="named individual">ni</sup>) <span class="logic">or</span> (<a href="http://www.w3.org/2004/02/skos/core#inScheme" target="_blank" title="http://www.w3.org/2004/02/skos/core#inScheme">in Scheme</a> <sup class="type-op" title="object property">op</sup> <span class="logic">value</span> <a href="https://agrixels.upc.edu/kos/medio-rural-pesca/sigpac/sigpacLandUseValueCode" target="_blank" title="https://agrixels.upc.edu/kos/medio-rural-pesca/sigpac/sigpacLandUseValueCode">sigpac Land Use Value Code</a> <sup class="type-ni" title="named individual">ni</sup>))
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="upovConcept">
+  <h3>upov concept<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/upovConcept</p>
+  <div class="comment">
+   <span class="markdown">Link to the corresponding concept defined in the UPOV database.</span>
+  </div>
+ </div>
+ <div class="entity" id="variety">
+  <h3>variety<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/variety</p>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+ <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+ <ul class="hlist">
+  <li><a href="#avgeragePrice" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/avgeragePrice">avgerage price</a></li>
+  <!-- <li><a href="#http://www.w3.org/2006/time#inXSDgYear" title="http://www.w3.org/2006/time#inXSDgYear">in XSD g-Year</a></li> -->
+  <li><a href="#maximumPrice" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/maximumPrice">maximum price</a></li>
+  <li><a href="#minimumPrice" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/minimumPrice">minimum price</a></li>
+ </ul>
+ <div class="entity" id="avgeragePrice">
+  <h3>avgerage price<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/avgeragePrice</p>
+  <div class="comment">
+   <span class="markdown">Relation depicting average price of a any resource e.g. Product, Treatment etc.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://foodie-cloud.com/model/foodie#price" target="_blank" title="http://foodie-cloud.com/model/foodie#price">price</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <!-- <div class="entity" id="http://www.w3.org/2006/time#inXSDgYear">
+  <h3>in XSD g-Year<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/2006/time#inXSDgYear</p>
+  <div class="comment">
+   <span class="markdown">Position of an instant, expressed using xsd:gYear</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Position of an instant, expressed using xsd:gYear</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2006/time#Instant" target="_blank" title="http://www.w3.org/2006/time#Instant">Instant</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#gYear" target="_blank" title="http://www.w3.org/2001/XMLSchema#gYear">g Year</a>
+    </dd>
+   </dl>
+  </div>
+ </div> -->
+ <div class="entity" id="maximumPrice">
+  <h3>maximum price<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/maximumPrice</p>
+  <div class="comment">
+   <span class="markdown">Relation depicting maximum price of a any resource e.g. Product, Treatment etc</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://foodie-cloud.com/model/foodie#price" target="_blank" title="http://foodie-cloud.com/model/foodie#price">price</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="minimumPrice">
+  <h3>minimum price<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/minimumPrice</p>
+  <div class="comment">
+   <span class="markdown">Relation depicting minimum price of a any resource e.g. Product, Treatment etc.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://foodie-cloud.com/model/foodie#price" target="_blank" title="http://foodie-cloud.com/model/foodie#price">price</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
+ <h3 id="namedindividuals" class="list">Named Individuals</h3>
+ <ul class="hlist">
+  <li><a href="#AgriculturalLime" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/AgriculturalLime">Agricultural Lime</a></li>
+  <li><a href="#CropCoefficient" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropCoefficient">Crop Coefficient</a></li>
+  <li><a href="#CropEvapotranspiration" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropEvapotranspiration">Crop Evapotranspiration</a></li>
+  <li><a href="#DripEmitterSpacing" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripEmitterSpacing">Drip Emitter Spacing</a></li>
+  <li><a href="#DripLineDiameter" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripLineDiameter">Drip Line Diameter</a></li>
+  <li><a href="#DripLineDistance" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripLineDistance">Drip Line Distance</a></li>
+  <li><a href="#DripTapeDistance" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripTapeDistance">Drip Tape Distance</a></li>
+  <li><a href="#Evapotranspiration" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Evapotranspiration">Evapotranspiration</a></li>
+  <li><a href="#IrrigationWaterFlux" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/IrrigationWaterFlux">Irrigation Water Flux</a></li>
+  <li><a href="#NormalizedDifferenceWaterIndex" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/NormalizedDifferenceWaterIndex">Normalized Difference Water Index</a></li>
+  <li><a href="#NumberOfCultivatorPasses" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/NumberOfCultivatorPasses">Number of Cultivator Passes</a></li>
+  <li><a href="#PlantDensityProperty" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/PlantDensityProperty">Plant Density Property</a></li>
+  <li><a href="#PollinatorPlantRatio" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/PollinatorPlantRatio">Pollinator Plant Ratio</a></li>
+  <li><a href="#ProductLossRate" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ProductLossRate">Product Loss Rate</a></li>
+  <li><a href="#ReferenceCropEvapotranspiration" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ReferenceCropEvapotranspiration">Reference Crop Evapotranspiration</a></li>
+  <li><a href="#RowSpacing" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/RowSpacing">Row Spacing</a></li>
+  <li><a href="#SoilMoistureDeficit" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SoilMoistureDeficit">Soil Moisture Deficit</a></li>
+  <li><a href="#SprinklerRiserHeight" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SprinklerRiserHeight">Sprinkler Riser Height</a></li>
+  <li><a href="#SprinklerWettedDiameter" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SprinklerWettedDiameter">Sprinkler Wetted Diameter</a></li>
+  <li><a href="#TotalDieselFuel" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/TotalDieselFuel">Total Diesel Fuel</a></li>
+  <li><a href="#Transpiration" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Transpiration">Transpiration</a></li>
+  <li><a href="#WaterPotential" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/WaterPotential">Water Potential</a></li>
+  <li><a href="#WetBulbDepth" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/WetBulbDepth">Wet Bulb Depth</a></li>
+  <li><a href="#Yield" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Yield">Yield</a></li>
+ </ul>
+ <div class="entity" id="AgriculturalLime">
+  <h3>Agricultural Lime<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/AgriculturalLime</p>
+  <div class="comment">
+   <span class="markdown">Soil amendment made from crushed limestone or chalk, primarily composed of calcium carbonate or calcium oxide, used to neutralize acidic soils.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://qudt.org/schema/qudt/UserQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/UserQuantityKind">User Quantity Kind</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/ns/sosa/ObservableProperty" target="_blank" title="http://www.w3.org/ns/sosa/ObservableProperty">Observable Property</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/DimensionlessRatio" target="_blank" title="http://qudt.org/vocab/quantitykind/DimensionlessRatio">Dimensionless Ratio</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#broader" target="_blank" title="http://www.w3.org/2004/02/skos/core#broader">broader</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="http://qudt.org/vocab/quantitykind/DimensionlessRatio" target="_blank" title="http://qudt.org/vocab/quantitykind/DimensionlessRatio">Dimensionless Ratio</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="CropCoefficient">
+  <h3>Crop Coefficient<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropCoefficient</p>
+  <div class="comment">
+   <span class="markdown">Crop Coefficient.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://qudt.org/schema/qudt/UserQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/UserQuantityKind">User Quantity Kind</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/ns/sosa/ObservableProperty" target="_blank" title="http://www.w3.org/ns/sosa/ObservableProperty">Observable Property</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/DimensionlessRatio" target="_blank" title="http://qudt.org/vocab/quantitykind/DimensionlessRatio">Dimensionless Ratio</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#broader" target="_blank" title="http://www.w3.org/2004/02/skos/core#broader">broader</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="http://qudt.org/vocab/quantitykind/DimensionlessRatio" target="_blank" title="http://qudt.org/vocab/quantitykind/DimensionlessRatio">Dimensionless Ratio</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="CropEvapotranspiration">
+  <h3>Crop Evapotranspiration<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropEvapotranspiration</p>
+  <div class="comment">
+   <span class="markdown">Crop Evapotranspiration (ETc).</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://qudt.org/schema/qudt/UserQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/UserQuantityKind">User Quantity Kind</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/ns/sosa/ObservableProperty" target="_blank" title="http://www.w3.org/ns/sosa/ObservableProperty">Observable Property</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/VolumetricFlux" target="_blank" title="http://qudt.org/vocab/quantitykind/VolumetricFlux">Volumetric Flux</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#broader" target="_blank" title="http://www.w3.org/2004/02/skos/core#broader">broader</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="#Evapotranspiration" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Evapotranspiration">Evapotranspiration</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="DripEmitterSpacing">
+  <h3>Drip Emitter Spacing<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripEmitterSpacing</p>
+  <div class="comment">
+   <span class="markdown">Spacing between emitters along a single drip line in a drip irrigation system.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://qudt.org/schema/qudt/UserQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/UserQuantityKind">User Quantity Kind</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/ns/sosa/ObservableProperty" target="_blank" title="http://www.w3.org/ns/sosa/ObservableProperty">Observable Property</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Length" target="_blank" title="http://qudt.org/vocab/quantitykind/Length">Length</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#broader" target="_blank" title="http://www.w3.org/2004/02/skos/core#broader">broader</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="http://qudt.org/vocab/quantitykind/Length" target="_blank" title="http://qudt.org/vocab/quantitykind/Length">Length</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="DripLineDiameter">
+  <h3>Drip Line Diameter<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripLineDiameter</p>
+  <div class="comment">
+   <span class="markdown">Diameter of a drip line in a drip irrigation system.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://qudt.org/schema/qudt/UserQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/UserQuantityKind">User Quantity Kind</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/ns/sosa/ObservableProperty" target="_blank" title="http://www.w3.org/ns/sosa/ObservableProperty">Observable Property</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Diameter" target="_blank" title="http://qudt.org/vocab/quantitykind/Diameter">Diameter</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#broader" target="_blank" title="http://www.w3.org/2004/02/skos/core#broader">broader</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="http://qudt.org/vocab/quantitykind/Diameter" target="_blank" title="http://qudt.org/vocab/quantitykind/Diameter">Diameter</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="DripLineDistance">
+  <h3>Drip Line Distance<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripLineDistance</p>
+  <div class="comment">
+   <span class="markdown">Distance between the drip lines in a drip irrigation system.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://qudt.org/schema/qudt/UserQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/UserQuantityKind">User Quantity Kind</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/ns/sosa/ObservableProperty" target="_blank" title="http://www.w3.org/ns/sosa/ObservableProperty">Observable Property</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Length" target="_blank" title="http://qudt.org/vocab/quantitykind/Length">Length</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#broader" target="_blank" title="http://www.w3.org/2004/02/skos/core#broader">broader</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="http://qudt.org/vocab/quantitykind/Length" target="_blank" title="http://qudt.org/vocab/quantitykind/Length">Length</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="DripTapeDistance">
+  <h3>Drip Tape Distance<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripTapeDistance</p>
+  <div class="comment">
+   <span class="markdown">Distance between the drip tapes in a drip irrigation system.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://qudt.org/schema/qudt/UserQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/UserQuantityKind">User Quantity Kind</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/ns/sosa/ObservableProperty" target="_blank" title="http://www.w3.org/ns/sosa/ObservableProperty">Observable Property</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Length" target="_blank" title="http://qudt.org/vocab/quantitykind/Length">Length</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#broader" target="_blank" title="http://www.w3.org/2004/02/skos/core#broader">broader</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="http://qudt.org/vocab/quantitykind/Length" target="_blank" title="http://qudt.org/vocab/quantitykind/Length">Length</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Evapotranspiration">
+  <h3>Evapotranspiration<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Evapotranspiration</p>
+  <div class="comment">
+   <span class="markdown">Evapotranspiration.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://qudt.org/schema/qudt/UserQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/UserQuantityKind">User Quantity Kind</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/ns/sosa/ObservableProperty" target="_blank" title="http://www.w3.org/ns/sosa/ObservableProperty">Observable Property</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/VolumetricFlux" target="_blank" title="http://qudt.org/vocab/quantitykind/VolumetricFlux">Volumetric Flux</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#broader" target="_blank" title="http://www.w3.org/2004/02/skos/core#broader">broader</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="http://qudt.org/vocab/quantitykind/VolumetricFlux" target="_blank" title="http://qudt.org/vocab/quantitykind/VolumetricFlux">Volumetric Flux</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="IrrigationWaterFlux">
+  <h3>Irrigation Water Flux<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/IrrigationWaterFlux</p>
+  <div class="comment">
+   <span class="markdown">Irrigation Water Flux.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://qudt.org/schema/qudt/UserQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/UserQuantityKind">User Quantity Kind</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/ns/sosa/ObservableProperty" target="_blank" title="http://www.w3.org/ns/sosa/ObservableProperty">Observable Property</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/VolumetricFlux" target="_blank" title="http://qudt.org/vocab/quantitykind/VolumetricFlux">Volumetric Flux</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#broader" target="_blank" title="http://www.w3.org/2004/02/skos/core#broader">broader</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="http://qudt.org/vocab/quantitykind/VolumetricFlux" target="_blank" title="http://qudt.org/vocab/quantitykind/VolumetricFlux">Volumetric Flux</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="NormalizedDifferenceWaterIndex">
+  <h3>Normalized Difference Water Index<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/NormalizedDifferenceWaterIndex</p>
+  <div class="comment">
+   <span class="markdown">Normalized Difference Water Index (NDWI).</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://qudt.org/schema/qudt/UserQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/UserQuantityKind">User Quantity Kind</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/ns/sosa/ObservableProperty" target="_blank" title="http://www.w3.org/ns/sosa/ObservableProperty">Observable Property</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/DimensionlessRatio" target="_blank" title="http://qudt.org/vocab/quantitykind/DimensionlessRatio">Dimensionless Ratio</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#broader" target="_blank" title="http://www.w3.org/2004/02/skos/core#broader">broader</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="http://qudt.org/vocab/quantitykind/DimensionlessRatio" target="_blank" title="http://qudt.org/vocab/quantitykind/DimensionlessRatio">Dimensionless Ratio</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="NumberOfCultivatorPasses">
+  <h3>Number of Cultivator Passes<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/NumberOfCultivatorPasses</p>
+  <div class="comment">
+   <span class="markdown">The number of times a cultivator passes over a field.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://qudt.org/schema/qudt/UserQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/UserQuantityKind">User Quantity Kind</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/ns/sosa/ObservableProperty" target="_blank" title="http://www.w3.org/ns/sosa/ObservableProperty">Observable Property</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Count" target="_blank" title="http://qudt.org/vocab/quantitykind/Count">Count</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#broader" target="_blank" title="http://www.w3.org/2004/02/skos/core#broader">broader</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="http://qudt.org/vocab/quantitykind/Count" target="_blank" title="http://qudt.org/vocab/quantitykind/Count">Count</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="PlantDensityProperty">
+  <h3>Plant Density Property<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/PlantDensityProperty</p>
+  <div class="comment">
+   <span class="markdown">The number of individual plants, typically expressed in plants per hectare.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/sosa/ObservableProperty" target="_blank" title="http://www.w3.org/ns/sosa/ObservableProperty">Observable Property</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="PollinatorPlantRatio">
+  <h3>Pollinator Plant Ratio<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/PollinatorPlantRatio</p>
+  <div class="comment">
+   <span class="markdown">Percentage of pollinator plants relative to total number of plants.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://qudt.org/schema/qudt/UserQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/UserQuantityKind">User Quantity Kind</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/ns/sosa/ObservableProperty" target="_blank" title="http://www.w3.org/ns/sosa/ObservableProperty">Observable Property</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/DimensionlessRatio" target="_blank" title="http://qudt.org/vocab/quantitykind/DimensionlessRatio">Dimensionless Ratio</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#broader" target="_blank" title="http://www.w3.org/2004/02/skos/core#broader">broader</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="http://qudt.org/vocab/quantitykind/DimensionlessRatio" target="_blank" title="http://qudt.org/vocab/quantitykind/DimensionlessRatio">Dimensionless Ratio</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ProductLossRate">
+  <h3>Product Loss Rate<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ProductLossRate</p>
+  <div class="comment">
+   <span class="markdown">Percentage of product lost during a specified time period.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://qudt.org/schema/qudt/UserQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/UserQuantityKind">User Quantity Kind</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/ns/sosa/ObservableProperty" target="_blank" title="http://www.w3.org/ns/sosa/ObservableProperty">Observable Property</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/DimensionlessRatio" target="_blank" title="http://qudt.org/vocab/quantitykind/DimensionlessRatio">Dimensionless Ratio</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#broader" target="_blank" title="http://www.w3.org/2004/02/skos/core#broader">broader</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="http://qudt.org/vocab/quantitykind/DimensionlessRatio" target="_blank" title="http://qudt.org/vocab/quantitykind/DimensionlessRatio">Dimensionless Ratio</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ReferenceCropEvapotranspiration">
+  <h3>Reference Crop Evapotranspiration<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ReferenceCropEvapotranspiration</p>
+  <div class="comment">
+   <span class="markdown">Reference Crop Evapotranspiration (ETo).</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://qudt.org/schema/qudt/UserQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/UserQuantityKind">User Quantity Kind</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/ns/sosa/ObservableProperty" target="_blank" title="http://www.w3.org/ns/sosa/ObservableProperty">Observable Property</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/VolumetricFlux" target="_blank" title="http://qudt.org/vocab/quantitykind/VolumetricFlux">Volumetric Flux</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#broader" target="_blank" title="http://www.w3.org/2004/02/skos/core#broader">broader</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="#Evapotranspiration" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Evapotranspiration">Evapotranspiration</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="RowSpacing">
+  <h3>Row Spacing<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/RowSpacing</p>
+  <div class="comment">
+   <span class="markdown">Row Spacing.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://qudt.org/schema/qudt/UserQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/UserQuantityKind">User Quantity Kind</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/ns/sosa/ObservableProperty" target="_blank" title="http://www.w3.org/ns/sosa/ObservableProperty">Observable Property</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Length" target="_blank" title="http://qudt.org/vocab/quantitykind/Length">Length</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#broader" target="_blank" title="http://www.w3.org/2004/02/skos/core#broader">broader</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="http://qudt.org/vocab/quantitykind/Length" target="_blank" title="http://qudt.org/vocab/quantitykind/Length">Length</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SoilMoistureDeficit">
+  <h3>Soil Moisture Deficit<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SoilMoistureDeficit</p>
+  <div class="comment">
+   <span class="markdown">Soil Moisture Deficit.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://qudt.org/schema/qudt/UserQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/UserQuantityKind">User Quantity Kind</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/ns/sosa/ObservableProperty" target="_blank" title="http://www.w3.org/ns/sosa/ObservableProperty">Observable Property</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/VolumetricFlux" target="_blank" title="http://qudt.org/vocab/quantitykind/VolumetricFlux">Volumetric Flux</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#broader" target="_blank" title="http://www.w3.org/2004/02/skos/core#broader">broader</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="http://qudt.org/vocab/quantitykind/VolumetricFlux" target="_blank" title="http://qudt.org/vocab/quantitykind/VolumetricFlux">Volumetric Flux</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SprinklerRiserHeight">
+  <h3>Sprinkler Riser Height<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SprinklerRiserHeight</p>
+  <div class="comment">
+   <span class="markdown">The sprinkler riser height in a sprinkler irrigation system.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://qudt.org/schema/qudt/UserQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/UserQuantityKind">User Quantity Kind</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/ns/sosa/ObservableProperty" target="_blank" title="http://www.w3.org/ns/sosa/ObservableProperty">Observable Property</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Height" target="_blank" title="http://qudt.org/vocab/quantitykind/Height">Height</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#broader" target="_blank" title="http://www.w3.org/2004/02/skos/core#broader">broader</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="http://qudt.org/vocab/quantitykind/Height" target="_blank" title="http://qudt.org/vocab/quantitykind/Height">Height</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SprinklerWettedDiameter">
+  <h3>Sprinkler Wetted Diameter<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SprinklerWettedDiameter</p>
+  <div class="comment">
+   <span class="markdown">The wetted diameter of a sprinkler in a sprinkler irrigation system.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://qudt.org/schema/qudt/UserQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/UserQuantityKind">User Quantity Kind</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/ns/sosa/ObservableProperty" target="_blank" title="http://www.w3.org/ns/sosa/ObservableProperty">Observable Property</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Diameter" target="_blank" title="http://qudt.org/vocab/quantitykind/Diameter">Diameter</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#broader" target="_blank" title="http://www.w3.org/2004/02/skos/core#broader">broader</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="http://qudt.org/vocab/quantitykind/Diameter" target="_blank" title="http://qudt.org/vocab/quantitykind/Diameter">Diameter</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="TotalDieselFuel">
+  <h3>Total Diesel Fuel<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/TotalDieselFuel</p>
+  <div class="comment">
+   <span class="markdown">Total amount of diesel fuel consumed.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://qudt.org/schema/qudt/UserQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/UserQuantityKind">User Quantity Kind</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/ns/sosa/ObservableProperty" target="_blank" title="http://www.w3.org/ns/sosa/ObservableProperty">Observable Property</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/LiquidVolume" target="_blank" title="http://qudt.org/vocab/quantitykind/LiquidVolume">Liquid Volume</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#broader" target="_blank" title="http://www.w3.org/2004/02/skos/core#broader">broader</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="http://qudt.org/vocab/quantitykind/LiquidVolume" target="_blank" title="http://qudt.org/vocab/quantitykind/LiquidVolume">Liquid Volume</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Transpiration">
+  <h3>Transpiration<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Transpiration</p>
+  <div class="comment">
+   <span class="markdown">Plant Transpiration.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://qudt.org/schema/qudt/UserQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/UserQuantityKind">User Quantity Kind</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/ns/sosa/ObservableProperty" target="_blank" title="http://www.w3.org/ns/sosa/ObservableProperty">Observable Property</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/VolumetricFlux" target="_blank" title="http://qudt.org/vocab/quantitykind/VolumetricFlux">Volumetric Flux</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#broader" target="_blank" title="http://www.w3.org/2004/02/skos/core#broader">broader</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="http://qudt.org/vocab/quantitykind/VolumetricFlux" target="_blank" title="http://qudt.org/vocab/quantitykind/VolumetricFlux">Volumetric Flux</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="WaterPotential">
+  <h3>Water Potential<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/WaterPotential</p>
+  <div class="comment">
+   <span class="markdown">Water Potential.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://qudt.org/schema/qudt/UserQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/UserQuantityKind">User Quantity Kind</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/ns/sosa/ObservableProperty" target="_blank" title="http://www.w3.org/ns/sosa/ObservableProperty">Observable Property</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/ForcePerArea" target="_blank" title="http://qudt.org/vocab/quantitykind/ForcePerArea">Force Per Area</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#broader" target="_blank" title="http://www.w3.org/2004/02/skos/core#broader">broader</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="http://qudt.org/vocab/quantitykind/ForcePerArea" target="_blank" title="http://qudt.org/vocab/quantitykind/ForcePerArea">Force Per Area</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="WetBulbDepth">
+  <h3>Wet Bulb Depth<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/WetBulbDepth</p>
+  <div class="comment">
+   <span class="markdown">The vertical depth of wet-bulb in a drip irrigation system.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://qudt.org/schema/qudt/UserQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/UserQuantityKind">User Quantity Kind</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/ns/sosa/ObservableProperty" target="_blank" title="http://www.w3.org/ns/sosa/ObservableProperty">Observable Property</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/Depth" target="_blank" title="http://qudt.org/vocab/quantitykind/Depth">Depth</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#broader" target="_blank" title="http://www.w3.org/2004/02/skos/core#broader">broader</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="http://qudt.org/vocab/quantitykind/Depth" target="_blank" title="http://qudt.org/vocab/quantitykind/Depth">Depth</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Yield">
+  <h3>Yield<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Yield</p>
+  <div class="comment">
+   <span class="markdown">Amount of product obtained per area of cultivated land.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://qudt.org/schema/qudt/UserQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/UserQuantityKind">User Quantity Kind</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/ns/sosa/ObservableProperty" target="_blank" title="http://www.w3.org/ns/sosa/ObservableProperty">Observable Property</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://qudt.org/schema/qudt/hasQuantityKind" target="_blank" title="http://qudt.org/schema/qudt/hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup> <a href="http://qudt.org/vocab/quantitykind/MassPerArea" target="_blank" title="http://qudt.org/vocab/quantitykind/MassPerArea">Mass Per Area</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#broader" target="_blank" title="http://www.w3.org/2004/02/skos/core#broader">broader</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="http://qudt.org/vocab/quantitykind/MassPerArea" target="_blank" title="http://qudt.org/vocab/quantitykind/MassPerArea">Mass Per Area</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals <br/>
+</div>
+</div>
+</div>
+    
+
+<!--REFERENCES SECTION-->
+  <div id="references">
+<h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+Add your references here. It is recommended to have them as a list.</span>
+
+</div>
+<div id="acknowledgments">
+<h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<p>
+The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
+</div>
+
+
+</div>
+</body>
+</html>

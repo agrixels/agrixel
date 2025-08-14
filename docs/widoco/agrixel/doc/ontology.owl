@@ -1,0 +1,1147 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/"
+     xml:base="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:mod="https://w3id.org/mod#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:ssn="http://www.w3.org/ns/ssn/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:base="http://def.isotc211.org/iso19150/-2/2012/base#"
+     xmlns:cube="http://purl.org/linked-data/cube#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:qudt="http://qudt.org/schema/qudt/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:sosa="http://www.w3.org/ns/sosa/"
+     xmlns:time="http://www.w3.org/2006/time#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="https://schema.org/"
+     xmlns:ngsi-ld="https://uri.etsi.org/ngsi-ld/"
+     xmlns:schema1="http://schema.org/"
+     xmlns:ontology="http://dbpedia.org/ontology/"
+     xmlns:property="http://dbpedia.org/property/"
+     xmlns:geosparql="http://www.opengis.net/ont/geosparql#"
+     xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
+     xmlns:agriCommon="https://w3id.org/demeter/agri/agriCommon#"
+     xmlns:SamplingFeature="http://def.isotc211.org/iso19156/2011/SamplingFeature#"
+     xmlns:smartdatamodels="https://smartdatamodels.org/">
+    <owl:Ontology rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/">
+        <owl:imports rdf:resource="http://qudt.org/3.1.1/vocab/quantitykind"/>
+        <owl:imports rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio"/>
+        <owl:imports rdf:resource="http://w3id.org/glosis/model"/>
+        <owl:imports rdf:resource="https://def.isotc211.org/ontologies/iso19115/2006/MetadataEntitySetInformation.rdf"/>
+        <owl:imports rdf:resource="https://w3id.org/demeter/agri"/>
+        <dc:contributor>Cecilio Angulo</dc:contributor>
+        <dc:creator>Joan Van Eeckhout Alsinet</dc:creator>
+        <dc:creator>Miona Dimic</dc:creator>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-nc-nd/4.0/"/>
+        <dc:title>Agrixel Ontology</dc:title>
+        <owl:versionInfo>1.0.0</owl:versionInfo>
+        <mod:createdWith rdf:resource="https://chowlk.linkeddata.es/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://def.isotc211.org/iso19150/-2/2012/base#associationName -->
+
+
+    <owl:AnnotationProperty rdf:about="http://def.isotc211.org/iso19150/-2/2012/base#associationName"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/license"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
+    
+
+
+    <!-- https://w3id.org/mod#createdWith -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/mod#createdWith"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gYear -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gYear"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.metadata -->
+
+
+    <owl:ObjectProperty rdf:about="http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.metadata">
+        <rdfs:domain rdf:resource="http://def.isotc211.org/iso19156/2011/Observation#OM_Observation"/>
+        <rdfs:range rdf:resource="http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation#MD_Metadata"/>
+        <base:associationName>Metadata</base:associationName>
+        <rdfs:isDefinedBy>http://standards.iso.org/iso/19156/ed-1/en/</rdfs:isDefinedBy>
+        <rdfs:label>metadata</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#ehDisjoint -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#ehDisjoint">
+        <owl:equivalentProperty rdf:resource="http://www.opengis.net/ont/geosparql#rcc8dc"/>
+        <owl:equivalentProperty rdf:resource="http://www.opengis.net/ont/geosparql#sfDisjoint"/>
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.opengis.net/ont/geosparql#sfIntersects"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/geosparql#"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/eh-spatial-relations"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/eh-spatial-relations"/>
+        <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/DE-9IM"/>
+        <skos:definition xml:lang="en">States that the subject SpatialObject is spatially disjoint from the object SpatialObject. DE-9IM: FF*FF****</skos:definition>
+        <skos:prefLabel xml:lang="en">disjoint</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#rcc8dc -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#rcc8dc">
+        <owl:equivalentProperty rdf:resource="http://www.opengis.net/ont/geosparql#sfDisjoint"/>
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/geosparql#"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/rcc8-spatial-relations"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/rcc8-spatial-relations"/>
+        <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/DE-9IM"/>
+        <skos:definition xml:lang="en">States that the subject SpatialObject is spatially disjoint from the object SpatialObject. DE-9IM: FFTFFTTTT</skos:definition>
+        <skos:prefLabel xml:lang="en">disconnected</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#sfDisjoint -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#sfDisjoint">
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.opengis.net/ont/geosparql#sfIntersects"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/geosparql#"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/sf-spatial-relations"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/sf-spatial-relations"/>
+        <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/DE-9IM"/>
+        <skos:definition xml:lang="en">States that the subject SpatialObject is spatially disjoint from the object SpatialObject. DE-9IM: FF*FF****</skos:definition>
+        <skos:prefLabel xml:lang="en">disjoint</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#sfIntersects -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#sfIntersects">
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/geosparql#"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/sf-spatial-relations"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/sf-spatial-relations"/>
+        <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/DE-9IM"/>
+        <skos:definition xml:lang="en">States that the subject SpatialObject is not spatially disjoint from the object SpatialObject. DE-9IM: T******** ^ *T******* ^ ***T***** ^ ****T****</skos:definition>
+        <skos:prefLabel xml:lang="en">intersects</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    
+
+
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/cadastralRecord -->
+
+
+    <owl:ObjectProperty rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/cadastralRecord">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:comment xml:lang="en">Relates an entity to its corresponding cadastral record.</rdfs:comment>
+        <rdfs:label>cadastral record</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/hasHarvestTimeInterval -->
+
+
+    <owl:ObjectProperty rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/hasHarvestTimeInterval">
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#Interval"/>
+        <rdfs:comment xml:lang="en">Links a crop to the time interval during which it is harvested.</rdfs:comment>
+        <rdfs:label>has harvest time interval</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/siexConcept -->
+
+
+    <owl:ObjectProperty rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/siexConcept">
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                                <owl:hasValue rdf:resource="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexCropProductValueCode"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                                <owl:hasValue rdf:resource="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexCropTypeValueCode"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                                <owl:hasValue rdf:resource="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFarmingSystemValueCode"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                                <owl:hasValue rdf:resource="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFertilizationMethodValueCode"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                                <owl:hasValue rdf:resource="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFertilizationTypeValueCode"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                                <owl:hasValue rdf:resource="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFertilizerMaterialValueCode"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                                <owl:hasValue rdf:resource="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexIntendedCropUseValueCode"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                                <owl:hasValue rdf:resource="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexIrrigationWaterSourceValueCode"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                                <owl:hasValue rdf:resource="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexRootstockValueCode"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                                <owl:hasValue rdf:resource="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexSoilCoverActivityValueCode"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                                <owl:hasValue rdf:resource="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexSoilCoverTypeValueCode"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                                <owl:hasValue rdf:resource="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexTrellisingSystemValueCode"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>siex concept</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/sigpacConcept -->
+
+
+    <owl:ObjectProperty rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/sigpacConcept">
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                                <owl:hasValue rdf:resource="https://agrixels.upc.edu/kos/medio-rural-pesca/sigpac/sigpacIncidentValueCode"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                                <owl:hasValue rdf:resource="https://agrixels.upc.edu/kos/medio-rural-pesca/sigpac/sigpacLandUseValueCode"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>sigpac concept</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/upovConcept -->
+
+
+    <owl:ObjectProperty rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/upovConcept">
+        <rdfs:comment xml:lang="en">Link to the corresponding concept defined in the UPOV database.</rdfs:comment>
+        <rdfs:label>upov concept</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.upov.int/"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/variety -->
+
+
+    <owl:ObjectProperty rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/variety">
+        <rdfs:label>variety</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2006/time#inXSDgYear -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/time#inXSDgYear">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+        <rdfs:comment xml:lang="en">Position of an instant, expressed using xsd:gYear</rdfs:comment>
+        <rdfs:label xml:lang="en">in XSD g-Year</rdfs:label>
+        <skos:definition xml:lang="en">Position of an instant, expressed using xsd:gYear</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/avgeragePrice -->
+
+
+    <owl:DatatypeProperty rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/avgeragePrice">
+        <rdfs:subPropertyOf rdf:resource="http://foodie-cloud.com/model/foodie#price"/>
+        <rdfs:comment xml:lang="en">Relation depicting average price of a any resource e.g. Product, Treatment etc.</rdfs:comment>
+        <rdfs:label>avgerage price</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/maximumPrice -->
+
+
+    <owl:DatatypeProperty rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/maximumPrice">
+        <rdfs:subPropertyOf rdf:resource="http://foodie-cloud.com/model/foodie#price"/>
+        <rdfs:comment xml:lang="en">Relation depicting maximum price of a any resource e.g. Product, Treatment etc</rdfs:comment>
+        <rdfs:label>maximum price</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/minimumPrice -->
+
+
+    <owl:DatatypeProperty rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/minimumPrice">
+        <rdfs:subPropertyOf rdf:resource="http://foodie-cloud.com/model/foodie#price"/>
+        <rdfs:comment xml:lang="en">Relation depicting minimum price of a any resource e.g. Product, Treatment etc.</rdfs:comment>
+        <rdfs:label>minimum price</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://qudt.org/schema/qudt/UserQuantityKind -->
+
+
+    <owl:Class rdf:about="http://qudt.org/schema/qudt/UserQuantityKind"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#Resource -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    
+
+
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Agrixel -->
+
+
+    <owl:Class rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Agrixel">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#sfIntersects"/>
+                <owl:someValuesFrom rdf:resource="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropArea"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/saref4agri/isContainedIn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Parcel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Agrixel represents 1m x 1m geospatial semantic unit.</rdfs:comment>
+        <rdfs:label>Agrixel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropArea -->
+
+
+    <owl:Class rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropArea">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#sfIntersects"/>
+                <owl:someValuesFrom rdf:resource="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ParcelUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/saref4agri/isContainedIn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Parcel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Declared crop surface for a specific agricultural campaign.</rdfs:comment>
+        <rdfs:label>Crop Area</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Parcel -->
+
+
+    <owl:Class rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Parcel">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/saref4agri/contains"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Agrixel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/saref4agri/contains"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropArea"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/saref4agri/contains"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ParcelUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/cadastralRecord"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/saref4agri/isContainedIn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://saref.etsi.org/saref4agri/Farm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Registered parcel.</rdfs:comment>
+        <rdfs:label>Parcel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ParcelUnit -->
+
+
+    <owl:Class rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ParcelUnit">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasTime"/>
+                <owl:allValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#inXSDgYear"/>
+                        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+                    </owl:Restriction>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/saref4agri/isContainedIn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Parcel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/identifier"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Declared area within a parcel, characterized by unique identifier and a single land use.</rdfs:comment>
+        <rdfs:label>Parcel Unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/foo#Tree -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/foo#Tree">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+        <rdfs:label>Tree</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://qudt.org/vocab/quantitykind/Count -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/vocab/quantitykind/Count"/>
+    
+
+
+    <!-- http://qudt.org/vocab/quantitykind/Diameter -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/vocab/quantitykind/Diameter"/>
+    
+
+
+    <!-- http://qudt.org/vocab/quantitykind/DimensionlessRatio -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/vocab/quantitykind/DimensionlessRatio"/>
+    
+
+
+    <!-- http://qudt.org/vocab/quantitykind/ForcePerArea -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/vocab/quantitykind/ForcePerArea"/>
+    
+
+
+    <!-- http://qudt.org/vocab/quantitykind/Height -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/vocab/quantitykind/Height"/>
+    
+
+
+    <!-- http://qudt.org/vocab/quantitykind/Length -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/vocab/quantitykind/Length"/>
+    
+
+
+    <!-- http://qudt.org/vocab/quantitykind/LiquidVolume -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/vocab/quantitykind/LiquidVolume"/>
+    
+
+
+    <!-- http://qudt.org/vocab/quantitykind/MassPerArea -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/vocab/quantitykind/MassPerArea"/>
+    
+
+
+    <!-- http://qudt.org/vocab/quantitykind/VolumetricFlux -->
+
+
+    <owl:NamedIndividual rdf:about="http://qudt.org/vocab/quantitykind/VolumetricFlux"/>
+    
+
+
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/AgriculturalLime -->
+
+
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/AgriculturalLime">
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/UserQuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <qudt:hasQuantityKind rdf:resource="http://qudt.org/vocab/quantitykind/DimensionlessRatio"/>
+        <rdfs:comment xml:lang="en">Soil amendment made from crushed limestone or chalk, primarily composed of calcium carbonate or calcium oxide, used to neutralize acidic soils.</rdfs:comment>
+        <rdfs:label xml:lang="en">Agricultural Lime</rdfs:label>
+        <rdfs:label xml:lang="es">Cal activa</rdfs:label>
+        <skos:broader rdf:resource="http://qudt.org/vocab/quantitykind/DimensionlessRatio"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropCoefficient -->
+
+
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropCoefficient">
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/UserQuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <qudt:hasQuantityKind rdf:resource="http://qudt.org/vocab/quantitykind/DimensionlessRatio"/>
+        <rdfs:comment xml:lang="en">Crop Coefficient.</rdfs:comment>
+        <rdfs:label xml:lang="es">Coeficiente de cultivo</rdfs:label>
+        <rdfs:label xml:lang="en">Crop Coefficient</rdfs:label>
+        <skos:broader rdf:resource="http://qudt.org/vocab/quantitykind/DimensionlessRatio"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropEvapotranspiration -->
+
+
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropEvapotranspiration">
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/UserQuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <qudt:hasQuantityKind rdf:resource="http://qudt.org/vocab/quantitykind/VolumetricFlux"/>
+        <rdfs:comment xml:lang="en">Crop Evapotranspiration (ETc).</rdfs:comment>
+        <rdfs:label xml:lang="en">Crop Evapotranspiration</rdfs:label>
+        <rdfs:label xml:lang="es">Evapotranspiración del cultivo</rdfs:label>
+        <skos:broader rdf:resource="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Evapotranspiration"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripEmitterSpacing -->
+
+
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripEmitterSpacing">
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/UserQuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <qudt:hasQuantityKind rdf:resource="http://qudt.org/vocab/quantitykind/Length"/>
+        <rdfs:comment xml:lang="en">Spacing between emitters along a single drip line in a drip irrigation system.</rdfs:comment>
+        <rdfs:label xml:lang="en">Drip Emitter Spacing</rdfs:label>
+        <rdfs:label xml:lang="es">Separación goteros</rdfs:label>
+        <skos:broader rdf:resource="http://qudt.org/vocab/quantitykind/Length"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripLineDiameter -->
+
+
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripLineDiameter">
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/UserQuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <qudt:hasQuantityKind rdf:resource="http://qudt.org/vocab/quantitykind/Diameter"/>
+        <rdfs:comment xml:lang="en">Diameter of a drip line in a drip irrigation system.</rdfs:comment>
+        <rdfs:label xml:lang="es">Diámetro tubería portagotero</rdfs:label>
+        <rdfs:label xml:lang="en">Drip Line Diameter</rdfs:label>
+        <skos:broader rdf:resource="http://qudt.org/vocab/quantitykind/Diameter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripLineDistance -->
+
+
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripLineDistance">
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/UserQuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <qudt:hasQuantityKind rdf:resource="http://qudt.org/vocab/quantitykind/Length"/>
+        <rdfs:comment xml:lang="en">Distance between the drip lines in a drip irrigation system.</rdfs:comment>
+        <rdfs:label xml:lang="es">Distancia ramales portagoteros</rdfs:label>
+        <rdfs:label xml:lang="en">Drip Line Distance</rdfs:label>
+        <skos:broader rdf:resource="http://qudt.org/vocab/quantitykind/Length"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripTapeDistance -->
+
+
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripTapeDistance">
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/UserQuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <qudt:hasQuantityKind rdf:resource="http://qudt.org/vocab/quantitykind/Length"/>
+        <rdfs:comment xml:lang="en">Distance between the drip tapes in a drip irrigation system.</rdfs:comment>
+        <rdfs:label xml:lang="es">Distancia cintas exudación</rdfs:label>
+        <rdfs:label xml:lang="en">Drip Tape Distance</rdfs:label>
+        <skos:broader rdf:resource="http://qudt.org/vocab/quantitykind/Length"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Evapotranspiration -->
+
+
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Evapotranspiration">
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/UserQuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <qudt:hasQuantityKind rdf:resource="http://qudt.org/vocab/quantitykind/VolumetricFlux"/>
+        <rdfs:comment xml:lang="en">Evapotranspiration.</rdfs:comment>
+        <rdfs:label xml:lang="es">Evapotranspiración</rdfs:label>
+        <rdfs:label xml:lang="en">Evapotranspiration</rdfs:label>
+        <skos:broader rdf:resource="http://qudt.org/vocab/quantitykind/VolumetricFlux"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/IrrigationWaterFlux -->
+
+
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/IrrigationWaterFlux">
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/UserQuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <qudt:hasQuantityKind rdf:resource="http://qudt.org/vocab/quantitykind/VolumetricFlux"/>
+        <rdfs:comment xml:lang="en">Irrigation Water Flux.</rdfs:comment>
+        <rdfs:label xml:lang="es">Dosis de riego</rdfs:label>
+        <rdfs:label xml:lang="en">Irrigation Water Flux</rdfs:label>
+        <skos:broader rdf:resource="http://qudt.org/vocab/quantitykind/VolumetricFlux"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/NormalizedDifferenceWaterIndex -->
+
+
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/NormalizedDifferenceWaterIndex">
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/UserQuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <qudt:hasQuantityKind rdf:resource="http://qudt.org/vocab/quantitykind/DimensionlessRatio"/>
+        <rdfs:comment xml:lang="en">Normalized Difference Water Index (NDWI).</rdfs:comment>
+        <rdfs:label xml:lang="en">Normalized Difference Water Index</rdfs:label>
+        <rdfs:label xml:lang="es">Índice Diferencial de Agua Normalizado</rdfs:label>
+        <skos:broader rdf:resource="http://qudt.org/vocab/quantitykind/DimensionlessRatio"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/NumberOfCultivatorPasses -->
+
+
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/NumberOfCultivatorPasses">
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/UserQuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <qudt:hasQuantityKind rdf:resource="http://qudt.org/vocab/quantitykind/Count"/>
+        <rdfs:comment xml:lang="en">The number of times a cultivator passes over a field.</rdfs:comment>
+        <rdfs:label xml:lang="en">Number of Cultivator Passes</rdfs:label>
+        <rdfs:label xml:lang="es">Número de veces que se pasa el cultivador</rdfs:label>
+        <skos:broader rdf:resource="http://qudt.org/vocab/quantitykind/Count"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/PlantDensityProperty -->
+
+
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/PlantDensityProperty">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment xml:lang="en">The number of individual plants, typically expressed in plants per hectare.</rdfs:comment>
+        <rdfs:label xml:lang="es">Densidad de plantación</rdfs:label>
+        <rdfs:label xml:lang="en">Plant Density Property</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/PollinatorPlantRatio -->
+
+
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/PollinatorPlantRatio">
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/UserQuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <qudt:hasQuantityKind rdf:resource="http://qudt.org/vocab/quantitykind/DimensionlessRatio"/>
+        <rdfs:comment xml:lang="en">Percentage of pollinator plants relative to total number of plants.</rdfs:comment>
+        <rdfs:label xml:lang="en">Pollinator Plant Ratio</rdfs:label>
+        <rdfs:label xml:lang="es">Porcentaje de variedad polinizadora</rdfs:label>
+        <skos:broader rdf:resource="http://qudt.org/vocab/quantitykind/DimensionlessRatio"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ProductLossRate -->
+
+
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ProductLossRate">
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/UserQuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <qudt:hasQuantityKind rdf:resource="http://qudt.org/vocab/quantitykind/DimensionlessRatio"/>
+        <rdfs:comment xml:lang="en">Percentage of product lost during a specified time period.</rdfs:comment>
+        <rdfs:label xml:lang="es">Porcentaje de producto perdido</rdfs:label>
+        <rdfs:label xml:lang="en">Product Loss Rate</rdfs:label>
+        <skos:broader rdf:resource="http://qudt.org/vocab/quantitykind/DimensionlessRatio"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ReferenceCropEvapotranspiration -->
+
+
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ReferenceCropEvapotranspiration">
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/UserQuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <qudt:hasQuantityKind rdf:resource="http://qudt.org/vocab/quantitykind/VolumetricFlux"/>
+        <rdfs:comment xml:lang="en">Reference Crop Evapotranspiration (ETo).</rdfs:comment>
+        <rdfs:label xml:lang="es">Evapotranspiración de referencia</rdfs:label>
+        <rdfs:label xml:lang="en">Reference Crop Evapotranspiration</rdfs:label>
+        <skos:broader rdf:resource="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Evapotranspiration"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/RowSpacing -->
+
+
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/RowSpacing">
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/UserQuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <qudt:hasQuantityKind rdf:resource="http://qudt.org/vocab/quantitykind/Length"/>
+        <rdfs:comment xml:lang="en">Row Spacing.</rdfs:comment>
+        <rdfs:label xml:lang="es">Distancia entre líneas</rdfs:label>
+        <rdfs:label xml:lang="en">Row Spacing</rdfs:label>
+        <skos:broader rdf:resource="http://qudt.org/vocab/quantitykind/Length"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SoilMoistureDeficit -->
+
+
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SoilMoistureDeficit">
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/UserQuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <qudt:hasQuantityKind rdf:resource="http://qudt.org/vocab/quantitykind/VolumetricFlux"/>
+        <rdfs:comment xml:lang="en">Soil Moisture Deficit.</rdfs:comment>
+        <rdfs:label xml:lang="es">Déficit hídrico del suelo</rdfs:label>
+        <rdfs:label xml:lang="en">Soil Moisture Deficit</rdfs:label>
+        <skos:broader rdf:resource="http://qudt.org/vocab/quantitykind/VolumetricFlux"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SprinklerRiserHeight -->
+
+
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SprinklerRiserHeight">
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/UserQuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <qudt:hasQuantityKind rdf:resource="http://qudt.org/vocab/quantitykind/Height"/>
+        <rdfs:comment xml:lang="en">The sprinkler riser height in a sprinkler irrigation system.</rdfs:comment>
+        <rdfs:label xml:lang="es">Altura del aspersor</rdfs:label>
+        <rdfs:label xml:lang="en">Sprinkler Riser Height</rdfs:label>
+        <skos:broader rdf:resource="http://qudt.org/vocab/quantitykind/Height"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SprinklerWettedDiameter -->
+
+
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SprinklerWettedDiameter">
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/UserQuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <qudt:hasQuantityKind rdf:resource="http://qudt.org/vocab/quantitykind/Diameter"/>
+        <rdfs:comment xml:lang="en">The wetted diameter of a sprinkler in a sprinkler irrigation system.</rdfs:comment>
+        <rdfs:label xml:lang="es">Diámetro de cobertura que abarca el aspersor</rdfs:label>
+        <rdfs:label xml:lang="en">Sprinkler Wetted Diameter</rdfs:label>
+        <skos:broader rdf:resource="http://qudt.org/vocab/quantitykind/Diameter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/TotalDieselFuel -->
+
+
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/TotalDieselFuel">
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/UserQuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <qudt:hasQuantityKind rdf:resource="http://qudt.org/vocab/quantitykind/LiquidVolume"/>
+        <rdfs:comment xml:lang="en">Total amount of diesel fuel consumed.</rdfs:comment>
+        <rdfs:label xml:lang="es">Consumo gasoil</rdfs:label>
+        <rdfs:label xml:lang="en">Total Diesel Fuel</rdfs:label>
+        <skos:broader rdf:resource="http://qudt.org/vocab/quantitykind/LiquidVolume"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Transpiration -->
+
+
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Transpiration">
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/UserQuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <qudt:hasQuantityKind rdf:resource="http://qudt.org/vocab/quantitykind/VolumetricFlux"/>
+        <rdfs:comment xml:lang="en">Plant Transpiration.</rdfs:comment>
+        <rdfs:label xml:lang="es">Transpiración</rdfs:label>
+        <rdfs:label xml:lang="en">Transpiration</rdfs:label>
+        <skos:broader rdf:resource="http://qudt.org/vocab/quantitykind/VolumetricFlux"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/WaterPotential -->
+
+
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/WaterPotential">
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/UserQuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <qudt:hasQuantityKind rdf:resource="http://qudt.org/vocab/quantitykind/ForcePerArea"/>
+        <rdfs:comment xml:lang="en">Water Potential.</rdfs:comment>
+        <rdfs:label xml:lang="es">Potencial hídrico</rdfs:label>
+        <rdfs:label xml:lang="en">Water Potential</rdfs:label>
+        <skos:broader rdf:resource="http://qudt.org/vocab/quantitykind/ForcePerArea"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/WetBulbDepth -->
+
+
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/WetBulbDepth">
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/UserQuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <qudt:hasQuantityKind rdf:resource="http://qudt.org/vocab/quantitykind/Depth"/>
+        <rdfs:comment xml:lang="en">The vertical depth of wet-bulb in a drip irrigation system.</rdfs:comment>
+        <rdfs:label xml:lang="es">Profundidad del bulbo húmedo</rdfs:label>
+        <rdfs:label xml:lang="en">Wet Bulb Depth</rdfs:label>
+        <skos:broader rdf:resource="http://qudt.org/vocab/quantitykind/Depth"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Yield -->
+
+
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Yield">
+        <rdf:type rdf:resource="http://qudt.org/schema/qudt/UserQuantityKind"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <qudt:hasQuantityKind rdf:resource="http://qudt.org/vocab/quantitykind/MassPerArea"/>
+        <rdfs:comment xml:lang="en">Amount of product obtained per area of cultivated land.</rdfs:comment>
+        <rdfs:label xml:lang="es">Rendimiento</rdfs:label>
+        <rdfs:label xml:lang="en">Yield</rdfs:label>
+        <skos:broader rdf:resource="http://qudt.org/vocab/quantitykind/MassPerArea"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexCropProductValueCode -->
+
+
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexCropProductValueCode"/>
+    
+
+
+    <!-- https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexCropTypeValueCode -->
+
+
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexCropTypeValueCode"/>
+    
+
+
+    <!-- https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFarmingSystemValueCode -->
+
+
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFarmingSystemValueCode"/>
+    
+
+
+    <!-- https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFertilizationMethodValueCode -->
+
+
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFertilizationMethodValueCode"/>
+    
+
+
+    <!-- https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFertilizationTypeValueCode -->
+
+
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFertilizationTypeValueCode"/>
+    
+
+
+    <!-- https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFertilizerMaterialValueCode -->
+
+
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFertilizerMaterialValueCode"/>
+    
+
+
+    <!-- https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexIntendedCropUseValueCode -->
+
+
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexIntendedCropUseValueCode"/>
+    
+
+
+    <!-- https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexIrrigationWaterSourceValueCode -->
+
+
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexIrrigationWaterSourceValueCode"/>
+    
+
+
+    <!-- https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexRootstockValueCode -->
+
+
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexRootstockValueCode"/>
+    
+
+
+    <!-- https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexSoilCoverActivityValueCode -->
+
+
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexSoilCoverActivityValueCode"/>
+    
+
+
+    <!-- https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexSoilCoverTypeValueCode -->
+
+
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexSoilCoverTypeValueCode"/>
+    
+
+
+    <!-- https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexTrellisingSystemValueCode -->
+
+
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexTrellisingSystemValueCode"/>
+    
+
+
+    <!-- https://agrixels.upc.edu/kos/medio-rural-pesca/sigpac/sigpacIncidentValueCode -->
+
+
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/kos/medio-rural-pesca/sigpac/sigpacIncidentValueCode"/>
+    
+
+
+    <!-- https://agrixels.upc.edu/kos/medio-rural-pesca/sigpac/sigpacLandUseValueCode -->
+
+
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/kos/medio-rural-pesca/sigpac/sigpacLandUseValueCode"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

@@ -1,0 +1,729 @@
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/> <http://www.w3.org/2002/07/owl#imports> <http://qudt.org/3.1.1/vocab/quantitykind> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/> <http://www.w3.org/2002/07/owl#imports> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/> <http://www.w3.org/2002/07/owl#imports> <http://w3id.org/glosis/model> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/> <http://www.w3.org/2002/07/owl#imports> <https://def.isotc211.org/ontologies/iso19115/2006/MetadataEntitySetInformation.rdf> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/demeter/agri> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/> <http://purl.org/dc/elements/1.1/contributor> "Cecilio Angulo" .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/> <http://purl.org/dc/elements/1.1/creator> "Joan Van Eeckhout Alsinet" .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/> <http://purl.org/dc/elements/1.1/creator> "Miona Dimic" .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/> <http://purl.org/dc/elements/1.1/license> <https://creativecommons.org/licenses/by-nc-nd/4.0/> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/> <http://purl.org/dc/elements/1.1/title> "Agrixel Ontology" .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/> <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://def.isotc211.org/iso19150/-2/2012/base#associationName
+<http://def.isotc211.org/iso19150/-2/2012/base#associationName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionInfo
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#gYear
+<http://www.w3.org/2001/XMLSchema#gYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.metadata
+<http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.metadata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.metadata> <http://www.w3.org/2000/01/rdf-schema#domain> <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation> .
+<http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.metadata> <http://www.w3.org/2000/01/rdf-schema#range> <http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation#MD_Metadata> .
+<http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.metadata> <http://def.isotc211.org/iso19150/-2/2012/base#associationName> "Metadata" .
+<http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.metadata> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://standards.iso.org/iso/19156/ed-1/en/" .
+<http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.metadata> <http://www.w3.org/2000/01/rdf-schema#label> "metadata" .
+# 
+# http://www.opengis.net/ont/geosparql#ehDisjoint
+<http://www.opengis.net/ont/geosparql#ehDisjoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opengis.net/ont/geosparql#ehDisjoint> <http://www.w3.org/2002/07/owl#equivalentProperty> <http://www.opengis.net/ont/geosparql#rcc8dc> .
+<http://www.opengis.net/ont/geosparql#ehDisjoint> <http://www.w3.org/2002/07/owl#equivalentProperty> <http://www.opengis.net/ont/geosparql#sfDisjoint> .
+<http://www.opengis.net/ont/geosparql#ehDisjoint> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opengis.net/ont/geosparql#SpatialObject> .
+<http://www.opengis.net/ont/geosparql#ehDisjoint> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opengis.net/ont/geosparql#SpatialObject> .
+<http://www.opengis.net/ont/geosparql#ehDisjoint> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://www.opengis.net/ont/geosparql#sfIntersects> .
+<http://www.opengis.net/ont/geosparql#ehDisjoint> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.opengis.net/ont/geosparql#> .
+<http://www.opengis.net/ont/geosparql#ehDisjoint> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/eh-spatial-relations> .
+<http://www.opengis.net/ont/geosparql#ehDisjoint> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/eh-spatial-relations> .
+<http://www.opengis.net/ont/geosparql#ehDisjoint> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://dbpedia.org/resource/DE-9IM> .
+<http://www.opengis.net/ont/geosparql#ehDisjoint> <http://www.w3.org/2004/02/skos/core#definition> "States that the subject SpatialObject is spatially disjoint from the object SpatialObject. DE-9IM: FF*FF****"@en .
+<http://www.opengis.net/ont/geosparql#ehDisjoint> <http://www.w3.org/2004/02/skos/core#prefLabel> "disjoint"@en .
+# 
+# http://www.opengis.net/ont/geosparql#rcc8dc
+<http://www.opengis.net/ont/geosparql#rcc8dc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opengis.net/ont/geosparql#rcc8dc> <http://www.w3.org/2002/07/owl#equivalentProperty> <http://www.opengis.net/ont/geosparql#sfDisjoint> .
+<http://www.opengis.net/ont/geosparql#rcc8dc> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opengis.net/ont/geosparql#SpatialObject> .
+<http://www.opengis.net/ont/geosparql#rcc8dc> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opengis.net/ont/geosparql#SpatialObject> .
+<http://www.opengis.net/ont/geosparql#rcc8dc> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.opengis.net/ont/geosparql#> .
+<http://www.opengis.net/ont/geosparql#rcc8dc> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/rcc8-spatial-relations> .
+<http://www.opengis.net/ont/geosparql#rcc8dc> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/rcc8-spatial-relations> .
+<http://www.opengis.net/ont/geosparql#rcc8dc> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://dbpedia.org/resource/DE-9IM> .
+<http://www.opengis.net/ont/geosparql#rcc8dc> <http://www.w3.org/2004/02/skos/core#definition> "States that the subject SpatialObject is spatially disjoint from the object SpatialObject. DE-9IM: FFTFFTTTT"@en .
+<http://www.opengis.net/ont/geosparql#rcc8dc> <http://www.w3.org/2004/02/skos/core#prefLabel> "disconnected"@en .
+# 
+# http://www.opengis.net/ont/geosparql#sfDisjoint
+<http://www.opengis.net/ont/geosparql#sfDisjoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opengis.net/ont/geosparql#sfDisjoint> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opengis.net/ont/geosparql#SpatialObject> .
+<http://www.opengis.net/ont/geosparql#sfDisjoint> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opengis.net/ont/geosparql#SpatialObject> .
+<http://www.opengis.net/ont/geosparql#sfDisjoint> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://www.opengis.net/ont/geosparql#sfIntersects> .
+<http://www.opengis.net/ont/geosparql#sfDisjoint> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.opengis.net/ont/geosparql#> .
+<http://www.opengis.net/ont/geosparql#sfDisjoint> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/sf-spatial-relations> .
+<http://www.opengis.net/ont/geosparql#sfDisjoint> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/sf-spatial-relations> .
+<http://www.opengis.net/ont/geosparql#sfDisjoint> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://dbpedia.org/resource/DE-9IM> .
+<http://www.opengis.net/ont/geosparql#sfDisjoint> <http://www.w3.org/2004/02/skos/core#definition> "States that the subject SpatialObject is spatially disjoint from the object SpatialObject. DE-9IM: FF*FF****"@en .
+<http://www.opengis.net/ont/geosparql#sfDisjoint> <http://www.w3.org/2004/02/skos/core#prefLabel> "disjoint"@en .
+# 
+# http://www.opengis.net/ont/geosparql#sfIntersects
+<http://www.opengis.net/ont/geosparql#sfIntersects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opengis.net/ont/geosparql#sfIntersects> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opengis.net/ont/geosparql#SpatialObject> .
+<http://www.opengis.net/ont/geosparql#sfIntersects> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opengis.net/ont/geosparql#SpatialObject> .
+<http://www.opengis.net/ont/geosparql#sfIntersects> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.opengis.net/ont/geosparql#> .
+<http://www.opengis.net/ont/geosparql#sfIntersects> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/sf-spatial-relations> .
+<http://www.opengis.net/ont/geosparql#sfIntersects> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/sf-spatial-relations> .
+<http://www.opengis.net/ont/geosparql#sfIntersects> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://dbpedia.org/resource/DE-9IM> .
+<http://www.opengis.net/ont/geosparql#sfIntersects> <http://www.w3.org/2004/02/skos/core#definition> "States that the subject SpatialObject is not spatially disjoint from the object SpatialObject. DE-9IM: T******** ^ *T******* ^ ***T***** ^ ****T****"@en .
+<http://www.opengis.net/ont/geosparql#sfIntersects> <http://www.w3.org/2004/02/skos/core#prefLabel> "intersects"@en .
+# 
+# http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/cadastralRecord
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/cadastralRecord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/cadastralRecord> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://www.w3.org/2000/01/rdf-schema#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/cadastralRecord> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an entity to its corresponding cadastral record."@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/cadastralRecord> <http://www.w3.org/2000/01/rdf-schema#label> "cadastral record" .
+# 
+# https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/hasHarvestTimeInterval
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/hasHarvestTimeInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/hasHarvestTimeInterval> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2006/time#Interval> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/hasHarvestTimeInterval> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a crop to the time interval during which it is harvested."@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/hasHarvestTimeInterval> <http://www.w3.org/2000/01/rdf-schema#label> "has harvest time interval" .
+# 
+# https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/siexConcept
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/siexConcept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/siexConcept> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#unionOf> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#hasValue> <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexTrellisingSystemValueCode> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#hasValue> <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexSoilCoverTypeValueCode> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#hasValue> <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexSoilCoverActivityValueCode> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#hasValue> <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexRootstockValueCode> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#hasValue> <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexIrrigationWaterSourceValueCode> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#hasValue> <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexIntendedCropUseValueCode> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid17 .
+_:genid17 <http://www.w3.org/2002/07/owl#hasValue> <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFertilizerMaterialValueCode> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#hasValue> <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFertilizationTypeValueCode> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid21 .
+_:genid21 <http://www.w3.org/2002/07/owl#hasValue> <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFertilizationMethodValueCode> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid23 .
+_:genid23 <http://www.w3.org/2002/07/owl#hasValue> <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFarmingSystemValueCode> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid25 .
+_:genid25 <http://www.w3.org/2002/07/owl#hasValue> <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexCropTypeValueCode> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid27 .
+_:genid27 <http://www.w3.org/2002/07/owl#hasValue> <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexCropProductValueCode> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/siexConcept> <http://www.w3.org/2000/01/rdf-schema#label> "siex concept" .
+# 
+# https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/sigpacConcept
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/sigpacConcept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/sigpacConcept> <http://www.w3.org/2000/01/rdf-schema#range> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid29 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid31 .
+_:genid31 <http://www.w3.org/2002/07/owl#unionOf> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid33 .
+_:genid33 <http://www.w3.org/2002/07/owl#hasValue> <https://agrixels.upc.edu/kos/medio-rural-pesca/sigpac/sigpacLandUseValueCode> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid35 .
+_:genid35 <http://www.w3.org/2002/07/owl#hasValue> <https://agrixels.upc.edu/kos/medio-rural-pesca/sigpac/sigpacIncidentValueCode> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/sigpacConcept> <http://www.w3.org/2000/01/rdf-schema#label> "sigpac concept" .
+# 
+# https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/upovConcept
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/upovConcept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/upovConcept> <http://www.w3.org/2000/01/rdf-schema#comment> "Link to the corresponding concept defined in the UPOV database."@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/upovConcept> <http://www.w3.org/2000/01/rdf-schema#label> "upov concept" .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/upovConcept> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.upov.int/> .
+# 
+# https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/variety
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/variety> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/variety> <http://www.w3.org/2000/01/rdf-schema#label> "variety" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2006/time#inXSDgYear
+<http://www.w3.org/2006/time#inXSDgYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2006/time#inXSDgYear> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2006/time#Instant> .
+<http://www.w3.org/2006/time#inXSDgYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#gYear> .
+<http://www.w3.org/2006/time#inXSDgYear> <http://www.w3.org/2000/01/rdf-schema#comment> "Position of an instant, expressed using xsd:gYear"@en .
+<http://www.w3.org/2006/time#inXSDgYear> <http://www.w3.org/2000/01/rdf-schema#label> "in XSD g-Year"@en .
+<http://www.w3.org/2006/time#inXSDgYear> <http://www.w3.org/2004/02/skos/core#definition> "Position of an instant, expressed using xsd:gYear"@en .
+# 
+# https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/avgeragePrice
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/avgeragePrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/avgeragePrice> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://foodie-cloud.com/model/foodie#price> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/avgeragePrice> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation depicting average price of a any resource e.g. Product, Treatment etc."@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/avgeragePrice> <http://www.w3.org/2000/01/rdf-schema#label> "avgerage price" .
+# 
+# https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/maximumPrice
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/maximumPrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/maximumPrice> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://foodie-cloud.com/model/foodie#price> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/maximumPrice> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation depicting maximum price of a any resource e.g. Product, Treatment etc"@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/maximumPrice> <http://www.w3.org/2000/01/rdf-schema#label> "maximum price" .
+# 
+# https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/minimumPrice
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/minimumPrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/minimumPrice> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://foodie-cloud.com/model/foodie#price> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/minimumPrice> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation depicting minimum price of a any resource e.g. Product, Treatment etc."@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/minimumPrice> <http://www.w3.org/2000/01/rdf-schema#label> "minimum price" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://qudt.org/schema/qudt/UserQuantityKind
+<http://qudt.org/schema/qudt/UserQuantityKind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#Resource
+# 
+# https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Agrixel
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Agrixel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Agrixel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/FeatureOfInterest> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Agrixel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
+_:genid37 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropArea> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <http://www.opengis.net/ont/geosparql#sfIntersects> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Agrixel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
+_:genid38 <http://www.w3.org/2002/07/owl#onClass> <http://www.opengis.net/ont/geosparql#Geometry> .
+_:genid38 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <http://www.opengis.net/ont/geosparql#hasGeometry> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Agrixel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
+_:genid39 <http://www.w3.org/2002/07/owl#onClass> <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Parcel> .
+_:genid39 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref4agri/isContainedIn> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Agrixel> <http://www.w3.org/2000/01/rdf-schema#comment> "Agrixel represents 1m x 1m geospatial semantic unit."@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Agrixel> <http://www.w3.org/2000/01/rdf-schema#label> "Agrixel" .
+# 
+# https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropArea
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/FeatureOfInterest> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
+_:genid40 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ParcelUnit> .
+_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <http://www.opengis.net/ont/geosparql#sfIntersects> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
+_:genid41 <http://www.w3.org/2002/07/owl#onClass> <http://www.opengis.net/ont/geosparql#Geometry> .
+_:genid41 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <http://www.opengis.net/ont/geosparql#hasGeometry> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
+_:genid42 <http://www.w3.org/2002/07/owl#onClass> <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Parcel> .
+_:genid42 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref4agri/isContainedIn> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropArea> <http://www.w3.org/2000/01/rdf-schema#comment> "Declared crop surface for a specific agricultural campaign."@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropArea> <http://www.w3.org/2000/01/rdf-schema#label> "Crop Area" .
+# 
+# https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Parcel
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Parcel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Parcel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/FeatureOfInterest> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Parcel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
+_:genid43 <http://www.w3.org/2002/07/owl#onClass> <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Agrixel> .
+_:genid43 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref4agri/contains> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Parcel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid44 .
+_:genid44 <http://www.w3.org/2002/07/owl#onClass> <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropArea> .
+_:genid44 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref4agri/contains> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Parcel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid45 .
+_:genid45 <http://www.w3.org/2002/07/owl#onClass> <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ParcelUnit> .
+_:genid45 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref4agri/contains> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Parcel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid46 .
+_:genid46 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+_:genid46 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/cadastralRecord> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Parcel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid47 .
+_:genid47 <http://www.w3.org/2002/07/owl#onClass> <https://saref.etsi.org/saref4agri/Farm> .
+_:genid47 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref4agri/isContainedIn> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Parcel> <http://www.w3.org/2000/01/rdf-schema#comment> "Registered parcel."@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Parcel> <http://www.w3.org/2000/01/rdf-schema#label> "Parcel" .
+# 
+# https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ParcelUnit
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ParcelUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ParcelUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/FeatureOfInterest> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ParcelUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid48 .
+_:genid48 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid49 .
+_:genid49 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#inXSDgYear> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#hasTime> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ParcelUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid50 .
+_:genid50 <http://www.w3.org/2002/07/owl#onClass> <http://www.opengis.net/ont/geosparql#Geometry> .
+_:genid50 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <http://www.opengis.net/ont/geosparql#hasGeometry> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ParcelUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid51 .
+_:genid51 <http://www.w3.org/2002/07/owl#onClass> <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Parcel> .
+_:genid51 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref4agri/isContainedIn> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ParcelUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid52 .
+_:genid52 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/identifier> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ParcelUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "Declared area within a parcel, characterized by unique identifier and a single land use."@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ParcelUnit> <http://www.w3.org/2000/01/rdf-schema#label> "Parcel Unit" .
+# 
+# https://w3id.org/def/foo#Tree
+<https://w3id.org/def/foo#Tree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/foo#Tree> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/FeatureOfInterest> .
+<https://w3id.org/def/foo#Tree> <http://www.w3.org/2000/01/rdf-schema#label> "Tree" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://qudt.org/vocab/quantitykind/Count
+<http://qudt.org/vocab/quantitykind/Count> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/vocab/quantitykind/Diameter
+<http://qudt.org/vocab/quantitykind/Diameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/vocab/quantitykind/DimensionlessRatio
+<http://qudt.org/vocab/quantitykind/DimensionlessRatio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/vocab/quantitykind/ForcePerArea
+<http://qudt.org/vocab/quantitykind/ForcePerArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/vocab/quantitykind/Height
+<http://qudt.org/vocab/quantitykind/Height> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/vocab/quantitykind/Length
+<http://qudt.org/vocab/quantitykind/Length> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/vocab/quantitykind/LiquidVolume
+<http://qudt.org/vocab/quantitykind/LiquidVolume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/vocab/quantitykind/MassPerArea
+<http://qudt.org/vocab/quantitykind/MassPerArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://qudt.org/vocab/quantitykind/VolumetricFlux
+<http://qudt.org/vocab/quantitykind/VolumetricFlux> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/AgriculturalLime
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/AgriculturalLime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/AgriculturalLime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/UserQuantityKind> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/AgriculturalLime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/AgriculturalLime> <http://qudt.org/schema/qudt/hasQuantityKind> <http://qudt.org/vocab/quantitykind/DimensionlessRatio> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/AgriculturalLime> <http://www.w3.org/2000/01/rdf-schema#comment> "Soil amendment made from crushed limestone or chalk, primarily composed of calcium carbonate or calcium oxide, used to neutralize acidic soils."@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/AgriculturalLime> <http://www.w3.org/2000/01/rdf-schema#label> "Agricultural Lime"@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/AgriculturalLime> <http://www.w3.org/2000/01/rdf-schema#label> "Cal activa"@es .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/AgriculturalLime> <http://www.w3.org/2004/02/skos/core#broader> <http://qudt.org/vocab/quantitykind/DimensionlessRatio> .
+# 
+# https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropCoefficient
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropCoefficient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropCoefficient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/UserQuantityKind> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropCoefficient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropCoefficient> <http://qudt.org/schema/qudt/hasQuantityKind> <http://qudt.org/vocab/quantitykind/DimensionlessRatio> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropCoefficient> <http://www.w3.org/2000/01/rdf-schema#comment> "Crop Coefficient."@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropCoefficient> <http://www.w3.org/2000/01/rdf-schema#label> "Coeficiente de cultivo"@es .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropCoefficient> <http://www.w3.org/2000/01/rdf-schema#label> "Crop Coefficient"@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropCoefficient> <http://www.w3.org/2004/02/skos/core#broader> <http://qudt.org/vocab/quantitykind/DimensionlessRatio> .
+# 
+# https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropEvapotranspiration
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropEvapotranspiration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropEvapotranspiration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/UserQuantityKind> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropEvapotranspiration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropEvapotranspiration> <http://qudt.org/schema/qudt/hasQuantityKind> <http://qudt.org/vocab/quantitykind/VolumetricFlux> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropEvapotranspiration> <http://www.w3.org/2000/01/rdf-schema#comment> "Crop Evapotranspiration (ETc)."@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropEvapotranspiration> <http://www.w3.org/2000/01/rdf-schema#label> "Crop Evapotranspiration"@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropEvapotranspiration> <http://www.w3.org/2000/01/rdf-schema#label> "Evapotranspiración del cultivo"@es .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropEvapotranspiration> <http://www.w3.org/2004/02/skos/core#broader> <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Evapotranspiration> .
+# 
+# https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripEmitterSpacing
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripEmitterSpacing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripEmitterSpacing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/UserQuantityKind> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripEmitterSpacing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripEmitterSpacing> <http://qudt.org/schema/qudt/hasQuantityKind> <http://qudt.org/vocab/quantitykind/Length> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripEmitterSpacing> <http://www.w3.org/2000/01/rdf-schema#comment> "Spacing between emitters along a single drip line in a drip irrigation system."@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripEmitterSpacing> <http://www.w3.org/2000/01/rdf-schema#label> "Drip Emitter Spacing"@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripEmitterSpacing> <http://www.w3.org/2000/01/rdf-schema#label> "Separación goteros"@es .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripEmitterSpacing> <http://www.w3.org/2004/02/skos/core#broader> <http://qudt.org/vocab/quantitykind/Length> .
+# 
+# https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripLineDiameter
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripLineDiameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripLineDiameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/UserQuantityKind> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripLineDiameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripLineDiameter> <http://qudt.org/schema/qudt/hasQuantityKind> <http://qudt.org/vocab/quantitykind/Diameter> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripLineDiameter> <http://www.w3.org/2000/01/rdf-schema#comment> "Diameter of a drip line in a drip irrigation system."@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripLineDiameter> <http://www.w3.org/2000/01/rdf-schema#label> "Diámetro tubería portagotero"@es .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripLineDiameter> <http://www.w3.org/2000/01/rdf-schema#label> "Drip Line Diameter"@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripLineDiameter> <http://www.w3.org/2004/02/skos/core#broader> <http://qudt.org/vocab/quantitykind/Diameter> .
+# 
+# https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripLineDistance
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripLineDistance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripLineDistance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/UserQuantityKind> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripLineDistance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripLineDistance> <http://qudt.org/schema/qudt/hasQuantityKind> <http://qudt.org/vocab/quantitykind/Length> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripLineDistance> <http://www.w3.org/2000/01/rdf-schema#comment> "Distance between the drip lines in a drip irrigation system."@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripLineDistance> <http://www.w3.org/2000/01/rdf-schema#label> "Distancia ramales portagoteros"@es .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripLineDistance> <http://www.w3.org/2000/01/rdf-schema#label> "Drip Line Distance"@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripLineDistance> <http://www.w3.org/2004/02/skos/core#broader> <http://qudt.org/vocab/quantitykind/Length> .
+# 
+# https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripTapeDistance
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripTapeDistance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripTapeDistance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/UserQuantityKind> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripTapeDistance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripTapeDistance> <http://qudt.org/schema/qudt/hasQuantityKind> <http://qudt.org/vocab/quantitykind/Length> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripTapeDistance> <http://www.w3.org/2000/01/rdf-schema#comment> "Distance between the drip tapes in a drip irrigation system."@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripTapeDistance> <http://www.w3.org/2000/01/rdf-schema#label> "Distancia cintas exudación"@es .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripTapeDistance> <http://www.w3.org/2000/01/rdf-schema#label> "Drip Tape Distance"@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripTapeDistance> <http://www.w3.org/2004/02/skos/core#broader> <http://qudt.org/vocab/quantitykind/Length> .
+# 
+# https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Evapotranspiration
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Evapotranspiration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Evapotranspiration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/UserQuantityKind> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Evapotranspiration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Evapotranspiration> <http://qudt.org/schema/qudt/hasQuantityKind> <http://qudt.org/vocab/quantitykind/VolumetricFlux> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Evapotranspiration> <http://www.w3.org/2000/01/rdf-schema#comment> "Evapotranspiration."@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Evapotranspiration> <http://www.w3.org/2000/01/rdf-schema#label> "Evapotranspiración"@es .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Evapotranspiration> <http://www.w3.org/2000/01/rdf-schema#label> "Evapotranspiration"@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Evapotranspiration> <http://www.w3.org/2004/02/skos/core#broader> <http://qudt.org/vocab/quantitykind/VolumetricFlux> .
+# 
+# https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/IrrigationWaterFlux
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/IrrigationWaterFlux> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/IrrigationWaterFlux> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/UserQuantityKind> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/IrrigationWaterFlux> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/IrrigationWaterFlux> <http://qudt.org/schema/qudt/hasQuantityKind> <http://qudt.org/vocab/quantitykind/VolumetricFlux> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/IrrigationWaterFlux> <http://www.w3.org/2000/01/rdf-schema#comment> "Irrigation Water Flux."@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/IrrigationWaterFlux> <http://www.w3.org/2000/01/rdf-schema#label> "Dosis de riego"@es .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/IrrigationWaterFlux> <http://www.w3.org/2000/01/rdf-schema#label> "Irrigation Water Flux"@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/IrrigationWaterFlux> <http://www.w3.org/2004/02/skos/core#broader> <http://qudt.org/vocab/quantitykind/VolumetricFlux> .
+# 
+# https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/NormalizedDifferenceWaterIndex
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/NormalizedDifferenceWaterIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/NormalizedDifferenceWaterIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/UserQuantityKind> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/NormalizedDifferenceWaterIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/NormalizedDifferenceWaterIndex> <http://qudt.org/schema/qudt/hasQuantityKind> <http://qudt.org/vocab/quantitykind/DimensionlessRatio> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/NormalizedDifferenceWaterIndex> <http://www.w3.org/2000/01/rdf-schema#comment> "Normalized Difference Water Index (NDWI)."@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/NormalizedDifferenceWaterIndex> <http://www.w3.org/2000/01/rdf-schema#label> "Normalized Difference Water Index"@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/NormalizedDifferenceWaterIndex> <http://www.w3.org/2000/01/rdf-schema#label> "Índice Diferencial de Agua Normalizado"@es .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/NormalizedDifferenceWaterIndex> <http://www.w3.org/2004/02/skos/core#broader> <http://qudt.org/vocab/quantitykind/DimensionlessRatio> .
+# 
+# https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/NumberOfCultivatorPasses
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/NumberOfCultivatorPasses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/NumberOfCultivatorPasses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/UserQuantityKind> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/NumberOfCultivatorPasses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/NumberOfCultivatorPasses> <http://qudt.org/schema/qudt/hasQuantityKind> <http://qudt.org/vocab/quantitykind/Count> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/NumberOfCultivatorPasses> <http://www.w3.org/2000/01/rdf-schema#comment> "The number of times a cultivator passes over a field."@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/NumberOfCultivatorPasses> <http://www.w3.org/2000/01/rdf-schema#label> "Number of Cultivator Passes"@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/NumberOfCultivatorPasses> <http://www.w3.org/2000/01/rdf-schema#label> "Número de veces que se pasa el cultivador"@es .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/NumberOfCultivatorPasses> <http://www.w3.org/2004/02/skos/core#broader> <http://qudt.org/vocab/quantitykind/Count> .
+# 
+# https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/PlantDensityProperty
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/PlantDensityProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/PlantDensityProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/PlantDensityProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "The number of individual plants, typically expressed in plants per hectare."@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/PlantDensityProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Densidad de plantación"@es .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/PlantDensityProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Plant Density Property"@en .
+# 
+# https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/PollinatorPlantRatio
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/PollinatorPlantRatio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/PollinatorPlantRatio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/UserQuantityKind> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/PollinatorPlantRatio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/PollinatorPlantRatio> <http://qudt.org/schema/qudt/hasQuantityKind> <http://qudt.org/vocab/quantitykind/DimensionlessRatio> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/PollinatorPlantRatio> <http://www.w3.org/2000/01/rdf-schema#comment> "Percentage of pollinator plants relative to total number of plants."@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/PollinatorPlantRatio> <http://www.w3.org/2000/01/rdf-schema#label> "Pollinator Plant Ratio"@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/PollinatorPlantRatio> <http://www.w3.org/2000/01/rdf-schema#label> "Porcentaje de variedad polinizadora"@es .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/PollinatorPlantRatio> <http://www.w3.org/2004/02/skos/core#broader> <http://qudt.org/vocab/quantitykind/DimensionlessRatio> .
+# 
+# https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ProductLossRate
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ProductLossRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ProductLossRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/UserQuantityKind> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ProductLossRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ProductLossRate> <http://qudt.org/schema/qudt/hasQuantityKind> <http://qudt.org/vocab/quantitykind/DimensionlessRatio> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ProductLossRate> <http://www.w3.org/2000/01/rdf-schema#comment> "Percentage of product lost during a specified time period."@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ProductLossRate> <http://www.w3.org/2000/01/rdf-schema#label> "Porcentaje de producto perdido"@es .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ProductLossRate> <http://www.w3.org/2000/01/rdf-schema#label> "Product Loss Rate"@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ProductLossRate> <http://www.w3.org/2004/02/skos/core#broader> <http://qudt.org/vocab/quantitykind/DimensionlessRatio> .
+# 
+# https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ReferenceCropEvapotranspiration
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ReferenceCropEvapotranspiration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ReferenceCropEvapotranspiration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/UserQuantityKind> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ReferenceCropEvapotranspiration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ReferenceCropEvapotranspiration> <http://qudt.org/schema/qudt/hasQuantityKind> <http://qudt.org/vocab/quantitykind/VolumetricFlux> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ReferenceCropEvapotranspiration> <http://www.w3.org/2000/01/rdf-schema#comment> "Reference Crop Evapotranspiration (ETo)."@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ReferenceCropEvapotranspiration> <http://www.w3.org/2000/01/rdf-schema#label> "Evapotranspiración de referencia"@es .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ReferenceCropEvapotranspiration> <http://www.w3.org/2000/01/rdf-schema#label> "Reference Crop Evapotranspiration"@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ReferenceCropEvapotranspiration> <http://www.w3.org/2004/02/skos/core#broader> <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Evapotranspiration> .
+# 
+# https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/RowSpacing
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/RowSpacing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/RowSpacing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/UserQuantityKind> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/RowSpacing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/RowSpacing> <http://qudt.org/schema/qudt/hasQuantityKind> <http://qudt.org/vocab/quantitykind/Length> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/RowSpacing> <http://www.w3.org/2000/01/rdf-schema#comment> "Row Spacing."@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/RowSpacing> <http://www.w3.org/2000/01/rdf-schema#label> "Distancia entre líneas"@es .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/RowSpacing> <http://www.w3.org/2000/01/rdf-schema#label> "Row Spacing"@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/RowSpacing> <http://www.w3.org/2004/02/skos/core#broader> <http://qudt.org/vocab/quantitykind/Length> .
+# 
+# https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SoilMoistureDeficit
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SoilMoistureDeficit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SoilMoistureDeficit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/UserQuantityKind> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SoilMoistureDeficit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SoilMoistureDeficit> <http://qudt.org/schema/qudt/hasQuantityKind> <http://qudt.org/vocab/quantitykind/VolumetricFlux> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SoilMoistureDeficit> <http://www.w3.org/2000/01/rdf-schema#comment> "Soil Moisture Deficit."@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SoilMoistureDeficit> <http://www.w3.org/2000/01/rdf-schema#label> "Déficit hídrico del suelo"@es .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SoilMoistureDeficit> <http://www.w3.org/2000/01/rdf-schema#label> "Soil Moisture Deficit"@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SoilMoistureDeficit> <http://www.w3.org/2004/02/skos/core#broader> <http://qudt.org/vocab/quantitykind/VolumetricFlux> .
+# 
+# https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SprinklerRiserHeight
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SprinklerRiserHeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SprinklerRiserHeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/UserQuantityKind> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SprinklerRiserHeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SprinklerRiserHeight> <http://qudt.org/schema/qudt/hasQuantityKind> <http://qudt.org/vocab/quantitykind/Height> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SprinklerRiserHeight> <http://www.w3.org/2000/01/rdf-schema#comment> "The sprinkler riser height in a sprinkler irrigation system."@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SprinklerRiserHeight> <http://www.w3.org/2000/01/rdf-schema#label> "Altura del aspersor"@es .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SprinklerRiserHeight> <http://www.w3.org/2000/01/rdf-schema#label> "Sprinkler Riser Height"@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SprinklerRiserHeight> <http://www.w3.org/2004/02/skos/core#broader> <http://qudt.org/vocab/quantitykind/Height> .
+# 
+# https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SprinklerWettedDiameter
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SprinklerWettedDiameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SprinklerWettedDiameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/UserQuantityKind> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SprinklerWettedDiameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SprinklerWettedDiameter> <http://qudt.org/schema/qudt/hasQuantityKind> <http://qudt.org/vocab/quantitykind/Diameter> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SprinklerWettedDiameter> <http://www.w3.org/2000/01/rdf-schema#comment> "The wetted diameter of a sprinkler in a sprinkler irrigation system."@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SprinklerWettedDiameter> <http://www.w3.org/2000/01/rdf-schema#label> "Diámetro de cobertura que abarca el aspersor"@es .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SprinklerWettedDiameter> <http://www.w3.org/2000/01/rdf-schema#label> "Sprinkler Wetted Diameter"@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SprinklerWettedDiameter> <http://www.w3.org/2004/02/skos/core#broader> <http://qudt.org/vocab/quantitykind/Diameter> .
+# 
+# https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/TotalDieselFuel
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/TotalDieselFuel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/TotalDieselFuel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/UserQuantityKind> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/TotalDieselFuel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/TotalDieselFuel> <http://qudt.org/schema/qudt/hasQuantityKind> <http://qudt.org/vocab/quantitykind/LiquidVolume> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/TotalDieselFuel> <http://www.w3.org/2000/01/rdf-schema#comment> "Total amount of diesel fuel consumed."@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/TotalDieselFuel> <http://www.w3.org/2000/01/rdf-schema#label> "Consumo gasoil"@es .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/TotalDieselFuel> <http://www.w3.org/2000/01/rdf-schema#label> "Total Diesel Fuel"@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/TotalDieselFuel> <http://www.w3.org/2004/02/skos/core#broader> <http://qudt.org/vocab/quantitykind/LiquidVolume> .
+# 
+# https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Transpiration
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Transpiration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Transpiration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/UserQuantityKind> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Transpiration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Transpiration> <http://qudt.org/schema/qudt/hasQuantityKind> <http://qudt.org/vocab/quantitykind/VolumetricFlux> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Transpiration> <http://www.w3.org/2000/01/rdf-schema#comment> "Plant Transpiration."@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Transpiration> <http://www.w3.org/2000/01/rdf-schema#label> "Transpiración"@es .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Transpiration> <http://www.w3.org/2000/01/rdf-schema#label> "Transpiration"@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Transpiration> <http://www.w3.org/2004/02/skos/core#broader> <http://qudt.org/vocab/quantitykind/VolumetricFlux> .
+# 
+# https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/WaterPotential
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/WaterPotential> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/WaterPotential> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/UserQuantityKind> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/WaterPotential> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/WaterPotential> <http://qudt.org/schema/qudt/hasQuantityKind> <http://qudt.org/vocab/quantitykind/ForcePerArea> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/WaterPotential> <http://www.w3.org/2000/01/rdf-schema#comment> "Water Potential."@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/WaterPotential> <http://www.w3.org/2000/01/rdf-schema#label> "Potencial hídrico"@es .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/WaterPotential> <http://www.w3.org/2000/01/rdf-schema#label> "Water Potential"@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/WaterPotential> <http://www.w3.org/2004/02/skos/core#broader> <http://qudt.org/vocab/quantitykind/ForcePerArea> .
+# 
+# https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/WetBulbDepth
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/WetBulbDepth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/WetBulbDepth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/UserQuantityKind> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/WetBulbDepth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/WetBulbDepth> <http://qudt.org/schema/qudt/hasQuantityKind> <http://qudt.org/vocab/quantitykind/Depth> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/WetBulbDepth> <http://www.w3.org/2000/01/rdf-schema#comment> "The vertical depth of wet-bulb in a drip irrigation system."@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/WetBulbDepth> <http://www.w3.org/2000/01/rdf-schema#label> "Profundidad del bulbo húmedo"@es .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/WetBulbDepth> <http://www.w3.org/2000/01/rdf-schema#label> "Wet Bulb Depth"@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/WetBulbDepth> <http://www.w3.org/2004/02/skos/core#broader> <http://qudt.org/vocab/quantitykind/Depth> .
+# 
+# https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Yield
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Yield> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Yield> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://qudt.org/schema/qudt/UserQuantityKind> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Yield> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Yield> <http://qudt.org/schema/qudt/hasQuantityKind> <http://qudt.org/vocab/quantitykind/MassPerArea> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Yield> <http://www.w3.org/2000/01/rdf-schema#comment> "Amount of product obtained per area of cultivated land."@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Yield> <http://www.w3.org/2000/01/rdf-schema#label> "Rendimiento"@es .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Yield> <http://www.w3.org/2000/01/rdf-schema#label> "Yield"@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Yield> <http://www.w3.org/2004/02/skos/core#broader> <http://qudt.org/vocab/quantitykind/MassPerArea> .
+# 
+# https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexCropProductValueCode
+<https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexCropProductValueCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexCropTypeValueCode
+<https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexCropTypeValueCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFarmingSystemValueCode
+<https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFarmingSystemValueCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFertilizationMethodValueCode
+<https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFertilizationMethodValueCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFertilizationTypeValueCode
+<https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFertilizationTypeValueCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFertilizerMaterialValueCode
+<https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFertilizerMaterialValueCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexIntendedCropUseValueCode
+<https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexIntendedCropUseValueCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexIrrigationWaterSourceValueCode
+<https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexIrrigationWaterSourceValueCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexRootstockValueCode
+<https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexRootstockValueCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexSoilCoverActivityValueCode
+<https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexSoilCoverActivityValueCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexSoilCoverTypeValueCode
+<https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexSoilCoverTypeValueCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexTrellisingSystemValueCode
+<https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexTrellisingSystemValueCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://agrixels.upc.edu/kos/medio-rural-pesca/sigpac/sigpacIncidentValueCode
+<https://agrixels.upc.edu/kos/medio-rural-pesca/sigpac/sigpacIncidentValueCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://agrixels.upc.edu/kos/medio-rural-pesca/sigpac/sigpacLandUseValueCode
+<https://agrixels.upc.edu/kos/medio-rural-pesca/sigpac/sigpacLandUseValueCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
