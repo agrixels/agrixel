@@ -249,11 +249,11 @@ xsd:gYear rdf:type rdfs:Datatype .
                                          <http://www.w3.org/2004/02/skos/core#definition> "Position of an instant, expressed using xsd:gYear"@en .
 
 
-###  https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/avgeragePrice
-:avgeragePrice rdf:type owl:DatatypeProperty ;
+###  https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/averagePrice
+:averagePrice rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf <http://foodie-cloud.com/model/foodie#price> ;
                rdfs:comment "Relation depicting average price of a any resource e.g. Product, Treatment etc."@en ;
-               rdfs:label "avgerage price" .
+               rdfs:label "average price" .
 
 
 ###  https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/maximumPrice

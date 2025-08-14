@@ -1252,14 +1252,14 @@
     "@id" : "http://qudt.org/vocab/quantitykind/MassPerArea"
   } ]
 }, {
-  "@id" : "https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/avgeragePrice",
+  "@id" : "https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/averagePrice",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Relation depicting average price of a any resource e.g. Product, Treatment etc."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "avgerage price"
+    "@value" : "average price"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://foodie-cloud.com/model/foodie#price"

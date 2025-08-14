@@ -392,13 +392,13 @@
     
 
 
-    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/avgeragePrice -->
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/averagePrice -->
 
 
-    <owl:DatatypeProperty rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/avgeragePrice">
+    <owl:DatatypeProperty rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/averagePrice">
         <rdfs:subPropertyOf rdf:resource="http://foodie-cloud.com/model/foodie#price"/>
         <rdfs:comment xml:lang="en">Relation depicting average price of a any resource e.g. Product, Treatment etc.</rdfs:comment>
-        <rdfs:label>avgerage price</rdfs:label>
+        <rdfs:label>average price</rdfs:label>
     </owl:DatatypeProperty>
     
 

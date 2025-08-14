@@ -276,11 +276,11 @@ _:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://www.w3.org/2006/time#inXSDgYear> <http://www.w3.org/2000/01/rdf-schema#label> "in XSD g-Year"@en .
 <http://www.w3.org/2006/time#inXSDgYear> <http://www.w3.org/2004/02/skos/core#definition> "Position of an instant, expressed using xsd:gYear"@en .
 # 
-# https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/avgeragePrice
-<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/avgeragePrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/avgeragePrice> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://foodie-cloud.com/model/foodie#price> .
-<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/avgeragePrice> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation depicting average price of a any resource e.g. Product, Treatment etc."@en .
-<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/avgeragePrice> <http://www.w3.org/2000/01/rdf-schema#label> "avgerage price" .
+# https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/average Price
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/averagePrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/averagePrice> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://foodie-cloud.com/model/foodie#price> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/averagePrice> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation depicting average price of a any resource e.g. Product, Treatment etc."@en .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/averagePrice> <http://www.w3.org/2000/01/rdf-schema#label> "average price" .
 # 
 # https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/maximumPrice
 <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/maximumPrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
