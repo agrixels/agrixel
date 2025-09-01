@@ -22,6 +22,7 @@
 @prefix iso19150-2: <http://def.isotc211.org/iso19150/-2/2012/base#> .
 @prefix iso19156_OB: <http://def.isotc211.org/iso19156/2011/Observation#> .
 @prefix iso19115_503: <http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation#> .
+@prefix iso19115_629: <http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation#> .
 @prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
 @base <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/> .
 
@@ -30,6 +31,7 @@
                                                                        <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ,
                                                                        <http://w3id.org/glosis/model> ,
                                                                        <https://def.isotc211.org/ontologies/iso19115/2006/MetadataEntitySetInformation.rdf> ,
+                                                                       <https://def.isotc211.org/ontologies/iso19115/2006/CitationAndResponsiblePartyInformation.rdf>,
                                                                        <https://w3id.org/demeter/agri> ;
                                                            dc:contributor "Cecilio Angulo" ;
                                                            dc:creator "Miona Dimic" ,
