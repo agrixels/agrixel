@@ -24,18 +24,19 @@
 @prefix iso19115_503: <http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation#> .
 @prefix iso19115_629: <http://def.isotc211.org/iso19115/2006/CitationAndResponsiblePartyInformation#> .
 @prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
+@prefix fiware-agrifood: <https://smartdatamodels.org/dataModel.Agrifood/> .
 @base <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/> .
 
 <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/> rdf:type owl:Ontology ;
                                                            owl:imports <http://qudt.org/3.1.1/vocab/quantitykind> ,
                                                                        <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ,
                                                                        <http://w3id.org/glosis/model> ,
+                                                                       <https://def.isotc211.org/ontologies/iso19115/2006/CitationAndResponsiblePartyInformation.rdf> ,
                                                                        <https://def.isotc211.org/ontologies/iso19115/2006/MetadataEntitySetInformation.rdf> ,
-                                                                       <https://def.isotc211.org/ontologies/iso19115/2006/CitationAndResponsiblePartyInformation.rdf>,
                                                                        <https://w3id.org/demeter/agri> ;
                                                            dc:contributor "Cecilio Angulo" ;
-                                                           dc:creator "Miona Dimic" ,
-                                                                      "Joan Van Eeckhout Alsinet" ;
+                                                           dc:creator "Joan Van Eeckhout Alsinet" ,
+                                                                      "Miona Dimic" ;
                                                            dc:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
                                                            dc:title "Agrixel Ontology" ;
                                                            owl:versionInfo "1.0.0" ;
@@ -260,9 +261,15 @@ time:inXSDgYear rdf:type owl:DatatypeProperty ;
 
 ###  https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/averagePrice
 agrixel:averagePrice rdf:type owl:DatatypeProperty ;
-                      rdfs:subPropertyOf foodie:price ;
-                      rdfs:comment "Relation depicting average price of a any resource e.g. Product, Treatment etc."@en ;
-                      rdfs:label "average price" .
+                     rdfs:subPropertyOf foodie:price ;
+                     rdfs:comment "Relation depicting average price of a any resource e.g. Product, Treatment etc."@en ;
+                     rdfs:label "average price" .
+
+
+###  https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/cropRole
+agrixel:cropRole rdf:type owl:DatatypeProperty ;
+                 rdfs:comment "Indicates if a crop is primary (main) or rotational (secondary) in the crop area."@en ;
+                 rdfs:label "crop role" .
 
 
 ###  https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/maximumPrice
@@ -310,6 +317,17 @@ agrixel:CropArea rdf:type owl:Class ;
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty geo:sfIntersects ;
                                    owl:someValuesFrom agrixel:ParcelUnit
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty time:hasTime ;
+                                   owl:allValuesFrom [ rdf:type owl:Restriction ;
+                                                       owl:onProperty time:inXSDgYear ;
+                                                       owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                     ]
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty fiware-agrifood:hasAgriCrop ;
+                                   owl:minCardinality "1"^^xsd:nonNegativeInteger
                                  ] ,
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty geo:hasGeometry ;
@@ -483,6 +501,14 @@ agrixel:Evapotranspiration rdf:type owl:NamedIndividual ,
                                       "Evapotranspiration"@en .
 
 
+###  https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/FarmingSystemType
+agrixel:FarmingSystemType rdf:type owl:NamedIndividual ,
+                                   sosa:ObservableProperty ;
+                          rdfs:comment "Farming System Type."@en ;
+                          rdfs:label "Farming System Type"@en ,
+                                     "Tipo de sistema de explotación"@es .
+
+
 ###  https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/IrrigationWaterFlux
 agrixel:IrrigationWaterFlux rdf:type owl:NamedIndividual ,
                                      qudt:UserQuantityKind ,
@@ -492,6 +518,22 @@ agrixel:IrrigationWaterFlux rdf:type owl:NamedIndividual ,
                             rdfs:comment "Irrigation Water Flux."@en ;
                             rdfs:label "Dosis de riego"@es ,
                                        "Irrigation Water Flux"@en .
+
+
+###  https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/IrrigationWaterSource
+agrixel:IrrigationWaterSource rdf:type owl:NamedIndividual ,
+                                       sosa:ObservableProperty ;
+                              rdfs:comment "Irrigation Water Source."@en ;
+                              rdfs:label "Irrigation Water Source"@en ,
+                                         "Procedencia del agua de riego"@es .
+
+
+###  https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/LandUse
+agrixel:LandUse rdf:type owl:NamedIndividual ,
+                         sosa:ObservableProperty ;
+                rdfs:comment "Land Use."@en ;
+                rdfs:label "Land Use"@en ,
+                           "Uso agrícola"@es .
 
 
 ###  https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/NormalizedDifferenceWaterIndex
@@ -516,12 +558,12 @@ agrixel:NumberOfCultivatorPasses rdf:type owl:NamedIndividual ,
                                             "Número de veces que se pasa el cultivador"@es .
 
 
-###  https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/PlantDensityProperty
-agrixel:PlantDensityProperty rdf:type owl:NamedIndividual ,
-                                      sosa:ObservableProperty ;
-                             rdfs:comment "The number of individual plants, typically expressed in plants per hectare."@en ;
-                             rdfs:label "Densidad de plantación"@es ,
-                                        "Plant Density Property"@en .
+###  https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/PlantDensity
+agrixel:PlantDensity rdf:type owl:NamedIndividual ,
+                              sosa:ObservableProperty ;
+                     rdfs:comment "The number of individual plants, typically expressed in plants per hectare."@en ;
+                     rdfs:label "Densidad de plantación"@es ,
+                                "Plant Density"@en .
 
 
 ###  https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/PollinatorPlantRatio
@@ -557,6 +599,14 @@ agrixel:ReferenceCropEvapotranspiration rdf:type owl:NamedIndividual ,
                                                    "Reference Crop Evapotranspiration"@en .
 
 
+###  https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/RootstockType
+agrixel:RootstockType rdf:type owl:NamedIndividual ,
+                               sosa:ObservableProperty ;
+                      rdfs:comment "Rootstock Type."@en ;
+                      rdfs:label "Rootstock Type"@en ,
+                                 "Tipo de portainjerto"@es .
+
+
 ###  https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/RowSpacing
 agrixel:RowSpacing rdf:type owl:NamedIndividual ,
                             qudt:UserQuantityKind ,
@@ -566,6 +616,22 @@ agrixel:RowSpacing rdf:type owl:NamedIndividual ,
                    rdfs:comment "Row Spacing."@en ;
                    rdfs:label "Distancia entre líneas"@es ,
                               "Row Spacing"@en .
+
+
+###  https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SoilCoverActivity
+agrixel:SoilCoverActivity rdf:type owl:NamedIndividual ,
+                                   sosa:ObservableProperty ;
+                          rdfs:comment "Type of activity applied to soil cover."@en ;
+                          rdfs:label "Actividad sobre la cubierta"@es ,
+                                     "Soil Cover Activity"@en .
+
+
+###  https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SoilCoverType
+agrixel:SoilCoverType rdf:type owl:NamedIndividual ,
+                               sosa:ObservableProperty ;
+                      rdfs:comment "Soil Cover Type."@en ;
+                      rdfs:label "Soil Cover Type"@en ,
+                                 "Tipo de cobertura del suelo"@es .
 
 
 ###  https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SoilMoistureDeficit
@@ -621,6 +687,14 @@ agrixel:Transpiration rdf:type owl:NamedIndividual ,
                       rdfs:comment "Plant Transpiration."@en ;
                       rdfs:label "Transpiración"@es ,
                                  "Transpiration"@en .
+
+
+###  https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/TrellisingSystemType
+agrixel:TrellisingSystemType rdf:type owl:NamedIndividual ,
+                                      sosa:ObservableProperty ;
+                             rdfs:comment "Trellising System Type."@en ;
+                             rdfs:label "Tipo de sistema de conducción"@es ,
+                                        "Trellising System Type"@en .
 
 
 ###  https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/WaterPotential
