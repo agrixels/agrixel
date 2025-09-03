@@ -204,6 +204,35 @@
 }, {
   "@id" : "_:genid41",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid42"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#hasTime"
+  } ]
+}, {
+  "@id" : "_:genid42",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#inXSDgYear"
+  } ]
+}, {
+  "@id" : "_:genid43",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://smartdatamodels.org/dataModel.Agrifood/hasAgriCrop"
+  } ]
+}, {
+  "@id" : "_:genid44",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "http://www.opengis.net/ont/geosparql#Geometry"
   } ],
@@ -215,7 +244,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid42",
+  "@id" : "_:genid45",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Parcel"
@@ -228,7 +257,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid43",
+  "@id" : "_:genid46",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -241,7 +270,7 @@
     "@id" : "https://saref.etsi.org/saref4agri/contains"
   } ]
 }, {
-  "@id" : "_:genid44",
+  "@id" : "_:genid47",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -254,7 +283,7 @@
     "@id" : "https://saref.etsi.org/saref4agri/contains"
   } ]
 }, {
-  "@id" : "_:genid45",
+  "@id" : "_:genid48",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -267,7 +296,7 @@
     "@id" : "https://saref.etsi.org/saref4agri/contains"
   } ]
 }, {
-  "@id" : "_:genid46",
+  "@id" : "_:genid49",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Resource"
@@ -278,38 +307,6 @@
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid47",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://saref.etsi.org/saref4agri/Farm"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://saref.etsi.org/saref4agri/isContainedIn"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid48",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "_:genid49"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/2006/time#hasTime"
-  } ]
-}, {
-  "@id" : "_:genid49",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#cardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/2006/time#inXSDgYear"
   } ]
 }, {
   "@id" : "_:genid5",
@@ -324,6 +321,38 @@
   "@id" : "_:genid50",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://saref.etsi.org/saref4agri/Farm"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/saref4agri/isContainedIn"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid51",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid52"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#hasTime"
+  } ]
+}, {
+  "@id" : "_:genid52",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#inXSDgYear"
+  } ]
+}, {
+  "@id" : "_:genid53",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "http://www.opengis.net/ont/geosparql#Geometry"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
@@ -334,7 +363,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid51",
+  "@id" : "_:genid54",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Parcel"
@@ -347,7 +376,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid52",
+  "@id" : "_:genid55",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#cardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -616,6 +645,8 @@
   }, {
     "@id" : "http://w3id.org/glosis/model"
   }, {
+    "@id" : "https://def.isotc211.org/ontologies/iso19115/2006/CitationAndResponsiblePartyInformation.rdf"
+  }, {
     "@id" : "https://def.isotc211.org/ontologies/iso19115/2006/MetadataEntitySetInformation.rdf"
   }, {
     "@id" : "https://w3id.org/demeter/agri"
@@ -685,7 +716,11 @@
   }, {
     "@id" : "_:genid41"
   }, {
-    "@id" : "_:genid42"
+    "@id" : "_:genid43"
+  }, {
+    "@id" : "_:genid44"
+  }, {
+    "@id" : "_:genid45"
   } ]
 }, {
   "@id" : "https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropCoefficient",
@@ -849,6 +884,20 @@
     "@id" : "http://qudt.org/vocab/quantitykind/VolumetricFlux"
   } ]
 }, {
+  "@id" : "https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/FarmingSystemType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Farming System Type."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Farming System Type"
+  }, {
+    "@language" : "es",
+    "@value" : "Tipo de sistema de explotación"
+  } ]
+}, {
   "@id" : "https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/IrrigationWaterFlux",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/ObservableProperty" ],
   "http://qudt.org/schema/qudt/hasQuantityKind" : [ {
@@ -870,6 +919,34 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://qudt.org/vocab/quantitykind/VolumetricFlux"
+  } ]
+}, {
+  "@id" : "https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/IrrigationWaterSource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Irrigation Water Source."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Irrigation Water Source"
+  }, {
+    "@language" : "es",
+    "@value" : "Procedencia del agua de riego"
+  } ]
+}, {
+  "@id" : "https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/LandUse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Land Use."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Land Use"
+  }, {
+    "@language" : "es",
+    "@value" : "Uso agrícola"
   } ]
 }, {
   "@id" : "https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/NormalizedDifferenceWaterIndex",
@@ -930,15 +1007,15 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/ns/sosa/FeatureOfInterest"
   }, {
-    "@id" : "_:genid43"
-  }, {
-    "@id" : "_:genid44"
-  }, {
-    "@id" : "_:genid45"
-  }, {
     "@id" : "_:genid46"
   }, {
     "@id" : "_:genid47"
+  }, {
+    "@id" : "_:genid48"
+  }, {
+    "@id" : "_:genid49"
+  }, {
+    "@id" : "_:genid50"
   } ]
 }, {
   "@id" : "https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ParcelUnit",
@@ -953,16 +1030,16 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/ns/sosa/FeatureOfInterest"
   }, {
-    "@id" : "_:genid48"
-  }, {
-    "@id" : "_:genid50"
-  }, {
     "@id" : "_:genid51"
   }, {
-    "@id" : "_:genid52"
+    "@id" : "_:genid53"
+  }, {
+    "@id" : "_:genid54"
+  }, {
+    "@id" : "_:genid55"
   } ]
 }, {
-  "@id" : "https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/PlantDensityProperty",
+  "@id" : "https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/PlantDensity",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/ObservableProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -973,7 +1050,7 @@
     "@value" : "Densidad de plantación"
   }, {
     "@language" : "en",
-    "@value" : "Plant Density Property"
+    "@value" : "Plant Density"
   } ]
 }, {
   "@id" : "https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/PollinatorPlantRatio",
@@ -1045,6 +1122,20 @@
     "@id" : "https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Evapotranspiration"
   } ]
 }, {
+  "@id" : "https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/RootstockType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Rootstock Type."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Rootstock Type"
+  }, {
+    "@language" : "es",
+    "@value" : "Tipo de portainjerto"
+  } ]
+}, {
   "@id" : "https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/RowSpacing",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/ObservableProperty" ],
   "http://qudt.org/schema/qudt/hasQuantityKind" : [ {
@@ -1066,6 +1157,34 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://qudt.org/vocab/quantitykind/Length"
+  } ]
+}, {
+  "@id" : "https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SoilCoverActivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Type of activity applied to soil cover."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Actividad sobre la cubierta"
+  }, {
+    "@language" : "en",
+    "@value" : "Soil Cover Activity"
+  } ]
+}, {
+  "@id" : "https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SoilCoverType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Soil Cover Type."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Soil Cover Type"
+  }, {
+    "@language" : "es",
+    "@value" : "Tipo de cobertura del suelo"
   } ]
 }, {
   "@id" : "https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SoilMoistureDeficit",
@@ -1183,6 +1302,20 @@
     "@id" : "http://qudt.org/vocab/quantitykind/VolumetricFlux"
   } ]
 }, {
+  "@id" : "https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/TrellisingSystemType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Trellising System Type."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Tipo de sistema de conducción"
+  }, {
+    "@language" : "en",
+    "@value" : "Trellising System Type"
+  } ]
+}, {
   "@id" : "https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/WaterPotential",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/ObservableProperty" ],
   "http://qudt.org/schema/qudt/hasQuantityKind" : [ {
@@ -1276,6 +1409,16 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Resource"
+  } ]
+}, {
+  "@id" : "https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/cropRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates if a crop is primary (main) or rotational (secondary) in the crop area."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "crop role"
   } ]
 }, {
   "@id" : "https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/hasHarvestTimeInterval",

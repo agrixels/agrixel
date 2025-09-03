@@ -35,6 +35,7 @@
         <owl:imports rdf:resource="http://qudt.org/3.1.1/vocab/quantitykind"/>
         <owl:imports rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio"/>
         <owl:imports rdf:resource="http://w3id.org/glosis/model"/>
+        <owl:imports rdf:resource="https://def.isotc211.org/ontologies/iso19115/2006/CitationAndResponsiblePartyInformation.rdf"/>
         <owl:imports rdf:resource="https://def.isotc211.org/ontologies/iso19115/2006/MetadataEntitySetInformation.rdf"/>
         <owl:imports rdf:resource="https://w3id.org/demeter/agri"/>
         <dc:contributor>Cecilio Angulo</dc:contributor>
@@ -403,6 +404,16 @@
     
 
 
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/cropRole -->
+
+
+    <owl:DatatypeProperty rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/cropRole">
+        <rdfs:comment xml:lang="en">Indicates if a crop is primary (main) or rotational (secondary) in the crop area.</rdfs:comment>
+        <rdfs:label>crop role</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/maximumPrice -->
 
 
@@ -491,6 +502,23 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#sfIntersects"/>
                 <owl:someValuesFrom rdf:resource="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ParcelUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasTime"/>
+                <owl:allValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#inXSDgYear"/>
+                        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+                    </owl:Restriction>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://smartdatamodels.org/dataModel.Agrifood/hasAgriCrop"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -806,6 +834,18 @@
     
 
 
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/FarmingSystemType -->
+
+
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/FarmingSystemType">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment xml:lang="en">Farming System Type.</rdfs:comment>
+        <rdfs:label xml:lang="en">Farming System Type</rdfs:label>
+        <rdfs:label xml:lang="es">Tipo de sistema de explotación</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/IrrigationWaterFlux -->
 
 
@@ -817,6 +857,30 @@
         <rdfs:label xml:lang="es">Dosis de riego</rdfs:label>
         <rdfs:label xml:lang="en">Irrigation Water Flux</rdfs:label>
         <skos:broader rdf:resource="http://qudt.org/vocab/quantitykind/VolumetricFlux"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/IrrigationWaterSource -->
+
+
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/IrrigationWaterSource">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment xml:lang="en">Irrigation Water Source.</rdfs:comment>
+        <rdfs:label xml:lang="en">Irrigation Water Source</rdfs:label>
+        <rdfs:label xml:lang="es">Procedencia del agua de riego</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/LandUse -->
+
+
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/LandUse">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment xml:lang="en">Land Use.</rdfs:comment>
+        <rdfs:label xml:lang="en">Land Use</rdfs:label>
+        <rdfs:label xml:lang="es">Uso agrícola</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -851,14 +915,14 @@
     
 
 
-    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/PlantDensityProperty -->
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/PlantDensity -->
 
 
-    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/PlantDensityProperty">
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/PlantDensity">
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
         <rdfs:comment xml:lang="en">The number of individual plants, typically expressed in plants per hectare.</rdfs:comment>
         <rdfs:label xml:lang="es">Densidad de plantación</rdfs:label>
-        <rdfs:label xml:lang="en">Plant Density Property</rdfs:label>
+        <rdfs:label xml:lang="en">Plant Density</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -908,6 +972,18 @@
     
 
 
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/RootstockType -->
+
+
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/RootstockType">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment xml:lang="en">Rootstock Type.</rdfs:comment>
+        <rdfs:label xml:lang="en">Rootstock Type</rdfs:label>
+        <rdfs:label xml:lang="es">Tipo de portainjerto</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/RowSpacing -->
 
 
@@ -919,6 +995,30 @@
         <rdfs:label xml:lang="es">Distancia entre líneas</rdfs:label>
         <rdfs:label xml:lang="en">Row Spacing</rdfs:label>
         <skos:broader rdf:resource="http://qudt.org/vocab/quantitykind/Length"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SoilCoverActivity -->
+
+
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SoilCoverActivity">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment xml:lang="en">Type of activity applied to soil cover.</rdfs:comment>
+        <rdfs:label xml:lang="es">Actividad sobre la cubierta</rdfs:label>
+        <rdfs:label xml:lang="en">Soil Cover Activity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SoilCoverType -->
+
+
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SoilCoverType">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment xml:lang="en">Soil Cover Type.</rdfs:comment>
+        <rdfs:label xml:lang="en">Soil Cover Type</rdfs:label>
+        <rdfs:label xml:lang="es">Tipo de cobertura del suelo</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -994,6 +1094,18 @@
         <rdfs:label xml:lang="es">Transpiración</rdfs:label>
         <rdfs:label xml:lang="en">Transpiration</rdfs:label>
         <skos:broader rdf:resource="http://qudt.org/vocab/quantitykind/VolumetricFlux"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/TrellisingSystemType -->
+
+
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/TrellisingSystemType">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment xml:lang="en">Trellising System Type.</rdfs:comment>
+        <rdfs:label xml:lang="es">Tipo de sistema de conducción</rdfs:label>
+        <rdfs:label xml:lang="en">Trellising System Type</rdfs:label>
     </owl:NamedIndividual>
     
 

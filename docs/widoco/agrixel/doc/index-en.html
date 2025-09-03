@@ -17,7 +17,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/","name":"Agrixel Ontology", "headline":"Document describing the ontology https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/", "dateReleased":"Thu Aug 14 12:11:01 CEST 2025", "version":"1.0.0", "license":"https://creativecommons.org/licenses/by-nc-nd/4.0/", "author":[{"@type":"Person","name":"Miona Dimic"},{"@type":"Person","name":"Joan Van Eeckhout Alsinet"}], "contributor":[{"@type":"Person","name":"Cecilio Angulo"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/","name":"Agrixel Ontology", "headline":"Document describing the ontology https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/", "dateReleased":"Wed Sep 03 14:40:57 CEST 2025", "version":"1.0.0", "license":"https://creativecommons.org/licenses/by-nc-nd/4.0/", "author":[{"@type":"Person","name":"Miona Dimic"},{"@type":"Person","name":"Joan Van Eeckhout Alsinet"}], "contributor":[{"@type":"Person","name":"Cecilio Angulo"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -70,7 +70,7 @@ $(function(){
 
 <dl>
 <dt>Latest version:</dt>
-<dd><a href="https://agrixels.github.io/agrixel/ontology/agrixel_draft.ttl">https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/</a></dd>
+<dd><a href="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/">https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/</a></dd>
 <dt>Revision:</dt>
 <dd>1.0.0</dd>
 <!-- <dt>Issued on:</dt>
@@ -84,7 +84,7 @@ $(function(){
 <dt>Publisher:</dt>
 <dd><a href="https://agrixels.upc.edu/">Agrixels</a></dd>
 <dt>Imported Ontologies:</dt>
-<dd><a href="https://def.isotc211.org/ontologies/iso19115/2006/MetadataEntitySetInformation.rdf">iso19115_503</a></dd><dd><a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio">esadm</a></dd><dd><a href="https://w3id.org/demeter/agri">demeterAgriProfile</a></dd><dd><a href="http://w3id.org/glosis/model">glosis</a></dd>
+<dd><a href="https://def.isotc211.org/ontologies/iso19115/2006/MetadataEntitySetInformation.rdf">iso19115_503</a></dd><dd><a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio">esadm</a></dd><dd><a href="https://w3id.org/demeter/agri">demeterAgriProfile</a></dd><dd><a href="http://w3id.org/glosis/model">glosis</a></dd><dd><a href="https://def.isotc211.org/ontologies/iso19115/2006/CitationAndResponsiblePartyInformation.rdf">iso19115_629</a></dd>
 
 <dt>Download serialization:</dt>
 <dd>
@@ -130,8 +130,8 @@ $(function(){
 
 <!--INTRODUCTION SECTION-->
     <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<span class="markdown">
-This document contains the first version of the agrixel ontology, a standard for the semantic representation of agricultural data at a 1 meter x 1 meter scale. It is designed to facilitate the integration, interoperability, and exploitation of heterogeneous agricultural data using artificial intelligence and computer vision techniques, while promoting the adoption of FAIR principles in data sharing and standardization.</div>
+<span class="markdown">This document contains the first version of the agrixel ontology, a standard for the semantic representation of agricultural data at a 1 meter x 1 meter scale. It is designed to facilitate the integration, interoperability, and exploitation of heterogeneous agricultural data using artificial intelligence and computer vision techniques, while promoting the adoption of FAIR principles in data sharing and standardization.</span>
+</div>
   
 
 <!--OVERVIEW SECTION-->
@@ -209,12 +209,16 @@ This ontology has the following classes and properties.</span>
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     class="hlist">
    <li>
-      <a href="averagePrice"
+      <a href="#averagePrice"
          title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/averagePrice">average price</a>
+   </li>
+   <li>
+      <a href="#cropRole"
+         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/cropRole">crop role</a>
    </li>
    <!-- <li>
       <a href="#http://www.w3.org/2006/time#inXSDgYear" title="http://www.w3.org/2006/time#inXSDgYear">in XSD g-Year</a>
-   </li> -->
+   </li>  -->
    <li>
       <a href="#maximumPrice"
          title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/maximumPrice">maximum price</a>
@@ -259,8 +263,20 @@ This ontology has the following classes and properties.</span>
          title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Evapotranspiration">Evapotranspiration</a>
    </li>
    <li>
+      <a href="#FarmingSystemType"
+         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/FarmingSystemType">Farming System Type</a>
+   </li>
+   <li>
       <a href="#IrrigationWaterFlux"
          title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/IrrigationWaterFlux">Irrigation Water Flux</a>
+   </li>
+   <li>
+      <a href="#IrrigationWaterSource"
+         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/IrrigationWaterSource">Irrigation Water Source</a>
+   </li>
+   <li>
+      <a href="#LandUse"
+         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/LandUse">Land Use</a>
    </li>
    <li>
       <a href="#NormalizedDifferenceWaterIndex"
@@ -271,8 +287,8 @@ This ontology has the following classes and properties.</span>
          title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/NumberOfCultivatorPasses">Number of Cultivator Passes</a>
    </li>
    <li>
-      <a href="#PlantDensityProperty"
-         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/PlantDensityProperty">Plant Density Property</a>
+      <a href="#PlantDensity"
+         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/PlantDensity">Plant Density</a>
    </li>
    <li>
       <a href="#PollinatorPlantRatio"
@@ -287,8 +303,20 @@ This ontology has the following classes and properties.</span>
          title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ReferenceCropEvapotranspiration">Reference Crop Evapotranspiration</a>
    </li>
    <li>
+      <a href="#RootstockType"
+         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/RootstockType">Rootstock Type</a>
+   </li>
+   <li>
       <a href="#RowSpacing"
          title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/RowSpacing">Row Spacing</a>
+   </li>
+   <li>
+      <a href="#SoilCoverActivity"
+         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SoilCoverActivity">Soil Cover Activity</a>
+   </li>
+   <li>
+      <a href="#SoilCoverType"
+         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SoilCoverType">Soil Cover Type</a>
    </li>
    <li>
       <a href="#SoilMoistureDeficit"
@@ -309,6 +337,10 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#Transpiration"
          title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Transpiration">Transpiration</a>
+   </li>
+   <li>
+      <a href="#TrellisingSystemType"
+         title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/TrellisingSystemType">Trellising System Type</a>
    </li>
    <li>
       <a href="#WaterPotential"
@@ -695,7 +727,8 @@ This section provides details for each class and property defined by Agrixel Ont
 </div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
  <h3 id="dataproperties-headline" class="list">Data Properties</h3>
  <ul class="hlist">
-  <li><a href="#average Price" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/averagePrice">average price</a></li>
+  <li><a href="#averagePrice" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/averagePrice">average price</a></li>
+  <li><a href="#cropRole" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/cropRole">crop role</a></li>
   <!-- <li><a href="#http://www.w3.org/2006/time#inXSDgYear" title="http://www.w3.org/2006/time#inXSDgYear">in XSD g-Year</a></li> -->
   <li><a href="#maximumPrice" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/maximumPrice">maximum price</a></li>
   <li><a href="#minimumPrice" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/minimumPrice">minimum price</a></li>
@@ -715,6 +748,13 @@ This section provides details for each class and property defined by Agrixel Ont
      <a href="http://foodie-cloud.com/model/foodie#price" target="_blank" title="http://foodie-cloud.com/model/foodie#price">price</a> <sup class="type-dp" title="data property">dp</sup>
     </dd>
    </dl>
+  </div>
+ </div>
+ <div class="entity" id="cropRole">
+  <h3>crop role<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/cropRole</p>
+  <div class="comment">
+   <span class="markdown">Indicates if a crop is primary (main) or rotational (secondary) in the crop area.</span>
   </div>
  </div>
  <!-- <div class="entity" id="http://www.w3.org/2006/time#inXSDgYear">
@@ -788,19 +828,26 @@ This section provides details for each class and property defined by Agrixel Ont
   <li><a href="#DripLineDistance" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripLineDistance">Drip Line Distance</a></li>
   <li><a href="#DripTapeDistance" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/DripTapeDistance">Drip Tape Distance</a></li>
   <li><a href="#Evapotranspiration" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Evapotranspiration">Evapotranspiration</a></li>
+  <li><a href="#FarmingSystemType" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/FarmingSystemType">Farming System Type</a></li>
   <li><a href="#IrrigationWaterFlux" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/IrrigationWaterFlux">Irrigation Water Flux</a></li>
+  <li><a href="#IrrigationWaterSource" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/IrrigationWaterSource">Irrigation Water Source</a></li>
+  <li><a href="#LandUse" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/LandUse">Land Use</a></li>
   <li><a href="#NormalizedDifferenceWaterIndex" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/NormalizedDifferenceWaterIndex">Normalized Difference Water Index</a></li>
   <li><a href="#NumberOfCultivatorPasses" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/NumberOfCultivatorPasses">Number of Cultivator Passes</a></li>
-  <li><a href="#PlantDensityProperty" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/PlantDensityProperty">Plant Density Property</a></li>
+  <li><a href="#PlantDensity" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/PlantDensity">Plant Density</a></li>
   <li><a href="#PollinatorPlantRatio" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/PollinatorPlantRatio">Pollinator Plant Ratio</a></li>
   <li><a href="#ProductLossRate" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ProductLossRate">Product Loss Rate</a></li>
   <li><a href="#ReferenceCropEvapotranspiration" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ReferenceCropEvapotranspiration">Reference Crop Evapotranspiration</a></li>
+  <li><a href="#RootstockType" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/RootstockType">Rootstock Type</a></li>
   <li><a href="#RowSpacing" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/RowSpacing">Row Spacing</a></li>
+  <li><a href="#SoilCoverActivity" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SoilCoverActivity">Soil Cover Activity</a></li>
+  <li><a href="#SoilCoverType" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SoilCoverType">Soil Cover Type</a></li>
   <li><a href="#SoilMoistureDeficit" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SoilMoistureDeficit">Soil Moisture Deficit</a></li>
   <li><a href="#SprinklerRiserHeight" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SprinklerRiserHeight">Sprinkler Riser Height</a></li>
   <li><a href="#SprinklerWettedDiameter" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SprinklerWettedDiameter">Sprinkler Wetted Diameter</a></li>
   <li><a href="#TotalDieselFuel" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/TotalDieselFuel">Total Diesel Fuel</a></li>
   <li><a href="#Transpiration" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Transpiration">Transpiration</a></li>
+  <li><a href="#TrellisingSystemType" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/TrellisingSystemType">Trellising System Type</a></li>
   <li><a href="#WaterPotential" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/WaterPotential">Water Potential</a></li>
   <li><a href="#WetBulbDepth" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/WetBulbDepth">Wet Bulb Depth</a></li>
   <li><a href="#Yield" title="https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Yield">Yield</a></li>
@@ -1021,6 +1068,21 @@ This section provides details for each class and property defined by Agrixel Ont
    </dd>
   </dl>
  </div>
+ <div class="entity" id="FarmingSystemType">
+  <h3>Farming System Type<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/FarmingSystemType</p>
+  <div class="comment">
+   <span class="markdown">Farming System Type.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/sosa/ObservableProperty" target="_blank" title="http://www.w3.org/ns/sosa/ObservableProperty">Observable Property</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="IrrigationWaterFlux">
   <h3>Irrigation Water Flux<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/IrrigationWaterFlux</p>
@@ -1045,6 +1107,36 @@ This section provides details for each class and property defined by Agrixel Ont
    </dd>
    <dd>
     <a href="http://www.w3.org/2004/02/skos/core#broader" target="_blank" title="http://www.w3.org/2004/02/skos/core#broader">broader</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="http://qudt.org/vocab/quantitykind/VolumetricFlux" target="_blank" title="http://qudt.org/vocab/quantitykind/VolumetricFlux">Volumetric Flux</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="IrrigationWaterSource">
+  <h3>Irrigation Water Source<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/IrrigationWaterSource</p>
+  <div class="comment">
+   <span class="markdown">Irrigation Water Source.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/sosa/ObservableProperty" target="_blank" title="http://www.w3.org/ns/sosa/ObservableProperty">Observable Property</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="LandUse">
+  <h3>Land Use<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/LandUse</p>
+  <div class="comment">
+   <span class="markdown">Land Use.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/sosa/ObservableProperty" target="_blank" title="http://www.w3.org/ns/sosa/ObservableProperty">Observable Property</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -1102,9 +1194,9 @@ This section provides details for each class and property defined by Agrixel Ont
    </dd>
   </dl>
  </div>
- <div class="entity" id="PlantDensityProperty">
-  <h3>Plant Density Property<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/PlantDensityProperty</p>
+ <div class="entity" id="PlantDensity">
+  <h3>Plant Density<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/PlantDensity</p>
   <div class="comment">
    <span class="markdown">The number of individual plants, typically expressed in plants per hectare.</span>
   </div>
@@ -1198,6 +1290,21 @@ This section provides details for each class and property defined by Agrixel Ont
    </dd>
   </dl>
  </div>
+ <div class="entity" id="RootstockType">
+  <h3>Rootstock Type<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/RootstockType</p>
+  <div class="comment">
+   <span class="markdown">Rootstock Type.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/sosa/ObservableProperty" target="_blank" title="http://www.w3.org/ns/sosa/ObservableProperty">Observable Property</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="RowSpacing">
   <h3>Row Spacing<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/RowSpacing</p>
@@ -1222,6 +1329,36 @@ This section provides details for each class and property defined by Agrixel Ont
    </dd>
    <dd>
     <a href="http://www.w3.org/2004/02/skos/core#broader" target="_blank" title="http://www.w3.org/2004/02/skos/core#broader">broader</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="http://qudt.org/vocab/quantitykind/Length" target="_blank" title="http://qudt.org/vocab/quantitykind/Length">Length</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SoilCoverActivity">
+  <h3>Soil Cover Activity<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SoilCoverActivity</p>
+  <div class="comment">
+   <span class="markdown">Type of activity applied to soil cover.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/sosa/ObservableProperty" target="_blank" title="http://www.w3.org/ns/sosa/ObservableProperty">Observable Property</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SoilCoverType">
+  <h3>Soil Cover Type<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/SoilCoverType</p>
+  <div class="comment">
+   <span class="markdown">Soil Cover Type.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/sosa/ObservableProperty" target="_blank" title="http://www.w3.org/ns/sosa/ObservableProperty">Observable Property</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -1357,6 +1494,21 @@ This section provides details for each class and property defined by Agrixel Ont
    </dd>
    <dd>
     <a href="http://www.w3.org/2004/02/skos/core#broader" target="_blank" title="http://www.w3.org/2004/02/skos/core#broader">broader</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="http://qudt.org/vocab/quantitykind/VolumetricFlux" target="_blank" title="http://qudt.org/vocab/quantitykind/VolumetricFlux">Volumetric Flux</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="TrellisingSystemType">
+  <h3>Trellising System Type<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/TrellisingSystemType</p>
+  <div class="comment">
+   <span class="markdown">Trellising System Type.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/sosa/ObservableProperty" target="_blank" title="http://www.w3.org/ns/sosa/ObservableProperty">Observable Property</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
