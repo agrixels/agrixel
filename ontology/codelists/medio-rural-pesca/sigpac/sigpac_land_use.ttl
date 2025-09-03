@@ -1,0 +1,259 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sigpac_cl: <https://agrixels.upc.edu/kos/medio-rural-pesca/sigpac/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+sigpac_cl:sigpacLandUseValueCode a skos:ConceptScheme ;
+    rdfs:label "Code list for sigpacLandUseValue - codelist scheme"@en ;
+    rdfs:seeAlso sigpac_cl:SigpacLandUseValueCode ;
+    skos:definition "Defined in SIPAC Code List Service: https://sigpac-hubcloud.es/html/listCod/descServicio.html" ;
+    skos:note "This code list provides possible values for sigpacLandUse."@en ;
+    skos:prefLabel "Code list for sigpacLandUseValue - codelist scheme"@en .
+
+sigpac_cl:SigpacLandUseValueCode a owl:Class ;
+    rdfs:label "Code list for SigpacLandUseValue - codelist class"@en ;
+    rdfs:comment "This code list provides the SigpacLandUseValue codes."@en ;
+    rdfs:seeAlso sigpac_cl:sigpacLandUseValueCode ;
+    rdfs:subClassOf skos:Concept ;
+    owl:oneOf ( sigpac_cl:sigpacLandUseValueCode-AG sigpac_cl:sigpacLandUseValueCode-CA sigpac_cl:sigpacLandUseValueCode-CF sigpac_cl:sigpacLandUseValueCode-CI sigpac_cl:sigpacLandUseValueCode-CO sigpac_cl:sigpacLandUseValueCode-CS sigpac_cl:sigpacLandUseValueCode-CV sigpac_cl:sigpacLandUseValueCode-ED sigpac_cl:sigpacLandUseValueCode-EP sigpac_cl:sigpacLandUseValueCode-FF sigpac_cl:sigpacLandUseValueCode-FL sigpac_cl:sigpacLandUseValueCode-FO sigpac_cl:sigpacLandUseValueCode-FS sigpac_cl:sigpacLandUseValueCode-FV sigpac_cl:sigpacLandUseValueCode-FY sigpac_cl:sigpacLandUseValueCode-IM sigpac_cl:sigpacLandUseValueCode-IS sigpac_cl:sigpacLandUseValueCode-IV sigpac_cl:sigpacLandUseValueCode-MT sigpac_cl:sigpacLandUseValueCode-OC sigpac_cl:sigpacLandUseValueCode-OF sigpac_cl:sigpacLandUseValueCode-OP sigpac_cl:sigpacLandUseValueCode-OV sigpac_cl:sigpacLandUseValueCode-PA sigpac_cl:sigpacLandUseValueCode-PR sigpac_cl:sigpacLandUseValueCode-PS sigpac_cl:sigpacLandUseValueCode-TA sigpac_cl:sigpacLandUseValueCode-TH sigpac_cl:sigpacLandUseValueCode-VF sigpac_cl:sigpacLandUseValueCode-VI sigpac_cl:sigpacLandUseValueCode-VO sigpac_cl:sigpacLandUseValueCode-ZC sigpac_cl:sigpacLandUseValueCode-ZU sigpac_cl:sigpacLandUseValueCode-ZV ) ;
+    skos:definition "Defined in SIPAC Code List Service: https://sigpac-hubcloud.es/html/listCod/descServicio.html" .
+
+sigpac_cl:sigpacLandUseValueCode-AG a skos:Concept,
+        sigpac_cl:SigpacLandUseValueCode ;
+    skos:inScheme sigpac_cl:sigpacLandUseValueCode ;
+    skos:notation "AG" ;
+    skos:prefLabel "CORRIENTES Y SUPERFICIES DE AGUA"@es ;
+    skos:topConceptOf sigpac_cl:sigpacLandUseValueCode .
+
+sigpac_cl:sigpacLandUseValueCode-CA a skos:Concept,
+        sigpac_cl:SigpacLandUseValueCode ;
+    skos:inScheme sigpac_cl:sigpacLandUseValueCode ;
+    skos:notation "CA" ;
+    skos:prefLabel "VIALES"@es ;
+    skos:topConceptOf sigpac_cl:sigpacLandUseValueCode .
+
+sigpac_cl:sigpacLandUseValueCode-CF a skos:Concept,
+        sigpac_cl:SigpacLandUseValueCode ;
+    skos:inScheme sigpac_cl:sigpacLandUseValueCode ;
+    skos:notation "CF" ;
+    skos:prefLabel "Asociación Cítricos-Frutales"@es ;
+    skos:topConceptOf sigpac_cl:sigpacLandUseValueCode .
+
+sigpac_cl:sigpacLandUseValueCode-CI a skos:Concept,
+        sigpac_cl:SigpacLandUseValueCode ;
+    skos:inScheme sigpac_cl:sigpacLandUseValueCode ;
+    skos:notation "CI" ;
+    skos:prefLabel "CITRICOS"@es ;
+    skos:topConceptOf sigpac_cl:sigpacLandUseValueCode .
+
+sigpac_cl:sigpacLandUseValueCode-CO a skos:Concept,
+        sigpac_cl:SigpacLandUseValueCode ;
+    skos:inScheme sigpac_cl:sigpacLandUseValueCode ;
+    skos:notation "CO" ;
+    skos:prefLabel "CONTORNO OLIVAR"@es ;
+    skos:topConceptOf sigpac_cl:sigpacLandUseValueCode .
+
+sigpac_cl:sigpacLandUseValueCode-CS a skos:Concept,
+        sigpac_cl:SigpacLandUseValueCode ;
+    skos:inScheme sigpac_cl:sigpacLandUseValueCode ;
+    skos:notation "CS" ;
+    skos:prefLabel "Asociación Cítricos-Frutales de cáscara"@es ;
+    skos:topConceptOf sigpac_cl:sigpacLandUseValueCode .
+
+sigpac_cl:sigpacLandUseValueCode-CV a skos:Concept,
+        sigpac_cl:SigpacLandUseValueCode ;
+    skos:inScheme sigpac_cl:sigpacLandUseValueCode ;
+    skos:notation "CV" ;
+    skos:prefLabel "Asociación Cítricos-Viñedo"@es ;
+    skos:topConceptOf sigpac_cl:sigpacLandUseValueCode .
+
+sigpac_cl:sigpacLandUseValueCode-ED a skos:Concept,
+        sigpac_cl:SigpacLandUseValueCode ;
+    skos:inScheme sigpac_cl:sigpacLandUseValueCode ;
+    skos:notation "ED" ;
+    skos:prefLabel "EDIFICACIONES"@es ;
+    skos:topConceptOf sigpac_cl:sigpacLandUseValueCode .
+
+sigpac_cl:sigpacLandUseValueCode-EP a skos:Concept,
+        sigpac_cl:SigpacLandUseValueCode ;
+    skos:inScheme sigpac_cl:sigpacLandUseValueCode ;
+    skos:notation "EP" ;
+    skos:prefLabel "ELEMENTO DEL PAISAJE"@es ;
+    skos:topConceptOf sigpac_cl:sigpacLandUseValueCode .
+
+sigpac_cl:sigpacLandUseValueCode-FF a skos:Concept,
+        sigpac_cl:SigpacLandUseValueCode ;
+    skos:inScheme sigpac_cl:sigpacLandUseValueCode ;
+    skos:notation "FF" ;
+    skos:prefLabel "Asociación Frutales-Frutales de cáscara"@es ;
+    skos:topConceptOf sigpac_cl:sigpacLandUseValueCode .
+
+sigpac_cl:sigpacLandUseValueCode-FL a skos:Concept,
+        sigpac_cl:SigpacLandUseValueCode ;
+    skos:inScheme sigpac_cl:sigpacLandUseValueCode ;
+    skos:notation "FL" ;
+    skos:prefLabel "FRUTOS SECOS Y OLIVAR"@es ;
+    skos:topConceptOf sigpac_cl:sigpacLandUseValueCode .
+
+sigpac_cl:sigpacLandUseValueCode-FO a skos:Concept,
+        sigpac_cl:SigpacLandUseValueCode ;
+    skos:inScheme sigpac_cl:sigpacLandUseValueCode ;
+    skos:notation "FO" ;
+    skos:prefLabel "FORESTAL"@es ;
+    skos:topConceptOf sigpac_cl:sigpacLandUseValueCode .
+
+sigpac_cl:sigpacLandUseValueCode-FS a skos:Concept,
+        sigpac_cl:SigpacLandUseValueCode ;
+    skos:inScheme sigpac_cl:sigpacLandUseValueCode ;
+    skos:notation "FS" ;
+    skos:prefLabel "FRUTOS SECOS"@es ;
+    skos:topConceptOf sigpac_cl:sigpacLandUseValueCode .
+
+sigpac_cl:sigpacLandUseValueCode-FV a skos:Concept,
+        sigpac_cl:SigpacLandUseValueCode ;
+    skos:inScheme sigpac_cl:sigpacLandUseValueCode ;
+    skos:notation "FV" ;
+    skos:prefLabel "FRUTOS SECOS Y VIÑEDO"@es ;
+    skos:topConceptOf sigpac_cl:sigpacLandUseValueCode .
+
+sigpac_cl:sigpacLandUseValueCode-FY a skos:Concept,
+        sigpac_cl:SigpacLandUseValueCode ;
+    skos:inScheme sigpac_cl:sigpacLandUseValueCode ;
+    skos:notation "FY" ;
+    skos:prefLabel "FRUTALES"@es ;
+    skos:topConceptOf sigpac_cl:sigpacLandUseValueCode .
+
+sigpac_cl:sigpacLandUseValueCode-IM a skos:Concept,
+        sigpac_cl:SigpacLandUseValueCode ;
+    skos:inScheme sigpac_cl:sigpacLandUseValueCode ;
+    skos:notation "IM" ;
+    skos:prefLabel "IMPRODUCTIVOS"@es ;
+    skos:topConceptOf sigpac_cl:sigpacLandUseValueCode .
+
+sigpac_cl:sigpacLandUseValueCode-IS a skos:Concept,
+        sigpac_cl:SigpacLandUseValueCode ;
+    skos:inScheme sigpac_cl:sigpacLandUseValueCode ;
+    skos:notation "IS" ;
+    skos:prefLabel "ISLAS"@es ;
+    skos:topConceptOf sigpac_cl:sigpacLandUseValueCode .
+
+sigpac_cl:sigpacLandUseValueCode-IV a skos:Concept,
+        sigpac_cl:SigpacLandUseValueCode ;
+    skos:inScheme sigpac_cl:sigpacLandUseValueCode ;
+    skos:notation "IV" ;
+    skos:prefLabel "INVERNADEROS Y CULTIVOS BAJO PLASTICO"@es ;
+    skos:topConceptOf sigpac_cl:sigpacLandUseValueCode .
+
+sigpac_cl:sigpacLandUseValueCode-MT a skos:Concept,
+        sigpac_cl:SigpacLandUseValueCode ;
+    skos:inScheme sigpac_cl:sigpacLandUseValueCode ;
+    skos:notation "MT" ;
+    skos:prefLabel "MATORRAL"@es ;
+    skos:topConceptOf sigpac_cl:sigpacLandUseValueCode .
+
+sigpac_cl:sigpacLandUseValueCode-OC a skos:Concept,
+        sigpac_cl:SigpacLandUseValueCode ;
+    skos:inScheme sigpac_cl:sigpacLandUseValueCode ;
+    skos:notation "OC" ;
+    skos:prefLabel "Asociación Olivar-Cítricos"@es ;
+    skos:topConceptOf sigpac_cl:sigpacLandUseValueCode .
+
+sigpac_cl:sigpacLandUseValueCode-OF a skos:Concept,
+        sigpac_cl:SigpacLandUseValueCode ;
+    skos:inScheme sigpac_cl:sigpacLandUseValueCode ;
+    skos:notation "OF" ;
+    skos:prefLabel "OLIVAR -  FRUTAL"@es ;
+    skos:topConceptOf sigpac_cl:sigpacLandUseValueCode .
+
+sigpac_cl:sigpacLandUseValueCode-OP a skos:Concept,
+        sigpac_cl:SigpacLandUseValueCode ;
+    skos:inScheme sigpac_cl:sigpacLandUseValueCode ;
+    skos:notation "OP" ;
+    skos:prefLabel "Otros cultivos Permanentes"@es ;
+    skos:topConceptOf sigpac_cl:sigpacLandUseValueCode .
+
+sigpac_cl:sigpacLandUseValueCode-OV a skos:Concept,
+        sigpac_cl:SigpacLandUseValueCode ;
+    skos:inScheme sigpac_cl:sigpacLandUseValueCode ;
+    skos:notation "OV" ;
+    skos:prefLabel "OLIVAR"@es ;
+    skos:topConceptOf sigpac_cl:sigpacLandUseValueCode .
+
+sigpac_cl:sigpacLandUseValueCode-PA a skos:Concept,
+        sigpac_cl:SigpacLandUseValueCode ;
+    skos:inScheme sigpac_cl:sigpacLandUseValueCode ;
+    skos:notation "PA" ;
+    skos:prefLabel "PASTO CON ARBOLADO"@es ;
+    skos:topConceptOf sigpac_cl:sigpacLandUseValueCode .
+
+sigpac_cl:sigpacLandUseValueCode-PR a skos:Concept,
+        sigpac_cl:SigpacLandUseValueCode ;
+    skos:inScheme sigpac_cl:sigpacLandUseValueCode ;
+    skos:notation "PR" ;
+    skos:prefLabel "PASTO ARBUSTIVO"@es ;
+    skos:topConceptOf sigpac_cl:sigpacLandUseValueCode .
+
+sigpac_cl:sigpacLandUseValueCode-PS a skos:Concept,
+        sigpac_cl:SigpacLandUseValueCode ;
+    skos:inScheme sigpac_cl:sigpacLandUseValueCode ;
+    skos:notation "PS" ;
+    skos:prefLabel "PASTIZAL"@es ;
+    skos:topConceptOf sigpac_cl:sigpacLandUseValueCode .
+
+sigpac_cl:sigpacLandUseValueCode-TA a skos:Concept,
+        sigpac_cl:SigpacLandUseValueCode ;
+    skos:inScheme sigpac_cl:sigpacLandUseValueCode ;
+    skos:notation "TA" ;
+    skos:prefLabel "TIERRAS ARABLES"@es ;
+    skos:topConceptOf sigpac_cl:sigpacLandUseValueCode .
+
+sigpac_cl:sigpacLandUseValueCode-TH a skos:Concept,
+        sigpac_cl:SigpacLandUseValueCode ;
+    skos:inScheme sigpac_cl:sigpacLandUseValueCode ;
+    skos:notation "TH" ;
+    skos:prefLabel "HUERTA"@es ;
+    skos:topConceptOf sigpac_cl:sigpacLandUseValueCode .
+
+sigpac_cl:sigpacLandUseValueCode-VF a skos:Concept,
+        sigpac_cl:SigpacLandUseValueCode ;
+    skos:inScheme sigpac_cl:sigpacLandUseValueCode ;
+    skos:notation "VF" ;
+    skos:prefLabel "VIÑEDO - FRUTAL"@es ;
+    skos:topConceptOf sigpac_cl:sigpacLandUseValueCode .
+
+sigpac_cl:sigpacLandUseValueCode-VI a skos:Concept,
+        sigpac_cl:SigpacLandUseValueCode ;
+    skos:inScheme sigpac_cl:sigpacLandUseValueCode ;
+    skos:notation "VI" ;
+    skos:prefLabel "VIÑEDO"@es ;
+    skos:topConceptOf sigpac_cl:sigpacLandUseValueCode .
+
+sigpac_cl:sigpacLandUseValueCode-VO a skos:Concept,
+        sigpac_cl:SigpacLandUseValueCode ;
+    skos:inScheme sigpac_cl:sigpacLandUseValueCode ;
+    skos:notation "VO" ;
+    skos:prefLabel "VIÑEDO - OLIVAR"@es ;
+    skos:topConceptOf sigpac_cl:sigpacLandUseValueCode .
+
+sigpac_cl:sigpacLandUseValueCode-ZC a skos:Concept,
+        sigpac_cl:SigpacLandUseValueCode ;
+    skos:inScheme sigpac_cl:sigpacLandUseValueCode ;
+    skos:notation "ZC" ;
+    skos:prefLabel "ZONA CONCENTRADA NO INCLUIDA EN LA ORTOF"@es ;
+    skos:topConceptOf sigpac_cl:sigpacLandUseValueCode .
+
+sigpac_cl:sigpacLandUseValueCode-ZU a skos:Concept,
+        sigpac_cl:SigpacLandUseValueCode ;
+    skos:inScheme sigpac_cl:sigpacLandUseValueCode ;
+    skos:notation "ZU" ;
+    skos:prefLabel "ZONA URBANA"@es ;
+    skos:topConceptOf sigpac_cl:sigpacLandUseValueCode .
+
+sigpac_cl:sigpacLandUseValueCode-ZV a skos:Concept,
+        sigpac_cl:SigpacLandUseValueCode ;
+    skos:inScheme sigpac_cl:sigpacLandUseValueCode ;
+    skos:notation "ZV" ;
+    skos:prefLabel "ZONA CENSURADA"@es ;
+    skos:topConceptOf sigpac_cl:sigpacLandUseValueCode .
+

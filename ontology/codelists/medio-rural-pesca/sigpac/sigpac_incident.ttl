@@ -1,0 +1,929 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sigpac_cl: <https://agrixels.upc.edu/kos/medio-rural-pesca/sigpac/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+sigpac_cl:sigpacIncidentValueCode a skos:ConceptScheme ;
+    rdfs:label "Code list for sigpacIncidentValue - codelist scheme"@en ;
+    rdfs:seeAlso sigpac_cl:SigpacIncidentValueCode ;
+    skos:note "This code list provides possible values for sigpacIncident."@en ;
+    skos:prefLabel "Code list for sigpacIncidentValue - codelist scheme"@en .
+
+sigpac_cl:SigpacIncidentValueCode a owl:Class ;
+    rdfs:label "Code list for SigpacIncidentValue - codelist class"@en ;
+    rdfs:comment "This code list provides the SigpacIncidentValue codes."@en ;
+    rdfs:seeAlso sigpac_cl:sigpacIncidentValueCode ;
+    rdfs:subClassOf skos:Concept ;
+    owl:oneOf ( sigpac_cl:sigpacIncidentValueCode-7 sigpac_cl:sigpacIncidentValueCode-11 sigpac_cl:sigpacIncidentValueCode-12 sigpac_cl:sigpacIncidentValueCode-13 sigpac_cl:sigpacIncidentValueCode-14 sigpac_cl:sigpacIncidentValueCode-15 sigpac_cl:sigpacIncidentValueCode-17 sigpac_cl:sigpacIncidentValueCode-19 sigpac_cl:sigpacIncidentValueCode-20 sigpac_cl:sigpacIncidentValueCode-21 sigpac_cl:sigpacIncidentValueCode-37 sigpac_cl:sigpacIncidentValueCode-39 sigpac_cl:sigpacIncidentValueCode-46 sigpac_cl:sigpacIncidentValueCode-47 sigpac_cl:sigpacIncidentValueCode-49 sigpac_cl:sigpacIncidentValueCode-58 sigpac_cl:sigpacIncidentValueCode-62 sigpac_cl:sigpacIncidentValueCode-63 sigpac_cl:sigpacIncidentValueCode-74 sigpac_cl:sigpacIncidentValueCode-75 sigpac_cl:sigpacIncidentValueCode-80 sigpac_cl:sigpacIncidentValueCode-81 sigpac_cl:sigpacIncidentValueCode-83 sigpac_cl:sigpacIncidentValueCode-96 sigpac_cl:sigpacIncidentValueCode-97 sigpac_cl:sigpacIncidentValueCode-98 sigpac_cl:sigpacIncidentValueCode-99 sigpac_cl:sigpacIncidentValueCode-100 sigpac_cl:sigpacIncidentValueCode-111 sigpac_cl:sigpacIncidentValueCode-112 sigpac_cl:sigpacIncidentValueCode-116 sigpac_cl:sigpacIncidentValueCode-117 sigpac_cl:sigpacIncidentValueCode-119 sigpac_cl:sigpacIncidentValueCode-120 sigpac_cl:sigpacIncidentValueCode-124 sigpac_cl:sigpacIncidentValueCode-127 sigpac_cl:sigpacIncidentValueCode-128 sigpac_cl:sigpacIncidentValueCode-129 sigpac_cl:sigpacIncidentValueCode-130 sigpac_cl:sigpacIncidentValueCode-132 sigpac_cl:sigpacIncidentValueCode-133 sigpac_cl:sigpacIncidentValueCode-134 sigpac_cl:sigpacIncidentValueCode-135 sigpac_cl:sigpacIncidentValueCode-136 sigpac_cl:sigpacIncidentValueCode-137 sigpac_cl:sigpacIncidentValueCode-138 sigpac_cl:sigpacIncidentValueCode-139 sigpac_cl:sigpacIncidentValueCode-140 sigpac_cl:sigpacIncidentValueCode-142 sigpac_cl:sigpacIncidentValueCode-143 sigpac_cl:sigpacIncidentValueCode-144 sigpac_cl:sigpacIncidentValueCode-145 sigpac_cl:sigpacIncidentValueCode-146 sigpac_cl:sigpacIncidentValueCode-148 sigpac_cl:sigpacIncidentValueCode-149 sigpac_cl:sigpacIncidentValueCode-150 sigpac_cl:sigpacIncidentValueCode-151 sigpac_cl:sigpacIncidentValueCode-152 sigpac_cl:sigpacIncidentValueCode-153 sigpac_cl:sigpacIncidentValueCode-154 sigpac_cl:sigpacIncidentValueCode-155 sigpac_cl:sigpacIncidentValueCode-156 sigpac_cl:sigpacIncidentValueCode-157 sigpac_cl:sigpacIncidentValueCode-158 sigpac_cl:sigpacIncidentValueCode-159 sigpac_cl:sigpacIncidentValueCode-160 sigpac_cl:sigpacIncidentValueCode-161 sigpac_cl:sigpacIncidentValueCode-162 sigpac_cl:sigpacIncidentValueCode-163 sigpac_cl:sigpacIncidentValueCode-164 sigpac_cl:sigpacIncidentValueCode-165 sigpac_cl:sigpacIncidentValueCode-166 sigpac_cl:sigpacIncidentValueCode-167 sigpac_cl:sigpacIncidentValueCode-168 sigpac_cl:sigpacIncidentValueCode-169 sigpac_cl:sigpacIncidentValueCode-170 sigpac_cl:sigpacIncidentValueCode-171 sigpac_cl:sigpacIncidentValueCode-173 sigpac_cl:sigpacIncidentValueCode-174 sigpac_cl:sigpacIncidentValueCode-175 sigpac_cl:sigpacIncidentValueCode-176 sigpac_cl:sigpacIncidentValueCode-177 sigpac_cl:sigpacIncidentValueCode-178 sigpac_cl:sigpacIncidentValueCode-179 sigpac_cl:sigpacIncidentValueCode-180 sigpac_cl:sigpacIncidentValueCode-181 sigpac_cl:sigpacIncidentValueCode-182 sigpac_cl:sigpacIncidentValueCode-183 sigpac_cl:sigpacIncidentValueCode-184 sigpac_cl:sigpacIncidentValueCode-185 sigpac_cl:sigpacIncidentValueCode-186 sigpac_cl:sigpacIncidentValueCode-187 sigpac_cl:sigpacIncidentValueCode-188 sigpac_cl:sigpacIncidentValueCode-189 sigpac_cl:sigpacIncidentValueCode-190 sigpac_cl:sigpacIncidentValueCode-191 sigpac_cl:sigpacIncidentValueCode-192 sigpac_cl:sigpacIncidentValueCode-193 sigpac_cl:sigpacIncidentValueCode-196 sigpac_cl:sigpacIncidentValueCode-197 sigpac_cl:sigpacIncidentValueCode-198 sigpac_cl:sigpacIncidentValueCode-199 sigpac_cl:sigpacIncidentValueCode-202 sigpac_cl:sigpacIncidentValueCode-204 sigpac_cl:sigpacIncidentValueCode-208 sigpac_cl:sigpacIncidentValueCode-209 sigpac_cl:sigpacIncidentValueCode-210 sigpac_cl:sigpacIncidentValueCode-211 sigpac_cl:sigpacIncidentValueCode-213 sigpac_cl:sigpacIncidentValueCode-214 sigpac_cl:sigpacIncidentValueCode-215 sigpac_cl:sigpacIncidentValueCode-216 sigpac_cl:sigpacIncidentValueCode-217 sigpac_cl:sigpacIncidentValueCode-218 sigpac_cl:sigpacIncidentValueCode-219 sigpac_cl:sigpacIncidentValueCode-220 sigpac_cl:sigpacIncidentValueCode-221 sigpac_cl:sigpacIncidentValueCode-222 sigpac_cl:sigpacIncidentValueCode-223 sigpac_cl:sigpacIncidentValueCode-224 sigpac_cl:sigpacIncidentValueCode-225 sigpac_cl:sigpacIncidentValueCode-226 sigpac_cl:sigpacIncidentValueCode-227 sigpac_cl:sigpacIncidentValueCode-228 sigpac_cl:sigpacIncidentValueCode-229 sigpac_cl:sigpacIncidentValueCode-230 sigpac_cl:sigpacIncidentValueCode-231 sigpac_cl:sigpacIncidentValueCode-233 sigpac_cl:sigpacIncidentValueCode-234 sigpac_cl:sigpacIncidentValueCode-235 ) .
+
+sigpac_cl:sigpacIncidentValueCode-100 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "100" ;
+    skos:prefLabel "Uso SIGPAC validado por fotointerpretación Control Teledetección 2019"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-11 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "11" ;
+    skos:prefLabel "Árboles dispersos"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-111 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "111" ;
+    skos:prefLabel "Asociación viña-hortalizas"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-112 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "112" ;
+    skos:prefLabel "Plataneras"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-116 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "116" ;
+    skos:prefLabel "Contiene elementos del paisaje"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-117 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "117" ;
+    skos:prefLabel "No subvencionable: Cultivo abandonado"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-119 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "119" ;
+    skos:prefLabel "Catastrado de urbano"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-12 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "12" ;
+    skos:prefLabel "Contiene otros usos sin subdividir"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-120 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "120" ;
+    skos:prefLabel "Zona esteparia medida"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-124 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "124" ;
+    skos:prefLabel "Superficies forestales de rotación corta."@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-127 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "127" ;
+    skos:prefLabel "Regadío comprobado. No consta existencia de concesión."@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-128 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "128" ;
+    skos:prefLabel "Recintos sin cultivar con valores ambientales o por medidas agroambientales"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-129 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "129" ;
+    skos:prefLabel "Plantación trufera o encinas micorrizadas"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-13 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "13" ;
+    skos:prefLabel "Se observa en la ortofoto uso de cultivo"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-130 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "130" ;
+    skos:prefLabel "Plantaciones forestales regulares"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-132 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "132" ;
+    skos:prefLabel "Roquedo según cobertura SIOSE"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-133 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "133" ;
+    skos:prefLabel "Todo el recinto es un elemento del paisaje sin definir"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-134 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "134" ;
+    skos:prefLabel "Elemento del paisaje árboles en hilera"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-135 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "135" ;
+    skos:prefLabel "Elemento del paisaje árboles en grupo hasta 0,3 ha"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-136 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "136" ;
+    skos:prefLabel "Elemento del paisaje linde hasta 10 m de anchura"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-137 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "137" ;
+    skos:prefLabel "Elemento del paisaje charcas, lagunas, pequeños humedales, etc. hasta 0,1ha"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-138 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "138" ;
+    skos:prefLabel "Elemento del paisaje islas de vegetación natural o roca hasta 0,1ha"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-139 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "139" ;
+    skos:prefLabel "Elemento del paisaje terraza hasta 10 m de anchura"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-14 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "14" ;
+    skos:prefLabel "Superficie de cultivo que se prolonga en red viaria o fluvial"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-140 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "140" ;
+    skos:prefLabel "Información del coeficiente de subvencionabilidad aportada por la Comunidad Autónoma"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-142 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "142" ;
+    skos:prefLabel "Cultivo de esparrago"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-143 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "143" ;
+    skos:prefLabel "Monte-bajo matorral"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-144 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "144" ;
+    skos:prefLabel "Erial"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-145 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "145" ;
+    skos:prefLabel "Plantas aromáticas leñosas"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-146 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "146" ;
+    skos:prefLabel "Asignación CAP manual recintos pequeños"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-148 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "148" ;
+    skos:prefLabel "Recinto perteneciente a un Tancat"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-149 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "149" ;
+    skos:prefLabel "Recinto de pasto sensible transformado"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-15 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "15" ;
+    skos:prefLabel "Recinto perteneciente a parcela incluida en información gráfica de un Certificado de Forestación"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-150 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "150" ;
+    skos:prefLabel "recinto con mezcla de platanera y otros frutales tropicales"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-151 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "151" ;
+    skos:prefLabel "Frutales bajo plástico"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-152 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "152" ;
+    skos:prefLabel "Improductivo según cobertura MFE"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-153 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "153" ;
+    skos:prefLabel "Actualización CAP manual con coeficiente 2016"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-154 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "154" ;
+    skos:prefLabel "Visto en campo 2017"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-155 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "155" ;
+    skos:prefLabel "Frutos secos que no cumplen la densidad mínima, según control de campo o administrativo"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-156 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "156" ;
+    skos:prefLabel "Control de pastos de más de 10 años"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-157 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "157" ;
+    skos:prefLabel "El cambio de uso SIGPAC, procedente de un uso forestal o pastos, no acredita autorización administrativa de la Consejería con competencia en medio ambiente"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-158 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "158" ;
+    skos:prefLabel "Barbecho de 5 años consecutivos"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-159 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "159" ;
+    skos:prefLabel "Subvencionabilidad del recinto condicionada por incendio"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-160 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "160" ;
+    skos:prefLabel "Contiene Balates"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-161 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "161" ;
+    skos:prefLabel "Frutos secos que no cumplen la densidad mínima, según el nº de árboles registrado"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-162 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "162" ;
+    skos:prefLabel "Visto en campo 2018"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-163 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "163" ;
+    skos:prefLabel "El cambio de uso reflejado en SIGPAC ha sido informado por parte de la Consejería con competencia en medio ambiente como exento de la necesidad de autorización"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-164 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "164" ;
+    skos:prefLabel "El cambio de uso reflejado en SIGPAC ha sido informado por parte de la Consejería con competencia en medio ambiente como autorizado"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-165 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "165" ;
+    skos:prefLabel "El cambio de uso SIGPAC a leñoso, procedente de tierras de cultivo en zona LIC o ZEPA, no acredita autorización administrativa de la Consejería con competencia en medio ambiente"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-166 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "166" ;
+    skos:prefLabel "El cambio de uso reflejado en SIGPAC ha sido informado por parte de la Consejería con competencia en medio ambiente como no autorizado"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-167 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "167" ;
+    skos:prefLabel "Pino inoculado con níscalo"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-168 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "168" ;
+    skos:prefLabel "Pastos leñosos sin mayoría herbácea"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-169 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "169" ;
+    skos:prefLabel "Pino para producción de piñones"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-17 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "17" ;
+    skos:prefLabel "Recinto perteneciente a parcela incluida en información alfanumérica del Registro Vitícola identificada como arranque de viña"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-170 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "170" ;
+    skos:prefLabel "Visto en campo 2019"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-171 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "171" ;
+    skos:prefLabel "Uso SIGPAC estudiado por Control Teledetección 2019"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-173 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "173" ;
+    skos:prefLabel "Actividad agraria comprobada 2016"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-174 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "174" ;
+    skos:prefLabel "Actividad agraria comprobada 2017"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-175 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "175" ;
+    skos:prefLabel "Actividad agraria comprobada 2018"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-176 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "176" ;
+    skos:prefLabel "Actividad agraria comprobada 2019"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-177 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "177" ;
+    skos:prefLabel "Cultivos Permanentes con actividad de mantenimiento 5 años consecutivos"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-178 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "178" ;
+    skos:prefLabel "Monitorización 2019: Pendiente confirmar por renovación Ortofoto"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-179 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "179" ;
+    skos:prefLabel "Recinto con derecho de cultivo en dominio público"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-180 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "180" ;
+    skos:prefLabel "Uso SIGPAC validado por fotointerpretación Control Teledetección 2020"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-181 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "181" ;
+    skos:prefLabel "Uso SIGPAC estudiado por Control Teledetección 2020"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-182 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "182" ;
+    skos:prefLabel "Visto en campo 2020"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-183 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "183" ;
+    skos:prefLabel "Monitorización 2020: Pendiente confirmar por renovación Ortofoto"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-184 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "184" ;
+    skos:prefLabel "cultivo sin suelo"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-185 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "185" ;
+    skos:prefLabel "Actividad agraria comprobada en 2020"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-186 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "186" ;
+    skos:prefLabel "Pasto Permanente con actividad de mantenimiento 5 años consecutivos"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-187 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "187" ;
+    skos:prefLabel "Pendiente control por covid-19"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-188 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "188" ;
+    skos:prefLabel "Uso SIGPAC validado por fotointerpretación Control Teledetección 2021"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-189 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "189" ;
+    skos:prefLabel "Uso SIGPAC estudiado por Control Teledetección 2021"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-19 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "19" ;
+    skos:prefLabel "Cítricos según SIG Citrícola"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-190 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "190" ;
+    skos:prefLabel "Visto en campo 2021"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-191 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "191" ;
+    skos:prefLabel "Monitorización 2021: Pendiente confirmar por renovación Ortofoto"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-192 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "192" ;
+    skos:prefLabel "Actividad agraria comprobada en 2021"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-193 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "193" ;
+    skos:prefLabel "Dominio público según catastro"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-196 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "196" ;
+    skos:prefLabel "Visto en campo 2022"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-197 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "197" ;
+    skos:prefLabel "Monitorización 2022: Pendiente confirmar por renovación Ortofoto"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-198 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "198" ;
+    skos:prefLabel "Actividad agraria comprobada en 2022"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-199 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "199" ;
+    skos:prefLabel "Recinto inactivo"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-20 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "20" ;
+    skos:prefLabel "Viña según SIG Vitícola"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-202 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "202" ;
+    skos:prefLabel "Información de Región en Concentración Parcelaria aportada por la Comunidad Autónoma"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-204 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "204" ;
+    skos:prefLabel "Información Vía Pecuaria aportada por la Comunidad Autónoma"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-208 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "208" ;
+    skos:prefLabel "CSP externo pendiente cambio raster"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-209 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "209" ;
+    skos:prefLabel "Revisado por fotointerpretación por la Comunidad Autónoma"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-21 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "21" ;
+    skos:prefLabel "Catastrado de arroz"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-210 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "210" ;
+    skos:prefLabel "Recintos afectados por Erupción 2021"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-211 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "211" ;
+    skos:prefLabel " Pasto sin actividad agraria."@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-213 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "213" ;
+    skos:prefLabel "Prado susceptible de siega con altitud <= 300 m"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-214 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "214" ;
+    skos:prefLabel "Prado susceptible de siega con altitud > 300 m"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-215 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "215" ;
+    skos:prefLabel "Elemento del paisaje construcciones tradicionales"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-216 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "216" ;
+    skos:prefLabel "Elemento del paisaje seto hasta 10 m de anchura"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-217 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "217" ;
+    skos:prefLabel "Elemento del paisaje árboles aislados"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-218 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "218" ;
+    skos:prefLabel "Visto en campo 2023"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-219 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "219" ;
+    skos:prefLabel "Monitorización 2023: Pendiente confirmar por renovación Ortofoto"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-220 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "220" ;
+    skos:prefLabel "Actividad agraria comprobada en 2023"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-221 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "221" ;
+    skos:prefLabel "Tierra de cultivo explotada de regadío en alguno de los últimos 3 años"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-222 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "222" ;
+    skos:prefLabel "Elemento del paisaje muro de piedra"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-223 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "223" ;
+    skos:prefLabel "Cabecera de cultivo permanente"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-224 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "224" ;
+    skos:prefLabel "Cultivo leñoso con bancales"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-225 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "225" ;
+    skos:prefLabel " Recinto con CSP bloqueado tras incendio"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-226 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "226" ;
+    skos:prefLabel "Cultivo de setas o champiñón"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-227 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "227" ;
+    skos:prefLabel "Prado susceptible de siega"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-228 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "228" ;
+    skos:prefLabel "Visto en campo 2024"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-229 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "229" ;
+    skos:prefLabel "Monitorización 2024: Pendiente confirmar por renovación Ortofoto"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-230 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "230" ;
+    skos:prefLabel "Actividad agraria comprobada en 2024"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-231 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "231" ;
+    skos:prefLabel "Disponibilidad No acreditada"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-233 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "233" ;
+    skos:prefLabel "Visto en campo 2025"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-234 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "234" ;
+    skos:prefLabel "Monitorización 2025: Pendiente confirmar por renovación Ortofoto"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-235 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "235" ;
+    skos:prefLabel "Actividad agraria comprobada en 2025"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-37 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "37" ;
+    skos:prefLabel "Recinto perteneciente a parcela incluida en información alfanumérica de un Certificado de Forestación"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-39 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "39" ;
+    skos:prefLabel "La superficie de cítricos no ocupa la totalidad del recinto por asociación con otros frutales"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-46 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "46" ;
+    skos:prefLabel "Recinto de uso no arable perteneciente a parcela incluido en fichero de parcelas declaradas"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-47 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "47" ;
+    skos:prefLabel "Se observa en la ortofoto superficie arada"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-49 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "49" ;
+    skos:prefLabel "Arboles aislados o a marco en cultivo combinado con el uso arable"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-58 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "58" ;
+    skos:prefLabel "Viña según Registro Vitícola en parte del Recinto SIGPAC"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-62 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "62" ;
+    skos:prefLabel "Uso pastos en parcela incluida en base de datos de pasto permanente"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-63 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "63" ;
+    skos:prefLabel "Uso diferente a pastos en parcela incluida en base de datos de pasto permanente"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-7 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "7" ;
+    skos:prefLabel "Uso asignado por la información de Catastro"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-74 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "74" ;
+    skos:prefLabel "Información de uso SIGPAC aportada por la Comunidad Autónoma"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-75 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "75" ;
+    skos:prefLabel "Información del sistema de explotación aportada por la Comunidad Autónoma"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-80 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "80" ;
+    skos:prefLabel "Dato con origen en información procedente de la Comunidad Autónoma"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-81 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "81" ;
+    skos:prefLabel "Instalaciones energéticas"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-83 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "83" ;
+    skos:prefLabel "Tomate en invernadero"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-96 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "96" ;
+    skos:prefLabel "Uso SIGPAC validado por fotointerpretación Control Teledetección 2017"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-97 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "97" ;
+    skos:prefLabel "Uso SIGPAC estudiado por Control Teledetección 2017"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-98 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "98" ;
+    skos:prefLabel "Uso SIGPAC validado por fotointerpretación Control Teledetección 2018"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
+sigpac_cl:sigpacIncidentValueCode-99 a skos:Concept,
+        sigpac_cl:SigpacIncidentValueCode ;
+    skos:inScheme sigpac_cl:sigpacIncidentValueCode ;
+    skos:notation "99" ;
+    skos:prefLabel "Uso SIGPAC estudiado por Control Teledetección 2018"@es ;
+    skos:topConceptOf sigpac_cl:sigpacIncidentValueCode .
+
