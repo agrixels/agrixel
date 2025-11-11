@@ -67,6 +67,7 @@
 <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.metadata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.metadata> <http://www.w3.org/2000/01/rdf-schema#domain> <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation> .
 <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.metadata> <http://www.w3.org/2000/01/rdf-schema#range> <http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation#MD_Metadata> .
+<http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation#MD_Metadata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.metadata> <http://def.isotc211.org/iso19150/-2/2012/base#associationName> "Metadata" .
 <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.metadata> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://standards.iso.org/iso/19156/ed-1/en/" .
 <http://def.isotc211.org/iso19156/2011/Observation#OM_Observation.metadata> <http://www.w3.org/2000/01/rdf-schema#label> "metadata" .
@@ -140,11 +141,12 @@
 <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/siexConcept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/siexConcept> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
 _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid28 .
-_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
 _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
-_:genid3 <http://www.w3.org/2002/07/owl#unionOf> _:genid26 .
+_:genid3 <http://www.w3.org/2002/07/owl#unionOf> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
 _:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
 _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
 _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
@@ -163,91 +165,96 @@ _:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/s
 _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid7 .
-_:genid7 <http://www.w3.org/2002/07/owl#hasValue> <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexSoilCoverTypeValueCode> .
+_:genid7 <http://www.w3.org/2002/07/owl#hasValue> <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexTreatmentEffectivenessValueCode> .
 _:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
 _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid9 .
-_:genid9 <http://www.w3.org/2002/07/owl#hasValue> <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexSoilCoverActivityValueCode> .
+_:genid9 <http://www.w3.org/2002/07/owl#hasValue> <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexSoilCoverTypeValueCode> .
 _:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
 _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid11 .
-_:genid11 <http://www.w3.org/2002/07/owl#hasValue> <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexRootstockValueCode> .
+_:genid11 <http://www.w3.org/2002/07/owl#hasValue> <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexSoilCoverActivityValueCode> .
 _:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
 _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid13 .
-_:genid13 <http://www.w3.org/2002/07/owl#hasValue> <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexIrrigationWaterSourceValueCode> .
+_:genid13 <http://www.w3.org/2002/07/owl#hasValue> <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexRootstockValueCode> .
 _:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
 _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid15 .
-_:genid15 <http://www.w3.org/2002/07/owl#hasValue> <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexIntendedCropUseValueCode> .
+_:genid15 <http://www.w3.org/2002/07/owl#hasValue> <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexIrrigationWaterSourceValueCode> .
 _:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
 _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid17 .
-_:genid17 <http://www.w3.org/2002/07/owl#hasValue> <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFertilizerMaterialValueCode> .
+_:genid17 <http://www.w3.org/2002/07/owl#hasValue> <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexIntendedCropUseValueCode> .
 _:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
 _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid19 .
-_:genid19 <http://www.w3.org/2002/07/owl#hasValue> <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFertilizationTypeValueCode> .
+_:genid19 <http://www.w3.org/2002/07/owl#hasValue> <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFertilizerMaterialValueCode> .
 _:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
 _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid21 .
-_:genid21 <http://www.w3.org/2002/07/owl#hasValue> <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFertilizationMethodValueCode> .
+_:genid21 <http://www.w3.org/2002/07/owl#hasValue> <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFertilizationTypeValueCode> .
 _:genid21 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
 _:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid23 .
-_:genid23 <http://www.w3.org/2002/07/owl#hasValue> <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFarmingSystemValueCode> .
+_:genid23 <http://www.w3.org/2002/07/owl#hasValue> <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFertilizationMethodValueCode> .
 _:genid23 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
 _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid25 .
-_:genid25 <http://www.w3.org/2002/07/owl#hasValue> <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexCropTypeValueCode> .
+_:genid25 <http://www.w3.org/2002/07/owl#hasValue> <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexFarmingSystemValueCode> .
 _:genid25 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
 _:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid27 .
-_:genid27 <http://www.w3.org/2002/07/owl#hasValue> <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexCropProductValueCode> .
+_:genid27 <http://www.w3.org/2002/07/owl#hasValue> <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexCropTypeValueCode> .
 _:genid27 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
 _:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid29 .
+_:genid29 <http://www.w3.org/2002/07/owl#hasValue> <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexCropProductValueCode> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
-_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/siexConcept> <http://www.w3.org/2000/01/rdf-schema#label> "siex concept" .
 # 
 # https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/sigpacConcept
 <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/sigpacConcept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/sigpacConcept> <http://www.w3.org/2000/01/rdf-schema#range> _:genid29 .
-_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid29 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid36 .
-_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
-_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid31 .
-_:genid31 <http://www.w3.org/2002/07/owl#unionOf> _:genid34 .
-_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/sigpacConcept> <http://www.w3.org/2000/01/rdf-schema#range> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid31 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
 _:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 _:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid33 .
-_:genid33 <http://www.w3.org/2002/07/owl#hasValue> <https://agrixels.upc.edu/kos/medio-rural-pesca/sigpac/sigpacLandUseValueCode> .
-_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
-_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid33 <http://www.w3.org/2002/07/owl#unionOf> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 _:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid35 .
-_:genid35 <http://www.w3.org/2002/07/owl#hasValue> <https://agrixels.upc.edu/kos/medio-rural-pesca/sigpac/sigpacIncidentValueCode> .
+_:genid35 <http://www.w3.org/2002/07/owl#hasValue> <https://agrixels.upc.edu/kos/medio-rural-pesca/sigpac/sigpacLandUseValueCode> .
 _:genid35 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
 _:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid37 .
+_:genid37 <http://www.w3.org/2002/07/owl#hasValue> <https://agrixels.upc.edu/kos/medio-rural-pesca/sigpac/sigpacIncidentValueCode> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/sigpacConcept> <http://www.w3.org/2000/01/rdf-schema#label> "sigpac concept" .
 # 
 # https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/upovConcept
@@ -309,6 +316,8 @@ _:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 # #################################################################
 # 
 # 
+# http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation#MD_Metadata
+# 
 # http://qudt.org/schema/qudt/UserQuantityKind
 <http://qudt.org/schema/qudt/UserQuantityKind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
@@ -317,109 +326,109 @@ _:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 # https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Agrixel
 <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Agrixel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Agrixel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/FeatureOfInterest> .
-<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Agrixel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
-_:genid37 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropArea> .
-_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <http://www.opengis.net/ont/geosparql#sfIntersects> .
-_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Agrixel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
-_:genid38 <http://www.w3.org/2002/07/owl#onClass> <http://www.opengis.net/ont/geosparql#Geometry> .
-_:genid38 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <http://www.opengis.net/ont/geosparql#hasGeometry> .
-_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Agrixel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
-_:genid39 <http://www.w3.org/2002/07/owl#onClass> <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Parcel> .
-_:genid39 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref4agri/isContainedIn> .
+_:genid39 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropArea> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <http://www.opengis.net/ont/geosparql#sfIntersects> .
 _:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Agrixel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
+_:genid40 <http://www.w3.org/2002/07/owl#onClass> <http://www.opengis.net/ont/geosparql#Geometry> .
+_:genid40 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <http://www.opengis.net/ont/geosparql#hasGeometry> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Agrixel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
+_:genid41 <http://www.w3.org/2002/07/owl#onClass> <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Parcel> .
+_:genid41 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref4agri/isContainedIn> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Agrixel> <http://www.w3.org/2000/01/rdf-schema#comment> "Agrixel represents 1m x 1m geospatial semantic unit."@en .
 <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Agrixel> <http://www.w3.org/2000/01/rdf-schema#label> "Agrixel" .
 # 
 # https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropArea
 <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/FeatureOfInterest> .
-<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
-_:genid40 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ParcelUnit> .
-_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <http://www.opengis.net/ont/geosparql#sfIntersects> .
-_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
-_:genid41 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid42 .
-_:genid42 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#inXSDgYear> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
+_:genid42 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ParcelUnit> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <http://www.opengis.net/ont/geosparql#sfIntersects> .
 _:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#hasTime> .
-_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
-_:genid43 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <https://smartdatamodels.org/dataModel.Agrifood/hasAgriCrop> .
-_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid44 .
-_:genid44 <http://www.w3.org/2002/07/owl#onClass> <http://www.opengis.net/ont/geosparql#Geometry> .
-_:genid44 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://www.opengis.net/ont/geosparql#hasGeometry> .
+_:genid43 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid44 .
+_:genid44 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#inXSDgYear> .
 _:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#hasTime> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid45 .
-_:genid45 <http://www.w3.org/2002/07/owl#onClass> <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Parcel> .
-_:genid45 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref4agri/isContainedIn> .
+_:genid45 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <https://smartdatamodels.org/dataModel.Agrifood/hasAgriCrop> .
 _:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid46 .
+_:genid46 <http://www.w3.org/2002/07/owl#onClass> <http://www.opengis.net/ont/geosparql#Geometry> .
+_:genid46 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <http://www.opengis.net/ont/geosparql#hasGeometry> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid47 .
+_:genid47 <http://www.w3.org/2002/07/owl#onClass> <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Parcel> .
+_:genid47 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref4agri/isContainedIn> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropArea> <http://www.w3.org/2000/01/rdf-schema#comment> "Declared crop surface for a specific agricultural campaign."@en .
 <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropArea> <http://www.w3.org/2000/01/rdf-schema#label> "Crop Area" .
 # 
 # https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Parcel
 <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Parcel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Parcel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/FeatureOfInterest> .
-<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Parcel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid46 .
-_:genid46 <http://www.w3.org/2002/07/owl#onClass> <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Agrixel> .
-_:genid46 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref4agri/contains> .
-_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Parcel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid47 .
-_:genid47 <http://www.w3.org/2002/07/owl#onClass> <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropArea> .
-_:genid47 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref4agri/contains> .
-_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Parcel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid48 .
-_:genid48 <http://www.w3.org/2002/07/owl#onClass> <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ParcelUnit> .
+_:genid48 <http://www.w3.org/2002/07/owl#onClass> <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Agrixel> .
 _:genid48 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid48 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref4agri/contains> .
 _:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Parcel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid49 .
-_:genid49 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/2000/01/rdf-schema#Resource> .
-_:genid49 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/cadastralRecord> .
+_:genid49 <http://www.w3.org/2002/07/owl#onClass> <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/CropArea> .
+_:genid49 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref4agri/contains> .
 _:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Parcel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid50 .
-_:genid50 <http://www.w3.org/2002/07/owl#onClass> <https://saref.etsi.org/saref4agri/Farm> .
-_:genid50 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref4agri/isContainedIn> .
+_:genid50 <http://www.w3.org/2002/07/owl#onClass> <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ParcelUnit> .
+_:genid50 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref4agri/contains> .
 _:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Parcel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid51 .
+_:genid51 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+_:genid51 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/cadastralRecord> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Parcel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid52 .
+_:genid52 <http://www.w3.org/2002/07/owl#onClass> <https://saref.etsi.org/saref4agri/Farm> .
+_:genid52 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref4agri/isContainedIn> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Parcel> <http://www.w3.org/2000/01/rdf-schema#comment> "Registered parcel."@en .
 <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Parcel> <http://www.w3.org/2000/01/rdf-schema#label> "Parcel" .
 # 
 # https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ParcelUnit
 <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ParcelUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ParcelUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/FeatureOfInterest> .
-<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ParcelUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid51 .
-_:genid51 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid52 .
-_:genid52 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#inXSDgYear> .
-_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#hasTime> .
-_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ParcelUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid53 .
-_:genid53 <http://www.w3.org/2002/07/owl#onClass> <http://www.opengis.net/ont/geosparql#Geometry> .
-_:genid53 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <http://www.opengis.net/ont/geosparql#hasGeometry> .
-_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ParcelUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid54 .
-_:genid54 <http://www.w3.org/2002/07/owl#onClass> <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Parcel> .
-_:genid54 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref4agri/isContainedIn> .
+_:genid53 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid54 .
+_:genid54 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#inXSDgYear> .
 _:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#hasTime> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ParcelUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid55 .
-_:genid55 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/identifier> .
+_:genid55 <http://www.w3.org/2002/07/owl#onClass> <http://www.opengis.net/ont/geosparql#Geometry> .
+_:genid55 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <http://www.opengis.net/ont/geosparql#hasGeometry> .
 _:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ParcelUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid56 .
+_:genid56 <http://www.w3.org/2002/07/owl#onClass> <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/Parcel> .
+_:genid56 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref4agri/isContainedIn> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ParcelUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid57 .
+_:genid57 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid57 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/identifier> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ParcelUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "Declared area within a parcel, characterized by unique identifier and a single land use."@en .
 <https://agrixels.upc.edu/def/medio-rural-pesca/agrixel/ParcelUnit> <http://www.w3.org/2000/01/rdf-schema#label> "Parcel Unit" .
 # 
@@ -782,6 +791,9 @@ _:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexSoilCoverTypeValueCode
 <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexSoilCoverTypeValueCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexTreatmentEffectivenessValueCode
+<https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexTreatmentEffectivenessValueCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexTrellisingSystemValueCode
 <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexTrellisingSystemValueCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

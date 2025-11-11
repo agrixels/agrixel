@@ -195,6 +195,10 @@ xsd:gYear rdf:type rdfs:Datatype .
                                                                ]
                                                                [ rdf:type owl:Restriction ;
                                                                  owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                                 owl:hasValue <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexTreatmentEffectivenessValueCode>
+                                                               ]
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
                                                                  owl:hasValue <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexTrellisingSystemValueCode>
                                                                ]
                                                              )
@@ -280,6 +284,10 @@ xsd:gYear rdf:type rdfs:Datatype .
 #################################################################
 #    Classes
 #################################################################
+
+###  http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation#MD_Metadata
+<http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation#MD_Metadata> rdf:type owl:Class .
+
 
 ###  http://qudt.org/schema/qudt/UserQuantityKind
 <http://qudt.org/schema/qudt/UserQuantityKind> rdf:type owl:Class .
@@ -807,6 +815,10 @@ rdfs:Resource rdf:type owl:Class .
 
 ###  https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexSoilCoverTypeValueCode
 <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexSoilCoverTypeValueCode> rdf:type owl:NamedIndividual .
+
+
+###  https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexTreatmentEffectivenessValueCode
+<https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexTreatmentEffectivenessValueCode> rdf:type owl:NamedIndividual .
 
 
 ###  https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexTrellisingSystemValueCode

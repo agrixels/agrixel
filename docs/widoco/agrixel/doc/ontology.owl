@@ -308,6 +308,10 @@
                             </owl:Restriction>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                                <owl:hasValue rdf:resource="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexTreatmentEffectivenessValueCode"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
                                 <owl:hasValue rdf:resource="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexTrellisingSystemValueCode"/>
                             </owl:Restriction>
                         </owl:unionOf>
@@ -445,6 +449,13 @@
      -->
 
 
+    
+
+
+    <!-- http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation#MD_Metadata -->
+
+
+    <owl:Class rdf:about="http://def.isotc211.org/iso19115/2006/MetadataEntitySetInformation#MD_Metadata"/>
     
 
 
@@ -1229,6 +1240,13 @@
 
 
     <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexSoilCoverTypeValueCode"/>
+    
+
+
+    <!-- https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexTreatmentEffectivenessValueCode -->
+
+
+    <owl:NamedIndividual rdf:about="https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexTreatmentEffectivenessValueCode"/>
     
 
 
