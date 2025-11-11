@@ -206,6 +206,10 @@ agrixel:siexConcept rdf:type owl:ObjectProperty ;
                                                                         owl:onProperty skos:inScheme ;
                                                                         owl:hasValue siex_cl:siexTrellisingSystemValueCode
                                                                       ]
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty skos:inScheme ;
+                                                                        owl:hasValue siex_cl:siexTreatmentEffectivenessValueCode
+                                                                      ]
                                                                     )
                                                       ]
                                                     ) ;
@@ -776,6 +780,9 @@ siex_cl:siexSoilCoverTypeValueCode rdf:type owl:NamedIndividual .
 
 ###  https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexTrellisingSystemValueCode
 siex_cl:siexTrellisingSystemValueCode rdf:type owl:NamedIndividual .
+
+###  https://agrixels.upc.edu/kos/medio-rural-pesca/siex/siexTreatmentEffectivenessValueCode
+siex_cl:siexTreatmentEffectivenessValueCode rdf:type owl:NamedIndividual .
 
 
 ###  https://agrixels.upc.edu/kos/medio-rural-pesca/sigpac/sigpacIncidentValueCode

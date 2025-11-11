@@ -1,0 +1,42 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix siex_cl: <https://agrixels.upc.edu/kos/medio-rural-pesca/siex/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+siex_cl:siexTreatmentEffectivenessValueCode a skos:ConceptScheme ;
+    rdfs:label "Code list for siexTreatmentEffectivenessValue - codelist scheme"@en ;
+    rdfs:seeAlso siex_cl:SiexTreatmentEffectivenessValueCode ;
+    skos:definition "Defined in SIEX 'Eficacia del tratamiento' catalogue: https://www3.sede.fega.gob.es/bdcsixpor/catalogos" ;
+    skos:note "This code list provides possible values for siexTreatmentEffectiveness."@en ;
+    skos:prefLabel "Code list for siexTreatmentEffectivenessValue - codelist scheme"@en .
+
+siex_cl:SiexTreatmentEffectivenessValueCode a owl:Class ;
+    rdfs:label "Code list for SiexTreatmentEffectivenessValue - codelist class"@en ;
+    rdfs:comment "This code list provides the SiexTreatmentEffectivenessValue codes."@en ;
+    rdfs:seeAlso siex_cl:siexTreatmentEffectivenessValueCode ;
+    rdfs:subClassOf skos:Concept ;
+    owl:oneOf ( siex_cl:siexTreatmentEffectivenessValueCode-1 siex_cl:siexTreatmentEffectivenessValueCode-2 siex_cl:siexTreatmentEffectivenessValueCode-3 ) ;
+    skos:definition "Defined in SIEX 'Eficacia del tratamiento' catalogue: https://www3.sede.fega.gob.es/bdcsixpor/catalogos" .
+
+siex_cl:siexTreatmentEffectivenessValueCode-1 a skos:Concept,
+        siex_cl:SiexTreatmentEffectivenessValueCode ;
+    skos:inScheme siex_cl:siexTreatmentEffectivenessValueCode ;
+    skos:notation "1" ;
+    skos:prefLabel "Buena"@es ;
+    skos:topConceptOf siex_cl:siexTreatmentEffectivenessValueCode .
+
+siex_cl:siexTreatmentEffectivenessValueCode-2 a skos:Concept,
+        siex_cl:SiexTreatmentEffectivenessValueCode ;
+    skos:inScheme siex_cl:siexTreatmentEffectivenessValueCode ;
+    skos:notation "2" ;
+    skos:prefLabel "Regular"@es ;
+    skos:topConceptOf siex_cl:siexTreatmentEffectivenessValueCode .
+
+siex_cl:siexTreatmentEffectivenessValueCode-3 a skos:Concept,
+        siex_cl:SiexTreatmentEffectivenessValueCode ;
+    skos:inScheme siex_cl:siexTreatmentEffectivenessValueCode ;
+    skos:notation "3" ;
+    skos:prefLabel "Mala"@es ;
+    skos:topConceptOf siex_cl:siexTreatmentEffectivenessValueCode .
+
